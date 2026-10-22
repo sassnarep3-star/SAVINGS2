@@ -63,6 +63,7 @@
   - [PR #1](https://github.com/sassnarep3-star/SAVINGS2/pull/1) (`e474bfc`), [PR #2](https://github.com/sassnarep3-star/SAVINGS2/pull/2) (`6601f69`), [PR #3](https://github.com/sassnarep3-star/SAVINGS2/pull/3) (`792cba6`) — Merged `arena/46ab1baa-savings2` into `main`.
 - **Current Session Integration PR (`session-1024a045`):**
   - **Source Branch:** `arena/1024a045-savings2` → **Target Branch:** `main`
-  - **PR Link:** [PR #4](https://github.com/sassnarep3-star/SAVINGS2/pull/4) — *"Integrate verified National Bank HYSA & Big Four datasets, interactive Max FDIC calculator, and 15-page GitHub Pages suite"*
+  - **PR Link:** [PR #5](https://github.com/sassnarep3-star/SAVINGS2/pull/5) — *"Integrate verified National Bank HYSA & Big Four datasets, interactive Max FDIC calculator, and 15-page GitHub Pages suite"*
+  - **Merge Status:** Merged to `main` via `gh pr merge 5 --merge` without waiting for manual approval (per user instructions); GitHub Pages deployed live from `main` root (`/`).
   - **Pre-Merge Verification:** `python3 build.py` (`0 errors`), `python3 scripts/build_site.py` (`8 dashboard pages built`), `python3 scripts/verify_site.py` (`293 table rows with 100% official source links, 0 broken local links across all 15 HTML pages`).
   - **Live GitHub Pages URL:** [https://sassnarep3-star.github.io/SAVINGS2/](https://sassnarep3-star.github.io/SAVINGS2/)
