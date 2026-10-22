@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FDIC coverage · Savings research</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Savings Account Research <span class="ver">v1.0 · 2026-10-22</span></div>
+    <nav><a href='index.html'>Overview</a><a href='accounts.html'>Accounts</a><a href='returns.html'>Returns</a><a href='fdic.html' class='active'>FDIC coverage</a><a href='competitiveness.html'>Competitiveness</a><a href='bonuses.html'>Bonuses &amp; rules</a><a href='flagged.html'>Flagged for review</a><a href='methodology.html'>Method</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1>FDIC coverage</h1>
+  <p class="sub">How the $250,000 limit works, how many banks a large deposit needs, and the structures that keep 100% of it insured.</p>
+  
+<p class="lead">"Maximum FDIC insurance" is not a property of a bank — it is a property of how the account is titled.
+The FDIC covers <strong>$250,000 per depositor, per FDIC-insured bank, for each account ownership category</strong>.
+Every account on this site is at an FDIC-insured institution; the practical question is how much you can hold at each one.</p>
+
+<h2>1. The limits, as published by the FDIC</h2>
+<div class='scroll'><table class=''><thead><tr><th>Ownership structure</th><th>Insured at one bank</th><th>Rule</th><th>Source</th></tr></thead><tbody><tr><td>Single ownership (one person, no beneficiaries)</td><td>$250,000</td><td>Per depositor, per FDIC-insured bank, per ownership category.</td><td><a href='https://www.fdic.gov/resources/deposit-insurance/' target='_blank' rel='noopener'>FDIC</a></td></tr><tr><td>Joint account (two owners)</td><td>$500,000</td><td>$250,000 per co-owner, so a two-person joint account is covered to $500,000.</td><td><a href='https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance' target='_blank' rel='noopener'>FDIC</a></td></tr><tr><td>Trust / POD naming 1 beneficiary</td><td>$250,000</td><td>$250,000 per eligible beneficiary.</td><td><a href='https://www.fdic.gov/financial-institution-employees-guide-deposit-insurance/trust-accounts' target='_blank' rel='noopener'>FDIC</a></td></tr><tr><td>Trust / POD naming 5+ beneficiaries</td><td>$1,250,000</td><td>Capped at $1,250,000 per trust owner for all trust accounts at one bank (rule effective 2024-04-01).</td><td><a href='https://www.fdic.gov/resources/deposit-insurance/brochures/insured-deposits' target='_blank' rel='noopener'>FDIC brochure</a></td></tr><tr><td>Same depositor, different banks</td><td>separate limits</td><td>Each FDIC-insured bank is insured separately — this is the lever for deposits above $250,000.</td><td><a href='https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance' target='_blank' rel='noopener'>FDIC</a></td></tr></tbody></table></div>
+
+<div class="callout">
+The FDIC's own warning matters here: <em>"All of your deposits in the same ownership category in the same FDIC-insured bank
+are added together for the purpose of determining FDIC deposit insurance coverage."</em> Two savings accounts at the same bank
+in your name are one $250,000 limit, not two.
+</div>
+
+<h2>2. How many banks a large deposit needs</h2>
+<div class='scroll'><table class=''><thead><tr><th>Deposit</th><th>Single ownership</th><th>Joint (2 owners)</th><th>Trust, 5 beneficiaries</th></tr></thead><tbody><tr><td><strong>$1,000,000</strong></td><td>4 banks × $250,000</td><td>2 banks × $500,000 joint</td><td>1 bank × $1,250,000 trust</td></tr><tr><td><strong>$2,500,000</strong></td><td>10 banks × $250,000</td><td>5 banks × $500,000 joint</td><td>2 banks × $1,250,000 trust</td></tr><tr><td><strong>$5,000,000</strong></td><td>20 banks × $250,000</td><td>10 banks × $500,000 joint</td><td>4 banks × $1,250,000 trust</td></tr></tbody></table></div><p class='note'>Coverage is per bank, so the count is the number of distinct FDIC-insured institutions required to keep every dollar insured.</p>
+
+<h2>3. Highest-verified-rate structure for $1,000,000</h2>
+<div class='scroll'><table class=''><thead><tr><th>Structure</th><th>Insured</th><th>Blended APY</th><th>Interest, year 1</th><th>Balance 2027-10-22</th><th>Caveat</th></tr></thead><tbody><tr><td>4 banks, single ownership<br><span class='small'>CIT $250k · Barclays $250k · Marcus $250k · U.S. Bank $250k</span></td><td>$1,000,000</td><td>3.60%</td><td>$36,000.00</td><td>$1,036,000.00</td><td>U.S. Bank slice requires the Smartly relationship; CIT's rate sheet is dated 2026-07-01.</td></tr><tr><td>2 banks, joint ownership<br><span class='small'>CIT $500k · Barclays $500k (joint)</span></td><td>$1,000,000</td><td>3.70%</td><td>$37,000.00</td><td>$1,037,000.00</td><td>Joint coverage is $250,000 per co-owner. Barclays caps a Tiered Savings account at $1,000,000.</td></tr><tr><td>1 bank, trust with 5 beneficiaries<br><span class='small'>CIT $1.25M in a trust-titled account</span></td><td>$1,250,000</td><td>3.75%</td><td>$46,875.00</td><td>$1,296,875.00</td><td>Highest verified single-bank capacity, but CIT trust-account availability was NOT verified in this pass — check before relying on it.</td></tr></tbody></table></div><p class='note'>Blended APY is the deposit-weighted average of the APYs published for each slice on 2026-10-22. It assumes every rate holds for 12 months.</p>
+
+<h2>4. Traps that silently break coverage</h2>
+<ul>
+  <li><strong>Two brands, one charter.</strong> CIT Bank is a division of First Citizens Bank, so CIT deposits combine with
+      First Citizens deposits for coverage. Capital One states that Capital One and Discover accounts opened on or after
+      2025-05-18 are counted together — the FDIC record shows Discover Bank (cert 5649) as inactive. Two familiar brands,
+      one $250,000 limit.</li>
+  <li><strong>Fintech "network" insurance is not the same as a bank deposit.</strong> SoFi advertises coverage up to $3,000,000
+      through a network of participating banks; that is the bank's own marketing statement, not an FDIC rule, and it depends on
+      how the sweep partners are structured. Verify with the bank and with EDIE before relying on it.</li>
+  <li><strong>Trust coverage requires a real trust account.</strong> The $1,250,000 limit applies to accounts titled in the name of
+      a valid revocable or irrevocable trust naming five or more eligible beneficiaries. Of the high-rate banks checked here,
+      only Ally states on its savings page that the account can be opened in the name of a trust.</li>
+  <li><strong>Interest counts toward the limit.</strong> Coverage is principal plus accrued interest through the date of failure,
+      so a $250,000 deposit sitting at exactly the cap can drift over it as interest accrues.</li>
+</ul>
+
+<h2>5. Check it yourself</h2>
+<p>The FDIC's own calculator (EDIE) is the authoritative check for a specific titling:
+<a href="https://edie.fdic.gov/" target="_blank" rel="noopener">edie.fdic.gov</a>. Bank charter status is verified through
+<a href="https://banks.data.fdic.gov/bankfind-suite/bankfind" target="_blank" rel="noopener">FDIC BankFind</a>.
+Every FDIC certificate number on the accounts page links to that bank's FDIC record.</p>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>Compiled 2026-10-22 from official bank, FDIC and Treasury publications. Deposit account opened <strong>2026-10-22</strong>.
+    APYs are variable unless the source says otherwise. Nothing here is financial advice.</p>
+    <p>19 products screened · 10 with a fully verified APY · 8 APY unverifiable from a public official page ·
+    <a href="flagged.html">see what is missing</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
