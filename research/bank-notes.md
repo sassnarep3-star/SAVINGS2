@@ -184,6 +184,147 @@ official PDFs/pages below loaded and were used instead):
   verified instead via Bank of America's official rate sheet + fee schedule documents (flagged for
   transparency).
 
+## 8. Wells Fargo Bank, N.A. (Fed rank #4)
+
+Checked: 2026-10-22
+Sources:
+- Savings hub: https://www.wellsfargo.com/savings-cds/
+- Rates (page displayed location "CA, 94105"): https://www.wellsfargo.com/savings-cds/rates/
+- Way2Save fee page: https://www.wellsfargo.com/savings-cds/way2save/way2save-monthly-service-fee/
+
+- Accounts: Way2Save® Savings; Platinum Savings (option to write checks).
+- APYs shown on the official rates page (displayed for CA, 94105; footnote 2: rates for
+  listed California Bay Area counties; "Current Deposit Rates for 10/17/2026–10/23/2026";
+  interest compounded daily and paid monthly). **Location flag:** Wells Fargo states rates
+  may vary by location — confirm for New York (ZIP 10001) on the rates page.
+  - Way2Save Savings: **0.01% APY** (standard rate 0.01%), $0 or more.
+  - Platinum Savings standard: **0.01% APY** all balances.
+  - Platinum Savings relationship: 0.02% APY linked to Prime Checking; 0.05% APY linked
+    to Premier Checking.
+  - **Platinum Savings new-customer offer: 3.25% APY** (3.20% interest rate) on balances
+    of $25,000+, APY accurate as of 10/7/2026. Terms (footnote 1): variable, may change
+    at any time; new Platinum Savings accounts only, for customers who do not have an
+    existing Wells Fargo consumer savings account and were not an owner/joint owner/
+    trustee on one within the past 30 days; must reach a balance of at least $25,000
+    within 30 days of opening and maintain a minimum daily balance of $25,000 each day;
+    days below $25,000 earn the standard (or relationship) rate. Note the page's general
+    disclosure: after a promotional period ends the account moves to an "assigned
+    variable interest rate" that may differ from published standard/relationship rates.
+- Minimum opening deposit: $25 (both accounts).
+- Monthly service fees: Way2Save $5, waived each fee period with any one of: $300 minimum
+  daily balance; an automatic transfer of $25+ from a linked WF checking account;
+  automatic transfers of $1+ each business day from a linked WF checking account; one or
+  more Save As You Go® transfers; or primary owner age 24 or under. Platinum $12, waived
+  with a $3,500 minimum daily balance each fee period (hub page; footnote detail at
+  rates page).
+- Opening rules (hub FAQ): online applicants must be 18+, know SSN or ITIN, have a
+  physical U.S. address and own mobile phone number; joint accounts available online.
+- FDIC: "all Wells Fargo savings funds in both savings accounts and CD accounts are
+  FDIC-insured up to the maximum applicable limit"; rates page footer "Wells Fargo
+  Bank, N.A. Member FDIC."
+- App: Wells Fargo Mobile app referenced in disclosures (view rate in "Online Banking or
+  the Mobile App").
+- Cash bonus: none seen on pages read (bonus pass). The 3.25% new-customer rate is the
+  headline promotion.
+- Irregularities: rates page defaulted to CA, 94105 — NY rates must be confirmed with
+  ZIP (flagged). New-customer 3.25% APY is variable with no stated end date and drops to
+  standard/relationship/assigned rate under stated conditions (flagged in analysis).
+
+## 9. U.S. Bank National Association (Fed rank #6)
+
+Checked: 2026-10-22 (site displayed ZIP 55402; U.S. Bank states APYs may vary by location)
+Sources:
+- Savings hub: https://www.usbank.com/bank-accounts/savings-accounts.html
+- Product page: https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings.html
+- Rates page: https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html
+
+- Account (flagship savings): U.S. Bank Smartly® Savings. (U.S. Bank also lists an Elite
+  Money Market account — a money market deposit account, outside the savings scope; noted
+  on the hub at up to 3.40% APY for new accounts with $25,000+ deposits, $10 monthly
+  maintenance fee, $100 minimum opening deposit.)
+- APYs effective as of **October 21, 2026** (for the ZIP shown; "accurate for accounts
+  opened on today's date"; variable):
+  - Standard APY (no eligible relationship product): **0.05%**
+  - Relationship APY (requires also being an account owner of a Bank Smartly® Checking,
+    Safe Debit account, or Bank Smartly™ Visa Signature® Card), by Combined Qualifying
+    Balances (CQB — includes the savings balance and other eligible U.S. Bank balances):
+    under $5,000 → 1.00% APY; $5,000–$24,999.99 → 2.00% APY; $25,000+ → **3.50% APY**
+    (same 3.50% for $25k–$49,999.99, $50k–$99,999.99, and $100,000+).
+  - Caveat printed by U.S. Bank: advertised rates may not apply to existing U.S. Bank
+    consumer savings/money market clients or accounts closed in the past 90 days
+    ("personalized" rates shown after login instead).
+- Minimum opening deposit: $25. Monthly maintenance fee: $5, waived when you are also an
+  account owner of an eligible account (Bank Smartly Checking / Safe Debit / Bank Smartly
+  Visa Signature Card) per the product page (footnote conditions apply).
+- FDIC: "Deposit products are offered by U.S. Bank National Association. Member FDIC";
+  savings accounts "FDIC insured to the maximum allowed by law."
+- App: U.S. Bank Mobile App (product/rates pages reference Online Banking and the Mobile App).
+- Opening rules detail: UNVERIFIED on pages read (see flagged).
+- Compounding detail: APY "takes into account compounding interest based on daily account
+  balances" (rates page); crediting frequency UNVERIFIED.
+- Bonus: none seen on savings pages (bonus pass — U.S. Bank frequently runs savings
+  deposit promos on separate offer pages; must verify officially before listing).
+- Irregularities: rates shown for default ZIP 55402 — confirm NY ZIP 10001 (flagged);
+  headline 3.50% requires an additional eligible U.S. Bank product + $25,000 CQB (flagged
+  in analysis); existing-client rate caveat (flagged).
+
+## 10. PNC Bank, National Association (Fed rank #8)
+
+Checked: 2026-10-22
+Sources:
+- HYSA product page: https://www.pnc.com/en/personal-banking/banking/savings/high-yield-savings.html
+- HYSA rates page: https://www.pnc.com/en/personal-banking/banking/deposit-rates/high-yield-savings.html
+- Savings hub: https://www.pnc.com/en/personal-banking/banking/savings.html
+
+- Accounts: PNC High Yield Savings® (area-restricted); Standard Savings; Premiere Money
+  Market (MMDA); Virtual Wallet® (checking + linked savings "Reserve"/"Growth").
+- High Yield Savings APY: **UNVERIFIED (left blank)** — the official product page's title
+  advertises "3.15% Annual Percentage Yield APY," but PNC serves rate terms only after ZIP
+  entry. Read on 2026-10-22, the rates page stated "Your Location: 15222, Allegheny
+  County, PA – 10/21/2026 — This product is not available in your area," and the product
+  page displayed a stop-sell ("This Product Isn't Available in Your Area") with
+  substitute products. Tier structure, as-of date, minimums and fees for the HYSA could
+  not be read. FLAG: enter a New York ZIP at the official links to determine (a) whether
+  the product is offered in NYC at all and (b) the APY/terms there.
+- Standard Savings: "$0 minimum deposit to open online," interest across all balance
+  tiers, FDIC insured to the maximum permitted by law (product listing on official page).
+  Numeric APY: ZIP-gated (deposit-rates pages require home ZIP) — UNVERIFIED/blank.
+- FDIC: "Bank deposit products and services provided by PNC Bank, National Association.
+  Member FDIC."
+- App: PNC Mobile Banking app (App Store / Google Play badges on official pages).
+- Opening rules detail: UNVERIFIED.
+- Bonus: none for savings seen on pages read (a $250 credit-card bonus banner is not a
+  deposit bonus; check PNC offers in bonus pass — PNC runs Virtual Wallet bonuses).
+- Irregularities: HYSA area-restricted and ZIP-gated; advertised 3.15% APY in title only
+  (flagged). Whether a NYC resident may open it is undetermined from official pages read
+  (flagged as a manual-review action).
+
+## 11. Truist Bank (Fed rank #9)
+
+Checked: 2026-10-22
+Sources:
+- Official disclosures & fees (rate table): https://www.truist.com/savings/truist-one-savings/disclosures-and-fees
+- Product page: https://www.truist.com/savings/truist-one-savings
+
+- Account: Truist One Savings.
+- APY: **0.01%** (rate 0.01%) across all listed balance tiers ($0 to $5,000,000+),
+  "accurate as of 9/28/2026," variable, may change without notice at any time. Interest
+  calculated and compounded daily on the collected balance, credited monthly; "Tiered
+  interest is not applicable" (single rate regardless of tier table).
+- Minimum opening deposit: $50. Monthly maintenance fee: $5, waived by any one of:
+  $300 minimum daily ledger balance; recurring preauthorized internal transfer of $25+
+  per statement cycle; minor under 18; or any related Truist checking product.
+- Withdrawal Limit Fee: $5 per withdrawal over 6 per statement cycle (max 6 such fees),
+  applies to all withdrawal types.
+- FDIC membership statement: not captured in the disclosure text read — FDIC BankFind
+  link provided for manual verification (flagged).
+- App: Truist app — UNVERIFIED on pages read (app pass).
+- Opening rules: open online (product page); detailed eligibility UNVERIFIED.
+- Bonus: none on pages read (bonus pass).
+- Irregularities: APY as-of date printed by Truist is 9/28/2026 (older than other
+  banks' 10/21/2026) — flagged to re-confirm; withdrawal-limit fee is stricter than
+  peers (flagged in analysis).
+
 ---
 
 _(remaining banks appended as research proceeds)_
