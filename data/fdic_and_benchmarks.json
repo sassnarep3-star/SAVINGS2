@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "analysis_date": "2026-10-22",
+    "timezone": "UTC",
+    "user_location_context": "New York City, NY, US",
+    "verification_policy": "All values verified directly against official .gov and bank primary domain disclosures. Unconfirmed values are left blank and flagged."
+  },
+  "macro_benchmarks": [
+    {
+      "benchmark_id": "FDIC-SAV-20261019",
+      "metric": "FDIC National Deposit Rate — Savings",
+      "rate_value": "0.38%",
+      "rate_cap_adjusted": "1.13%",
+      "reference_treasury_or_effr": "3.88%",
+      "national_rate_cap": "4.63%",
+      "effective_date": "2026-10-19",
+      "tier_basis": "$2,500 product tier (weighted by domestic deposit share)",
+      "source_name": "FDIC National Rates and Rate Caps (October 2026)",
+      "source_url": "https://www.fdic.gov/national-rates-and-rate-caps",
+      "verification_status": "Verified"
+    },
+    {
+      "benchmark_id": "FDIC-MMA-20261019",
+      "metric": "FDIC National Deposit Rate — Money Market",
+      "rate_value": "0.63%",
+      "rate_cap_adjusted": "1.38%",
+      "reference_treasury_or_effr": "3.88%",
+      "national_rate_cap": "4.63%",
+      "effective_date": "2026-10-19",
+      "tier_basis": "Average of $10,000 and $100,000 product tiers",
+      "source_name": "FDIC National Rates and Rate Caps (October 2026)",
+      "source_url": "https://www.fdic.gov/national-rates-and-rate-caps",
+      "verification_status": "Verified"
+    },
+    {
+      "benchmark_id": "FDIC-CHK-20261019",
+      "metric": "FDIC National Deposit Rate — Interest Checking",
+      "rate_value": "0.07%",
+      "rate_cap_adjusted": "0.82%",
+      "reference_treasury_or_effr": "3.88%",
+      "national_rate_cap": "4.63%",
+      "effective_date": "2026-10-19",
+      "tier_basis": "$2,500 product tier",
+      "source_name": "FDIC National Rates and Rate Caps (October 2026)",
+      "source_url": "https://www.fdic.gov/national-rates-and-rate-caps",
+      "verification_status": "Verified"
+    },
+    {
+      "benchmark_id": "FDIC-CD12-20261019",
+      "metric": "FDIC National Deposit Rate — 12-Month CD",
+      "rate_value": "1.76%",
+      "rate_cap_adjusted": "2.51%",
+      "reference_treasury_or_effr": "4.54%",
+      "national_rate_cap": "6.20%",
+      "effective_date": "2026-10-19",
+      "tier_basis": "Average of $10,000 and $100,000 product tiers",
+      "source_name": "FDIC National Rates and Rate Caps (October 2026)",
+      "source_url": "https://www.fdic.gov/national-rates-and-rate-caps",
+      "verification_status": "Verified"
+    },
+    {
+      "benchmark_id": "FED-EFFR-20261019",
+      "metric": "Federal Reserve Effective Federal Funds Rate (EFFR)",
+      "rate_value": "3.88%",
+      "rate_cap_adjusted": "N/A",
+      "reference_treasury_or_effr": "Target Range: 3.75% – 4.00%",
+      "national_rate_cap": "N/A",
+      "effective_date": "2026-10-19",
+      "tier_basis": "Volume-weighted median of overnight federal funds transactions (H.15 release 2026-10-20)",
+      "source_name": "Federal Reserve Board H.15 Selected Interest Rates",
+      "source_url": "https://www.federalreserve.gov/releases/h15/",
+      "verification_status": "Verified"
+    },
+    {
+      "benchmark_id": "FED-IORB-20260917",
+      "metric": "Federal Reserve Interest Rate on Reserve Balances (IORB)",
+      "rate_value": "3.90%",
+      "rate_cap_adjusted": "N/A",
+      "reference_treasury_or_effr": "ON RRP Offering Rate: 3.75% | Primary Credit Rate: 4.00%",
+      "national_rate_cap": "N/A",
+      "effective_date": "2026-09-17",
+      "tier_basis": "FOMC Implementation Note (Issued 2026-09-16; Minutes Released 2026-10-07)",
+      "source_name": "Federal Reserve FOMC Implementation Note",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm",
+      "verification_status": "Verified"
+    }
+  ],
+  "fdic_ownership_categories": [
+    {
+      "category_id": "SINGLE",
+      "ownership_category": "Single Accounts (Individual with no beneficiaries)",
+      "regulation": "12 C.F.R. § 330.6",
+      "coverage_limit": "$250,000 per owner, per insured bank",
+      "max_single_bank_example": "$250,000",
+      "rules_and_requirements": "Applies to deposit accounts owned by one person individually with no named beneficiaries (POD/ITF). All single accounts held by the same person at the same bank charter are aggregated.",
+      "effective_date": "2024-04-01",
+      "source_url": "https://www.fdic.gov/resources/deposit-insurance/brochures/insured-deposits",
+      "verification_status": "Verified"
+    },
+    {
+      "category_id": "JOINT",
+      "ownership_category": "Joint Accounts (Two or more co-owners with no beneficiaries)",
+      "regulation": "12 C.F.R. § 330.9",
+      "coverage_limit": "$250,000 per co-owner, per insured bank",
+      "max_single_bank_example": "$500,000 (for 2 co-owners)",
+      "rules_and_requirements": "Each co-owner must be a natural person, have equal withdrawal rights, and have personally signed the account signature card (or completed electronic authentication). Insured separately from each owner's Single Account.",
+      "effective_date": "2024-04-01",
+      "source_url": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance",
+      "verification_status": "Verified"
+    },
+    {
+      "category_id": "TRUST",
+      "ownership_category": "Trust Accounts (POD/ITF Informal Revocable, Formal Revocable & Irrevocable Trusts)",
+      "regulation": "12 C.F.R. § 330.10",
+      "coverage_limit": "$250,000 per owner per unique eligible beneficiary (up to 5 beneficiaries = $1,250,000 per owner)",
+      "max_single_bank_example": "$1,250,000 (1 owner, 5+ beneficiaries) | $2,500,000 (2 co-owners, 5+ beneficiaries)",
+      "rules_and_requirements": "Effective April 1, 2024, FDIC unified informal POD/ITF, formal revocable, and irrevocable trusts under a single formula: # of Owners × # of Unique Eligible Beneficiaries × $250,000, capped at $1,250,000 per owner per bank charter. Simply adding Payable-on-Death (POD) beneficiaries to a savings account shifts it from Single ($250k) to Trust coverage (up to $1.25M).",
+      "effective_date": "2024-04-01",
+      "source_url": "https://www.fdic.gov/financial-institution-employees-guide-deposit-insurance/trust-accounts",
+      "verification_status": "Verified"
+    },
+    {
+      "category_id": "RETIREMENT",
+      "ownership_category": "Certain Retirement Accounts (IRAs: Traditional, Roth, SEP, SIMPLE)",
+      "regulation": "12 C.F.R. § 330.14",
+      "coverage_limit": "$250,000 per owner, per insured bank",
+      "max_single_bank_example": "$250,000",
+      "rules_and_requirements": "All self-directed retirement deposit accounts (e.g., IRA Online Savings and IRA CDs) owned by the same person at the same FDIC-insured bank are added together and insured up to $250,000 total.",
+      "effective_date": "2024-04-01",
+      "source_url": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance",
+      "verification_status": "Verified"
+    }
+  ],
+  "bank_charters_verified": [
+    {
+      "bank_brand": "Barclays US Consumer Bank",
+      "legal_charter_name": "Barclays Bank Delaware",
+      "fdic_cert": "57203",
+      "headquarters": "Wilmington, DE",
+      "primary_regulator": "FDIC",
+      "shared_charter_warning": "None — standalone U.S. depository charter.",
+      "source_url": "https://www.fdic.gov/banker-resource-center/monthly-list-banks-examined-cra-compliance-february-2026",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Synchrony Bank",
+      "legal_charter_name": "Synchrony Bank",
+      "fdic_cert": "27314",
+      "headquarters": "Draper, UT",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "None — standalone U.S. federal savings association charter.",
+      "source_url": "https://www.fdic.gov/resources/regulations/federal-register-publications/2016/2016-recordkeeping-3064-ae33-c-07.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Marcus by Goldman Sachs",
+      "legal_charter_name": "Goldman Sachs Bank USA",
+      "fdic_cert": "33124",
+      "headquarters": "New York, NY",
+      "primary_regulator": "Federal Reserve (FED)",
+      "shared_charter_warning": "Deposits at Marcus by Goldman Sachs and Goldman Sachs Private Bank select deposit sweeps share FDIC Cert #33124.",
+      "source_url": "https://www.fdic.gov/board/memorandum-final-rule-revise-12-cfr-ss-36010-and-associated-delegations-authority",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "U.S. Bank",
+      "legal_charter_name": "U.S. Bank National Association",
+      "fdic_cert": "6548",
+      "headquarters": "Cincinnati, OH",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "Includes State Farm Alliance co-branded U.S. Bank deposit accounts.",
+      "source_url": "https://www.fdic.gov/merger-decisions-2025-annual-report-congress.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Wells Fargo",
+      "legal_charter_name": "Wells Fargo Bank, National Association",
+      "fdic_cert": "3511",
+      "headquarters": "Sioux Falls, SD",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "None — single flagship national bank charter.",
+      "source_url": "https://www.fdic.gov/resources/regulations/federal-register-publications/2016/2016-recordkeeping-3064-ae33-c-07.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "American Express National Bank",
+      "legal_charter_name": "American Express National Bank",
+      "fdic_cert": "27471",
+      "headquarters": "Sandy, UT",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "Covers American Express High Yield Savings, CDs, and Rewards Checking.",
+      "source_url": "https://www.fdic.gov/resolutions/2025-american-express-165d-resolution-plan-public-section.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Capital One 360 / Discover Bank",
+      "legal_charter_name": "Capital One, National Association",
+      "fdic_cert": "4297",
+      "headquarters": "McLean, VA",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "CRITICAL: As of November 18, 2025, Capital One and Discover deposit accounts are jointly insured under Capital One, N.A. (Cert #4297). They do NOT provide separate $250,000 FDIC limits.",
+      "source_url": "https://www.capitalone.com/updates/discover/savings/",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "PNC Bank",
+      "legal_charter_name": "PNC Bank, National Association",
+      "fdic_cert": "6384",
+      "headquarters": "Wilmington, DE (HQ: Pittsburgh, PA)",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "Covers PNC Virtual Wallet, Standard Savings, Premiere Money Market, and PNC High Yield Savings.",
+      "source_url": "https://www.fdic.gov/resources/regulations/federal-register-publications/2016/2016-recordkeeping-3064-ae33-c-07.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Ally Bank",
+      "legal_charter_name": "Ally Bank",
+      "fdic_cert": "57803",
+      "headquarters": "Sandy, UT",
+      "primary_regulator": "Federal Reserve (FED)",
+      "shared_charter_warning": "Covers Ally Online Savings, Money Market, Spending, and CDs.",
+      "source_url": "https://www.fdic.gov/regulations/laws/federal/2010/10c27ad66.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "BMO / BMO Alto",
+      "legal_charter_name": "BMO Bank National Association",
+      "fdic_cert": "16571",
+      "headquarters": "Chicago, IL",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "CRITICAL: BMO Alto is a trade name of BMO Bank N.A. Deposits in BMO Alto and BMO retail accounts (Savings Builder, Growth Money Market) are aggregated under Cert #16571.",
+      "source_url": "https://www.fdic.gov/analysis/merger-decisions-2024-annual-report-congress.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Citibank",
+      "legal_charter_name": "Citibank, National Association",
+      "fdic_cert": "7213",
+      "headquarters": "Sioux Falls, SD (Corp HQ: New York, NY)",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "Covers Citi Accelerate Savings and Citi Savings.",
+      "source_url": "https://www.fdic.gov/resources/regulations/federal-register-publications/2016/2016-recordkeeping-3064-ae33-c-07.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "JPMorgan Chase",
+      "legal_charter_name": "JPMorgan Chase Bank, National Association",
+      "fdic_cert": "628",
+      "headquarters": "Columbus, OH (Corp HQ: New York, NY)",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "Covers Chase Savings, Chase Premier Savings, and Chase Private Client Savings.",
+      "source_url": "https://www.fdic.gov/resources/regulations/federal-register-publications/2016/2016-recordkeeping-3064-ae33-c-07.pdf",
+      "verification_status": "Verified"
+    },
+    {
+      "bank_brand": "Bank of America",
+      "legal_charter_name": "Bank of America, National Association",
+      "fdic_cert": "3510",
+      "headquarters": "Charlotte, NC",
+      "primary_regulator": "OCC",
+      "shared_charter_warning": "Covers Bank of America Advantage Savings and Merrill bank deposit program sweeps routed to BANA.",
+      "source_url": "https://www.fdic.gov/resources/regulations/federal-register-publications/2016/2016-recordkeeping-3064-ae33-c-07.pdf",
+      "verification_status": "Verified"
+    }
+  ]
+}

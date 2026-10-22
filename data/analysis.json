@@ -2,10 +2,10 @@
   "opened_on": "2026-10-22",
   "retrieved_on": "2026-10-22",
   "counts": {
-    "products": 19,
-    "verified_apy": 10,
+    "products": 23,
+    "verified_apy": 16,
     "partial_apy": 1,
-    "unverified_apy": 8,
+    "unverified_apy": 6,
     "inactive_entities": 1
   },
   "benchmarks": {
@@ -31,6 +31,15 @@
         "balance_1y": 10375.0,
         "multiple_of_national": 9.868,
         "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 355.0,
+        "balance_1y": 10355.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
       },
       {
         "bank": "Barclays",
@@ -69,6 +78,15 @@
         "vs_1y_treasury": -1.34
       },
       {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
+        "apy": 3.2,
+        "interest_1y": 320.0,
+        "balance_1y": 10320.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
         "bank": "PNC",
         "product": "PNC High Yield Savings",
         "apy": 3.15,
@@ -96,6 +114,15 @@
         "vs_1y_treasury": -1.44
       },
       {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 300.0,
+        "balance_1y": 10300.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
         "bank": "U.S. Bank",
         "product": "U.S. Bank Bank Smartly Savings",
         "apy": 2.0,
@@ -103,6 +130,33 @@
         "balance_1y": 10200.0,
         "multiple_of_national": 5.263,
         "vs_1y_treasury": -2.54
+      },
+      {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 0.01,
+        "interest_1y": 1.0,
+        "balance_1y": 10001.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 0.01,
+        "interest_1y": 1.0,
+        "balance_1y": 10001.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 1.0,
+        "balance_1y": 10001.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
       },
       {
         "bank": "Truist",
@@ -134,6 +188,15 @@
         "vs_1y_treasury": -0.79
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 887.5,
+        "balance_1y": 25887.5,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Barclays",
         "product": "Barclays Tiered Savings",
         "apy": 3.5,
@@ -161,6 +224,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 850.0,
+        "balance_1y": 25850.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -170,8 +242,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 812.5,
+        "balance_1y": 25812.5,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 800.0,
+        "balance_1y": 25800.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 800.0,
         "balance_1y": 25800.0,
@@ -206,6 +296,24 @@
         "vs_1y_treasury": -1.44
       },
       {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 750.0,
+        "balance_1y": 25750.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 2.5,
+        "balance_1y": 25002.5,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
         "bank": "Truist",
         "product": "Truist One Savings",
         "apy": 0.01,
@@ -235,6 +343,15 @@
         "vs_1y_treasury": -0.79
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 1775.0,
+        "balance_1y": 51775.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Barclays",
         "product": "Barclays Tiered Savings",
         "apy": 3.5,
@@ -262,6 +379,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 1700.0,
+        "balance_1y": 51700.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -271,8 +397,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 1625.0,
+        "balance_1y": 51625.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 1600.0,
+        "balance_1y": 51600.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 1600.0,
         "balance_1y": 51600.0,
@@ -307,6 +451,24 @@
         "vs_1y_treasury": -1.44
       },
       {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 1500.0,
+        "balance_1y": 51500.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 5.0,
+        "balance_1y": 50005.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
         "bank": "Truist",
         "product": "Truist One Savings",
         "apy": 0.01,
@@ -336,6 +498,15 @@
         "vs_1y_treasury": -0.79
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 3550.0,
+        "balance_1y": 103550.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Barclays",
         "product": "Barclays Tiered Savings",
         "apy": 3.5,
@@ -363,6 +534,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 3400.0,
+        "balance_1y": 103400.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -372,8 +552,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 3250.0,
+        "balance_1y": 103250.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 3200.0,
+        "balance_1y": 103200.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 3200.0,
         "balance_1y": 103200.0,
@@ -406,6 +604,24 @@
         "balance_1y": 103100.0,
         "multiple_of_national": 8.158,
         "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 3000.0,
+        "balance_1y": 103000.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 10.0,
+        "balance_1y": 100010.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
       },
       {
         "bank": "Truist",
@@ -446,6 +662,15 @@
         "vs_1y_treasury": -0.89
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 8875.0,
+        "balance_1y": 258875.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Marcus by Goldman Sachs",
         "product": "Marcus Online Savings",
         "apy": 3.5,
@@ -464,6 +689,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 8500.0,
+        "balance_1y": 258500.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -473,8 +707,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 8125.0,
+        "balance_1y": 258125.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 8000.0,
+        "balance_1y": 258000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 8000.0,
         "balance_1y": 258000.0,
@@ -507,6 +759,24 @@
         "balance_1y": 257750.0,
         "multiple_of_national": 8.158,
         "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 7500.0,
+        "balance_1y": 257500.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 25.0,
+        "balance_1y": 250025.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
       },
       {
         "bank": "Truist",
@@ -547,6 +817,15 @@
         "vs_1y_treasury": -0.89
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 17750.0,
+        "balance_1y": 517750.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Marcus by Goldman Sachs",
         "product": "Marcus Online Savings",
         "apy": 3.5,
@@ -565,6 +844,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 17000.0,
+        "balance_1y": 517000.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -574,8 +862,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 16250.0,
+        "balance_1y": 516250.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 16000.0,
+        "balance_1y": 516000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 16000.0,
         "balance_1y": 516000.0,
@@ -608,6 +914,24 @@
         "balance_1y": 515500.0,
         "multiple_of_national": 8.158,
         "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 15000.0,
+        "balance_1y": 515000.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 50.0,
+        "balance_1y": 500050.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
       },
       {
         "bank": "Truist",
@@ -648,6 +972,15 @@
         "vs_1y_treasury": -0.89
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 35500.0,
+        "balance_1y": 1035500.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Marcus by Goldman Sachs",
         "product": "Marcus Online Savings",
         "apy": 3.5,
@@ -666,6 +999,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 34000.0,
+        "balance_1y": 1034000.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -675,8 +1017,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 32500.0,
+        "balance_1y": 1032500.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 32000.0,
+        "balance_1y": 1032000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 32000.0,
         "balance_1y": 1032000.0,
@@ -711,6 +1071,24 @@
         "vs_1y_treasury": -1.44
       },
       {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 30000.0,
+        "balance_1y": 1030000.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 100.0,
+        "balance_1y": 1000100.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
         "bank": "Truist",
         "product": "Truist One Savings",
         "apy": 0.01,
@@ -740,6 +1118,15 @@
         "vs_1y_treasury": -0.79
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 88750.0,
+        "balance_1y": 2588750.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Barclays",
         "product": "Barclays Tiered Savings",
         "apy": 3.5,
@@ -767,6 +1154,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 85000.0,
+        "balance_1y": 2585000.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -776,8 +1172,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 81250.0,
+        "balance_1y": 2581250.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 80000.0,
+        "balance_1y": 2580000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 80000.0,
         "balance_1y": 2580000.0,
@@ -812,6 +1226,24 @@
         "vs_1y_treasury": -1.44
       },
       {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 75000.0,
+        "balance_1y": 2575000.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 250.0,
+        "balance_1y": 2500250.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
         "bank": "Truist",
         "product": "Truist One Savings",
         "apy": 0.01,
@@ -841,6 +1273,15 @@
         "vs_1y_treasury": -0.79
       },
       {
+        "bank": "Synchrony",
+        "product": "Synchrony High Yield Savings",
+        "apy": 3.55,
+        "interest_1y": 177500.0,
+        "balance_1y": 5177500.0,
+        "multiple_of_national": 9.342,
+        "vs_1y_treasury": -0.99
+      },
+      {
         "bank": "Barclays",
         "product": "Barclays Tiered Savings",
         "apy": 3.5,
@@ -868,6 +1309,15 @@
         "vs_1y_treasury": -1.04
       },
       {
+        "bank": "U.S. Bank (Elite MMA)",
+        "product": "U.S. Bank Elite Money Market",
+        "apy": 3.4,
+        "interest_1y": 170000.0,
+        "balance_1y": 5170000.0,
+        "multiple_of_national": 8.947,
+        "vs_1y_treasury": -1.14
+      },
+      {
         "bank": "SoFi",
         "product": "SoFi Savings (standard)",
         "apy": 3.3,
@@ -877,8 +1327,26 @@
         "vs_1y_treasury": -1.24
       },
       {
+        "bank": "Wells Fargo (Platinum)",
+        "product": "Wells Fargo Platinum Savings (New Customer)",
+        "apy": 3.25,
+        "interest_1y": 162500.0,
+        "balance_1y": 5162500.0,
+        "multiple_of_national": 8.553,
+        "vs_1y_treasury": -1.29
+      },
+      {
         "bank": "American Express",
         "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 160000.0,
+        "balance_1y": 5160000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "Capital One",
+        "product": "Capital One 360 Performance Savings",
         "apy": 3.2,
         "interest_1y": 160000.0,
         "balance_1y": 5160000.0,
@@ -913,6 +1381,24 @@
         "vs_1y_treasury": -1.44
       },
       {
+        "bank": "BMO Alto",
+        "product": "BMO Alto Online Savings",
+        "apy": 3.0,
+        "interest_1y": 150000.0,
+        "balance_1y": 5150000.0,
+        "multiple_of_national": 7.895,
+        "vs_1y_treasury": -1.54
+      },
+      {
+        "bank": "Chase",
+        "product": "Chase Savings",
+        "apy": 0.01,
+        "interest_1y": 500.0,
+        "balance_1y": 5000500.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
         "bank": "Truist",
         "product": "Truist One Savings",
         "apy": 0.01,
@@ -934,6 +1420,16 @@
   },
   "promotions": [
     {
+      "bank": "Chase",
+      "offer": "Up to $200 New Chase Savings Customer Bonus: Earn $100 when depositing $5,000\u2013$9,999.99 or $200 when depositing $10,000+ in new money within 30 days and maintaining for 90 days (offer expires 2027-01-27).",
+      "source": "https://account.chase.com/consumer/banking/savingsoffer"
+    },
+    {
+      "bank": "Capital One",
+      "offer": "Companion 360 Checking offers $250 bonus with code CHECKING250 (2x $500+ direct deposits in 75 days) or DEBIT250/STUDENT250 (20x $10+ debit transactions in 75 days).",
+      "source": "https://www.capitalone.com/bank/choose-your-offer/"
+    },
+    {
       "bank": "Marcus by Goldman Sachs",
       "offer": "3-month promotional APY increase of 1.00% on top of the standard APY (Marcus states that with one referral in a year and an unchanged standard APY, the combined APY would be 3.75%).",
       "source": "https://www.marcus.com/us/en/savings/referrals#termsandconditions"
@@ -952,6 +1448,11 @@
       "bank": "CIT Bank",
       "offer": "APY Boost: promo code BOOST50 adds 0.50% APY for 6 months (4.25% APY on balances of $5,000+ during the boost). Promotion runs 2026-09-29 to 2026-12-15.",
       "source": "https://www.cit.com/cit-bank/platinum-savings/boost"
+    },
+    {
+      "bank": "Wells Fargo (Platinum)",
+      "offer": "3.25% APY New Customer variable rate on >=$25,000 (online/branch, excludes CO); or 3.50% APY 12-Month Promotional Interest Rate when enrolled with a banker with >=$10,000 new money.",
+      "source": "https://accountoffers.wellsfargo.com/platinumoffer/?sub_channel=BCN&vendor_code=WF&collateral_code=grate"
     }
   ],
   "fdic_plans": {
@@ -974,7 +1475,6 @@
   "validation": {
     "errors": [],
     "warnings": [
-      "wells-fargo-way2save: verified APY without published effective date",
       "hsbc-premier-relationship-savings: verified APY without published effective date",
       "discover-online-savings: missing 'product' source link"
     ]
