@@ -228,11 +228,13 @@ def rate_cell(p):
     if p["apy_status"] == "verified":
         tiers = p["tiers"]
         if len(tiers) == 1:
-            return f"<strong>{pct(tiers[0]['apy'])}</strong><div class='small'>as of {esc(p['apy_as_of'] or '— no date published')}</div>"
+            datebit = f"as of {esc(p['apy_as_of'])}" if p['apy_as_of'] else "no effective date published"
+            return f"<strong>{pct(tiers[0]['apy'])}</strong><div class='small'>{datebit}</div>"
         rows = "".join(
             f"<div class='small'>{pct(t['apy'])} · {esc(t['condition'])}</div>" for t in tiers
         )
-        return f"<strong>tiered</strong><div class='small'>as of {esc(p['apy_as_of'] or '— no date published')}</div>{rows}"
+        datebit = f"as of {esc(p['apy_as_of'])}" if p['apy_as_of'] else "no effective date published"
+        return f"<strong>tiered</strong><div class='small'>{datebit}</div>{rows}"
     if p["apy_status"] == "partial":
         return "<span class='flag'>3.15% (title only)</span><div class='small'>partial evidence</div>"
     return "<span class='blank'>not published</span>"
@@ -429,9 +431,9 @@ def build_accounts():
         ])
 
     body = f"""
-<p class="lead">All {len(PRODUCTS)} products screened: the four largest U.S. banks, the large national/regional banks that
-publish consumer savings products, and the national digital banks that hold the top verified rates.
-Rows are ordered by bank size then by rate. A dash means <em>not verifiable from an official public page</em> — it is never a guess.</p>
+<p class="lead">All {len(PRODUCTS)} products screened: the four largest U.S. banks first, then the national and regional branch
+banks that publish consumer savings products, then the national digital banks that hold the top verified rates.
+A dash means <em>not verifiable from an official public page</em> — it is never a guess.</p>
 
 <h2>Rates, minimums and fees</h2>
 {table(["Bank / product", "Legal entity & FDIC cert", "APY", "Min. to open", "Monthly fee", "Fee waiver / notes", "Withdrawal rule", "Status", "Sources"],
@@ -534,8 +536,9 @@ Only the {len(verified)} accounts with a fully verified APY are projected.</p>
 <ul>
   <li><strong>Year one is almost entirely about APY.</strong> At {money(amt)}, moving from the FDIC national average ({pct(FDIC_NAT)}) to the best verified rate ({pct(ranked[0]['apy'])}) is worth
       {money(ranked[0]['interest_1y'] - interest(amt, FDIC_NAT, 1), True)} in twelve months.</li>
-  <li><strong>A bonus can beat a rate — briefly.</strong> Barclays' $200 requires keeping $25,000 on deposit for 120 days; that is
-      roughly 0.24% of the balance for the year, on top of the 3.50% APY. It does not change the ranking, but it is real money.</li>
+  <li><strong>A bonus can beat a rate — briefly.</strong> Barclays' $200 requires keeping $25,000 on deposit for 120 days.
+      That is 0.8% of the balance, or about 2.4% annualised over the holding period — on top of the 3.50% APY.
+      It does not change the one-year ranking, but it is real money.</li>
   <li><strong>Tier cliffs matter more than headline APY.</strong> CIT pays 0.25% below $5,000 and 3.75% above it; Barclays pays 3.65%
       only from $250,000. Dropping below a tier can cost more than choosing a lower-rate bank.</li>
   <li><strong>Above $250,000 the constraint changes.</strong> Return is capped by how much you can keep insured at one bank —
@@ -703,18 +706,19 @@ the FDIC national average savings rate ({pct(FDIC_NAT)}, as of {esc(META['fdic_n
 
 <h2>3. What the comparison actually says</h2>
 <ul>
-  <li><strong>The savings advantage is real but modest.</strong> The best verified savings APY, {pct(ranked[0]['apy'])}, sits
-      <strong>{gap_1y:.2f} points below</strong> the 12-month Treasury yield ({pct(TREAS['1_year'])}). The gap widens with maturity:
-      over five years, the Treasury curve would earn about <strong>{money(gap_5y_extra, True)}</strong> more on {money(amt)} than the
-      savings account at today's rates.</li>
-  <li><strong>Versus the average bank the savings account wins by a mile.</strong> {pct(ranked[0]['apy'])} is
+  <li><strong>The best savings rate does not beat the Treasury curve.</strong> {pct(ranked[0]['apy'])} sits
+      <strong>{gap_1y:.2f} points below</strong> the 12-month Treasury yield ({pct(TREAS['1_year'])}), and the gap widens with maturity:
+      over five years the Treasury curve would earn about <strong>{money(gap_5y_extra, True)}</strong> more on {money(amt)} than the
+      savings account at today's rates. Treasuries are not FDIC-insured and carry price risk if sold before maturity — that is what
+      you are paid for.</li>
+  <li><strong>Versus the average bank, the savings account wins by a mile.</strong> {pct(ranked[0]['apy'])} is
       {ranked[0]['apy']/FDIC_NAT:.1f}× the FDIC national average of {pct(FDIC_NAT)}. The gap between a 0.01% branch account and a
       3.75% online account is worth far more than the gap between the best savings account and a Treasury.</li>
-  <li><strong>The curve is inverted-ish at the long end.</strong> The 3-year ({pct(TREAS['3_year'])}), 5-year ({pct(TREAS['5_year'])}) and
-      2-year ({pct(TREAS['2_year'])}) Treasury yields sit above the 1-year, so locking money up pays slightly more. Savings accounts
-      have repriced in the same direction: the top verified savings rates are all short-term variable products.</li>
+  <li><strong>The curve slopes upward.</strong> The 2-year ({pct(TREAS['2_year'])}), 3-year ({pct(TREAS['3_year'])}) and 5-year
+      ({pct(TREAS['5_year'])}) Treasury yields all sit above the 1-year ({pct(TREAS['1_year'])}), so committing money for longer is
+      rewarded. A savings account gives you the same short-end exposure with no lock-up and no price risk, but no fixed rate either.</li>
   <li><strong>Lifespan changes the ranking, not the winner.</strong> Across 1, 3 and 5 years the highest verified savings account stays the
-      best savings product, but it never overtakes the Treasury curve. That is the price of liquidity and of not taking duration risk.</li>
+      best savings product, but at today's rates it never overtakes the Treasury curve. That is the price of liquidity.</li>
   <li><strong>Rate history is the missing dimension.</strong> None of the banks publish a public rate history in a form that can be
       verified here, so this study cannot tell you how often these APYs moved. What it can tell you is that every bank on the list
       reserves the right to change the rate the day after you open the account.</li>
@@ -722,7 +726,7 @@ the FDIC national average savings rate ({pct(FDIC_NAT)}, as of {esc(META['fdic_n
 
 <h2>4. Competitive position within this study</h2>
 <p>Of {len(PRODUCTS)} products screened, {len(verified)} publish a rate that could be verified. The distribution is bimodal:
-six accounts cluster between {pct(3.10)} and {pct(3.75)}; two verified branch accounts pay {pct(0.01)}; the rest publish nothing
+eight verified accounts cluster between {pct(3.10)} and {pct(3.75)}; two verified branch accounts pay {pct(0.01)}; the rest publish nothing
 a public page can capture. There is almost nothing in between — which is why choosing the <em>category</em> of bank matters more
 than fine-tuning between banks inside a category.</p>
 
@@ -742,7 +746,7 @@ without market risk.
 def build_bonuses():
     promos = [
         ["Barclays Tiered Savings", "$200 cash", "$25,000 deposited within 30 days and kept for 120 consecutive days; new Barclays savings customers only; offer expires 2026-10-31; paid ~60 days after the 120 days.",
-         "≈0.24% of the $25,000 balance for the year", "https://banking.us.barclays/tiered-savings.html"],
+         "0.8% of the $25,000 balance (≈2.4% annualised over the 120-day hold)", "https://banking.us.barclays/tiered-savings.html"],
         ["SoFi Savings", "$50 or $400 cash", "Open the account and set up an eligible direct deposit of $1,000+; terms apply; accounts opened by 2026-12-31.",
          "Up to 1.6% of a $25,000 deposit, one-off", "https://www.sofi.com/banking/high-yield-savings-account/"],
         ["CIT Platinum Savings", "+0.50% APY for 6 months (BOOST50)", "Promo code BOOST50 at opening; promotion 2026-09-29 to 2026-12-15; boost applies to balances up to $9,999,999.",
@@ -761,7 +765,7 @@ because those pages are frequently out of date and often pay the publisher.</p>
 
 <h2>1. Live promotions found on official pages (checked 2026-10-22)</h2>
 {table(["Bank", "Offer", "Exact conditions", "Rough value", "Source"], rows,
-       note="'Rough value' converts the offer into an annualised percentage of a mid-size deposit so it can be compared with APY differences. It is arithmetic on the stated terms, not a bank claim.")}
+       note="'Rough value' restates the offer as a percentage of a representative deposit so it can be compared with APY differences. It is arithmetic on the stated terms, not a bank claim.")}
 
 <h2>2. Accounts with no promotion found on the official product page</h2>
 <p class="small">{esc(", ".join(no_bonus))}. "No promotion found" means the page checked on 2026-10-22 disclosed none — banks rotate
@@ -775,8 +779,9 @@ offers frequently and some promote only by direct mail or in-app.</p>
 
 <h2>4. How to judge a bonus without being fooled</h2>
 <ul>
-  <li><strong>Divide by the holding requirement.</strong> Barclays' $200 needs $25,000 held 120 days. That is 0.8% of the balance,
-      annualised to roughly 0.24% — worthwhile, but smaller than the 0.25-point gap between two nearby APYs.</li>
+  <li><strong>Divide by the holding requirement.</strong> Barclays' $200 needs $25,000 held 120 days. That is 0.8% of the
+      balance, or about 2.4% annualised over that period — worth more than the 0.15-point gap between Barclays' 3.50% and
+      3.65% tiers, but it is a one-off that cannot be repeated.</li>
   <li><strong>Check what the bonus does to the rate you can accept.</strong> Several "bonus" accounts pay a low base rate after the
       promotion ends. The SoFi boost, for example, lasts six months; the standard APY is what you live on afterwards.</li>
   <li><strong>Bonuses are taxable interest.</strong> Barclays states the $200 is reported on Form 1099-INT.</li>
@@ -826,7 +831,9 @@ def build_flagged():
 public page is listed here with the reason, and the value is left blank in the tables.</p>
 
 <div class="callout warn">
-<strong>{len(unverified)} of {len(PRODUCTS)} products have no verifiable APY.</strong> Not because the banks are hiding anything illegal —
+<strong>{len(unverified) + len(partial)} of {len(active)} active products have no fully verifiable APY.</strong> Seven publish
+nothing a public page will disclose, PNC's figure exists only in a page title, and one further product (Discover) is included
+solely to record that its charter is now inactive. Not because the banks are hiding anything illegal —
 because the biggest banks publish rates only after a ZIP code or login, or inject them with JavaScript that a static fetch cannot read.
 Substituting an aggregator's number would have made the table look complete and would have been unverifiable.
 </div>
