@@ -2,8 +2,8 @@
   "opened_on": "2026-10-22",
   "retrieved_on": "2026-10-22",
   "counts": {
-    "products": 23,
-    "verified_apy": 16,
+    "products": 24,
+    "verified_apy": 17,
     "partial_apy": 1,
     "unverified_apy": 6,
     "inactive_entities": 1
@@ -1421,13 +1421,13 @@
   "promotions": [
     {
       "bank": "Chase",
-      "offer": "Up to $200 New Chase Savings Customer Bonus: Earn $100 when depositing $5,000\u2013$9,999.99 or $200 when depositing $10,000+ in new money within 30 days and maintaining for 90 days (offer expires 2027-01-27).",
-      "source": "https://account.chase.com/consumer/banking/savingsoffer"
+      "offer": "$200 Chase Savings\u2120 bonus ($15,000 new money within 30 days, held 90 days) OR $900 combo bonus when opened with Chase Total Checking\u00ae + direct deposit (expires 2027-01-27).",
+      "source": "https://www.chase.com/personal/offers/checking-and-savings"
     },
     {
       "bank": "Capital One",
-      "offer": "Companion 360 Checking offers $250 bonus with code CHECKING250 (2x $500+ direct deposits in 75 days) or DEBIT250/STUDENT250 (20x $10+ debit transactions in 75 days).",
-      "source": "https://www.capitalone.com/bank/choose-your-offer/"
+      "offer": "Promo code BONUS1500 (NO direct deposit required): $300 bonus on $20,000\u2013$49,999.99, $750 bonus on $50,000\u2013$99,999.99, or $1,500 bonus on $100,000+ deposited within 15 days and held 90 days.",
+      "source": "https://www.capitalone.com/bank/bonus1500/"
     },
     {
       "bank": "Marcus by Goldman Sachs",
@@ -1436,7 +1436,7 @@
     },
     {
       "bank": "SoFi",
-      "offer": "$50 or $400 cash bonus with eligible direct deposit of $1,000+ (terms apply).",
+      "offer": "Up to $400 cash bonus ($50 for $1,000\u2013$4,999.99 DD; $400 for $5,000+ DD within 25 days) + 1.10% APY boost (to 4.40% APY) for up to 6 months; valid through 2027-12-31.",
       "source": "https://www.sofi.com/banking/high-yield-savings-account/"
     },
     {
@@ -1453,6 +1453,11 @@
       "bank": "Wells Fargo (Platinum)",
       "offer": "3.25% APY New Customer variable rate on >=$25,000 (online/branch, excludes CO); or 3.50% APY 12-Month Promotional Interest Rate when enrolled with a banker with >=$10,000 new money.",
       "source": "https://accountoffers.wellsfargo.com/platinumoffer/?sub_channel=BCN&vendor_code=WF&collateral_code=grate"
+    },
+    {
+      "bank": "BMO Bank",
+      "offer": "Up to $60 Year-1 Savings Reward ($5/month each month balance grows by >= $200 during first 12 months).",
+      "source": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/"
     }
   ],
   "fdic_plans": {

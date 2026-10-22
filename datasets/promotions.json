@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "verification_date_utc": "2026-10-22",
+    "account_open_date": "2026-10-22",
+    "total_promotions": 9
+  },
+  "promotions": [
+    {
+      "promo_id": "PROMO-CIT-BOOST50",
+      "bank_name": "First-Citizens Bank & Trust Co. (CIT Bank Division)",
+      "account_name": "CIT Bank Platinum Savings",
+      "promo_code": "BOOST50",
+      "offer_headline": "+0.50% APY Boost for 6 Months -> 4.25% APY on $5,000+ Balances (NO Direct Deposit Required!)",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 5000,
+          "bonus_usd": 0,
+          "effective_1yr_apy_at_min_pct": 4.0,
+          "note": "4.25% APY for first 6 months + 3.75% APY standard thereafter up to $9,999,999 ($9,999.25 Year-1 interest on $250k)"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 30,
+      "hold_period_days": 180,
+      "total_lock_days": 0,
+      "payout_timing": "Credited monthly inside daily-compounded interest throughout the 6-month boost window (no lockup penalty if withdrawn early).",
+      "expiration_date": "2026-12-15",
+      "expiration_note": "Confirmed verbatim on official terms: 'The Promotion begins on September 29, 2026, and ends December 15, 2026.' Note standard tier APY schedule carries effective date July 1, 2026 ( reference comparison footnote updated September 21, 2026).",
+      "base_apy_percent": 3.75,
+      "official_source_url": "https://www.cit.com/cit-bank/platinum-savings/boost",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-CAPONE-1500",
+      "bank_name": "Capital One, N.A.",
+      "account_name": "360 Performance Savings",
+      "promo_code": "BONUS1500",
+      "offer_headline": "Up to $1,500 Cash Bonus ($300 / $750 / $1,500 Tiers \u2014 NO Direct Deposit Required)",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 20000,
+          "bonus_usd": 300,
+          "effective_1yr_apy_at_min_pct": 4.7
+        },
+        {
+          "min_deposit_usd": 50000,
+          "bonus_usd": 750,
+          "effective_1yr_apy_at_min_pct": 4.7
+        },
+        {
+          "min_deposit_usd": 100000,
+          "bonus_usd": 1500,
+          "effective_1yr_apy_at_min_pct": 4.7
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 15,
+      "hold_period_days": 90,
+      "total_lock_days": 105,
+      "payout_timing": "Credited within 60 days after completing the 90-day hold following the 15-day Initial Funding Period.",
+      "expiration_date": null,
+      "expiration_note": "Active live campaign page verified 2026-10-22; no fixed end date stated on public hero (rates effective 10/21/2026).",
+      "base_apy_percent": 3.2,
+      "official_source_url": "https://www.capitalone.com/bank/bonus1500/",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-SOFI-COMBO",
+      "bank_name": "SoFi Bank, N.A.",
+      "account_name": "SoFi Checking and Savings",
+      "promo_code": "Auto-applied online",
+      "offer_headline": "+1.10% APY Boost (4.40% APY for 6 Months) + $50 or $400 Direct Deposit Cash Bonus",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 1000,
+          "bonus_usd": 50,
+          "note": "$1,000\u2013$4,999.99 Eligible Direct Deposits within 25 days"
+        },
+        {
+          "min_deposit_usd": 5000,
+          "bonus_usd": 400,
+          "note": "$5,000+ Eligible Direct Deposits within 25 days; PLUS +1.10% APY Boost (4.40% APY for 6 mos) w/ DD or $5k/31d Qualifying Deposits"
+        }
+      ],
+      "direct_deposit_required": true,
+      "funding_window_days": 60,
+      "hold_period_days": 180,
+      "total_lock_days": 180,
+      "payout_timing": "Cash bonus paid within 7 business days after 25-day DD window; +1.10% APY boost runs up to 6 months while maintaining DD or $5,000/31-day qualifying deposits.",
+      "expiration_date": "2027-12-31",
+      "expiration_note": "Confirmed verbatim on official SoFi terms: open between 5/15/2026 (cash bonus) / 9/3/2026 (APY boost) and 12/31/2027 at 11:59 PM ET.",
+      "base_apy_percent": 3.3,
+      "official_source_url": "https://www.sofi.com/banking/high-yield-savings-account/",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-BARCLAYS-200",
+      "bank_name": "Barclays Bank Delaware",
+      "account_name": "Barclays Tiered Savings",
+      "promo_code": "Auto-applied on banking.us.barclays/tiered-savings.html",
+      "offer_headline": "$200 Cash Bonus on $25,000+ Deposit (EXPIRES 2026-10-31 \u2014 Urgent 9-Day Window from Open Date 2026-10-22!)",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 25000,
+          "bonus_usd": 200,
+          "effective_1yr_apy_at_min_pct": 4.3
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 30,
+      "hold_period_days": 120,
+      "total_lock_days": 150,
+      "payout_timing": "Added to account approximately 60 days after completing the 120-day minimum balance hold.",
+      "expiration_date": "2026-10-31",
+      "expiration_note": "Confirmed verbatim on official page: 'Offer expires 10/31/2026.**' \u2014 only 9 days remaining after account open date 2026-10-22!",
+      "base_apy_percent": 3.5,
+      "official_source_url": "https://banking.us.barclays/tiered-savings.html",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-CHASE-900",
+      "bank_name": "JPMorgan Chase Bank, N.A.",
+      "account_name": "Chase Savings\u2120 ($200 Standalone) / Chase Total Checking\u00ae + Chase Savings\u2120 ($900 Combo)",
+      "promo_code": "Coupon applied on chase.com/personal/offers/checking-and-savings",
+      "offer_headline": "$200 Savings Bonus ($15k Hold) OR $900 Combo Bonus ($300 Checking + $200 Savings + $400 Extra)",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 15000,
+          "bonus_usd": 200,
+          "note": "Chase Savings\u2120 standalone: deposit $15,000+ new money within 30 days & hold 90 days"
+        },
+        {
+          "min_deposit_usd": 15000,
+          "bonus_usd": 900,
+          "note": "Open Total Checking\u00ae (complete DD within 90 days) + Chase Savings\u2120 ($15,000 held 90 days) together -> $900 total (6.00% cash return in 90 days!)"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 30,
+      "hold_period_days": 90,
+      "total_lock_days": 90,
+      "payout_timing": "Paid within 15 days after completing qualifying activities. Eligible once every 2 years; must not hold existing Chase checking/savings or closed within 90 days.",
+      "expiration_date": "2027-01-27",
+      "expiration_note": "Confirmed verbatim on official Chase offer page: 'Offer expires 01/27/2027.'",
+      "base_apy_percent": null,
+      "official_source_url": "https://www.chase.com/personal/offers/checking-and-savings",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-MARCUS-REF",
+      "bank_name": "Goldman Sachs Bank USA (Marcus)",
+      "account_name": "Marcus Online Savings Account",
+      "promo_code": "Referral Link Enrollment",
+      "offer_headline": "+1.00% Promotional APY Increase for 3 Months per Referral (~3.75% 1-Yr Combined APY with 1 Referral)",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 0,
+          "bonus_usd": null,
+          "note": "3-month +1.00% APY boost on top of 3.50% standard APY (= 4.50% during boost window; 3.75% 1-yr effective w/ 1 referral)"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 0,
+      "hold_period_days": 90,
+      "total_lock_days": 90,
+      "payout_timing": "Applied monthly as promotional interest increase for 3 months per qualifying referral.",
+      "expiration_date": null,
+      "expiration_note": "Ongoing referral terms verified live on marcus.com on 2026-10-22 (rates as of 10/21/2026).",
+      "base_apy_percent": 3.5,
+      "official_source_url": "https://www.marcus.com/us/en/savings/high-yield-savings",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-USBANK-SMARTLY",
+      "bank_name": "U.S. Bank National Association",
+      "account_name": "U.S. Bank Smartly\u00ae Savings",
+      "promo_code": "Automatic w/ Companion Product",
+      "offer_headline": "+3.39% Relationship Interest Rate Bump -> 3.50% APY at \u2265 $25,000 Combined Qualifying Balance",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 25000,
+          "bonus_usd": null,
+          "note": "3.50% APY (0.05% standard + 3.39% rate bump = 3.44% rate / 3.50% APY) w/ Smartly Checking, Safe Debit, or Smartly Visa"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 0,
+      "hold_period_days": 0,
+      "total_lock_days": 0,
+      "payout_timing": "Ongoing variable relationship rate bump while maintaining eligible U.S. Bank product + $25,000+ CQB.",
+      "expiration_date": null,
+      "expiration_note": "Rates effective October 21, 2026 for default ZIP 55402.",
+      "base_apy_percent": 3.5,
+      "official_source_url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-WF-PLATINUM",
+      "bank_name": "Wells Fargo Bank, N.A.",
+      "account_name": "Platinum Savings",
+      "promo_code": "New Savings Customer Offer",
+      "offer_headline": "3.25% Variable Special APY on $25,000+ for New Wells Fargo Savings Customers",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 25000,
+          "bonus_usd": null,
+          "note": "3.25% APY (3.20% interest rate) vs 0.01% standard rate when depositing & maintaining $25,000+ within 30 days"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 30,
+      "hold_period_days": 0,
+      "total_lock_days": 30,
+      "payout_timing": "Variable special rate until expiration date; reverts afterward to an assigned variable rate.",
+      "expiration_date": null,
+      "expiration_note": "Verified on live wellsfargo.com/savings-cds/rates/ on 2026-10-22.",
+      "base_apy_percent": 3.25,
+      "official_source_url": "https://www.wellsfargo.com/savings-cds/rates/",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "promo_id": "PROMO-BMO-BUILDER",
+      "bank_name": "BMO Bank N.A.",
+      "account_name": "Savings Builder Account",
+      "promo_code": "Automatic on Savings Builder",
+      "offer_headline": "$5 Monthly Savings Reward (Up to $60 in Year 1) for Growing Balance by $200+/Month",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 200,
+          "bonus_usd": 60,
+          "note": "$5/month credited within 5 calendar days after month-end for each month ledger balance grows by \u2265 $200 in Year 1"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 30,
+      "hold_period_days": 365,
+      "total_lock_days": 365,
+      "payout_timing": "$5 monthly credit for up to 12 months ($60 max total); base interest rate is 0.01% APY.",
+      "expiration_date": null,
+      "expiration_note": "Rates effective October 21, 2026 (ZIP 60603).",
+      "base_apy_percent": 0.01,
+      "official_source_url": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/",
+      "verified_date": "2026-10-22"
+    }
+  ]
+}
