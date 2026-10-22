@@ -106,7 +106,8 @@
 
 - **Source Branch:** `arena/6ce52089-savings2` → **Target Branch:** `main`
 - **Pull Request:** [PR #7](https://github.com/sassnarep3-star/SAVINGS2/pull/7) — *"Integrate verified 26-account National Bank & Max-FDIC Dashboard Suite, fix passive SoFi APY bug, add $1,500 BONUS1500 & pass all 3 site auditors (22 pages)"*
-- **Merge Status:** **MERGED** immediately via `gh pr merge 7 --merge` without waiting for manual review (`needs review` flagged items transparently published on `flagged-review.html` and `flagged-for-review.html`).
+- **Merge Status:** **MERGED** (`2026-10-22T00:50:42Z`, merge commit `a13efd2e949f023c784b430bca0490447f882143`) immediately via `gh pr merge 7 --merge` without waiting for manual review (`needs review` flagged items transparently published on `flagged-review.html` and `flagged-for-review.html`).
+- **GitHub Pages Deployment Verification:** Confirmed via `gh api repos/sassnarep3-star/SAVINGS2/pages/builds` — merge commit `a13efd2e949f023c784b430bca0490447f882143` completed with `status: "built"` at `2026-10-22T00:51:03Z` (`duration: 20796ms`, `error: null`), and live public pages verified via HTTP fetch on <https://sassnarep3-star.github.io/SAVINGS2/>, <https://sassnarep3-star.github.io/SAVINGS2/returns-by-deposit.html>, and <https://sassnarep3-star.github.io/SAVINGS2/flagged-review.html>.
 - **Pre-Merge Full Suite Verification:**
   - `python3 check_links.py`: **22 pages, 0 broken local links**
   - `python3 scripts/verify_site.py`: **100% of table rows carry official source links, 0 errors**
