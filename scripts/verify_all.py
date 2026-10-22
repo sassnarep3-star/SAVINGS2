@@ -160,7 +160,7 @@ def main() -> None:
         server.shutdown()
 
     print(
-        f"ALL VERIFICATION CHECKS PASSED: 15/15 HTML pages HTTP 200 OK · "
+        f"ALL VERIFICATION CHECKS PASSED: {len(html_files)}/{len(html_files)} HTML pages HTTP 200 OK · "
         f"{checked_local_links} local links & #anchors valid · "
         f"{checked_ext_links} official primary external links verified clean · "
         f"0 third-party aggregators · 100% math & blank-cell checks verified."
