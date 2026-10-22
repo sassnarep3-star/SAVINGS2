@@ -1,0 +1,599 @@
+{
+  "meta": {
+    "checked_on": "2026-10-22",
+    "account_open_date": "2026-10-22",
+    "deposit_sizes_usd": [1000, 10000, 50000, 100000, 250000],
+    "projection_horizons": [
+      { "years": 1, "end_date": "2027-10-22" },
+      { "years": 3, "end_date": "2029-10-22" },
+      { "years": 5, "end_date": "2031-10-22" }
+    ],
+    "projection_method": "Ending balance = deposit x (1 + APY)^years, using each bank's verified APY as the effective annual rate (the definition of APY already reflects compounding). Assumes a single deposit on 2026-10-22, no withdrawals or added deposits, the variable APY held constant for illustration only, and no monthly fees deducted (see each account's fee/waiver terms). Accounts whose APY could not be verified on an official page are excluded from projections and shown blank.",
+    "ranking_source": "Federal Reserve, Large Commercial Banks ranking (domestic assets), as of June 30, 2026: https://www.federalreserve.gov/releases/lbr/current/default.htm",
+    "fdic_bankfind": "https://banks.data.fdic.gov/bankfind-suite/bankfind"
+  },
+  "accounts": [
+    {
+      "id": "marcus-online-savings",
+      "bank_display": "Marcus by Goldman Sachs",
+      "bank_legal": "Goldman Sachs Bank USA",
+      "fed_rank": 5,
+      "product": "Online Savings Account",
+      "apy_percent": 3.50,
+      "apy_display": "3.50%",
+      "apy_as_of": "October 21, 2026",
+      "apy_verified": true,
+      "rate_type": "Variable; may change at any time",
+      "tiers": "No tiers stated; same APY regardless of balance",
+      "compounding": "Compounded daily, credited monthly",
+      "min_opening_deposit": "None",
+      "monthly_fee": "None",
+      "fee_details": "No fees (product page/FAQ). Maximum balance $1,000,000 per Online Savings Account; $3,000,000 per owner across all deposit accounts.",
+      "conditions_for_apy": "None; no minimum deposit required to open or earn the stated APY.",
+      "bonus": {
+        "type": "referral",
+        "summary": "Referral program: +1.00% promotional APY increase for 3 months on top of the standard APY when referrals occur (Marcus example: one referral in a year with unchanged APY = 3.75% combined APY). No live cash opening bonus found on 2026-10-22 (prior bonus page returned an error).",
+        "expires": "Per referral terms",
+        "source_url": "https://www.marcus.com/us/en/savings/referrals#termsandconditions"
+      },
+      "opening_rules": "18+, SSN or ITIN, U.S. street address (incl. PR/USVI/American Samoa) or U.S. military/embassy address; natural persons only (no trusts/entities). Joint accounts up to 4 owners; up to 6 POD beneficiaries.",
+      "fdic_note": "Deposit Account Agreement states FDIC insures deposits up to the standard maximum per depositor, per bank, per ownership category.",
+      "app_note": "Marcus app (account management and transfers referenced in official FAQ).",
+      "security_note": "Multi-factor authentication; SSL encryption (EV SSL certificate); firewalls; 24/7 network monitoring; secure-browser requirement; unique email + password login.",
+      "security_source_url": "https://www.marcus.com/us/en/banking-with-us/security-center",
+      "sources": [
+        { "label": "Product page", "url": "https://www.marcus.com/us/en/savings/high-yield-savings" },
+        { "label": "FAQ", "url": "https://www.marcus.com/us/en/faqs" },
+        { "label": "Deposit Account Agreement (eff. June 27, 2025)", "url": "https://www.marcus.com/content/dam/marcus/us/en/pdfs/Marcus_Deposit_Account_Agreement.pdf" }
+      ],
+      "flags": [],
+      "include_in_projection": true
+    },
+    {
+      "id": "capital-one-360-performance-savings",
+      "bank_display": "Capital One",
+      "bank_legal": "Capital One, N.A.",
+      "fed_rank": 7,
+      "product": "360 Performance Savings",
+      "apy_percent": 3.20,
+      "apy_display": "3.20%",
+      "apy_as_of": "Effective October 21, 2026",
+      "apy_verified": true,
+      "rate_type": "Variable",
+      "tiers": "No tiers; same rate on the entire balance",
+      "compounding": "Accrues daily; compounded and credited monthly",
+      "min_opening_deposit": "None (fund within 60 days of approval)",
+      "monthly_fee": "None",
+      "fee_details": "Disclosed transaction fees only (e.g., outgoing domestic wire $30 if agreed; cashier's check at a location $10). No minimum balance to obtain APY.",
+      "conditions_for_apy": "None.",
+      "bonus": {
+        "type": "none-found",
+        "summary": "No public standing savings bonus. Official Help Center: Capital One occasionally offers bonuses to targeted groups by letter or email with a bonus code.",
+        "expires": "",
+        "source_url": "https://www.capitalone.com/help-center/checking-savings/account-bonus-offers/"
+      },
+      "opening_rules": "U.S. citizen or lawful permanent resident with U.S. physical address in the 50 states/DC or APO/FPO military address; 18+; U.S.-based mobile phone number; SSN or ITIN; linked account at a U.S.-chartered bank.",
+      "fdic_note": "FDIC-insured up to allowable limits; up to 10 POD beneficiaries may be assigned. Capital One states that Capital One and Discover Bank deposit accounts opened on or after May 18, 2025 are counted together for FDIC coverage (Discover is now part of Capital One).",
+      "app_note": "Capital One Mobile app (mobile check deposit; account alerts; card lock).",
+      "security_note": "Biometric login (facial recognition/fingerprint ID); real-time fraud alerts; debit card lock/unlock in app; $0 fraud liability for unauthorized charges with timely notice.",
+      "security_source_url": "https://www.capitalone.com/bank/security-fraud-protection/",
+      "sources": [
+        { "label": "Product page", "url": "https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/" },
+        { "label": "Disclosures (rate 3.1540% / APY 3.20%)", "url": "https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/" },
+        { "label": "Account comparison (3.20% variable APY)", "url": "https://www.capitalone.com/bank/open-an-account/" }
+      ],
+      "flags": [
+        "Product-page hero widget failed to render the numeral APY on 2026-10-22 (showed 'NaN APY'); 3.20% APY confirmed on two other official Capital One pages (comparison page and disclosures: rate 3.1540%, APY 3.20%)."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "ally-savings",
+      "bank_display": "Ally Bank",
+      "bank_legal": "Ally Bank",
+      "fed_rank": 23,
+      "product": "Ally Bank Savings Account",
+      "apy_percent": 3.10,
+      "apy_display": "3.1%",
+      "apy_as_of": "Accurate as of October 21, 2026",
+      "apy_verified": true,
+      "rate_type": "Variable; may change after the account is open",
+      "tiers": "Balance tiers exist (<$5,000; $5,000–$24,999.99; $25,000+) but all currently pay the same APY",
+      "compounding": "Compounded daily",
+      "min_opening_deposit": "$0",
+      "monthly_fee": "$0",
+      "fee_details": "Outgoing domestic wire $20; expedited delivery $15; $0 for ACH transfers, incoming wires, cashier's checks. Limit of 10 limited withdrawals/transfers per statement cycle (no fee, but Ally may close the account if exceeded more than occasionally).",
+      "conditions_for_apy": "None.",
+      "bonus": {
+        "type": "referral",
+        "summary": "Customer Referral Program: referred new customers ('New Friends') can earn a $100 Welcome Bonus by enrolling via a referrer's personal link (enrollment by December 31, 2026), opening an eligible Ally Savings or Spending account within 30 days of enrollment, and completing the required transfers. Existing Ally customers (or accounts open since Jan 1, 2024) ineligible. Referrers earn $50 per successful referral (max 5/year).",
+        "expires": "Enrollment by December 31, 2026",
+        "source_url": "https://www.ally.com/content/dam/pdf/bank/customer-referral-terms-and-conditions-new-friends.pdf"
+      },
+      "opening_rules": "Personal information such as address and Social Security number requested at opening (product page). Detailed eligibility rules not read on the official pages checked.",
+      "fdic_note": "Deposits insured by FDIC up to the maximum allowed by law; Member FDIC badge on product page.",
+      "app_note": "Ally mobile app (transfers; Ally eCheck Deposit mobile check deposit).",
+      "security_note": "Online and Mobile Security Guarantee: no liability for unauthorized online/mobile transactions reported within 60 days of statement availability; multi-factor authentication.",
+      "security_source_url": "https://www.ally.com/security/",
+      "sources": [
+        { "label": "Product page", "url": "https://www.ally.com/bank/online-savings-account/" },
+        { "label": "FDIC coverage page", "url": "https://www.ally.com/bank/fdic" }
+      ],
+      "flags": [
+        "Ally displays the APY with one-decimal precision (3.1%); projections are computed with exactly 3.10%.",
+        "Ally's on-page competitor comparison uses third-party data (mybanktracker.com) — not used in this report."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "amex-hysa",
+      "bank_display": "American Express",
+      "bank_legal": "American Express National Bank",
+      "fed_rank": 21,
+      "product": "High Yield Savings Account (HYSA)",
+      "apy_percent": 3.20,
+      "apy_display": "3.20%",
+      "apy_as_of": "Accurate as of October 21, 2026",
+      "apy_verified": true,
+      "rate_type": "Variable; may change at any time without notice, before or after opening",
+      "tiers": "No tiers shown",
+      "compounding": "Compounded daily, credited monthly",
+      "min_opening_deposit": "None",
+      "monthly_fee": "None",
+      "fee_details": "No minimum balance required to open, avoid a fee, or obtain the APY; no fee to open; no monthly fees.",
+      "conditions_for_apy": "None.",
+      "bonus": {
+        "type": "none-found",
+        "summary": "No welcome bonus for the High Yield Savings Account found on official pages checked on 2026-10-22.",
+        "expires": "",
+        "source_url": "https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/"
+      },
+      "opening_rules": "Individual or joint ownership (two persons, joint tenants with right of survivorship) per product FAQ. Detailed age/residency/ID rules are in the Deposit Account Agreement (not yet extracted).",
+      "fdic_note": "Offered by American Express National Bank, Member FDIC (stated on product page).",
+      "app_note": "American Express App (manage personal bank accounts; Mobile Check Deposit, subject to limits).",
+      "security_note": "Two-step verification (code or app notification); passkeys (Face ID/fingerprint/device passcode); biometric app login; SafeKey checkout authentication; automatic fraud alerts; device management.",
+      "security_source_url": "https://www.americanexpress.com/en-us/security/",
+      "sources": [
+        { "label": "Product page", "url": "https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/" },
+        { "label": "Deposit Account Agreement", "url": "https://www.americanexpress.com/content/dam/amex/en-us/banking/personal-savings/deposit_account_agreement.pdf" }
+      ],
+      "flags": [],
+      "include_in_projection": true
+    },
+    {
+      "id": "usbank-smartly-relationship",
+      "bank_display": "U.S. Bank",
+      "bank_legal": "U.S. Bank National Association",
+      "fed_rank": 6,
+      "product": "U.S. Bank Smartly Savings — relationship APY",
+      "apy_percent": 3.50,
+      "apy_display": "3.50% (at $25,000+ Combined Qualifying Balances)",
+      "apy_as_of": "Effective October 21, 2026 (ZIP 55402 shown on site)",
+      "apy_verified": true,
+      "rate_type": "Variable; may vary by location",
+      "tiers": "Relationship APY by Combined Qualifying Balances (CQB, includes the savings balance and other eligible U.S. Bank balances): under $5,000 = 1.00%; $5,000–$24,999.99 = 2.00%; $25,000+ = 3.50%",
+      "apy_by_balance": [
+        { "min_balance_usd": 0, "apy_percent": 1.00 },
+        { "min_balance_usd": 5000, "apy_percent": 2.00 },
+        { "min_balance_usd": 25000, "apy_percent": 3.50 }
+      ],
+      "compounding": "APY reflects compounding on daily account balances (rates page); crediting frequency not stated on pages read",
+      "min_opening_deposit": "$25",
+      "monthly_fee": "$5, waived with an eligible relationship account",
+      "fee_details": "$5 monthly maintenance fee waived when you are also an account owner of an eligible account (Bank Smartly Checking / Safe Debit / Bank Smartly Visa Signature Card), per product page footnotes.",
+      "conditions_for_apy": "Headline 3.50% requires ALSO being an account owner of Bank Smartly Checking, a Safe Debit account, or the Bank Smartly Visa Signature Card, AND $25,000+ in Combined Qualifying Balances. Advertised rates may not apply to existing U.S. Bank consumer savings/money market clients or accounts closed in the past 90 days.",
+      "bonus": {
+        "type": "none-found",
+        "summary": "No live generally-available consumer savings bonus found on official pages on 2026-10-22 (U.S. Bank rotates promo-code offers; previously published offer pages checked returned 404/expired). Re-check usbank.com at application time.",
+        "expires": "",
+        "source_url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings.html"
+      },
+      "opening_rules": "Detailed eligibility not stated on pages read.",
+      "fdic_note": "Deposit products offered by U.S. Bank National Association, Member FDIC; savings accounts FDIC-insured to the maximum allowed by law.",
+      "app_note": "U.S. Bank Mobile App (security center, alerts, biometric login).",
+      "security_note": "In-app Security Center with personal security rating; biometric login (Face/Touch ID); two-step verification; login notifications; security/account alerts; digital security guarantee (zero fraud liability for unauthorized transactions with prompt notice).",
+      "security_source_url": "https://www.usbank.com/online-mobile-banking/security-center.html",
+      "sources": [
+        { "label": "Rates page (effective Oct 21, 2026; ZIP 55402)", "url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html" },
+        { "label": "Product page", "url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings.html" },
+        { "label": "Savings hub", "url": "https://www.usbank.com/bank-accounts/savings-accounts.html" }
+      ],
+      "flags": [
+        "Rates were displayed for ZIP 55402; U.S. Bank states APYs may vary by location — confirm for New York (e.g., ZIP 10001) on the rates page before applying.",
+        "Projection assumes the relationship-product condition is met and the CQB tier is set by the initial deposit (the deposit itself counts toward CQB).",
+        "An Elite Money Market account (money market deposit account, outside savings scope) was listed on the hub at up to 3.40% APY for new accounts with $25,000+ deposits, $10 monthly fee, $100 minimum opening deposit."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "usbank-smartly-standard",
+      "bank_display": "U.S. Bank",
+      "bank_legal": "U.S. Bank National Association",
+      "fed_rank": 6,
+      "product": "U.S. Bank Smartly Savings — standard APY (no relationship product)",
+      "apy_percent": 0.05,
+      "apy_display": "0.05%",
+      "apy_as_of": "Effective October 21, 2026 (ZIP 55402 shown on site)",
+      "apy_verified": true,
+      "rate_type": "Variable; may vary by location",
+      "tiers": "Single standard APY when no eligible relationship product is held",
+      "compounding": "APY reflects compounding on daily account balances (rates page); crediting frequency not stated on pages read",
+      "min_opening_deposit": "$25",
+      "monthly_fee": "$5, waived with an eligible relationship account",
+      "fee_details": "See relationship row.",
+      "conditions_for_apy": "Standard rate applies without an eligible Bank Smartly Checking / Safe Debit / Bank Smartly Visa Signature relationship.",
+      "bonus": {
+        "type": "none-found",
+        "summary": "See U.S. Bank Smartly relationship row.",
+        "expires": "",
+        "source_url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings.html"
+      },
+      "opening_rules": "Detailed eligibility not stated on pages read.",
+      "fdic_note": "Deposit products offered by U.S. Bank National Association, Member FDIC.",
+      "app_note": "U.S. Bank Mobile App.",
+      "security_note": "See U.S. Bank Smartly relationship row.",
+      "security_source_url": "https://www.usbank.com/online-mobile-banking/security-center.html",
+      "sources": [
+        { "label": "Rates page", "url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html" }
+      ],
+      "flags": [
+        "Confirm for New York ZIP — rates may vary by location."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "wf-platinum-new-customer",
+      "bank_display": "Wells Fargo",
+      "bank_legal": "Wells Fargo Bank, N.A.",
+      "fed_rank": 4,
+      "product": "Platinum Savings — new-customer offer rate",
+      "apy_percent": 3.25,
+      "apy_display": "3.25%",
+      "apy_as_of": "APY accurate as of October 7, 2026 (rates page displayed location CA, 94105; rate period 10/17/2026–10/23/2026)",
+      "apy_verified": true,
+      "rate_type": "Variable; may change at any time; may vary by location",
+      "tiers": "Applies on balances of $25,000+ only; days below $25,000 earn the standard (or relationship) rate",
+      "compounding": "Compounded daily, paid monthly",
+      "min_opening_deposit": "$25",
+      "monthly_fee": "$12, waived with $3,500 minimum daily balance",
+      "fee_details": "Platinum Savings monthly service fee $12, waived with a $3,500 minimum daily balance each fee period.",
+      "conditions_for_apy": "New Platinum Savings accounts only, for customers with no existing Wells Fargo consumer savings account and who were not an owner/joint owner/trustee on one within the past 30 days. Balance must reach at least $25,000 within 30 days of opening and a minimum daily balance of $25,000 must be maintained each day. After a promotional period ends, Wells Fargo states the account moves to an 'assigned variable interest rate' that may differ from published standard/relationship rates.",
+      "bonus": {
+        "type": "rate-promo",
+        "summary": "The 3.25% APY new-customer rate is the savings promotion. Separate related checking offer: $325 for a new Everyday Checking account with $1,000+ in qualifying electronic deposits within 90 days; open with offer code by January 13, 2027.",
+        "expires": "Checking offer ends January 13, 2027",
+        "source_url": "https://accountoffers.wellsfargo.com/checkingoffer/"
+      },
+      "opening_rules": "Online applicants: 18+, SSN or ITIN, physical U.S. address, own mobile phone number; joint accounts available online.",
+      "fdic_note": "Wells Fargo Bank, N.A., Member FDIC; savings funds FDIC-insured up to the maximum applicable limit.",
+      "app_note": "Wells Fargo Mobile app (view account rate in Online Banking or the Mobile App).",
+      "security_note": "24/7 fraud monitoring; Zero Liability protection; Security Center in the Wells Fargo Mobile app.",
+      "security_source_url": "https://www.wellsfargo.com/privacy-security/",
+      "sources": [
+        { "label": "Rates page (location CA, 94105)", "url": "https://www.wellsfargo.com/savings-cds/rates/" },
+        { "label": "Savings hub", "url": "https://www.wellsfargo.com/savings-cds/" }
+      ],
+      "flags": [
+        "Rates page defaulted to California (CA, 94105; footnote lists Bay Area counties) and Wells Fargo states rates may vary by location — confirm the New York (ZIP 10001) rates and whether the new-customer offer applies there before applying.",
+        "Variable offer rate with no stated end date; long-horizon projections assume it persists, which is NOT guaranteed — treat 3/5-year figures for this row as upper bounds."
+      ],
+      "include_in_projection": true,
+      "projection_min_balance_usd": 25000
+    },
+    {
+      "id": "wf-way2save",
+      "bank_display": "Wells Fargo",
+      "bank_legal": "Wells Fargo Bank, N.A.",
+      "fed_rank": 4,
+      "product": "Way2Save Savings",
+      "apy_percent": 0.01,
+      "apy_display": "0.01%",
+      "apy_as_of": "Rates for 10/17/2026–10/23/2026 (rates page displayed location CA, 94105)",
+      "apy_verified": true,
+      "rate_type": "Variable; may vary by location",
+      "tiers": "0.01% APY on $0 or more",
+      "compounding": "Compounded daily, paid monthly",
+      "min_opening_deposit": "$25",
+      "monthly_fee": "$5, with waivers",
+      "fee_details": "$5 monthly service fee waived each fee period with any one of: $300 minimum daily balance; automatic transfer of $25+ from a linked Wells Fargo checking account; automatic transfers of $1+ each business day from a linked checking account; one or more Save As You Go transfers; or primary owner age 24 or under.",
+      "conditions_for_apy": "None.",
+      "bonus": {
+        "type": "related-checking",
+        "summary": "No Way2Save cash bonus seen. Related checking offer: $325 new Everyday Checking bonus (see Platinum new-customer row).",
+        "expires": "January 13, 2027",
+        "source_url": "https://accountoffers.wellsfargo.com/checkingoffer/"
+      },
+      "opening_rules": "Online applicants: 18+, SSN or ITIN, physical U.S. address, own mobile phone number.",
+      "fdic_note": "Wells Fargo Bank, N.A., Member FDIC.",
+      "app_note": "Wells Fargo Mobile app.",
+      "security_note": "24/7 fraud monitoring; Zero Liability protection; Security Center in the Wells Fargo Mobile app.",
+      "security_source_url": "https://www.wellsfargo.com/privacy-security/",
+      "sources": [
+        { "label": "Rates page (location CA, 94105)", "url": "https://www.wellsfargo.com/savings-cds/rates/" },
+        { "label": "Way2Save monthly service fee page", "url": "https://www.wellsfargo.com/savings-cds/way2save/way2save-monthly-service-fee/" }
+      ],
+      "flags": [
+        "Confirm New York ZIP rates — displayed rates were for CA, 94105.",
+        "Platinum Savings standard APY is also 0.01% (relationship: 0.02% with Prime Checking; 0.05% with Premier Checking); Platinum fee $12 waived with $3,500 minimum daily balance. Not separately projected because the standard APY equals Way2Save."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "bofa-advantage-savings",
+      "bank_display": "Bank of America",
+      "bank_legal": "Bank of America, N.A.",
+      "fed_rank": 2,
+      "product": "Bank of America Advantage Savings",
+      "apy_percent": 0.04,
+      "apy_display": "0.04%",
+      "apy_as_of": "Effective October 21, 2026 (official New York–Tri-State Area rate sheet)",
+      "apy_verified": true,
+      "rate_type": "Variable; may change at any time without notice",
+      "tiers": "0.04% rate/APY for all balance tiers (<$5,000 to $10,000,000+) in the NY–Tri-State region (Bronx, Dutchess, Kings, Nassau, New York, Orange, Putnam, Queens, Richmond, Rockland, Suffolk, Westchester counties)",
+      "compounding": "Not stated on documents read (rate sheet refers to deposit agreement)",
+      "min_opening_deposit": "$100",
+      "monthly_fee": "$8, with waivers (waived first 6 months for new accounts)",
+      "fee_details": "Thereafter waived per statement cycle with any one of: $500+ minimum daily balance; ownership of a Bank of America Advantage Relationship Banking account; an account owner under age 25; or Preferred Rewards Preferred Plus / Preferred Honors / Premier tier enrollment.",
+      "conditions_for_apy": "None for the 0.04% APY. Rate sheet states: 'New Account opening limit is $250,000 in Online Channel. For larger accounts, please contact us.'",
+      "bonus": {
+        "type": "none-found",
+        "summary": "No generally-available consumer savings opening bonus found on official Bank of America pages/documents checked on 2026-10-22 (checking cash offers run through targeted channels).",
+        "expires": "",
+        "source_url": "https://www.bankofamerica.com/deposits/bank-account-interest-rates/"
+      },
+      "opening_rules": "Detailed age/residency/ID rules not read (consumer product pages blocked automated access; verified via official rate sheet and fee schedule instead).",
+      "fdic_note": "Bank of America, N.A., Member FDIC (rate sheet footer).",
+      "app_note": "Bank of America Mobile Banking app (App Store / Google Play links on official rates page).",
+      "security_note": "Consumer Online and Mobile Banking Security Guarantee: not liable for unauthorized transfers or bill payments made via Online/Mobile Banking if reported promptly. Official pages also describe two-factor authentication (one-time authorization codes) and an in-app Security Center.",
+      "security_source_url": "https://www.bankofamerica.com/online-banking/online-banking-security-guarantee/",
+      "sources": [
+        { "label": "NY–Tri-State deposit rate sheet (eff. Oct 21, 2026)", "url": "https://media.bac-assets.com/DigitalDeposit_NY_NY_Tri_State_Area.pdf" },
+        { "label": "Personal Schedule of Fees (eff. Aug 7, 2026)", "url": "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" },
+        { "label": "Rates hub", "url": "https://www.bankofamerica.com/deposits/bank-account-interest-rates/" }
+      ],
+      "flags": [
+        "bankofamerica.com consumer product pages returned HTTP 405 to automated reads on 2026-10-22; figures verified from Bank of America's official rate sheet and personal fee schedule instead.",
+        "$250,000 online new-account opening limit is directly relevant to a max-FDIC strategy: larger opening deposits must be arranged by phone/branch."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "truist-one-savings",
+      "bank_display": "Truist",
+      "bank_legal": "Truist Bank",
+      "fed_rank": 9,
+      "product": "Truist One Savings",
+      "apy_percent": 0.01,
+      "apy_display": "0.01%",
+      "apy_as_of": "Accurate as of September 28, 2026 (date printed by Truist)",
+      "apy_verified": true,
+      "rate_type": "Variable; may change without notice at any time",
+      "tiers": "0.01% rate/APY on all listed tiers ($0 to $5,000,000+); 'Tiered interest is not applicable'",
+      "compounding": "Calculated and compounded daily on the collected balance; credited monthly",
+      "min_opening_deposit": "$50",
+      "monthly_fee": "$5, with waivers",
+      "fee_details": "Waived by any one of: $300 minimum daily ledger balance; recurring preauthorized internal transfer of $25+ per statement cycle; minor under 18; or any related Truist checking product. Withdrawal Limit Fee: $5 per withdrawal over 6 per statement cycle (max 6 such fees), applies to all withdrawal types.",
+      "conditions_for_apy": "None.",
+      "bonus": {
+        "type": "none-found",
+        "summary": "No current official consumer savings bonus found on 2026-10-22.",
+        "expires": "",
+        "source_url": "https://www.truist.com/savings/truist-one-savings"
+      },
+      "opening_rules": "Open online (product page); detailed eligibility not read on pages checked.",
+      "fdic_note": "FDIC membership statement was not captured in the Truist disclosure text read — verify Truist Bank's FDIC status in FDIC BankFind (link in Sources).",
+      "app_note": "Truist mobile app (move money, Zelle, bill pay, mobile check deposit — official fraud/security pages; App Store/Google Play).",
+      "security_note": "Two-factor authentication with one-time passcodes (biometric ID or text/email code); account alerts; card controls (lock/unlock, limits); encrypted technology; automatic session timeout; account lockout after three failed sign-in attempts.",
+      "security_source_url": "https://www.truist.com/fraud-and-security/protect-yourself",
+      "sources": [
+        { "label": "Disclosures & fees (rate table)", "url": "https://www.truist.com/savings/truist-one-savings/disclosures-and-fees" },
+        { "label": "Product page", "url": "https://www.truist.com/savings/truist-one-savings" },
+        { "label": "FDIC BankFind (verify FDIC status)", "url": "https://banks.data.fdic.gov/bankfind-suite/bankfind" }
+      ],
+      "flags": [
+        "Truist's printed APY as-of date (9/28/2026) is older than most peers' 10/21/2026 — re-confirm the current APY on the disclosures page before applying.",
+        "The $5-per-withdrawal fee over 6 withdrawals per cycle is stricter than most peers (federal Reg D limits were suspended in 2020; this is Truist's own fee)."
+      ],
+      "include_in_projection": true
+    },
+    {
+      "id": "citi-savings",
+      "bank_display": "Citi",
+      "bank_legal": "Citibank, N.A.",
+      "fed_rank": 3,
+      "product": "Citi Savings (Citi Accelerate Savings not available to New York residents)",
+      "apy_percent": null,
+      "apy_display": "",
+      "apy_as_of": "Official disclosure: APY accurate as of October 21, 2026 in the location entered on citi.com (numeric value is location-injected and could not be read)",
+      "apy_verified": false,
+      "rate_type": "Variable",
+      "tiers": "Unverified (location-injected)",
+      "compounding": "Unverified on pages read",
+      "min_opening_deposit": "No minimum deposit required to obtain the APY (accounts with zero balance for 90 days subject to closure)",
+      "monthly_fee": "$4.50 (base tier), with waivers",
+      "fee_details": "Waived with $500 Average Monthly Balance per savings account or when a savings owner also owns a Citi checking account; no fee in Citi Priority/Citigold/Citigold Private Client tiers.",
+      "conditions_for_apy": "APY depends on home location entered on citi.com. Citi Accelerate Savings (higher-yield variant) is offered only in listed states/markets — New York is NOT on the official list, so a NYC resident cannot open Accelerate.",
+      "bonus": {
+        "type": "rate-promo",
+        "summary": "Bundled offer (official Citi offer page): new Citi Savings account with minimum $25,000 of 'New-to-Citibank Funds' deposited within 10 business days and maintained earns a 3.75% Promotional Interest Rate for up to 3 months (max $10,000 interest; blended APY shown 0.98%–1.05%); plus a $325 cash bonus for a new Regular Checking account with two Enhanced Direct Deposits totaling $3,000+ within 90 days. Offer page states account-opening window 4/14/26–10/26/26 and pricing depends on home ZIP — these terms were expiring days after the 2026-10-22 check, so re-verify before relying on them. The ongoing base APY remains unverified (location-injected).",
+        "expires": "October 26, 2026 (per offer page)",
+        "source_url": "https://banking.citi.com/cbol/OM/checking/enhanced-direct-deposit-offer/default.htm"
+      },
+      "opening_rules": "Online applicants: U.S. citizen or U.S. resident alien, 18+, U.S. physical address, date of birth, identification possibly including SSN or ITIN.",
+      "fdic_note": "Deposit products provided by Citibank, N.A., Member FDIC; deposits FDIC-insured up to $250,000 per depositor for each account ownership category.",
+      "app_note": "Citi Mobile App (Mobile Check Deposit, Zelle).",
+      "security_note": "2-Step Authentication with one-time passcodes; customizable account alerts; Quick Lock (freeze cards in the Citi Mobile App); push notifications. Citi Online security pages also describe SSL encryption, automatic blocking when credentials are compromised, and fingerprint/facial-recognition app sign-in.",
+      "security_source_url": "https://citicards.citi.com/cbol/fraudprevention/default.htm",
+      "sources": [
+        { "label": "Savings page (enter ZIP to see APY)", "url": "https://www.citi.com/banking/savings-account" },
+        { "label": "Compare bank accounts / relationship tiers", "url": "https://www.citi.com/banking/compare-bank-accounts" },
+        { "label": "Current interest rates (enter ZIP)", "url": "https://www.citi.com/banking/current-interest-rates" }
+      ],
+      "flags": [
+        "UNVERIFIED APY: Citi injects the numeric APY by visitor location; official pages rendered a placeholder without a number. Manual action: open the Citi rates page, enter ZIP 10001, and record Citi Savings APY. Excluded from return projections.",
+        "Citi Accelerate Savings excludes New York residents per the official state list."
+      ],
+      "include_in_projection": false
+    },
+    {
+      "id": "chase-savings",
+      "bank_display": "Chase",
+      "bank_legal": "JPMorgan Chase Bank, N.A.",
+      "fed_rank": 1,
+      "product": "Chase Savings",
+      "apy_percent": null,
+      "apy_display": "",
+      "apy_as_of": "Rates shown only after entering a 5-digit ZIP on Chase's official rates pages",
+      "apy_verified": false,
+      "rate_type": "Variable; determined daily at Chase's discretion; may vary by market",
+      "tiers": "Unverified (ZIP-gated)",
+      "compounding": "Compounded and credited monthly on the daily collected balance (official FAQ)",
+      "min_opening_deposit": "No minimum balance to open",
+      "monthly_fee": "$5, with waivers",
+      "fee_details": "Waived with any one of: $300+ balance at the beginning of each day; $25+ Autosave/repeating automatic transfers from a personal Chase checking account; link to a qualifying checking account; link to a Chase College Checking account enrolled in Overdraft Protection; or an account owner under 25.",
+      "conditions_for_apy": "APY is ZIP/market-dependent and could not be read without ZIP entry.",
+      "bonus": {
+        "type": "savings-cash",
+        "summary": "New Chase savings customers: $100 for depositing $5,000–$9,999, or $200 for $10,000+, in new money into a new Chase Savings account within 30 days of offer enrollment, then maintaining the new money for 90 days; bonus credited within 15 days after requirements are met.",
+        "expires": "January 27, 2027",
+        "source_url": "https://account.chase.com/consumer/banking/savingsoffer"
+      },
+      "opening_rules": "Apply online or in branch; personal info required (address, email, SSN, contact details) per official FAQ.",
+      "fdic_note": "Chase savings accounts are FDIC insured up to the maximum amount allowed by law.",
+      "app_note": "Chase Mobile app (mobile check deposit, transfers, Autosave).",
+      "security_note": "Reimbursement commitment for unauthorized online/mobile bill-pay/transfer transactions reported promptly; Zero Liability Protection on cards; 24/7 fraud monitoring with alerts; encryption; biometric and passkey login; one-time-code/app-notification validation (2-step verification); temporary holds on suspicious activity.",
+      "security_source_url": "https://www.chase.com/digital/resources/privacy-security",
+      "sources": [
+        { "label": "Chase Savings product page", "url": "https://www.chase.com/personal/savings/savings-account" },
+        { "label": "Rates (enter ZIP 10001)", "url": "https://www.chase.com/personal/savings/savings-account/interest-rates" },
+        { "label": "Savings hub", "url": "https://personal.chase.com/personal/savings" }
+      ],
+      "flags": [
+        "UNVERIFIED APY: Chase requires a 5-digit ZIP before displaying savings rates. Manual action: open the rates link, enter ZIP 10001, record APYs. Excluded from return projections."
+      ],
+      "include_in_projection": false
+    },
+    {
+      "id": "chase-premier-savings",
+      "bank_display": "Chase",
+      "bank_legal": "JPMorgan Chase Bank, N.A.",
+      "fed_rank": 1,
+      "product": "Chase Premier Savings",
+      "apy_percent": null,
+      "apy_display": "",
+      "apy_as_of": "Rates shown only after entering a 5-digit ZIP on Chase's official rates pages",
+      "apy_verified": false,
+      "rate_type": "Variable; standard and relationship rates vary by market (ZIP-gated)",
+      "tiers": "Unverified (ZIP-gated). Relationship rates require linking to Chase Premier Plus Checking, Chase Sapphire Checking, Chase Private Client Checking, J.P. Morgan Private Client Checking Plus, or J.P. Morgan Classic Checking.",
+      "compounding": "Compounded and credited monthly on the daily collected balance (official FAQ)",
+      "min_opening_deposit": "See official page (not captured)",
+      "monthly_fee": "$25, waived with $15,000+ daily beginning balance or linked qualifying checking",
+      "fee_details": "Monthly Service Fee $25 waived with $15,000+ balance at the beginning of each day or by linking to a qualifying checking account.",
+      "conditions_for_apy": "Relationship (higher) rates require an eligible linked premium checking account; numeric APYs ZIP-gated/unverified.",
+      "bonus": {
+        "type": "savings-cash",
+        "summary": "See Chase Savings row for the $100/$200 new-savings bonus (offer targets Chase Savings accounts; confirm eligible account types in offer terms).",
+        "expires": "January 27, 2027",
+        "source_url": "https://account.chase.com/consumer/banking/savingsoffer"
+      },
+      "opening_rules": "Apply online or in branch.",
+      "fdic_note": "Chase savings accounts are FDIC insured up to the maximum amount allowed by law.",
+      "app_note": "Chase Mobile app.",
+      "security_note": "See Chase Savings row.",
+      "security_source_url": "https://www.chase.com/digital/resources/privacy-security",
+      "sources": [
+        { "label": "Premier Savings product page", "url": "https://www.chase.com/personal/savings/interest-savings" }
+      ],
+      "flags": [
+        "UNVERIFIED APY (ZIP-gated) — see Chase Savings row. Excluded from return projections.",
+        "Chase also offers Chase Private Client Savings, which requires a Chase Private Client Checking relationship (not separately researched)."
+      ],
+      "include_in_projection": false
+    },
+    {
+      "id": "pnc-high-yield-savings",
+      "bank_display": "PNC",
+      "bank_legal": "PNC Bank, National Association",
+      "fed_rank": 8,
+      "product": "PNC High Yield Savings",
+      "apy_percent": null,
+      "apy_display": "",
+      "apy_as_of": "Product page title advertises '3.15% Annual Percentage Yield APY' but rate terms require ZIP entry and could not be verified",
+      "apy_verified": false,
+      "rate_type": "Unverified (ZIP/market-gated)",
+      "tiers": "Unverified",
+      "compounding": "Unverified",
+      "min_opening_deposit": "Unverified (page served a not-available notice for the detected area)",
+      "monthly_fee": "Unverified",
+      "fee_details": "",
+      "conditions_for_apy": "Area-restricted product: on 2026-10-22 the official rates page showed location 15222, Allegheny County, PA (10/21/2026) with 'This product is not available in your area,' and the product page displayed a stop-sell notice. Whether the product is offered to New York City residents could not be determined from official pages read.",
+      "bonus": {
+        "type": "related-checking",
+        "summary": "Virtual Wallet checking bonuses: $100 (Virtual Wallet) with $500 in qualifying direct deposits to the Spend account, or $400 (Virtual Wallet with Performance Select) with $5,000 in qualifying direct deposits, within the offer's stated timeframe (see legal terms on the page). Virtual Wallet bundles checking with optional Reserve/Growth savings accounts. This is a checking bonus, not a standalone savings bonus.",
+        "expires": "See official offer page",
+        "source_url": "https://www.pnc.com/en/personal-banking/banking/checking/bonus-offer.html"
+      },
+      "opening_rules": "Unverified; product is market-restricted.",
+      "fdic_note": "Bank deposit products and services provided by PNC Bank, National Association, Member FDIC.",
+      "app_note": "PNC Mobile Banking app (App Store / Google Play badges on official pages).",
+      "security_note": "Opt-in multifactor authentication ('Add a Layer of Security'); customizable account-activity alerts; free Trusteer Rapport anti-malware software for online banking customers; dedicated fraud-reporting channels.",
+      "security_source_url": "https://www.pnc.com/en/security-privacy.html",
+      "sources": [
+        { "label": "HYSA product page (enter ZIP)", "url": "https://www.pnc.com/en/personal-banking/banking/savings/high-yield-savings.html" },
+        { "label": "HYSA rates (enter ZIP)", "url": "https://www.pnc.com/en/personal-banking/banking/deposit-rates/high-yield-savings.html" },
+        { "label": "Savings hub", "url": "https://www.pnc.com/en/personal-banking/banking/savings.html" }
+      ],
+      "flags": [
+        "UNVERIFIED APY: advertised 3.15% appears in the page title only; terms are ZIP-gated and the fetched location showed the product unavailable. Manual action: enter a New York ZIP (e.g., 10001) at the official links to determine NYC availability and APY/terms. Excluded from return projections.",
+        "PNC Standard Savings shows '$0 minimum deposit to open online' and FDIC insurance, but its numeric APY is also ZIP-gated/unverified."
+      ],
+      "include_in_projection": false
+    },
+    {
+      "id": "td-signature-savings",
+      "bank_display": "TD Bank",
+      "bank_legal": "TD Bank, N.A.",
+      "fed_rank": 13,
+      "product": "TD Signature Savings",
+      "apy_percent": null,
+      "apy_display": "",
+      "apy_as_of": "Official disclosure: APY accurate as of October 21, 2026 (numeric tier table is location-injected and rendered empty when read)",
+      "apy_verified": false,
+      "rate_type": "Variable; subject to change after opening; tiered with relationship 'rate bump'",
+      "tiers": "Top advertised tier requires a $250,000 minimum balance plus a linked eligible account (rate bump); numeric tiers unverified",
+      "compounding": "Unverified on pages read",
+      "min_opening_deposit": "$0 (account auto-closes if no deposit within 45 days)",
+      "monthly_fee": "$15, with waivers",
+      "fee_details": "Waived with $10,000 minimum daily balance or by linking an eligible TD checking account (Beyond/Complete/Relationship).",
+      "conditions_for_apy": "Rate-bump eligibility (official footnote): linked TD personal mortgage/home equity/credit card, OR active personal/small-business checking with 3+ customer-initiated transactions per calendar month, OR active checking with a direct deposit each calendar month.",
+      "bonus": {
+        "type": "savings-cash",
+        "summary": "$200 bonus for new TD personal savings customers who open TD Signature Savings online, deposit $10,000+ within the first 20 days and maintain $10,000+ for 90 additional days; bonus paid on or before 180 days after opening and deducted if the account is closed within 6 months. Related checking bonuses in the same campaign: $300 (Beyond Checking, $2,500 qualifying direct deposits) / $200 (Complete Checking, $500 qualifying direct deposits); up to $500 combined.",
+        "expires": "November 30, 2026",
+        "source_url": "https://www.td.com/us/en/personal-banking/savings-accounts/featured"
+      },
+      "opening_rules": "Open online with SSN, government-issued ID, source of funds, and phone number (official FAQ).",
+      "fdic_note": "Hub describes products as 'FDIC-insured savings account[s]'; TD Bank, N.A. is the FDIC-insured charter (verify in FDIC BankFind).",
+      "app_note": "TD Bank app (Mobile Deposit; card lock; iOS/Android).",
+      "security_note": "Single-use security codes (2-step verification); TD VoicePrint voice authentication for phone banking; security alerts; firewalls and encryption; card lock in app/Online Banking.",
+      "security_source_url": "https://www.td.com/us/en/personal-banking/security-center",
+      "sources": [
+        { "label": "Rates/compare (set location to New York)", "url": "https://www.td.com/us/en/personal-banking/savings-accounts/rates" },
+        { "label": "Savings hub", "url": "https://www.td.com/us/en/personal-banking/savings-accounts" },
+        { "label": "Checking & savings bonus campaign", "url": "https://www.td.com/us/en/personal-banking/checking-and-saving-bonus" }
+      ],
+      "flags": [
+        "UNVERIFIED APY: TD injects rate tables by visitor location; tables rendered empty. Manual action: open the rates link, set location to New York, read the Signature/Simple tier table. Excluded from return projections.",
+        "TD Simple Savings: $0 opening minimum; $5 monthly fee waived with $300 minimum daily balance, a $25+ monthly recurring transfer from linked eligible TD checking (first-year condition per footnote), primary holder age 18 or younger / 62 or older, or linked eligible Beyond/Complete checking. APY likewise unverified."
+      ],
+      "include_in_projection": false
+    }
+  ],
+  "excluded_and_status_notes": [
+    {
+      "name": "Discover Bank (Discover Online Savings)",
+      "status": "Not separately modeled. On 2026-10-22 the official Discover savings URL redirected to Capital One's 360 Performance Savings page with the banner 'Discover is now part of Capital One.' Capital One states that Capital One and Discover Bank deposit accounts opened on or after May 18, 2025 count together for FDIC coverage. Discover Bank also no longer appears as a separate charter in the Federal Reserve June 30, 2026 large-bank ranking.",
+      "source_url": "https://www.discover.com/online-banking/savings-account/"
+    }
+  ]
+}
