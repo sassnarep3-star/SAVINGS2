@@ -176,6 +176,12 @@ A fourth parallel session (blind, like the others) worked on branch
   merges; `README.md` and this file resolved as unions. PR #4 merged without waiting
   for manual approval; GitHub Pages (source: `main` / root) rebuilt on the merge
   commit — build status recorded below in section 4 style.
+- **Merge & deployment result:** PR #4 **MERGED** `2026-10-22T01:06:17Z`, merge
+  commit `863beed1b9a91a84ae93b52fa45fe84889963182` (`gh pr merge 4 --merge`,
+  confirmed `mergeable: CLEAN` first). GitHub Pages API
+  (`repos/sassnarep3-star/SAVINGS2/pages/builds`): commit `863beed1…` reached
+  `status: "built"` at `2026-10-22T01:06:19Z` (`duration: 18289ms`, `error: null`).
+  Live site: <https://sassnarep3-star.github.io/SAVINGS2/>
 
 ### Session B final integration record (`2026-10-22`)
 
