@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method and verification · Savings research</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Savings Account Research <span class="ver">v1.0 · 2026-10-22</span></div>
+    <nav><a href='index.html'>Overview</a><a href='accounts.html'>Accounts</a><a href='returns.html'>Returns</a><a href='fdic.html'>FDIC coverage</a><a href='competitiveness.html'>Competitiveness</a><a href='bonuses.html'>Bonuses &amp; rules</a><a href='flagged.html'>Flagged for review</a><a href='methodology.html' class='active'>Method</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1>Method and verification</h1>
+  <p class="sub">How every value was checked, what was excluded, and what the study cannot tell you.</p>
+  
+<p class="lead">The rule for this project was simple and strict: a number either comes from an official page, or it does not appear.</p>
+
+<h2>1. What counts as an official source</h2>
+<ul>
+  <li><strong>The bank's own domain</strong> — the product page, rate sheet, fee schedule or disclosure PDF on the bank's website.</li>
+  <li><strong>The FDIC</strong> — deposit insurance rules, the national rate table, and the BankFind institution record (via api.fdic.gov).</li>
+  <li><strong>The U.S. Treasury</strong> — yields, as republished in the FDIC national rate table.</li>
+</ul>
+<p>Aggregators, review sites, affiliate "best rate" lists, news articles and the comparison tables inside banks' own marketing pages
+were <strong>not</strong> used as value sources. For example, SoFi's page compares itself to Chase at 0.02% and Bank of America at
+0.04%; those are third-party figures SoFi attributes to a data vendor, so they do not appear as Chase or BofA values here.</p>
+
+<h2>2. How each row was verified</h2>
+<ol>
+  <li>Identify the legal entity and FDIC certificate through the FDIC BankFind API, and check that the institution is active.</li>
+  <li>Open the bank's own product page and record: APY (with the page's own effective date), minimum to open, minimum to earn the
+      APY, monthly fee and waiver, withdrawal rules, app, security controls, insurance statement, bonus and opening requirements.</li>
+  <li>Paste the exact wording into the notes where the wording is doing the work — for example "no minimum balance required to open
+      an account or earn APY".</li>
+  <li>If the page will not produce the value (ZIP gate, login wall, JavaScript-only table), record the reason and leave it blank.</li>
+  <li>Store the source URL with the value so any reader can re-run the check.</li>
+</ol>
+
+<h2>3. How the return figures are calculated</h2>
+<p>Interest = principal × ((1 + APY / 100)<sup>years</sup> − 1). Because an APY already embeds compounding, it is used directly as an
+annual factor. No fees are deducted (all the high-rate accounts are fee-free), no taxes are modelled, and no rate changes are assumed.
+Projections start on <strong>2026-10-22</strong>, the account-opening date used throughout.</p>
+<p>Blended APYs in the FDIC section are deposit-weighted averages of the published APYs applied to each slice. Promotion maths assumes
+the boosted rate applies for exactly the stated promotional period and the standard rate applies afterwards.</p>
+
+<h2>4. What this study cannot tell you</h2>
+<ul>
+  <li><strong>How a rate will move.</strong> Every account here is variable-rate. Past rate behaviour is not published in a form that
+      could be verified, so no trend is claimed.</li>
+  <li><strong>Your actual APY at a ZIP-gated bank.</strong> For Chase, Bank of America, Citi and TD it is location- and
+      relationship-dependent. What is published is the structure of the fee, not a single number.</li>
+  <li><strong>Which account you will be approved for.</strong> All of these banks may decline an application;
+      SoFi and Capital One say so explicitly.</li>
+  <li><strong>Tax.</strong> Interest is taxable income. No after-tax figures are shown.</li>
+</ul>
+
+<h2>5. Refresh instructions</h2>
+<p>All values live in <code>data/banks.json</code>. Re-checking means opening the <code>sources</code> URL for a product, updating the
+value and <code>apy_as_of</code>, then re-running <code>python3 build.py</code>, which regenerates every page and rebuilds
+<code>data/analysis.json</code>. The build refuses to render a verified APY that has no tier value or no source link.</p>
+
+<h2>6. Limitations and conflicts</h2>
+<ul>
+  <li>No affiliate links, no referral codes, and no compensation relationship with any bank.</li>
+  <li>The "big national bank" filter uses FDIC total assets from the institution file; it is a size screen, not a quality judgement.</li>
+  <li>Figures were read on 2026-10-22 in a U.S. timezone; a page edited later the same day may differ.</li>
+</ul>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>Compiled 2026-10-22 from official bank, FDIC and Treasury publications. Deposit account opened <strong>2026-10-22</strong>.
+    APYs are variable unless the source says otherwise. Nothing here is financial advice.</p>
+    <p>19 products screened · 10 with a fully verified APY · 8 with no usable public APY · 1 partial
+    <a href="flagged.html">see what is missing</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

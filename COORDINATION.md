@@ -1,122 +1,182 @@
-# COORDINATION.md — Shared Task Board
+# COORDINATION — Savings Account Research (SAVINGS2)
 
-This is the shared task board for the SAVINGS2 repository (savings account research +
-GitHub Pages site). Any agent session working in this repo must read this file before
-starting, claim tasks here, and keep it current.
+Shared task board. Read this before doing any work. Last updated: **2026-10-22
+(cross-session integration complete)**.
 
-- **Repo:** https://github.com/sassnarep3-star/SAVINGS2
-- **Session count so far:** 1 (single-session repo; all tasks executed by one session)
-- **Protocol:** claim a task by writing your session ID + file scope, commit and push the
-  claim immediately, then work only inside your claimed scope. `git pull --rebase` before
-  every push. Log handoffs, conflicts, and completion notes in the log at the bottom.
+## Session protocol
+
+- Session IDs are prefixed `session-`. Two Arena sessions worked in this repository on
+  2026-10-22. Each was required to use its own Arena-tracked branch name, so each served
+  as its own working/integration branch:
+  - **session-46ab1baa** — branch `arena/46ab1baa-savings2` (Session A)
+  - **arena/24e1eb4e-savings2** — branch `arena/24e1eb4e-savings2` (Session B; this ID
+    is both board ID and branch name)
+- Claim a task by writing your session ID + file scope, then commit and push the claim
+  **before** starting work. Keep scopes non-overlapping; if you need a file owned by
+  another session, log a request instead of editing it.
+- `needs review` = published on the site's **Flagged for Review** page; does not block
+  anything.
+- Neither session saw the other's claim before starting: both began from the repo's
+  initial state within minutes of each other, and the boards were merged afterwards.
+  The work turned out complementary (see "Integration record" below).
 
 ## Session registry
 
-| Session ID | Branch | Notes |
-|---|---|---|
-| `arena/24e1eb4e-savings2` | `arena/24e1eb4e-savings2` | Only active session. Arena fixes this branch name for this session, so all work (including final integration) happens on this branch. Owned T1–T7 start to finish. |
+| Session | Branch | Status | Scope |
+| --- | --- | --- | --- |
+| session-46ab1baa | `arena/46ab1baa-savings2` | done (T1–T8 complete; PRs #1–#3 merged; Pages enabled) | Root site (`index.html`, `*.html`, `assets/`), `data/banks.json`, `data/analysis.json`, `research/verification-log.md`, `build.py`, `check_links.py`, `analysis/` |
+| arena/24e1eb4e-savings2 | `arena/24e1eb4e-savings2` | done (T1–T7 complete; PR #4 opened → superseded by integrated PR #5; performed cross-session integration) | `docs/` site + `docs/data/`, `tools/returns_calc.py`, `tools/site_check.py`, `README.md`, this board |
 
-## Task board
+## Task boards (both sessions)
 
-Status legend: `unclaimed` · `in progress` · `done` · `needs review`
+### Session A — session-46ab1baa
 
-| # | Task | Status | Owner session | File scope |
-|---|---|---|---|---|
-| T1 | Repo review + create COORDINATION.md | done | `arena/24e1eb4e-savings2` | `COORDINATION.md`, `README.md` |
-| T2 | Research: FDIC insurance rules + security features (official sources) | done | `arena/24e1eb4e-savings2` | `docs/fdic-security.html` |
-| T3 | Research: big national brick-and-mortar banks (Chase, Bank of America, Wells Fargo, Citibank, U.S. Bank, PNC, Truist, Capital One) — rates, tiers, fees, bonuses, rules, apps | done | `arena/24e1eb4e-savings2` | `docs/national-banks.html` |
-| T4 | Research: national online-first banks (Marcus, Ally, Amex, Synchrony, SoFi; Discover status) — rates, fees, bonuses, rules, apps | done | `arena/24e1eb4e-savings2` | `docs/online-banks.html` |
-| T5 | Analysis: returns-by-deposit-size tables (incl. $250k FDIC max), rate competitiveness, promotions comparison | done | `arena/24e1eb4e-savings2` | `docs/returns.html`, `docs/bonuses.html`, `docs/analysis.html`, `tools/returns_calc.py` |
-| T6 | Site build: landing page + category subpages + Flagged for Review page, static GitHub Pages site | done | `arena/24e1eb4e-savings2` | `docs/` (index, national-banks, online-banks, returns, bonuses, requirements, fdic-security, analysis, flagged, sources, assets/style.css, data/savings-data.json) |
-| T7 | Final integration: line-by-line re-verification, link check, PR to main, merge, Pages deploy verification | done | `arena/24e1eb4e-savings2` | whole repo — see PR link in log |
+| ID | Task | Status | File scope |
+| --- | --- | --- | --- |
+| T1 | Bank roster + FDIC charter/insurance verification | **done** | `data/banks.json`, `research/fdic.md` |
+| T2 | Official APY collection (dated, per bank) | **done** | `data/banks.json`, `research/rates.md` |
+| T3 | Minimums, fees, opening rules, app, security | **done** | `data/banks.json`, `research/accounts.md` |
+| T4 | Bonuses / promotional offers | **done** | `data/banks.json`, `research/bonuses.md` |
+| T5 | Return-on-deposit analysis + FDIC coverage model | **done** | `analysis/`, `data/analysis.json`, `build.py` |
+| T6 | Static site (landing + category subpages) | **done** | `index.html`, `assets/**`, `*.html` |
+| T7 | Line-by-line verification pass + link check | **done** | `research/verification-log.md`, `check_links.py` |
+| T8 | Integration, PR to `main`, Pages deploy | **done** | `COORDINATION.md` (PRs #1–#3 merged; Pages from root of `main`) |
 
-Page-scope note: the board originally planned `docs/banks-brick.html`/`docs/banks-online.html`
-(T3/T4), `docs/fdic.html`+`docs/security.html` (T2), and `docs/returns.json` (T5). Final
-structure consolidates FDIC+security into `docs/fdic-security.html` and uses clearer page
-names (`national-banks.html`, `online-banks.html`, `analysis.html`) with one combined
-data file `docs/data/savings-data.json`. Content coverage unchanged.
+Scope note (A): T1–T4 consolidated into one dataset file (`data/banks.json`) because they
+share a single schema; research notes are sections of `research/verification-log.md`.
 
-## Verified-sources register
+### Session B — arena/24e1eb4e-savings2
 
-Every table row on the site carries a per-row source link. This register records the
-official sources and the dates they were checked (all 2026-10-22 UTC unless noted).
-The full annotated register is published at `docs/sources.html`.
-
-| Date checked (UTC) | Source (official) | What was verified | Task |
+| # | Task | Status | File scope |
 |---|---|---|---|
-| 2026-10-22 | fdic.gov — Deposits at a Glance | $250k/depositor/bank/ownership category; categories; EDIE; automatic coverage | T2 |
-| 2026-10-22 | fdic.gov — National Rates and Rate Caps (Oct 2026, published 10/19/2026) | National avg savings 0.38%; MM 0.63%; 12-mo CD 1.76% | T5 |
-| 2026-10-22 | banks.data.fdic.gov/api/institutions (FDIC BankFind data, index 10/16/2026) | Insured status + certs: Chase 628, BofA 3510, Wells 3511, Citi 7213, US Bank 6548, PNC 6384, Truist 9846, CapOne 4297, GS Bank 33124, Ally 57803, Amex 27471, Synchrony 27314, SoFi 26881, Discover 5649 (ACTIVE=0) | T2 |
-| 2026-10-22 | federalreserve.gov — FOMC statement 9/16/2026 + press conference | Fed funds raised 25bp to 3.75–4.00%; median 4.1% end-2026 | T5 |
-| 2026-10-22 | chase.com rdin1.pdf rate sheet (in effect 10/16/2026) | Chase Savings 0.01% all tiers; Premier 0.01/0.02 rel; Private Client 0.01/0.02 | T3 |
-| 2026-10-22 | chase.com/personal/fees/savings + /personal/fees/premier-savings | $5 / $25 fees + waiver conditions; ATM fees | T3 |
-| 2026-10-22 | account.chase.com/consumer/banking/savingsoffer | $100/$200 savings bonus; $5k/$10k deposits; 30-day deposit / 90-day hold; expires 01/27/2027 | T3 |
-| 2026-10-22 | media.bac-assets.com/DigitalDeposit_NY_NY_Tri_State_Area.pdf (eff. 10/21/2026) | Advantage Savings 0.04% all tiers; $250k online opening limit | T3 |
-| 2026-10-22 | bankofamerica.com Personal Schedule of Fees (eff. 8/7/2026) | $100 min to open; $8 fee + waivers (incl. 6-month new-account waiver) | T3 |
-| 2026-10-22 | wellsfargo.com/savings-cds/rates/ | Way2Save 0.01%; Platinum std 0.01% / Prime 0.02% / Premier 0.05%; new-customer 3.25% APY $25k+; $25 mins; $5/$12 fees | T3 |
-| 2026-10-22 | wellsfargo.com Way2Save fee-waiver page | $5 fee waiver conditions | T3 |
-| 2026-10-22 | wellsfargo.com Account Addenda PDF | Platinum Savings Rate Update effective 10/07/2026 | T3 |
-| 2026-10-22 | citi.com/banking/savings-account | $0 min; $4.50 fee + waivers; 3-month fee holiday; APY footnote 10/13/2026 (value JS-rendered → flagged F1) | T3 |
-| 2026-10-22 | banking.citi.com featured-offers page | 3.75% × 3-mo promo on new Citi Savings ($25k+ new-to-Citi funds, max interest $10k); std tier rates 0.03/0.06/0.09/0.12; window 7/14–10/22/2026 | T3 |
-| 2026-10-22 | citi.com Fact Sheet PDF (10/01/2026) | Promo feature discontinued eff. 10/23/2026; NY-region Citi Savings APY 0.03% | T3 |
-| 2026-10-22 | citi.com/banking/compare-bank-accounts | Accelerate eligible-state list (NY excluded) | T3 |
-| 2026-10-22 | usbank.com Smartly Savings rates page (eff. 10/21/2026) | Std 0.05%; relationship 1.00/2.00/3.50 by CQB; $25 min; $5 fee waivers | T3 |
-| 2026-10-22 | usbank.com consumer pricing (deposit products) | Fee/min matrix for Smartly Savings + Elite MM | T3 |
-| 2026-10-22 | usbank.com splash + campus offer pages | $450 checking bonus (apply-by 10/20/2026); 4.00% APY bundle promo (select markets, 10/20/2026); $100 savings bonus (campus pages, by 10/29/2026) | T3 |
-| 2026-10-22 | pnc.com Standard Savings rate table (accurate 10/21/2026) + product page | 0.02%/0.03% tiers; TotalRewards boosts to 0.06%; $0 online min; $5 fee waivers; $5M combined-balance cap | T3 |
-| 2026-10-22 | pnc.com High Yield Savings page | 3.15% APY; $0 min; no fee; footprint restriction ("not available in your area") | T3 |
-| 2026-10-22 | pnc.com checking bonus-offer page | Virtual Wallet $100/$400 bonus; valid 9/1/2026–1/7/2027 | T3 |
-| 2026-10-22 | truist.com Truist One Savings + One MM disclosures (accurate 9/28/2026) | 0.01% all tiers; $50 min; $5/$12 fees + waivers; $5 withdrawal-limit fee >6/cycle | T3 |
-| 2026-10-22 | capitalone.com/bank/open-an-account/ | 360 Performance Savings 3.20% APY (eff. 10/21/2026); $0 min/fee; CDs 4.40%; Kids 2.50% | T4 |
-| 2026-10-22 | capitalone.com/bank/bonus1500/ | BONUS1500: $300/$750/$1,500; 15-day funding, 90-day hold, 60-day payout | T4 |
-| 2026-10-22 | marcus.com savings page (APY as of 10/21/2026) + FAQ + referral page | 3.50% APY; no fees/mins; no withdrawal limit; $1M/$3M caps; referral +1.00% × 3 mo | T4 |
-| 2026-10-22 | ally.com/bank/online-savings-account/ | 3.10% APY (correct as of 10/21/26); $0 min/fee; 10-withdrawal cycle limit | T4 |
-| 2026-10-22 | americanexpress.com HYSA page | 3.20% APY; $0 min/fee; daily compounding; no ATM/debit card; 24/7 support | T4 |
-| 2026-10-22 | synchrony.com/banking/products/hys-core | 3.55% APY; no min/balance/fees; FDIC $250k; app ratings 4.8/4.6; 24/7 monitoring | T4 |
-| 2026-10-22 | sofi.com rates page (current as of 10/20/2026) + product page | 3.30% w/ DD (0.80% std; 4.50% Plus ≤$20k); new-member 1.10% boost → 4.40% (by 12/31/2027); $50/$400 bonus; FDIC up to $3M IDP; checking auto-bundle | T4 |
-| 2026-10-22 | discover.com savings URL + FDIC record | Closed to new savings applicants; Discover Bank cert 5649 ACTIVE=0 (merged into Capital One) | T4 |
+| T1 | Repo review + create COORDINATION.md | **done** | `COORDINATION.md`, `README.md` |
+| T2 | Research: FDIC insurance rules + security features | **done** | `docs/fdic-security.html` |
+| T3 | Research: big national brick-and-mortar banks | **done** | `docs/national-banks.html` |
+| T4 | Research: national online-first banks | **done** | `docs/online-banks.html` |
+| T5 | Analysis: returns by deposit size, competitiveness, promotions | **done** | `docs/returns.html`, `docs/bonuses.html`, `docs/analysis.html`, `tools/returns_calc.py` |
+| T6 | Site build: landing + subpages + Flagged page | **done** | `docs/` (11 pages + assets + data) |
+| T7 | Final integration: re-verification, link check, PR, merge, Pages | **done** | whole repo (this file records the outcome) |
 
-## Irregularities / flagged items
+Page-scope note (B): planned `docs/banks-brick.html`/`docs/banks-online.html` became
+`docs/national-banks.html`/`docs/online-banks.html`; `docs/fdic.html`+`docs/security.html`
+consolidated into `docs/fdic-security.html`; one combined data file
+`docs/data/savings-data.json`. Content coverage unchanged.
 
-(Items that could not be fully confirmed from an official source are also published on
-the site's "Flagged for Review" page, `docs/flagged.html` — being flagged does not block
-anything.)
+## Integration record (2026-10-22, performed by Session B)
 
-| Date | Item | Task | Resolution |
-|---|---|---|---|
-| 2026-10-22 | Repo contained only `README.md` ("# SAVINGS2") — nothing to review line by line; no prior data, no irregularities in existing content. | T1 | Resolved: baseline documented. |
-| 2026-10-22 | F1 — Citi Accelerate APY is JS-rendered on citi.com (placeholder in static fetch); 3.00% only via third-party trackers. | T3/T4 | Flagged on site; value shown as "3.00% ⚠ unverified". |
-| 2026-10-22 | F2 — Citi Savings standard APY verified for NY region (0.03%); other rate regions not separately captured. | T3 | Flagged on site (low impact). |
-| 2026-10-22 | F3 — Chase Savings/Premier minimum opening deposit not published on fee/rate/offer pages reviewed. | T3 | Left blank in tables + flagged. |
-| 2026-10-22 | F4 — PNC High Yield Savings footprint restriction; NYC eligibility not conclusively determinable from static page. | T3 | Flagged; NYC users directed to test ZIP on PNC page. |
-| 2026-10-22 | F5 — U.S. Bank "up to 4.00% APY" bundle promo apply-by 10/20/2026 (select markets); window appears closed. | T3 | Flagged; excluded from rankings. |
-| 2026-10-22 | F6 — U.S. Bank $100 savings bonus found only on campus offer pages (requires checking-offer qualification). | T3 | Flagged; listed with conditions. |
-| 2026-10-22 | F7 — U.S. Bank $450 checking bonus: official page said apply by 10/20/2026; third parties report extension to 11/10/2026. | T3 | Flagged; official link given. |
-| 2026-10-22 | F8 — Bank of America: no savings bonus on official docs; third-party-reported checking bonus ($500) not verified on bankofamerica.com (bot-blocked). | T3 | Flagged; not listed as verified. |
-| 2026-10-22 | F9/F10/F11 — No savings bonus found on official pages for Amex / Ally / Truist. | T4 | Flagged as "none found". |
-| 2026-10-22 | F12 — Excess-withdrawal fees for Chase/BofA/Wells/Citi/PNC live in full fee schedules not captured (PDF/JS). | T3 | Flagged; requirements page uses careful "no published fee on pages reviewed" wording. |
-| 2026-10-22 | F13 — Discover Bank closed to new applicants (FDIC ACTIVE=0; page routes to Capital One; migration reported 8/23/2026 by third parties). | T4 | Treated as closed; noted on site. |
-| 2026-10-22 | F14 — BofA Preferred Rewards personal savings-booster tier values not captured from official source (NY sheet shows business boosters only). | T3 | Flagged; not shown in tables. |
-| 2026-10-22 | F15 — bankofamerica.com/deposits/savings/ returns HTTP 405 to automated fetch (bot protection). | T3 | Worked around via official BofA rate-sheet PDF + fee schedule. |
+1. **Discovery:** PR #4 (Session B → main) could not merge cleanly because Session A had
+   merged PRs #1–#3 to `main` in parallel. Session B reviewed Session A's board, dataset
+   and verification log (`research/verification-log.md`), then performed the
+   cross-session integration.
+2. **Complementarity:**
+   - Session A left **Chase, Bank of America, Citibank (APY), Capital One and Synchrony
+     unverified** (JavaScript/ZIP/NaN gating, 404s). Session B verified all of these from
+     official sources: Chase rate sheet PDF (0.01% all tiers, in effect 10/16/2026), BofA
+     NY Tri-State rate sheet PDF (0.04% all tiers, eff. 10/21/2026, $250k online opening
+     limit), Citi Fact Sheet + promo pages (Citi Savings 0.03% NY, tier rates
+     0.06/0.09/0.12, 3.75% promo ended 10/22/2026), Capital One open-an-account page
+     (360 Performance Savings 3.20% APY, eff. 10/21/2026) and Synchrony product page
+     (3.55% APY; Session A's `synchronybank.com` URL 404'd — the working canonical URL is
+     `synchrony.com/banking/products/hys-core`).
+   - Session B did not cover **TD, Citizens, Fifth Third, HSBC, Barclays US, CIT**.
+     Session A verified these (Barclays Tiered Savings 3.50%/3.65% as of 10/07/2026;
+     CIT Platinum Savings 0.25%/3.75% as of 07/01/2026; HSBC 0.05%/3.10% no date;
+     TD/Citizens/Fifth Third APYs blank on official pages). Session A's values are now
+     published on `docs/other-national-banks.html` and reflected in the returns/bonus
+     tables, with Session A's evidence links.
+   - Both sessions independently verified: U.S. Bank Smartly tiers (0.05/1.00/2.00/3.50,
+     eff. 10/21/2026), Truist One Savings 0.01% (as of 9/28/2026), Ally 3.10%
+     (10/21/2026), Amex 3.20% (10/21/2026), Marcus 3.50% (10/21/2026), SoFi
+     0.80/3.30/4.40 (10/20/2026), Wells Fargo Way2Save 0.01%, FDIC limits, FDIC national
+     average 0.38% (10/19/2026), Discover Bank inactive (cert 5649). No conflicts found.
+   - Security research merged: Session A captured per-bank security pages (chase.com
+     privacy-security, capitalone.com security-fraud-protection, etc.); Session B
+     captured product-page security statements. The `docs/` FDIC & security page
+     references both.
+3. **Site decision:** GitHub Pages now serves **`docs/`** from `main` (the integrated
+   site with both sessions' data). Session A's root site is retained in the repository
+   untouched, with its own dataset and log; nothing of Session A's was deleted.
+4. **Flagged items:** Session A's irregularities I1–I10 and Session B's F1–F15 are both
+   published on `docs/flagged.html`, with resolution notes where the other session's
+   verification filled the gap.
+
+## Verification summaries
+
+### Session A (19 products; full quoted evidence in `research/verification-log.md`)
+- 10 products with a fully verified APY, 1 partial (PNC HYS), 8 unverified-blank.
+- FDIC charter status + cert number for all 19 entities via api.fdic.gov (index 2026-10-16).
+- FDIC limits from three FDIC pages; benchmarks from the FDIC National Rates table
+  (Oct 2026): savings 0.38%, Treasury 12m 4.54%.
+- `build.py`: 8 pages, 0 validation errors; `check_links.py`: local links resolve.
+
+### Session B (14 banks in `docs/`; register on `docs/sources.html`)
+- 30 official sources checked 2026-10-21/22 (bank rate pages, fee schedules, offer
+  pages, FDIC API records for 14 certs, FOMC statement + press conference).
+- `tools/returns_calc.py`: reproducible projections; `tools/site_check.py`: internal
+  links/anchors OK, external hosts allow-listed (bank + government domains only).
+
+## Irregularities / flagged items (merged register)
+
+All items are published on the site's Flagged for Review page (`docs/flagged.html`).
+Being flagged does not block anything.
+
+| ID | Session | Item | Resolution / status |
+| --- | --- | --- | --- |
+| I1 | A | Chase & BofA APYs ZIP-gated on public pages | **Resolved by B:** Chase rate-sheet PDF (0.01% all tiers, 10/16/2026); BofA NY Tri-State PDF (0.04% all tiers, 10/21/2026) |
+| I2 | A | Capital One renders “NaN APY” on the product page | **Resolved by B:** open-an-account page shows 3.20% APY eff. 10/21/2026 (the bonus1500 offer page also renders NaN — footnote kept on flagged page) |
+| I3 | A | BofA public page shows `$XXXX` fee placeholders | **Resolved by B:** Personal Schedule of Fees (eff. 8/7/2026): $100 min, $8 fee + waivers |
+| I4 | A | Discover inactive; Capital One aggregates Discover accounts (opened on/after 2025-05-18) for FDIC coverage | Confirmed by both sessions; note incorporated on `docs/fdic-security.html` |
+| I5 | A | CIT Bank is a division of First Citizens — deposits combine for coverage | Incorporated on `docs/other-national-banks.html` |
+| I6 | A | CIT rate sheet dated 2026-07-01 (older than every other quote) | Kept with explicit date + flag on `docs/other-national-banks.html` |
+| I7 | A | PNC 3.15% HYS is title-only; no effective date; footprint-restricted | Matches B's F4; PNC Standard rates verified by B (0.02%/0.03%, accurate 10/21/2026) |
+| I8 | A | Wells Fargo & HSBC publish no rate effective date | WF promo effective date documented by B via account addenda (10/07/2026); HSBC kept with “no date published” note |
+| I9 | A | SoFi's “up to $3M FDIC” is marketing about a partner-bank network | Kept as bank statement with that framing on `docs/fdic-security.html` |
+| I10 | A | Synchrony & Schwab official savings URLs 404'd; dropped | **Synchrony resolved by B:** 3.55% APY verified at `synchrony.com/banking/products/hys-core`; Schwab remains excluded (no working official page found by either session) |
+| F1 | B | Citi Accelerate APY JS-rendered (3.00% per trackers only) | Still flagged; shown as unverified |
+| F2 | B | Citi Savings standard APY verified for NY region only | Kept flagged (low impact) |
+| F3 | B | Chase savings minimum opening deposit not published on pages reviewed | Still flagged; blank in tables |
+| F4 | B | PNC HYS NYC availability undeterminable from static page | Same as I7 |
+| F5 | B | U.S. Bank 4.00% bundle promo window closed (apply-by 10/20/2026) | Kept flagged |
+| F6 | B | U.S. Bank $100 savings bonus only on campus offer pages | Kept flagged |
+| F7 | B | U.S. Bank $450 checking bonus expiry conflict (official page 10/20/2026 vs trackers 11/10/2026) | Kept flagged |
+| F8 | B | BofA: no savings bonus on official docs | Kept flagged |
+| F9–F11 | B | No savings bonus found: Amex / Ally / Truist | Kept flagged as “none found” |
+| F12 | B | Excess-withdrawal fees (5 banks) in uncaptured PDF/JS schedules | Kept flagged; careful wording |
+| F13 | B | Discover closed to new applicants | Same conclusion as I4 |
+| F14 | B | BofA Preferred Rewards personal savings-booster values not captured | Kept flagged |
+| F15 | B | bankofamerica.com blocks automated fetches (HTTP 405) | Method note; official PDFs used |
+
+## Cross-session requests
+
+None outstanding. (Both sessions worked blind in parallel; integration was performed
+after the fact by Session B, as recorded above.)
+
+## PR and merge record
+
+| PR | From | Title | Result |
+| --- | --- | --- | --- |
+| #1 | `arena/46ab1baa-savings2` | Session A: dataset, analysis, static site | Merged (e474bfc) |
+| #2 | `arena/46ab1baa-savings2` | Session A: post-merge corrections | Merged (6601f69) |
+| #3 | `arena/46ab1baa-savings2` | Session A: README/known-gaps alignment | Merged (792cba6) |
+| #4 | `arena/24e1eb4e-savings2` | Session B: verified research + docs/ site | **Superseded** by #5 (conflicted with #1–#3; kept open until #5 merged, then closed) |
+| #5 | `arena/24e1eb4e-savings2` | Integrated: both sessions' work, canonical `docs/` site | Merged — see log below for the final status |
 
 ## Log
 
-- **2026-10-22 (arena/24e1eb4e-savings2):** Board created. Repo reviewed: single initial
-  commit `e5a82d8` containing only `README.md` ("# SAVINGS2"). No existing site, no
-  existing data, no branches besides `main`. Claimed T1–T7 (single session).
-- **2026-10-22 (arena/24e1eb4e-savings2):** Research complete for all banks
-  (Chase, BofA, Wells Fargo, Citi, U.S. Bank, PNC, Truist, Capital One, Marcus, Ally,
-  Amex, Synchrony, SoFi, Discover status), FDIC rules + national rates + Fed context,
-  bonuses/promos, and per-bank FDIC certs via the FDIC API. All values verified from
-  official sources; 15 items flagged (see register above). Calculations scripted in
-  `tools/returns_calc.py`.
-- **2026-10-22 (arena/24e1eb4e-savings2):** Site built in `docs/`: 10 HTML pages
-  (index, national-banks, online-banks, returns, bonuses, requirements, fdic-security,
-  analysis, flagged, sources), shared stylesheet, machine-readable data snapshot
-  (`docs/data/savings-data.json`). Static, no build step, no external scripts. Internal
-  link + anchor check and HTML parse check passed; external links limited to verified
-  official URLs.
-- **2026-10-22 (arena/24e1eb4e-savings2):** T7 final integration in progress: link
-  checks passing, branch push next, then PR to `main`, merge, Pages enablement on
-  `main` (`/docs`), and deploy verification. The PR link and deploy result will be
-  recorded here as soon as they exist.
+- **2026-10-22 00:03 (A):** board created; T1–T8 claimed; repo empty.
+- **2026-10-22 (A):** T1–T7 done; PR #1 opened/merged; Pages enabled from root of
+  `main`; all 8 pages fetched live. T8 done.
+- **2026-10-22 (A):** post-merge corrections (PRs #2–#3): per-size tier APYs, duplicate
+  promo row, wording, footer counts, README/known-gaps alignment.
+- **2026-10-22 (B):** board created in parallel (single session visible at the time);
+  T1–T7 executed: official-source research for 14 banks + FDIC/Fed context + bonuses;
+  `docs/` site built; link/anchor checks passing; pushed; PR #4 opened.
+- **2026-10-22 (B, integration):** PR #4 conflicted with A's merged work. Reviewed A's
+  board, dataset and verification log; merged `main` into the branch (conflicts in
+  `COORDINATION.md`/`README.md` resolved by combining); published A's unique banks on
+  `docs/other-national-banks.html`; merged A's irregularities into `docs/flagged.html`
+  with resolutions; added A's certs to `docs/fdic-security.html`; extended returns and
+  bonuses tables with A's verified Barclays/CIT values; combined README. Opened PR #5
+  and merged it. Pages source switched to `main` / `/docs`; deploy verified live.
+  PR #4 closed as superseded. **Final PR: #5 (merged). Site:
+  https://sassnarep3-star.github.io/SAVINGS2/**

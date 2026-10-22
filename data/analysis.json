@@ -1,0 +1,982 @@
+{
+  "opened_on": "2026-10-22",
+  "retrieved_on": "2026-10-22",
+  "counts": {
+    "products": 19,
+    "verified_apy": 10,
+    "partial_apy": 1,
+    "unverified_apy": 8,
+    "inactive_entities": 1
+  },
+  "benchmarks": {
+    "fdic_national_savings_rate": 0.38,
+    "as_of": "2026-10-19",
+    "treasury": {
+      "1_year": 4.54,
+      "2_year": 4.88,
+      "3_year": 5.0,
+      "5_year": 5.09,
+      "as_of": "2026-10-19",
+      "source": "https://www.fdic.gov/national-rates-and-rate-caps",
+      "source_note": "Treasury yields as republished in the FDIC National Rates and Rate Caps table (October 2026)."
+    }
+  },
+  "by_size": {
+    "10000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 375.0,
+        "balance_1y": 10375.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.5,
+        "interest_1y": 350.0,
+        "balance_1y": 10350.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 350.0,
+        "balance_1y": 10350.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 330.0,
+        "balance_1y": 10330.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 320.0,
+        "balance_1y": 10320.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 315.0,
+        "balance_1y": 10315.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 310.0,
+        "balance_1y": 10310.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 310.0,
+        "balance_1y": 10310.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 2.0,
+        "interest_1y": 200.0,
+        "balance_1y": 10200.0,
+        "multiple_of_national": 5.263,
+        "vs_1y_treasury": -2.54
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 1.0,
+        "balance_1y": 10001.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 1.0,
+        "balance_1y": 10001.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "25000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 937.5,
+        "balance_1y": 25937.5,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.5,
+        "interest_1y": 875.0,
+        "balance_1y": 25875.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 875.0,
+        "balance_1y": 25875.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 875.0,
+        "balance_1y": 25875.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 825.0,
+        "balance_1y": 25825.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 800.0,
+        "balance_1y": 25800.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 787.5,
+        "balance_1y": 25787.5,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 775.0,
+        "balance_1y": 25775.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 775.0,
+        "balance_1y": 25775.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 2.5,
+        "balance_1y": 25002.5,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 2.5,
+        "balance_1y": 25002.5,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "50000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 1875.0,
+        "balance_1y": 51875.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.5,
+        "interest_1y": 1750.0,
+        "balance_1y": 51750.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 1750.0,
+        "balance_1y": 51750.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 1750.0,
+        "balance_1y": 51750.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 1650.0,
+        "balance_1y": 51650.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 1600.0,
+        "balance_1y": 51600.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 1575.0,
+        "balance_1y": 51575.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 1550.0,
+        "balance_1y": 51550.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 1550.0,
+        "balance_1y": 51550.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 5.0,
+        "balance_1y": 50005.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 5.0,
+        "balance_1y": 50005.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "100000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 3750.0,
+        "balance_1y": 103750.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.5,
+        "interest_1y": 3500.0,
+        "balance_1y": 103500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 3500.0,
+        "balance_1y": 103500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 3500.0,
+        "balance_1y": 103500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 3300.0,
+        "balance_1y": 103300.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 3200.0,
+        "balance_1y": 103200.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 3150.0,
+        "balance_1y": 103150.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 3100.0,
+        "balance_1y": 103100.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 3100.0,
+        "balance_1y": 103100.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 10.0,
+        "balance_1y": 100010.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 10.0,
+        "balance_1y": 100010.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "250000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 9375.0,
+        "balance_1y": 259375.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.65,
+        "interest_1y": 9125.0,
+        "balance_1y": 259125.0,
+        "multiple_of_national": 9.605,
+        "vs_1y_treasury": -0.89
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 8750.0,
+        "balance_1y": 258750.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 8750.0,
+        "balance_1y": 258750.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 8250.0,
+        "balance_1y": 258250.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 8000.0,
+        "balance_1y": 258000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 7875.0,
+        "balance_1y": 257875.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 7750.0,
+        "balance_1y": 257750.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 7750.0,
+        "balance_1y": 257750.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 25.0,
+        "balance_1y": 250025.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 25.0,
+        "balance_1y": 250025.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "500000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 18750.0,
+        "balance_1y": 518750.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.65,
+        "interest_1y": 18250.0,
+        "balance_1y": 518250.0,
+        "multiple_of_national": 9.605,
+        "vs_1y_treasury": -0.89
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 17500.0,
+        "balance_1y": 517500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 17500.0,
+        "balance_1y": 517500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 16500.0,
+        "balance_1y": 516500.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 16000.0,
+        "balance_1y": 516000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 15750.0,
+        "balance_1y": 515750.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 15500.0,
+        "balance_1y": 515500.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 15500.0,
+        "balance_1y": 515500.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 50.0,
+        "balance_1y": 500050.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 50.0,
+        "balance_1y": 500050.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "1000000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 37500.0,
+        "balance_1y": 1037500.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.65,
+        "interest_1y": 36500.0,
+        "balance_1y": 1036500.0,
+        "multiple_of_national": 9.605,
+        "vs_1y_treasury": -0.89
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 35000.0,
+        "balance_1y": 1035000.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 35000.0,
+        "balance_1y": 1035000.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 33000.0,
+        "balance_1y": 1033000.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 32000.0,
+        "balance_1y": 1032000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 31500.0,
+        "balance_1y": 1031500.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 31000.0,
+        "balance_1y": 1031000.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 31000.0,
+        "balance_1y": 1031000.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 100.0,
+        "balance_1y": 1000100.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 100.0,
+        "balance_1y": 1000100.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "2500000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 93750.0,
+        "balance_1y": 2593750.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.5,
+        "interest_1y": 87500.0,
+        "balance_1y": 2587500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 87500.0,
+        "balance_1y": 2587500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 87500.0,
+        "balance_1y": 2587500.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 82500.0,
+        "balance_1y": 2582500.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 80000.0,
+        "balance_1y": 2580000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 78750.0,
+        "balance_1y": 2578750.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 77500.0,
+        "balance_1y": 2577500.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 77500.0,
+        "balance_1y": 2577500.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 250.0,
+        "balance_1y": 2500250.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 250.0,
+        "balance_1y": 2500250.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ],
+    "5000000": [
+      {
+        "bank": "CIT Bank",
+        "product": "CIT Bank Platinum Savings",
+        "apy": 3.75,
+        "interest_1y": 187500.0,
+        "balance_1y": 5187500.0,
+        "multiple_of_national": 9.868,
+        "vs_1y_treasury": -0.79
+      },
+      {
+        "bank": "Barclays",
+        "product": "Barclays Tiered Savings",
+        "apy": 3.5,
+        "interest_1y": 175000.0,
+        "balance_1y": 5175000.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "Marcus by Goldman Sachs",
+        "product": "Marcus Online Savings",
+        "apy": 3.5,
+        "interest_1y": 175000.0,
+        "balance_1y": 5175000.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "U.S. Bank",
+        "product": "U.S. Bank Bank Smartly Savings",
+        "apy": 3.5,
+        "interest_1y": 175000.0,
+        "balance_1y": 5175000.0,
+        "multiple_of_national": 9.211,
+        "vs_1y_treasury": -1.04
+      },
+      {
+        "bank": "SoFi",
+        "product": "SoFi Savings (standard)",
+        "apy": 3.3,
+        "interest_1y": 165000.0,
+        "balance_1y": 5165000.0,
+        "multiple_of_national": 8.684,
+        "vs_1y_treasury": -1.24
+      },
+      {
+        "bank": "American Express",
+        "product": "American Express High Yield Savings",
+        "apy": 3.2,
+        "interest_1y": 160000.0,
+        "balance_1y": 5160000.0,
+        "multiple_of_national": 8.421,
+        "vs_1y_treasury": -1.34
+      },
+      {
+        "bank": "PNC",
+        "product": "PNC High Yield Savings",
+        "apy": 3.15,
+        "interest_1y": 157500.0,
+        "balance_1y": 5157500.0,
+        "multiple_of_national": 8.289,
+        "vs_1y_treasury": -1.39
+      },
+      {
+        "bank": "HSBC",
+        "product": "HSBC Premier Relationship Savings",
+        "apy": 3.1,
+        "interest_1y": 155000.0,
+        "balance_1y": 5155000.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Ally Bank",
+        "product": "Ally Savings",
+        "apy": 3.1,
+        "interest_1y": 155000.0,
+        "balance_1y": 5155000.0,
+        "multiple_of_national": 8.158,
+        "vs_1y_treasury": -1.44
+      },
+      {
+        "bank": "Truist",
+        "product": "Truist One Savings",
+        "apy": 0.01,
+        "interest_1y": 500.0,
+        "balance_1y": 5000500.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      },
+      {
+        "bank": "Wells Fargo",
+        "product": "Wells Fargo Way2Save Savings",
+        "apy": 0.01,
+        "interest_1y": 500.0,
+        "balance_1y": 5000500.0,
+        "multiple_of_national": 0.026,
+        "vs_1y_treasury": -4.53
+      }
+    ]
+  },
+  "promotions": [
+    {
+      "bank": "Marcus by Goldman Sachs",
+      "offer": "3-month promotional APY increase of 1.00% on top of the standard APY (Marcus states that with one referral in a year and an unchanged standard APY, the combined APY would be 3.75%).",
+      "source": "https://www.marcus.com/us/en/savings/referrals#termsandconditions"
+    },
+    {
+      "bank": "SoFi",
+      "offer": "$50 or $400 cash bonus with eligible direct deposit of $1,000+ (terms apply).",
+      "source": "https://www.sofi.com/banking/high-yield-savings-account/"
+    },
+    {
+      "bank": "Barclays",
+      "offer": "$200 bonus: be a new Barclays Tiered Savings customer, open through 2026-10-31, fund with at least $25,000 within 30 days and keep a $25,000 balance for 120 consecutive days; bonus paid about 60 days later.",
+      "source": "https://banking.us.barclays/tiered-savings.html"
+    },
+    {
+      "bank": "CIT Bank",
+      "offer": "APY Boost: promo code BOOST50 adds 0.50% APY for 6 months (4.25% APY on balances of $5,000+ during the boost). Promotion runs 2026-09-29 to 2026-12-15.",
+      "source": "https://www.cit.com/cit-bank/platinum-savings/boost"
+    }
+  ],
+  "fdic_plans": {
+    "1000000": {
+      "banks_single": 4,
+      "banks_joint": 2,
+      "banks_trust": 1
+    },
+    "2500000": {
+      "banks_single": 10,
+      "banks_joint": 5,
+      "banks_trust": 2
+    },
+    "5000000": {
+      "banks_single": 20,
+      "banks_joint": 10,
+      "banks_trust": 4
+    }
+  },
+  "validation": {
+    "errors": [],
+    "warnings": [
+      "wells-fargo-way2save: verified APY without published effective date",
+      "hsbc-premier-relationship-savings: verified APY without published effective date",
+      "discover-online-savings: missing 'product' source link"
+    ]
+  }
+}
