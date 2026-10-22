@@ -38,7 +38,7 @@ data/analysis.json       computed output: every return figure, benchmark compari
 analysis/summary.md      the analysis as plain markdown
 research/verification-log.md   line-by-line audit trail: quoted evidence for every number
 build.py                 regenerates every page from data/banks.json (includes a validation gate)
-check_links.py           verifies local links and reports external reachability
+check_links.py           verifies local links; external source URLs are listed for manual review
 COORDINATION.md          the shared task board for parallel sessions
 ```
 
@@ -63,8 +63,8 @@ site cannot silently drift from the dataset.
 
 ## Known gaps (published, not hidden)
 
-- 8 of 19 products have no APY a public official page will disclose: Chase, Bank of America, Citi, TD, Capital One,
-  Citizens, Fifth Third, and Discover (whose charter is now inactive).
+- 7 of the 18 active products have no APY a public official page will disclose: Chase, Bank of America, Citi, TD,
+  Capital One, Citizens and Fifth Third. Discover is listed separately because its charter is now inactive.
 - PNC's 3.15% exists only in the page title of a product that is geo-blocked from this location.
 - CIT's rate sheet is dated 2026-07-01 — older than every other quote.
 - CIT trust-account availability was **not** verified; the $1.25M single-bank trust structure is an FDIC rule, not a
