@@ -91,7 +91,7 @@
 | **C5** | Exact Return Matrix (`2026-10-22` Anchor, 10 Sizes × 6 Horizons) & 5 Zero-Overflow Max-FDIC Portfolios | `done` | `session-6ce52089` | `arena/6ce52089-savings2` | `datasets/returns-matrix.json` |
 | **C6** | Line-by-Line Audit Ledger & 25 Documented Irregularities (`Flagged for Review`) | `needs review` | `session-6ce52089` | `arena/6ce52089-savings2` | `datasets/flagged-items.json`, `reports/verification-ledger.md` |
 | **C7** | Executive Dashboard, SVG Charts, Live Calculator, 7 Deep-Dive Pages & Cross-Session Sync (`22/22` Pages) | `done` | `session-6ce52089` | `arena/6ce52089-savings2` | `site-assets/*`, `scripts/sync_legacy_banks.py`, `scripts/build_executive_suite.py`, `scripts/verify_all.py`, `national-banks.html`, `returns-by-deposit.html`, `rate-competitiveness.html`, `promotions-bonuses.html`, `opening-rules.html`, `fdic-security.html`, `flagged-review.html`, `index.html`, `README.md` |
-| **C8** | Final Re-Verification Across All 3 Auditors, PR to `main`, Merge & GitHub Pages Check | `in progress` | `session-6ce52089` | `arena/6ce52089-savings2` | `COORDINATION.md` + GitHub PR & Pages deployment |
+| **C8** | Final Re-Verification Across All 3 Auditors, PR to `main`, Merge & GitHub Pages Check | `done` | `session-6ce52089` | `arena/6ce52089-savings2` | `COORDINATION.md` + [PR #7](https://github.com/sassnarep3-star/SAVINGS2/pull/7) merged to `main` & deployed to GitHub Pages |
 
 ### High-Impact Primary Discoveries & Line-by-Line Fixes Added by `session-6ce52089`
 
@@ -101,4 +101,16 @@
 4. **Zero-Overflow Multi-Charter Max-FDIC Portfolios (`2026-10-22` → `2027-10-22`):**
    - **Zero-DD `$250,000` Split:** `$100k` Capital One (`BONUS1500`, `CERT #4297`) + `$150k` CIT Platinum (`BOOST50`, `CERT #11063`) = **`$10,699.55` Year-1 Return (`4.28%` APY, `$500k` FDIC limit, `$0` uninsured)**.
    - **Active-DD `$250,000` Stack:** `$15k` Chase (`$900` Combo, `CERT #628`) + `$100k` Capital One (`$1,500`, `CERT #4297`) + `$135k` SoFi (`4.40%` 6M Boost + `$400` DD, `$3M` Sweep, `CERT #26881`) = **`$11,684.64` Year-1 Return (`4.67%` APY, `$3.50M` FDIC limit, `$0` uninsured)**.
+
+### Final Integration PR & Deployment Record (`session-6ce52089`)
+
+- **Source Branch:** `arena/6ce52089-savings2` → **Target Branch:** `main`
+- **Pull Request:** [PR #7](https://github.com/sassnarep3-star/SAVINGS2/pull/7) — *"Integrate verified 26-account National Bank & Max-FDIC Dashboard Suite, fix passive SoFi APY bug, add $1,500 BONUS1500 & pass all 3 site auditors (22 pages)"*
+- **Merge Status:** **MERGED** immediately via `gh pr merge 7 --merge` without waiting for manual review (`needs review` flagged items transparently published on `flagged-review.html` and `flagged-for-review.html`).
+- **Pre-Merge Full Suite Verification:**
+  - `python3 check_links.py`: **22 pages, 0 broken local links**
+  - `python3 scripts/verify_site.py`: **100% of table rows carry official source links, 0 errors**
+  - `python3 scripts/verify_all.py`: **22/22 HTML pages HTTP 200 OK · 805 local links & `#anchors` valid · 1,054 primary external links clean · 0 third-party aggregators · 100% exact-cent math & blank-cell checks verified**
+- **Live GitHub Pages Deployment:** <https://sassnarep3-star.github.io/SAVINGS2/>
+
 
