@@ -1,78 +1,55 @@
-# SAVINGS2 — savings account research
+# SAVINGS2 — Big National Bank Savings & Max FDIC Return Intelligence (`2026-10-22`)
 
-A verified, source-linked comparison of U.S. savings accounts at the largest national banks and the biggest national
-digital banks, built to answer one question: **where does a large deposit earn the most while staying fully FDIC-insured?**
+**Live GitHub Pages Dashboard:** [https://sassnarep3-star.github.io/SAVINGS2/](https://sassnarep3-star.github.io/SAVINGS2/)  
+**Coordination & Audit Log:** [`COORDINATION.md`](COORDINATION.md)  
+**Account Opening Reference Date:** `2026-10-22` (UTC)
 
-**Live site:** https://sassnarep3-star.github.io/SAVINGS2/
+---
 
-Account-opening date used for every projection: **2026-10-22**. All values retrieved **2026-10-22**.
+## Executive Summary
 
-## Headline result
+This repository contains a line-by-line verified analysis of **big national bank savings accounts** in the United States—requiring full digital/mobile apps, institutional security, and **Federal Deposit Insurance Corporation (FDIC)** coverage—with return projections calculated from account opening date **October 22, 2026 (`2026-10-22`)** up to and beyond the **$250,000 standard single-owner FDIC insurance limit** (`$500,000` joint, `$1,250,000` single-owner trust/POD with 5+ beneficiaries under `12 C.F.R. § 330.10`, and `$1,000,000–$5,000,000` multi-bank allocations).
 
-| | |
-| --- | --- |
-| Highest fully verified savings APY | **3.75%** — CIT Bank Platinum Savings (balances ≥ $5,000, rate sheet dated 2026-07-01) |
-| Best rate with no promotion and no gate | **3.50%** — Marcus Online Savings (as of 2026-10-21) |
-| Highest APY on $250,000+ | **3.65%** — Barclays Tiered Savings (as of 2026-10-07) |
-| Big-branch banks that publish a rate | **0.01%** — Truist (as of 2026-09-28) and Wells Fargo (no date published) |
-| FDIC national average savings rate | **0.38%** (as of 2026-10-19) |
-| 12-month Treasury | **4.54%** (as of 2026-10-19) |
-| FDIC cover per bank | $250,000 single · $500,000 joint · $1,250,000 trust (5+ beneficiaries) |
+### Top Verified National Bank Savings Picks (As of `2026-10-22`)
 
-On $250,000 for one year: **$9,375** at the best verified rate vs **$950** at the national average vs **$25** at 0.01%.
+| Rank ($250k Max FDIC) | National Bank & FDIC Cert # | Account Name | Verified APY ($250k) | APY (<$250k) | Min to Open / Monthly Fee | Active Sign-Up Bonus / Rate Boost | 1-Yr Return on $250,000 (`2027-10-22`) | 5-Yr Return on $250,000 (`2031-10-22`) | Official Source |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **#1** | **CIT Bank** (`First-Citizens Bank & Trust Co.`, Cert `#11063`) | **CIT Bank Platinum Savings** | **3.75% APY** *(as of 2026-07-01)* | 0.25% (<$5k) / 3.75% ($5k+) | $100 / $0 | **+0.50% APY for 6 Mos** via `BOOST50` (`4.25% APY` for 6 mos; offer ends `2026-12-15`) | **$9,375.00** *(base)* / **$10,011.72** *(w/ BOOST50)* | **$50,524.80** *(base)* | [cit.com](https://www.cit.com/cit-bank/platinum-savings) |
+| **#2** | **Barclays US Consumer Bank** (`Barclays Bank Delaware`, Cert `#57203`) | **Barclays Tiered Savings** | **3.65% APY** *(as of 2026-10-07)* | 3.50% APY | $0 / $0 | **+$200 Cash Bonus** (Deposit >=$25k in 30 days, hold 120 days; expires `2026-10-31`) | **$9,325.00** *(3.73% eff. yield)* | **$49,076.62** | [banking.us.barclays](https://banking.us.barclays/tiered-savings.html) |
+| **#3** | **Synchrony Bank** (`Synchrony Bank`, Cert `#27314`) | **Synchrony High Yield Savings** | **3.55% APY** *(as of 2026-10-21)* | 3.55% APY | $0 / $0 | None | **$8,875.00** | **$47,638.99** | [synchrony.com](https://www.synchrony.com/banking/products/high-yield-savings) |
+| **#4** | **Marcus by Goldman Sachs** (`Goldman Sachs Bank USA`, Cert `#33124`) | **Marcus Online Savings Account** | **3.50% APY** *(as of 2026-10-21)* | 3.50% APY | $0 / $0 | **+1.00% APY for 3 Months** via Refer-a-Friend (`4.50% APY` for 3 mos / `3.75%` 1-yr APY) | **$9,375.00** *(w/ 1 referral)* / **$8,750.00** *(base)* | **$47,638.78** *(w/ 1 referral)* | [marcus.com](https://www.marcus.com/us/en/savings/high-yield-savings) |
+| **#5** | **U.S. Bank** (`U.S. Bank N.A.`, Cert `#6548`) | **U.S. Bank Smartly® Savings** | **3.50% APY** *(as of 2026-10-21)* | 1.00%–3.50% *(w/ companion)* | $25 / $5 *(waived)* | **+3.39% Relationship Rate Bump** (Requires Smartly Checking/Safe Debit/Smartly Visa + $25k+ CQB) | **$8,750.00** | **$46,921.58** | [usbank.com](https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html) |
+| **#6** | **U.S. Bank** (`U.S. Bank N.A.`, Cert `#6548`) | **U.S. Bank Elite Money Market** | **3.40% APY** *(as of 2026-10-21)* | 0.01% (<$25k) / 3.40% ($25k+) | $100 / $10 *(waived at $10k)* | **New Client 3.40% APY Tier** (Deposit >=$25k within 30 days) | **$8,500.00** | **$45,489.94** | [usbank.com](https://www.usbank.com/bank-accounts/savings-accounts/elite-money-market.html) |
+| **#7** | **SoFi Bank** (`SoFi Bank, N.A.`, Cert `#26881`) | **SoFi Savings (with SoFi Checking)** | **3.30% APY** *(as of 2026-10-20)* | 3.30% (Std) / 4.40% (6-Mo DD Boost) | $0 / $0 | **+1.10% APY for 6 Mos (`4.40% APY`)** + **$50/$400 Bonus** w/ qualifying direct deposit | **$8,250.00** *(base)* / **$9,647.82** *(w/ 6-mo boost)* | **$44,063.93** *(base)* | [sofi.com](https://www.sofi.com/banking/high-yield-savings-account/) |
+| **#8** | **Wells Fargo** (`Wells Fargo Bank, N.A.`, Cert `#3511`) | **Wells Fargo Platinum Savings** | **3.25% APY** *(as of 2026-10-07)* | 0.01% (<$25k) / 3.25% ($25k+) | $25 / $12 *(waived at $3.5k)* | **3.25% APY Online ($25k+)** or **3.50% APY 12-Mo Banker Promo ($10k+)** | **$8,125.00** *(Online)* / **$8,750.00** *(Banker)* | **$43,352.87** | [wellsfargo.com](https://www.wellsfargo.com/savings-cds/rates/) |
+| **#9** | **American Express** (`American Express National Bank`, Cert `#27471`) | **American Express® High Yield Savings** | **3.20% APY** *(as of 2026-10-21)* | 3.20% APY | $0 / $0 | Exclusive Rate Boost for Consumer Platinum Card® Members *(exact % unverified publicly)* | **$8,000.00** | **$42,643.25** | [americanexpress.com](https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/) |
+| **#10** | **Capital One 360** (`Capital One, N.A.`, Cert `#4297` — incl. Discover) | **360 Performance Savings** | **3.20% APY** *(as of 2026-10-21)* | 3.20% APY | $0 / $0 | **$250 Companion 360 Checking Bonus** (`CHECKING250` / `DEBIT250` / `STUDENT250`) | **$8,000.00** *(+$250 checking)* | **$42,643.25** | [apply.capitalone.com](https://apply.capitalone.com/fc/index.html) |
+| **#11** | **Barclays US Consumer Bank** (`Barclays Bank Delaware`, Cert `#57203`) | **Barclays Online Savings** | **3.20% APY** *(as of 2026-10-07)* | 3.20% APY | $0 / $0 | None *(Use Tiered Savings for 3.65% APY + $200 bonus)* | **$8,000.00** | **$42,643.25** | [banking.us.barclays](https://banking.us.barclays/online-savings.html) |
+| **#12** | **PNC Bank** (`PNC Bank, N.A.`, Cert `#6384`) | **PNC High Yield Savings℠** | **3.15% APY** *(as of 2026-10-22)* | 3.15% APY | $0 / $0 | None *(Flagged: Geo-blocked in NYC branch footprint)* | **$7,875.00** | **$41,935.72** | [pnc.com](https://www.pnc.com/en/personal-banking/banking/savings/high-yield-savings.html) |
+| **#13** | **Ally Bank** (`Ally Bank`, Cert `#57803`) | **Ally Bank Online Savings** | **3.10% APY** *(as of 2026-10-21)* | 3.10% APY | $0 / $0 | None *(Includes Savings Buckets & Boosters; 10 withdrawals/cycle limit)* | **$7,750.00** | **$41,230.28** | [ally.com](https://www.ally.com/bank/online-savings-account/) |
+| **#14** | **HSBC Bank USA** (`HSBC Bank USA, N.A.`, Cert `#57890`) | **HSBC Premier Relationship Savings** | **3.10% APY** *(Relationship)* | 0.05% (Std) / 3.10% (Rel) | $0 / $0 *(Requires Premier Checking)* | 3.10% Relationship APY (Requires HSBC Premier Checking criteria) | **$7,750.00** | **$41,230.28** | [us.hsbc.com](https://www.us.hsbc.com/savings-accounts/products/premier-relationship-savings/) |
+| **#15** | **BMO Alto** (`BMO Bank N.A.`, Cert `#16571`) | **Alto Online Savings Account** | **3.00% APY** *(as of 2026-10-21)* | 3.00% APY | $0 / $0 | None *(Shares FDIC Cert #16571 limit with retail BMO accounts)* | **$7,500.00** | **$39,818.52** | [alto.bmo.com](https://www.alto.bmo.com/en-us/high-yield-online-savings/) |
+| **—** | **Citibank** (`Citibank, N.A.`, Cert `#7213`) | **Citi® Accelerate Savings** | *Unverified (Left Blank)* | *Unverified (Left Blank)* | $0 / $4.50 *(waived at $500)* | Ineligible for Citi Savings Promo Rate *(Geo-gated out of NYC; outputs `:BLUE_AccSavings_Rate%`)* | *Unverified (Left Blank)* | *Unverified (Left Blank)* | [citi.com](https://www.citi.com/banking/savings-account?intc=citihpmenu_overview_savings) |
 
-## What is in the repo
+---
 
-```
-index.html               dashboard: headline answer, decision table, top-8 ranking, promotions
-accounts.html            all 19 products: rates, minimums, fees, app, security, FDIC, opening rules
-returns.html             return tables: $10k-$5M x 1/3/5 years, plus promotions converted to year-one dollars
-fdic.html                coverage limits, how many banks a large deposit needs, traps that break coverage
-competitiveness.html     rates vs FDIC national average and the Treasury curve
-bonuses.html             every promotion with its exact conditions, plus opening rules
-flagged.html             every unverified value and irregularity, with sources
-methodology.html         how verification and arithmetic were done, and what the study cannot tell you
+## Multi-Page Site Architecture (15 Verified HTML Pages)
 
-data/banks.json          the only place values are stored (each with source URLs, effective dates, flags)
-data/analysis.json       computed output: every return figure, benchmark comparison and FDIC plan
-analysis/summary.md      the analysis as plain markdown
-research/verification-log.md   line-by-line audit trail: quoted evidence for every number
-build.py                 regenerates every page from data/banks.json (includes a validation gate)
-check_links.py           verifies local links; external source URLs are listed for manual review
-COORDINATION.md          the shared task board for parallel sessions
-```
+### Interactive Executive & Category Dashboards (`scripts/build_site.py`)
+1. **[`index.html`](index.html)** — Executive Dashboard, Interactive Deposit Return & FDIC Calculator (`2026-10-22`), Master National Bank Comparison Table, and U.S. Government Macro Benchmarks (`FDIC 0.38% APY`, `Fed EFFR 3.88%`).
+2. **[`investment-returns.html`](investment-returns.html)** — Return on Size of Investment Matrices (`$1,000`, `$10,000`, `$25,000`, `$50,000`, `$100,000`, `$250,000`, `$500,000`, `$1,000,000`) across 6 horizons (`3 Months`, `6 Months`, `1 Year`, `2 Years`, `3 Years`, `5 Years` from `2026-10-22` to `2031-10-22`).
+3. **[`high-yield-savings.html`](high-yield-savings.html)** — Line-by-line audit of all 16 National High-Yield & Hybrid Savings Accounts.
+4. **[`big-four-comparison.html`](big-four-comparison.html)** — Big Four Brick-and-Mortar National Banks (`JPMorgan Chase`, `Bank of America`, `Wells Fargo`, `Citibank`) & Relationship Tiers vs. Top National HYSAs.
+5. **[`fdic-maximization.html`](fdic-maximization.html)** — Max FDIC Insurance Strategies (`$250k` Single, `$500k` Joint, `$1.25M` Trust/POD under `12 C.F.R. § 330.10`, and Multi-Charter Portfolios) & Verified National Bank Charter Registry (`Cert #`).
+6. **[`bonuses-and-promotions.html`](bonuses-and-promotions.html)** — Account Opening Bonuses, Rate Boosts, Funding Windows, Holding Periods & Expiration Dates.
+7. **[`account-rules-and-security.html`](account-rules-and-security.html)** — Account Opening Rules, Zero-Balance Closure Deadlines, Monthly Withdrawal Limits & Digital App Security.
+8. **[`flagged-for-review.html`](flagged-for-review.html)** — Audit Log of Flagged Irregularities & Unconfirmed Blank Fields (`FLAG-01` through `FLAG-09`).
 
-## Rebuild
-
-```bash
-python3 build.py        # writes all HTML + data/analysis.json + analysis/summary.md
-python3 check_links.py  # local links must resolve
-```
-
-`build.py` refuses to render a product marked as having a verified APY if it has no tier value or no source link, so the
-site cannot silently drift from the dataset.
-
-## Verification rules
-
-1. A value comes from the bank's own domain, the FDIC, the CFPB or the U.S. Treasury — or it does not appear.
-2. Aggregators, review sites and banks' own competitor comparison tables are never used as value sources.
-3. If an official page will not disclose a value (ZIP gate, login wall, JavaScript-only table, 404), the field is left
-   blank and the reason is published on the **Flagged for Review** page.
-4. Every APY carries the bank's own effective date where one is published; where none is published, that is flagged.
-5. FDIC charter status is confirmed per legal entity from `api.fdic.gov`.
-
-## Known gaps (published, not hidden)
-
-- 7 of the 18 active products have no APY a public official page will disclose: Chase, Bank of America, Citi, TD,
-  Capital One, Citizens and Fifth Third. Discover is listed separately because its charter is now inactive.
-- PNC's 3.15% exists only in the page title of a product that is geo-blocked from this location.
-- CIT's rate sheet is dated 2026-07-01 — older than every other quote.
-- CIT trust-account availability was **not** verified; the $1.25M single-bank trust structure is an FDIC rule, not a
-  recommendation for CIT.
-
-Full detail: [flagged.html](flagged.html) and [research/verification-log.md](research/verification-log.md).
-
-## Disclaimer
-
-Informational only, not financial, tax or legal advice. APYs are variable and can change at any time, including after an
-account is opened. Confirm every rate and term with the bank before depositing.
+### Companion Roster & Treasury Curve Views (`build.py`)
+9. **[`accounts.html`](accounts.html)** — Complete 23-product screened bank roster (including regional/branch banks `Truist`, `TD Bank`, `Citizens`, `Fifth Third`).
+10. **[`returns.html`](returns.html)** — 1-, 3-, and 5-year return summary from `$10,000` to `$5,000,000`.
+11. **[`fdic.html`](fdic.html)** — FDIC multi-bank capacity planner (`$1M`, `$2.5M`, `$5M`).
+12. **[`competitiveness.html`](competitiveness.html)** — Savings APYs vs. the U.S. Treasury yield curve (`1-yr 4.54%`, `2-yr 4.88%`, `3-yr 5.00%`, `5-yr 5.09%`).
+13. **[`bonuses.html`](bonuses.html)** — Promotional rate path digest and opening requirements.
+14. **[`flagged.html`](flagged.html)** — Roster-wide unverified APY and field gap summary.
+15. **[`methodology.html`](methodology.html)** — Verification methodology and inclusion criteria.

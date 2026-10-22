@@ -86,6 +86,14 @@ def apy_usbank(amount):
     return 1.00
 
 
+def apy_usbank_elite(amount):
+    return 3.40 if amount >= 25_000 else 0.01
+
+
+def apy_wf_platinum(amount):
+    return 3.25 if amount >= 25_000 else 0.01
+
+
 SCENARIOS = [
     ("cit-platinum-savings", "CIT Bank Platinum Savings",
      apy_cit, "≥$5,000 earns 3.75%; below $5,000 earns 0.25%. Rate sheet effective 2026-07-01.",
@@ -93,28 +101,46 @@ SCENARIOS = [
     ("barclays-tiered-savings", "Barclays Tiered Savings",
      apy_barclays, "3.50% below $250k; 3.65% for $250k–$1M. Max $1M per account.",
      ""),
+    ("synchrony-high-yield-savings", "Synchrony High Yield Savings",
+     lambda a: 3.55, "3.55% APY across all balances as of 2026-10-21; $0 minimum, $0 monthly fee.",
+     ""),
     ("marcus-online-savings", "Marcus Online Savings",
      lambda a: 3.50, "Standard APY, no minimum, no fees.", ""),
     ("us-bank-smartly-savings", "U.S. Bank Bank Smartly Savings",
      apy_usbank, "Highest tier needs a Smartly Checking/Safe Debit/Smartly Visa plus $25k combined qualifying balance; without the relationship the standard APY is 0.05%.",
      "Relationship conditions apply."),
+    ("us-bank-elite-money-market", "U.S. Bank Elite Money Market",
+     apy_usbank_elite, "3.40% APY on $25,000+ for new clients depositing >=$25,000 within 30 days; 0.01% below $25,000.",
+     "New-client $25k+ tier."),
     ("sofi-savings", "SoFi Savings (standard)",
      lambda a: 3.30, "Standard APY with no direct deposit. The 4.40% headline needs a direct deposit and lasts 6 months.",
      ""),
+    ("wells-fargo-platinum-savings", "Wells Fargo Platinum Savings (New Customer)",
+     apy_wf_platinum, "3.25% APY on $25,000+ for new Wells Fargo savings customers as of 2026-10-07; 0.01% below $25,000.",
+     "New customer $25k+ tier."),
     ("amex-high-yield-savings", "American Express High Yield Savings",
      lambda a: 3.20, "No minimum balance, no fees.", ""),
+    ("capital-one-360-performance", "Capital One 360 Performance Savings",
+     lambda a: 3.20, "3.20% APY across all balances as of 2026-10-21 (verified on apply.capitalone.com/fc/index.html).",
+     ""),
     ("pnc-high-yield-savings", "PNC High Yield Savings",
-     lambda a: 3.15, "Rate read from the official page title only; PNCl refused to serve the product page outside its area and gives no effective date.",
+     lambda a: 3.15, "Rate read from the official page title only; PNC refused to serve the product page outside its area and gives no effective date.",
      "Partial evidence — flagged."),
     ("hsbc-premier-relationship-savings", "HSBC Premier Relationship Savings",
      lambda a: 3.10, "Relationship APY requires an HSBC Premier checking account and monthly qualifying activity; otherwise 0.05%.",
      "Relationship conditions apply."),
     ("ally-savings", "Ally Savings",
      lambda a: 3.10, "No minimum, no monthly fee; 10 withdrawals per statement cycle.", ""),
+    ("bmo-alto-online-savings", "BMO Alto Online Savings",
+     lambda a: 3.00, "3.00% APY across all balances as of 2026-10-21; $0 minimum, $0 monthly fee.",
+     ""),
+    ("chase-savings", "Chase Savings",
+     lambda a: 0.01, "0.01% APY across all balance tiers as of 2026-10-16 (rdin1.pdf); $200 bonus on $10k+ new money held 90 days.",
+     ""),
     ("truist-one-savings", "Truist One Savings",
      lambda a: 0.01, "$50 to open, $5 fee (waivable), all tiers pay 0.01%.", ""),
     ("wells-fargo-way2save", "Wells Fargo Way2Save Savings",
-     lambda a: 0.01, "$25 to open, $5 fee (waivable), 0.01% at all balances.", ""),
+     lambda a: 0.01, "$25 to open, $5 fee (waivable), 0.01% at all balances as of 2026-10-07.", ""),
 ]
 
 
@@ -206,6 +232,7 @@ def page(title, body, subtitle="", active=""):
     APYs are variable unless the source says otherwise. Nothing here is financial advice.</p>
     <p>{len(PRODUCTS)} products screened · {len(verified)} with a fully verified APY · {len(unverified)} with no usable public APY · {len(partial)} partial
     <a href="flagged.html">see what is missing</a>.</p>
+    <p>Interactive Deep-Dive Dashboards: <a href="investment-returns.html">Return by Deposit Size ($1k–$1M)</a> · <a href="high-yield-savings.html">National HYSAs</a> · <a href="big-four-comparison.html">Big Four Audit</a> · <a href="fdic-maximization.html">Max FDIC ($250k–$1.25M)</a> · <a href="bonuses-and-promotions.html">Bonuses &amp; Promos</a> · <a href="account-rules-and-security.html">Rules &amp; Security</a> · <a href="flagged-for-review.html">Flagged for Review</a></p>
   </div>
 </footer>
 </body>
