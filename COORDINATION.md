@@ -25,7 +25,7 @@ Shared task board. Read this before doing any work. Last updated: **2026-10-22
 | Session | Branch | Status | Scope |
 | --- | --- | --- | --- |
 | session-46ab1baa | `arena/46ab1baa-savings2` | done (T1–T8 complete; PRs #1–#3 merged; Pages enabled) | Root site (`index.html`, `*.html`, `assets/`), `data/banks.json`, `data/analysis.json`, `research/verification-log.md`, `build.py`, `check_links.py`, `analysis/` |
-| arena/24e1eb4e-savings2 | `arena/24e1eb4e-savings2` | done (T1–T7 complete; PR #4 opened → superseded by integrated PR #5; performed cross-session integration) | `docs/` site + `docs/data/`, `tools/returns_calc.py`, `tools/site_check.py`, `README.md`, this board |
+| arena/24e1eb4e-savings2 | `arena/24e1eb4e-savings2` | done (T1–T7 complete; performed cross-session integration; PR #4 updated with the integration and merged) | `docs/` site + `docs/data/`, `tools/returns_calc.py`, `tools/site_check.py`, `README.md`, this board |
 
 ## Task boards (both sessions)
 
@@ -158,8 +158,7 @@ after the fact by Session B, as recorded above.)
 | #1 | `arena/46ab1baa-savings2` | Session A: dataset, analysis, static site | Merged (e474bfc) |
 | #2 | `arena/46ab1baa-savings2` | Session A: post-merge corrections | Merged (6601f69) |
 | #3 | `arena/46ab1baa-savings2` | Session A: README/known-gaps alignment | Merged (792cba6) |
-| #4 | `arena/24e1eb4e-savings2` | Session B: verified research + docs/ site | **Superseded** by #5 (conflicted with #1–#3; kept open until #5 merged, then closed) |
-| #5 | `arena/24e1eb4e-savings2` | Integrated: both sessions' work, canonical `docs/` site | Merged — see log below for the final status |
+| #4 | `arena/24e1eb4e-savings2` | Session B: verified research + `docs/` site, then updated with the cross-session merge (main integrated into the branch; session A's banks published on `docs/other-national-banks.html`; boards/README combined) | Merged — see log below for the final status |
 
 ## Log
 
@@ -171,12 +170,13 @@ after the fact by Session B, as recorded above.)
 - **2026-10-22 (B):** board created in parallel (single session visible at the time);
   T1–T7 executed: official-source research for 14 banks + FDIC/Fed context + bonuses;
   `docs/` site built; link/anchor checks passing; pushed; PR #4 opened.
-- **2026-10-22 (B, integration):** PR #4 conflicted with A's merged work. Reviewed A's
-  board, dataset and verification log; merged `main` into the branch (conflicts in
-  `COORDINATION.md`/`README.md` resolved by combining); published A's unique banks on
-  `docs/other-national-banks.html`; merged A's irregularities into `docs/flagged.html`
-  with resolutions; added A's certs to `docs/fdic-security.html`; extended returns and
-  bonuses tables with A's verified Barclays/CIT values; combined README. Opened PR #5
-  and merged it. Pages source switched to `main` / `/docs`; deploy verified live.
-  PR #4 closed as superseded. **Final PR: #5 (merged). Site:
-  https://sassnarep3-star.github.io/SAVINGS2/**
+- **2026-10-22 (B, integration):** PR #4 initially conflicted with A's merged work.
+  Reviewed A's board, dataset and verification log; merged `main` into the branch
+  (conflicts in `COORDINATION.md`/`README.md` resolved by combining); published A's
+  unique banks on `docs/other-national-banks.html`; merged A's irregularities (I1–I10)
+  into `docs/flagged.html` with resolutions; added A's six certs to
+  `docs/fdic-security.html`; extended the returns and bonuses tables with A's verified
+  Barclays/CIT values; combined README; added A's sources to `docs/sources.html` and
+  A's dataset snapshot to `docs/data/savings-data.json`. Pushed the integration to PR
+  #4 and merged it. Pages source switched from root to `main` `/docs`; deploy verified
+  live. **Final PR: #4 (merged). Site: https://sassnarep3-star.github.io/SAVINGS2/**

@@ -16,6 +16,7 @@
       <a href="index.html">Dashboard</a>
       <a href="national-banks.html">National banks</a>
       <a href="online-banks.html">Online-first banks</a>
+      <a href="other-national-banks.html">More banks</a>
       <a href="returns.html">Returns by deposit size</a>
       <a href="bonuses.html">Bonuses &amp; promos</a>
       <a href="requirements.html">Opening rules</a>
@@ -262,6 +263,23 @@
     </table>
   </div>
 
+  <h2>Second research session (additional banks)</h2>
+  <p>A parallel session in this repository verified six additional national banks on 2026-10-22 with quoted evidence (log: <a href="https://github.com/sassnarep3-star/SAVINGS2/blob/main/research/verification-log.md">research/verification-log.md</a>; dataset: <a href="https://github.com/sassnarep3-star/SAVINGS2/blob/main/data/banks.json">data/banks.json</a>). Its values are published on <a href="other-national-banks.html">More banks</a>. Primary sources:</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Bank</th><th>Official source</th><th>What it verified</th><th>URL</th></tr></thead>
+      <tbody>
+        <tr><td class="bank">Barclays US</td><td>Tiered Savings page</td><td>3.50% / 3.65% ($250k–$1M) APYs, accurate as of 10/07/2026; $0 min/fee; $1M per-account cap, max 3 accounts; $200 bonus terms (through 10/31/2026)</td><td class="src"><a href="https://banking.us.barclays/tiered-savings.html">banking.us.barclays/tiered-savings</a></td></tr>
+        <tr><td class="bank">CIT Bank</td><td>Platinum Savings page</td><td>0.25% / 3.75% ($5k+) APYs accurate as of 07/01/2026; $100 min; $0 fees; FDIC aggregation with First Citizens</td><td class="src"><a href="https://www.cit.com/cit-bank/platinum-savings">cit.com/cit-bank/platinum-savings</a></td></tr>
+        <tr><td class="bank">HSBC US</td><td>Premier Relationship Savings page</td><td>0.05% standard / 3.10% relationship APY (no date published); qualifying criteria; Premier requirement</td><td class="src"><a href="https://www.us.hsbc.com/savings-accounts/products/relationship-savings/">us.hsbc.com</a></td></tr>
+        <tr><td class="bank">TD Bank</td><td>Savings accounts page</td><td>$0 min (45-day funding rule); $15 fee + waiver; APY blank (location-gated rates)</td><td class="src"><a href="https://www.td.com/us/en/personal-banking/savings-accounts">td.com</a></td></tr>
+        <tr><td class="bank">Citizens</td><td>Savings overview page</td><td>$0 min; $4.99 fee + waiver; no transaction limits; 15-state footprint; APY blank</td><td class="src"><a href="https://www.citizensbank.com/savings/savings-accounts/overview.aspx">citizensbank.com</a></td></tr>
+        <tr><td class="bank">Fifth Third</td><td>Savings page</td><td>$0 min; $7.50 fee + waiver; APY blank (promo rates via branch)</td><td class="src"><a href="https://www.53.com/content/fifth-third/en/personal-banking/bank/savings.html">53.com</a></td></tr>
+        <tr><td class="bank">FDIC / Treasury</td><td>FDIC National Rates and Rate Caps table</td><td>National savings average 0.38% (10/19/2026); Treasury yields 12m 4.54%, 24m 4.88%, 36m 5.00%, 60m 5.09% as republished by the FDIC</td><td class="src"><a href="https://www.fdic.gov/national-rates-and-rate-caps">fdic.gov/national-rates-and-rate-caps</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="note">
     <p><strong>Method notes.</strong> Pages were captured as served text (no JavaScript execution), so values that banks render via JS are flagged rather than quoted — see <a href="flagged.html">Flagged for Review</a>. Bank balance/withdrawal-limit language and offer deadlines are quoted as written on the official pages on the capture dates. FDIC API queries were run against <code>banks.data.fdic.gov/api/institutions</code> (redirecting to api.fdic.gov), index built 10/16/2026, queried 10/22/2026.</p>
   </div>
@@ -273,7 +291,7 @@
 <footer class="site-footer">
   <div class="inner">
     <p><strong>SAVINGS2</strong> — savings account research dashboard. Rates are variable and change frequently; always confirm current terms on the bank’s official site (linked in every row) before opening an account. This site is research, not financial advice.</p>
-    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
+    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="other-national-banks.html">More banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
   </div>
 </footer>
 

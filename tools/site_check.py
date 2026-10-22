@@ -26,6 +26,9 @@ ALLOWED_EXTERNAL = {
     "www.synchrony.com", "www.sofi.com", "www.discover.com",
     "www.fdic.gov", "banks.data.fdic.gov", "api.fdic.gov", "edie.fdic.gov",
     "www.federalreserve.gov",
+    # second-session sources (additional banks) + this repository on GitHub
+    "www.td.com", "www.citizensbank.com", "www.53.com", "us.hsbc.com", "www.us.hsbc.com",
+    "banking.us.barclays", "www.cit.com", "github.com",
 }
 
 class Collector(HTMLParser):

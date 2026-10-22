@@ -16,6 +16,7 @@
       <a href="index.html">Dashboard</a>
       <a href="national-banks.html">National banks</a>
       <a href="online-banks.html">Online-first banks</a>
+      <a href="other-national-banks.html">More banks</a>
       <a href="returns.html">Returns by deposit size</a>
       <a href="bonuses.html">Bonuses &amp; promos</a>
       <a href="requirements.html">Opening rules</a>
@@ -156,10 +157,33 @@
     </table>
   </div>
 
+  <h2>Findings from the second research session (I1–I10)</h2>
+  <p>A parallel session in this repository hit different official-page behaviors while verifying the same banks. Its ten irregularities are reproduced below with resolutions where this session's verification filled the gap. Full quoted evidence: <a href="https://github.com/sassnarep3-star/SAVINGS2/blob/main/research/verification-log.md">research/verification-log.md</a>.</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>ID</th><th>Item</th><th>Status after integration</th></tr>
+      </thead>
+      <tbody>
+        <tr id="i1"><td class="bank">I1</td><td>Chase &amp; Bank of America APYs are ZIP-gated on their public rate pages (no table without a ZIP; "rates may vary by market").</td><td><strong>Resolved by this session:</strong> Chase's official rate-sheet PDF (rdin1.pdf, in effect 10/16/2026) shows 0.01% on all tiers; Bank of America's official NY Tri-State rate sheet (eff. 10/21/2026) shows 0.04% on all tiers.</td></tr>
+        <tr id="i2"><td class="bank">I2</td><td>Capital One's product page renders "NaN APY" (it states the rate is variable and effective 10/21/2026 but prints NaN in the served HTML).</td><td><strong>Resolved by this session:</strong> the open-an-account page shows 360 Performance Savings at 3.20% APY effective 10/21/2026. Note: the BONUS1500 offer page also renders "NaN APY" where the rate would appear — the bonus terms themselves are fully readable and verified.</td></tr>
+        <tr id="i3"><td class="bank">I3</td><td>Bank of America's public page renders literal "$XXXX" placeholders for the monthly fee and waiver balance.</td><td><strong>Resolved by this session:</strong> the official Personal Schedule of Fees (effective 8/7/2026) shows $100 minimum to open, $8 monthly fee and the waiver conditions.</td></tr>
+        <tr id="i4"><td class="bank">I4</td><td>Discover Bank inactive (cert 5649); Capital One states accounts opened on/after 2025-05-18 are aggregated for FDIC coverage.</td><td>Confirmed by both sessions; incorporated on the <a href="fdic-security.html">FDIC page</a>.</td></tr>
+        <tr id="i5"><td class="bank">I5</td><td>CIT Bank is a division of First Citizens Bank — deposits combine for coverage; the 3.75% does not add FDIC capacity.</td><td>Incorporated on <a href="other-national-banks.html">More banks</a> and the <a href="fdic-security.html">FDIC page</a>.</td></tr>
+        <tr id="i6"><td class="bank">I6</td><td>CIT's rate sheet is dated 2026-07-01 — three to eleven weeks older than every other verified quote.</td><td>Kept with explicit date + flag wherever CIT's 3.75% is shown.</td></tr>
+        <tr id="i7"><td class="bank">I7</td><td>PNC's 3.15% High Yield Savings is title-only (page refuses to render outside its area; no effective date).</td><td>Matches F4 above; PNC Standard Savings rates verified separately (0.02%/0.03%, accurate as of 10/21/2026).</td></tr>
+        <tr id="i8"><td class="bank">I8</td><td>Wells Fargo and HSBC publish no rate effective date.</td><td>Wells Fargo's promo rate is documented effective 10/07/2026 via the account addenda; HSBC kept with a "no date published" note.</td></tr>
+        <tr id="i9"><td class="bank">I9</td><td>SoFi's "up to $3M FDIC" claim is bank marketing about a partner-bank network, not an FDIC rule.</td><td>Kept with that framing on the <a href="fdic-security.html">FDIC page</a> (SoFi Insured Deposit Program, participating banks, conditions apply).</td></tr>
+        <tr id="i10"><td class="bank">I10</td><td>Synchrony and Schwab official savings URLs 404'd; both were dropped by that session.</td><td><strong>Synchrony resolved by this session:</strong> 3.55% APY verified at synchrony.com/banking/products/hys-core (the synchronybank.com domain 404s). Schwab remains excluded — no working official savings page found by either session.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <h2>Repository irregularities (repo review)</h2>
   <ul class="tight">
     <li>The repository at the start of this task contained a single file, <code>README.md</code> with the text “# SAVINGS2” and one commit — no code, no hidden files, no CI, no secrets. Reviewed line by line; nothing irregular to report beyond the empty state.</li>
-    <li>No sensitive files (tokens, credentials, <code>.env</code>) were present or are introduced by this work. The site is fully static (HTML/CSS) plus a documented Python calculation script (<code>tools/returns_calc.py</code>) — no build step, no external scripts loaded (no CDN, no tracking), which keeps the GitHub Pages deploy simple and safe.</li>
+    <li>No sensitive files (tokens, credentials, <code>.env</code>) were present or are introduced by this work. The site is fully static (HTML/CSS) plus documented Python scripts (<code>tools/returns_calc.py</code>, <code>tools/site_check.py</code>; second session: <code>build.py</code>, <code>check_links.py</code>) — no external scripts loaded (no CDN, no tracking), which keeps the GitHub Pages deploy simple and safe.</li>
+    <li>Parallel-session note: a second research session (branch <code>arena/46ab1baa-savings2</code>) worked in this repository at the same time and merged its own site and dataset to <code>main</code> first. Its dataset (<code>data/banks.json</code>) and evidence log (<code>research/verification-log.md</code>) were reviewed line by line during integration; its verified values for the six banks this session did not cover are published on <a href="other-national-banks.html">More banks</a>, and its blanks (Chase, BofA, Capital One, Synchrony, Citi APY) were filled by this session's official-source verifications. No conflicts were found between the two sessions' overlapping verified values.</li>
   </ul>
 
   <p class="verified-line">Flagged items do not change the main conclusions; they are documented so every claim on this site is traceable to what was actually observed · Last updated 2026-10-22</p>
@@ -169,7 +193,7 @@
 <footer class="site-footer">
   <div class="inner">
     <p><strong>SAVINGS2</strong> — savings account research dashboard. Rates are variable and change frequently; always confirm current terms on the bank’s official site (linked in every row) before opening an account. This site is research, not financial advice.</p>
-    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
+    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="other-national-banks.html">More banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
   </div>
 </footer>
 

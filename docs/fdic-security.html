@@ -16,6 +16,7 @@
       <a href="index.html">Dashboard</a>
       <a href="national-banks.html">National banks</a>
       <a href="online-banks.html">Online-first banks</a>
+      <a href="other-national-banks.html">More banks</a>
       <a href="returns.html">Returns by deposit size</a>
       <a href="bonuses.html">Bonuses &amp; promos</a>
       <a href="requirements.html">Opening rules</a>
@@ -78,12 +79,18 @@
         <tr><td class="bank">American Express</td><td>American Express National Bank</td><td class="num">27471</td><td>Sandy, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:27471&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 27471</a></td></tr>
         <tr><td class="bank">Synchrony</td><td>Synchrony Bank</td><td class="num">27314</td><td>Draper, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:27314&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 27314</a></td></tr>
         <tr><td class="bank">SoFi</td><td>SoFi Bank, National Association</td><td class="num">26881</td><td>Cottonwood Heights, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:26881&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 26881</a></td></tr>
+        <tr><td class="bank">Barclays US (2nd session)</td><td>Barclays Bank Delaware</td><td class="num">57203</td><td>Wilmington, DE</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:57203&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 57203</a></td></tr>
+        <tr><td class="bank">CIT Bank (2nd session)</td><td>First-Citizens Bank &amp; Trust Company (CIT division)</td><td class="num">11063</td><td>Raleigh, NC</td><td><span class="chip good">Active</span> · shares charter with First Citizens</td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:11063&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 11063</a></td></tr>
+        <tr><td class="bank">TD Bank (2nd session)</td><td>TD Bank, National Association</td><td class="num">18409</td><td>Wilmington, DE</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:18409&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 18409</a></td></tr>
+        <tr><td class="bank">Citizens (2nd session)</td><td>Citizens Bank, National Association</td><td class="num">57957</td><td>Providence, RI</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:57957&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 57957</a></td></tr>
+        <tr><td class="bank">Fifth Third (2nd session)</td><td>Fifth Third Bank, National Association</td><td class="num">6672</td><td>Cincinnati, OH</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:6672&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 6672</a></td></tr>
+        <tr><td class="bank">HSBC US (2nd session)</td><td>HSBC Bank USA, National Association</td><td class="num">57890</td><td>McLean, VA</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:57890&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 57890</a></td></tr>
         <tr><td class="bank">Discover (former)</td><td>Discover Bank</td><td class="num">5649</td><td>Greenwood, DE</td><td><span class="chip bad">Inactive — merged into Capital One</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:5649&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 5649</a></td></tr>
       </tbody>
     </table>
   </div>
   <div class="note warn">
-    <p><strong>Capital One + Discover are now one FDIC charter.</strong> Discover Bank’s certificate (5649) is inactive: its deposits are held by Capital One, N.A. If you hold both a legacy Discover savings account and a Capital One 360 account, the balances combine toward the same $250,000 limit (per ownership category). This also means “Discover” no longer adds a separate bank for FDIC-maximization purposes.</p>
+    <p><strong>Capital One + Discover are now one FDIC charter.</strong> Discover Bank’s certificate (5649) is inactive: its deposits are held by Capital One, N.A. Capital One’s own disclosure (captured by this repository’s second session): “any Capital One or Discover Bank deposit accounts opened on or after May 18, 2025 are immediately counted with your other Capital One deposit accounts for determining deposit insurance coverage.” If you hold both a legacy Discover savings account and a Capital One 360 account, the balances combine toward the same $250,000 limit (per ownership category). This also means “Discover” no longer adds a separate bank for FDIC-maximization purposes.</p>
   </div>
 
   <h2>Balance caps and movement limits that matter at $250,000+</h2>
@@ -212,7 +219,7 @@
 <footer class="site-footer">
   <div class="inner">
     <p><strong>SAVINGS2</strong> — savings account research dashboard. Rates are variable and change frequently; always confirm current terms on the bank’s official site (linked in every row) before opening an account. This site is research, not financial advice.</p>
-    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
+    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="other-national-banks.html">More banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
   </div>
 </footer>
 
