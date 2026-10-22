@@ -325,6 +325,195 @@ Sources:
   banks' 10/21/2026) — flagged to re-confirm; withdrawal-limit fee is stricter than
   peers (flagged in analysis).
 
+## 12. TD Bank, N.A. (Fed rank #13)
+
+Checked: 2026-10-22
+Sources:
+- Savings hub: https://www.td.com/us/en/personal-banking/savings-accounts
+- Rates/compare page: https://www.td.com/us/en/personal-banking/savings-accounts/rates
+
+- Accounts: TD Signature Savings (tiered rates + relationship "rate bump"); TD Simple Savings.
+- APY: **UNVERIFIED (left blank)** — TD injects rate tables based on visitor location
+  ("You are viewing info for [location]"); tables rendered empty when read on 2026-10-22.
+  Official disclosure states APY "accurate as of 10/21/2026" and subject to change after
+  opening; the hub shows Signature "Rates up to __ APY* with minimum balance of $250,000,"
+  i.e., the top advertised tier requires a $250,000 balance plus a linked eligible account
+  (rate bump). Action: open the rates link, set location to New York, read the tier table.
+- Minimum opening deposit: $0 (both accounts); account auto-closes if no deposit within
+  45 days (FAQ).
+- Monthly maintenance fees: Signature $15 — waived with $10,000 minimum daily balance or
+  by linking an eligible TD checking account (Beyond/Complete/Relationship). Simple $5 —
+  waived with $300 minimum daily balance, a $25+ monthly recurring transfer from a linked
+  eligible TD checking account (first-year condition per footnote), primary holder age 18
+  or younger/62 or older, or linking an eligible TD Beyond/Complete checking account.
+- Rate bump eligibility (Signature footnote): eligible linked accounts include a TD
+  personal mortgage/home equity/credit card, OR an active personal/small-business checking
+  account with ≥3 customer-initiated transactions per calendar month, OR an active checking
+  account with a direct deposit each calendar month.
+- Opening (FAQ): SSN, government-issued ID, source of funds, phone number; open online.
+- FDIC: hub describes products as "FDIC-insured savings account[s]."
+- App: TD Bank Mobile Deposit referenced (iOS/Android); full app feature list UNVERIFIED.
+- Bonus: none on pages read (bonus pass).
+- Irregularities: numeric APYs location-gated (flagged); top rate requires $250,000 +
+  linked account activity conditions (flagged in analysis).
+
+## 13. Discover — status (checked 2026-10-22)
+
+- https://www.discover.com/online-banking/savings-account/ now redirects to Capital One's
+  360 Performance Savings page with the banner "Discover is now part of Capital One."
+- Capital One states on its official product page: "any Capital One or Discover Bank
+  deposit accounts opened on or after May 18, 2025 are immediately counted with your other
+  Capital One deposit accounts for determining deposit insurance coverage by the FDIC."
+- Conclusion: Discover is no longer a separately-openable savings option; it is covered
+  under the Capital One row (no separate Discover row, and no separate $250,000 of FDIC
+  coverage for new deposits). Consistent with the Federal Reserve June 30, 2026 ranking,
+  where Discover Bank no longer appears as a separate top charter.
+
+## 14. Bonuses & promotions pass (checked 2026-10-22)
+
+_Savings-account opening bonuses/promotions, plus related checking/bundle offers where
+they are the bank's main promotion. "None found" means: no generally-available offer was
+visible on the bank's official consumer pages/search results on the check date — targeted
+or promo-code offers may still exist._
+
+- **Marcus (Goldman Sachs Bank USA):** Referral program — 3-month promotional APY increase
+  of **+1.00%** on top of the standard Online Savings APY when referrals occur (product-page
+  terms; example given: one referral in a year with unchanged APY = combined 3.75% APY).
+  Marcus's previous cash-bonus landing page was not live on 2026-10-22 (404). Source:
+  https://www.marcus.com/us/en/savings/high-yield-savings ; terms
+  https://www.marcus.com/us/en/savings/referrals#termsandconditions
+- **Capital One:** No public standing savings bonus. Official Help Center: "Occasionally,
+  Capital One offers bonuses to targeted groups... you may receive a letter or email
+  including a bonus code." Source: https://www.capitalone.com/help-center/checking-savings/account-bonus-offers/
+- **Ally Bank:** Customer Referral Program — referred new customers ("New Friends") can earn
+  a **$100 Welcome Bonus** by enrolling via a referrer's personal link (enrollment by
+  December 31, 2026), opening an eligible Ally Savings or Spending account within 30 days of
+  enrollment, and completing the required transfers; one welcome bonus per person; existing
+  Ally customers (or accounts open since Jan 1, 2024) ineligible. Referrers earn $50 per
+  successful referral (max 5/year). Source (official terms PDFs):
+  https://www.ally.com/content/dam/pdf/bank/customer-referral-terms-and-conditions-new-friends.pdf
+- **American Express:** None found for the High Yield Savings Account on official pages.
+- **Citi:** (a) Bundled savings promo — new Citi Savings account + minimum **$25,000** of
+  "New-to-Citibank Funds" within 10 business days, maintain ≥$25,000 for up to 3 months to
+  earn a **3.75% Promotional Interest Rate** (maximum $10,000 interest; blended APY shown
+  0.98%–1.05% after the standard rate resumes; promo ends early if balance drops below the
+  minimum or max interest is reached). (b) Related checking offer — **$325 cash bonus** for a
+  new Regular Checking account with two Enhanced Direct Deposits totaling ≥$3,000 within 90
+  days. Offer page states account opening window **4/14/26–10/26/26** (i.e., ending days
+  after this check) and products/pricing depend on home ZIP. Source:
+  https://banking.citi.com/cbol/OM/checking/enhanced-direct-deposit-offer/default.htm
+- **Chase:** Savings cash bonus for new Chase savings customers — **$100** for depositing
+  $5,000–$9,999 or **$200** for $10,000+ in new money into a new Chase Savings℠ account
+  within 30 days of offer enrollment, then maintaining the new money for 90 days; bonus
+  credited within 15 days after requirements are met. **Offer expires 01/27/2027.** Source:
+  https://account.chase.com/consumer/banking/savingsoffer
+- **Bank of America:** None found (no generally-available savings opening bonus on official
+  consumer documents checked; Bank of America runs checking cash offers through targeted channels).
+- **Wells Fargo:** Savings promotion = the 3.25% APY new-customer Platinum Savings rate
+  (see Wells Fargo entry). Separate checking offer — **$325** for a new Everyday Checking
+  account with $1,000+ in qualifying electronic deposits within 90 days; account must be
+  opened with offer code by **January 13, 2027**. Source:
+  https://accountoffers.wellsfargo.com/checkingoffer/
+- **U.S. Bank:** None live found for consumer savings on the check date — U.S. Bank rotates
+  promo-code "splash" offers; previously published consumer offer pages checked on
+  2026-10-22 returned 404/expired. Re-check usbank.com at application time.
+- **PNC:** Virtual Wallet® checking bonuses — **$100** (Virtual Wallet) or **$400** (Virtual
+  Wallet with Performance Select) when total qualifying direct deposits of $500 / $5,000
+  respectively are established to the Spend account within the offer's stated timeframe
+  (see legal terms on the page); Virtual Wallet bundles checking with optional Reserve and
+  Growth savings accounts. This is a checking-account bonus, not a standalone savings bonus.
+  Source: https://www.pnc.com/en/personal-banking/banking/checking/bonus-offer.html
+- **Truist:** None found on official pages/search.
+- **TD Bank:** Savings bonus — **$200** for new TD personal savings customers who open a TD
+  Signature Savings account online, deposit ≥$10,000 within the first 20 days and maintain
+  ≥$10,000 for 90 additional days; bonus paid on or before 180 days after opening; deducted
+  if the account is closed within 6 months. **Offer ends November 30, 2026.** Related
+  checking bonuses on the same campaign: $300 (Beyond Checking, $2,500 qualifying direct
+  deposits) / $200 (Complete Checking, $500 qualifying direct deposits), each direct deposit
+  ≥$250 of payroll/pension/government benefits; up to $500 combined. Sources:
+  https://www.td.com/us/en/personal-banking/savings-accounts/featured ;
+  https://www.td.com/us/en/personal-banking/checking-and-saving-bonus
+
+## 15. Capital One APY — flag resolution (2026-10-22)
+
+The 360 Performance Savings APY of **3.20%** is confirmed on two further official Capital
+One pages read today: the account-comparison page (3.20% APY, variable) reached via
+apply.capitalone.com, and the account disclosures page (interest rate 3.1540%, APY 3.20%).
+The product page states the APY is variable and effective 10/21/2026; only the product
+page's hero widget failed to render the numeral ("NaN APY"). APY is therefore recorded as
+**verified 3.20%, effective 10/21/2026**, with the rendering glitch noted.
+
+## 16. Security-features pass (checked 2026-10-22)
+
+_Features below are quoted from each bank's official security page read directly on
+2026-10-22. Only features actually seen on the cited page are listed; absence from this
+list does not prove the bank lacks the feature._
+
+- **Marcus / Goldman Sachs Bank USA** — multi-factor authentication; SSL encryption
+  (EV SSL certificate); firewalls; 24/7 network monitoring; secure-browser requirement;
+  unique email + password login.
+  Source: https://www.marcus.com/us/en/banking-with-us/security-center
+- **Capital One** — biometric login (facial recognition / fingerprint ID); real-time fraud
+  alerts; debit card lock/unlock in the mobile app; $0 fraud liability for unauthorized
+  charges with timely notice; FDIC-insured statement.
+  Source: https://www.capitalone.com/bank/security-fraud-protection/
+- **Ally** — Online and Mobile Security Guarantee: no liability for unauthorized Online or
+  Mobile Banking transactions reported within 60 days of statement availability;
+  multi-factor authentication (per linked security-approach page).
+  Source: https://www.ally.com/security/
+- **American Express** — two-step verification (verification code or app notification);
+  passkeys (Face ID / fingerprint / device passcode); biometric app login; SafeKey®
+  checkout authentication; automatic fraud alerts; device management/removal.
+  Source: https://www.americanexpress.com/en-us/security/
+- **Citi** — 2-Step Authentication with one-time passcodes; customizable account alerts;
+  Quick Lock (freeze cards in the Citi Mobile® App); mobile push notifications. Official
+  Citi Online security pages additionally describe SSL encryption, automatic blocking of
+  online/mobile access when login credentials are compromised, and fingerprint/facial
+  recognition sign-in in the Citi Mobile App.
+  Source: https://citicards.citi.com/cbol/fraudprevention/default.htm
+- **Chase** — reimbursement commitment for unauthorized online/mobile bill-pay/transfer
+  transactions reported promptly; Zero Liability Protection® on cards; 24/7 fraud
+  monitoring with text/email/call alerts; data encryption; biometric and passkey login;
+  one-time-code/app-notification validation (2-step verification); temporary holds on
+  suspicious activity.
+  Source: https://www.chase.com/digital/resources/privacy-security
+- **Bank of America** — Consumer Online and Mobile Banking Security Guarantee: not liable
+  for unauthorized transfers or bill payments made via Online/Mobile Banking if reported
+  promptly. Official pages also describe two-factor authentication (one-time authorization
+  codes) and a Security Center with security-level recommendations.
+  Source: https://www.bankofamerica.com/online-banking/online-banking-security-guarantee/
+- **Wells Fargo** — 24/7 fraud monitoring; Zero Liability protection; Security Center in
+  the Wells Fargo Mobile® app; FDIC-insured statements on product/offer pages.
+  Source: https://accountoffers.wellsfargo.com/checkingoffer/ (security hub:
+  https://www.wellsfargo.com/privacy-security/)
+- **U.S. Bank** — in-app Security Center with a personal security rating; biometric login
+  (Face/Touch ID); two-step verification; login notifications; security and account
+  alerts; digital security guarantee — zero fraud liability for unauthorized transactions
+  with prompt notice.
+  Source: https://www.usbank.com/online-mobile-banking/security-center.html
+- **PNC** — opt-in multifactor authentication ("Add a Layer of Security"); customizable
+  account-activity alerts; free Trusteer Rapport anti-malware software for online banking
+  customers; dedicated fraud/suspicious-activity reporting channels.
+  Source: https://www.pnc.com/en/security-privacy.html
+- **Truist** — two-factor authentication with one-time passcodes (biometric identification
+  or text/email code); account alerts (login attempts, transactions, balance changes);
+  card controls (lock/unlock, limits); encrypted technology; automatic session timeout;
+  account lockout after three failed sign-in attempts.
+  Sources: https://www.truist.com/fraud-and-security/protect-yourself ;
+  https://www.truist.com/fraud-and-security/protections
+- **TD Bank** — single-use security codes (2-step verification); TD VoicePrint voice
+  authentication for phone banking; security alerts; firewalls and encryption; card lock
+  in the TD Bank app/Online Banking; online and mobile security commitment.
+  Source: https://www.td.com/us/en/personal-banking/security-center
+
+**Common baseline across all 12:** every bank is an FDIC member (verified on product
+pages above or via FDIC BankFind), every one offers a mobile app, and every one publishes
+some form of multi-factor/two-step authentication and account alerts. The strongest
+published unauthorized-transaction guarantees seen on the pages read are Ally's and
+Bank of America's online/mobile security guarantees, U.S. Bank's digital security
+guarantee, and Chase's reimbursement commitment; passkey support was explicitly seen at
+Amex and Chase.
+
 ---
 
 _(remaining banks appended as research proceeds)_
