@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "verification_date_utc": "2026-10-22",
+    "total_flagged_items": 24
+  },
+  "items": [
+    {
+      "flag_id": "IRREG-AUDIT-01",
+      "severity": "CRITICAL \u2014 Peer Repo Data Error Caught & Corrected During Line-by-Line Audit of `main`",
+      "institution": "SoFi Bank, N.A. (`data/banks.json` Row 16 on `main`)",
+      "field_affected": "Non-Direct-Deposit Savings APY (`3.30%` Falsely Claimed Instead of Official `0.80% APY`)",
+      "status": "Caught & Fixed in Integrated Repo",
+      "date_checked": "2026-10-22",
+      "observation": "Line-by-line audit of `data/banks.json` merged onto `main` (`PR #1\u2013#3`, `session-46ab1baa`) caught a critical factual error: `sofi-savings` listed `{'min': 0, 'apy': 3.3, 'condition': 'Standard savings APY, no direct deposit'}`. In reality, per **Table 5** of SoFi Bank's official *Rate Sheet (Effective October 20, 2026)* PDF (`SoFi-Bank-Rate-Sheet-October-20-2026.pdf`), accounts **without** Eligible Direct Deposit, $5,000/31-day Qualifying Deposits, or SoFi Plus earn **`0.80% APY`** (`0.79708%` interest rate) \u2014 NOT `3.30% APY`! That single error overstates passive Year-1 interest on `$250,000` by **`$6,250.00`** (`$8,250` vs `$2,000`).",
+      "action_taken": "Corrected `data/banks.json` and split `sofi-checking-savings-dd` (`3.30%` base / `4.40%` 6-mo boost WITH qualifying activity) vs `sofi-savings-no-dd` (`0.80%` passive APY) in `datasets/national-banks.json` with direct link to official Oct 20, 2026 PDF.",
+      "source_url": "https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SoFi-Bank-Rate-Sheet-October-20-2026.pdf"
+    },
+    {
+      "flag_id": "IRREG-AUDIT-02",
+      "severity": "HIGH \u2014 Peer Repo `NaN` / Missing Primary Disclosure Resolved via Official Truth-in-Savings Pages",
+      "institution": "Capital One, N.A. (`360 Performance Savings`) & Bank of America, N.A. (`Advantage Savings`)",
+      "field_affected": "Capital One `3.20% APY` + `$1,500 BONUS1500` & Bank of America `$100` Open / `$8` Fee / `$500` Waiver + Synchrony `3.55% APY`",
+      "status": "Resolved & Upgraded Across Repo",
+      "date_checked": "2026-10-22",
+      "observation": "Prior pass on `main` recorded Capital One as `unverified` (`NaN APY` on hero page), Bank of America min/fee as `null` (`$XXXX` placeholders), Chase bonus as blank, and Synchrony as 404. Line-by-line primary verification located official Truth-in-Savings disclosures confirming: (1) Capital One `3.1540%` rate / **`3.20% APY`** effective `10/21/2026` + active **`BONUS1500` (`$300`/`$750`/`$1,500`)**; (2) Bank of America official *Personal Schedule of Fees (Effective Aug 7, 2026)* PDF confirming **`$100` min open** and **`$8` fee (`$500` daily balance waiver)**; (3) Chase **`$200` Savings / `$900` Combo Bonus** (`exp. 01/27/2027`); and (4) live Synchrony HYSA page (`/banking/products/hys-core`) confirming **`3.55% APY`** effective `10/21/2026`.",
+      "action_taken": "Upgraded both `datasets/national-banks.json` and `data/banks.json` with exact verbatim primary-source links and dates.",
+      "source_url": "https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/"
+    },
+    {
+      "flag_id": "IRREG-CIT-01",
+      "severity": "MEDIUM \u2014 Older Rate Sheet Effective Date (`2026-07-01`) & Sharp `<$5,000` Rate Cliff",
+      "institution": "First-Citizens Bank & Trust Co. (CIT Bank Division) \u2014 Platinum Savings",
+      "field_affected": "Official Rate Effective Date (`2026-07-01`) & Tier Cliff (`0.25%` below `$5,000`)",
+      "status": "Needs Review (Verified from Official CIT Rate Table)",
+      "date_checked": "2026-10-22",
+      "observation": "CIT Bank's official Products and Interest Rates table (`cit.com/cit-bank/resources/products-and-rates`) lists `3.75% APY` (`3.682%` rate) at `>= $5,000`, `0.25% APY` below `$5,000`, and `3.65% APY` on `Savings Connect`, stamped **Effective July 1, 2026** \u2014 nearly 16 weeks older than peers stamped `2026-10-20`/`2026-10-21`.",
+      "action_taken": "Recorded exact `2026-07-01` source date prominently in every table and offered parallel Oct-2026-fresh multi-bank portfolio (`Synchrony 3.55%`).",
+      "source_url": "https://www.cit.com/cit-bank/resources/products-and-rates"
+    },
+    {
+      "flag_id": "IRREG-CHARTER-03",
+      "severity": "HIGH \u2014 Shared Single FDIC Charter Between CIT Bank & First Citizens Bank",
+      "institution": "First-Citizens Bank & Trust Company (`CIT Bank` Division)",
+      "field_affected": "Aggregate $250,000 FDIC Limit (`CERT #11063`)",
+      "status": "Active Charter Trap Flagged",
+      "date_checked": "2026-10-22",
+      "observation": "CIT Bank is an unincorporated division of **First-Citizens Bank & Trust Company (`FDIC Cert #11063`)**. Per CIT's official FDIC disclosure, deposits across CIT Platinum Savings, CIT Savings Connect, and all 519 First Citizens branches combine toward a single `$250,000` per-owner cap.",
+      "action_taken": "Flagged on all tables and excluded CIT + First Citizens pairing from multi-bank max-FDIC portfolios.",
+      "source_url": "https://www.cit.com/cit-bank/platinum-savings"
+    },
+    {
+      "flag_id": "IRREG-BARC-01",
+      "severity": "HIGH \u2014 Structural $250,000 Balance Tier Threshold vs Single-Owner FDIC Ceiling + 9-Day Promo Expiry",
+      "institution": "Barclays Bank Delaware \u2014 Barclays Tiered Savings",
+      "field_affected": "Top `3.65% APY` Tier (`$250k\u2013$1M`) & `$200` Bonus Expiration (`2026-10-31`)",
+      "status": "Active Warning Flagged",
+      "date_checked": "2026-10-22",
+      "observation": "Barclays Tiered Savings requires at least **`$250,000.00`** to unlock its top **`3.65% APY`** tier (`3.50%` under `$250k`, accurate `10/07/2026`). For an individual single-owner account without POD beneficiaries, every penny of accrued interest above `$250,000` (`$9,125` in Year 1) is **uninsured**! Additionally, Barclays' `$200` bonus (`$25k` held 120d) expires **`2026-10-31`** (9 days from `2026-10-22`).",
+      "action_taken": "Recommended opening Barclays Tiered Savings strictly as a **Joint Account (`$500k` FDIC limit)** or **POD Trust (`$250k`/beneficiary up to `$1.25M`)** when targeting `$250,000+`.",
+      "source_url": "https://banking.us.barclays/tiered-savings.html"
+    },
+    {
+      "flag_id": "IRREG-HSBC-01",
+      "severity": "LOW \u2014 Public Rate Page Omits Calendar As-Of Date",
+      "institution": "HSBC Bank USA, N.A. \u2014 Premier Relationship Savings",
+      "field_affected": "Official Rate Effective Date (`\u2014`)",
+      "status": "Needs Review (Verified `2026-10-22`)",
+      "date_checked": "2026-10-22",
+      "observation": "Official HSBC product page displays `3.10% Relationship APY` / `0.05% Standard APY` (`$1` min balance) but omits a specific calendar effective date on the public webpage.",
+      "action_taken": "Left `Official Rate As-Of Date` strictly blank (`\u2014`) while recording retrieval date `2026-10-22`.",
+      "source_url": "https://www.us.hsbc.com/savings-accounts/products/relationship-savings/"
+    },
+    {
+      "flag_id": "IRREG-FITB-01",
+      "severity": "MEDIUM \u2014 Unverified APY (ZIP-Gated Rate Table)",
+      "institution": "Fifth Third Bank, N.A. \u2014 Fifth Third Momentum\u00ae Savings",
+      "field_affected": "Current Savings APY %",
+      "status": "Unverified \u2014 Left Blank",
+      "date_checked": "2026-10-22",
+      "observation": "Fifth Third Momentum\u00ae Savings rate lookup requires regional ZIP entry to display APY tiers.",
+      "action_taken": "Left APY strictly blank (`\u2014`) and logged official URL for review.",
+      "source_url": "https://www.53.com/content/fifth-third/en/personal-banking/bank/savings/momentum.html"
+    },
+    {
+      "flag_id": "IRREG-CHARTER-01",
+      "severity": "CRITICAL \u2014 FDIC Coverage Trap",
+      "institution": "Discover Bank / Capital One, N.A.",
+      "field_affected": "Independent $250,000 FDIC Insurance Capacity",
+      "status": "Needs Review (Verified Merger \u2014 Do Not Double-Count)",
+      "date_checked": "2026-10-22",
+      "observation": "FDIC BankFind API reports Discover Bank (Cert #5649) as `ACTIVE: 0` (`DATEUPDT: 06/04/2025`), and `https://www.discover.com/online-banking/savings-account/` HTTP-redirects directly to Capital One 360 Performance Savings (`Cert #4297`). Official Capital One FAQ states any Capital One or Discover Bank deposit accounts opened on or after May 18, 2025 are immediately aggregated under Capital One's single $250,000 FDIC insurance cap.",
+      "action_taken": "Recorded Discover under Capital One Charter #4297 and excluded Discover from multi-bank $500k/$1M FDIC diversification portfolios.",
+      "source_url": "https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/?timerBanner=DISCOVER&src=dfs117-savings-account"
+    },
+    {
+      "flag_id": "IRREG-CHARTER-02",
+      "severity": "HIGH \u2014 Shared FDIC Charter",
+      "institution": "Citizens Bank, N.A. / Citizens Access\u00ae",
+      "field_affected": "Independent $250,000 FDIC Insurance Capacity",
+      "status": "Needs Review (Shared Charter #57957)",
+      "date_checked": "2026-10-22",
+      "observation": "Citizens Access\u00ae is branded separately online from Citizens Bank branch banking, but footnote `^` on `citizensaccess.com/Citizens/home` explicitly states both are treated as the SAME legal entity under FDIC Certificate #57957.",
+      "action_taken": "Flagged shared certificate #57957 so depositors do not hold $250,000 at both divisions simultaneously.",
+      "source_url": "https://www.secure.citizensaccess.com/Citizens/home"
+    },
+    {
+      "flag_id": "IRREG-CITI-01",
+      "severity": "CRITICAL \u2014 Geographic Ineligibility (NYC / NY State)",
+      "institution": "Citibank, N.A. \u2014 Citi\u00ae Accelerate Savings",
+      "field_affected": "Account Eligibility by Residential Address",
+      "status": "Needs Review (Ineligible in New York)",
+      "date_checked": "2026-10-22",
+      "observation": "Official disclosure on `citi.com/banking/compare-bank-accounts` restricts Citi\u00ae Accelerate Savings strictly to non-branch U.S. states/territories (`AK, AL, AR, AZ, CO, DE, GA, HI, IA, ID, IN, KS, KY, LA, MA, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NM, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY`). Residents of New York (`NY`), CA, NJ, CT, FL, IL, MD, and DC are NOT eligible.",
+      "action_taken": "Flagged prominently because New York City depositors cannot open Citi Accelerate Savings online and are routed to lower-yielding branch savings tiers.",
+      "source_url": "https://www.citi.com/banking/compare-bank-accounts"
+    },
+    {
+      "flag_id": "IRREG-CITI-02",
+      "severity": "MEDIUM \u2014 Unverified APY (Address-Gated Token)",
+      "institution": "Citibank, N.A.",
+      "field_affected": "Current Savings APY % & Monthly Service Fee Base Amount",
+      "status": "Unverified \u2014 Left Blank",
+      "date_checked": "2026-10-22",
+      "observation": "Public HTML on `citi.com/banking/savings-account` renders raw placeholder token `:BLUE_AccSavings_Rate% Annual Percentage Yield` until a residential address is submitted interactively.",
+      "action_taken": "Left APY and base unwaived monthly fee cells blank (`\u2014`); never inferred or copied from third-party sites.",
+      "source_url": "https://www.citi.com/banking/savings-account"
+    },
+    {
+      "flag_id": "IRREG-COF-01",
+      "severity": "MEDIUM \u2014 Marketing Page `NaN APY` Hydration Bug",
+      "institution": "Capital One, N.A. \u2014 360 Performance Savings",
+      "field_affected": "Marketing Hero APY Display vs Truth-in-Savings Disclosure",
+      "status": "Resolved via Official Disclosure (Flagged Site Defect)",
+      "date_checked": "2026-10-22",
+      "observation": "Capital One's marketing pages (`/bank/savings-accounts/online-performance-savings-account/` and `/bank/bonus1500/`) render literal `NaN APY` in server-returned HTML. Cross-checking Capital One's official Truth-in-Savings Disclosure (`/bank/disclosures/savings-accounts/online-performance-savings-account/`) and application portal (`apply.capitalone.com/fc/index.html`) confirmed the exact rate server-side: `3.1540%` interest rate / `3.20% APY` effective `10/21/2026`.",
+      "action_taken": "Used verified `3.20% APY` from Capital One's official Truth-in-Savings disclosure and logged the marketing hero `NaN` defect here.",
+      "source_url": "https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/"
+    },
+    {
+      "flag_id": "IRREG-SYF-01",
+      "severity": "LOW \u2014 Stale Static Calculator Default Text",
+      "institution": "Synchrony Bank \u2014 High Yield Savings",
+      "field_affected": "Embedded Calculator Widget Default Text vs Official Rate Disclosure",
+      "status": "Resolved via Official Disclosure (Flagged Site Defect)",
+      "date_checked": "2026-10-22",
+      "observation": "Synchrony's hero banner, bottom CTA, and official `*DISCLOSURES` section all confirm `3.55% APY accurate as of 10/21/2026`, whereas an embedded calculator widget placeholder displays static default text `Our HYS APY: 2.85%` / `National Average: 1% APY`, and top alert banner still mentions legacy `Hurricane Isaias`.",
+      "action_taken": "Recorded confirmed `3.55% APY` (`as of 2026-10-21`) from official Truth-in-Savings disclosure footnote and flagged stale widget text.",
+      "source_url": "https://www.synchrony.com/banking/products/hys-core"
+    },
+    {
+      "flag_id": "IRREG-JPM-01",
+      "severity": "MEDIUM \u2014 Unverified APY (ZIP-Code Gated)",
+      "institution": "JPMorgan Chase Bank, N.A. \u2014 Chase Savings\u2120",
+      "field_affected": "Current Savings APY %",
+      "status": "Unverified \u2014 Left Blank",
+      "date_checked": "2026-10-22",
+      "observation": "`chase.com/personal/savings/savings-account/interest-rates` blocks server-side rendering with `'In order to see rates table, please provide valid 5-digit zip code.'` All fees (`$5` / `$0` waiver), `$0` min deposit, and `$200`/`$900` bonus through `01/27/2027` were verified directly from official Chase pages and `ABSF-en.pdf`.",
+      "action_taken": "Left APY strictly blank (`\u2014`) in all tables per verification rules.",
+      "source_url": "https://www.chase.com/personal/savings/savings-account/interest-rates"
+    },
+    {
+      "flag_id": "IRREG-JPM-02",
+      "severity": "LOW \u2014 HTTP 404 on Legacy Premier Savings URL",
+      "institution": "JPMorgan Chase Bank, N.A. \u2014 Chase Premier Savings\u2120",
+      "field_affected": "Standalone Marketing Page URL",
+      "status": "Resolved via Official Fee Schedule PDF",
+      "date_checked": "2026-10-22",
+      "observation": "`https://www.chase.com/personal/savings/premier-savings` returned HTTP 404 ('Page not found...'), whereas Chase's official Deposit Account Agreement `ABSF-en.pdf` (page 9) documents active Chase Premier Savings\u2120 terms (`$25` monthly fee waived at `$15,000+` daily balance or linked qualifying checking).",
+      "action_taken": "Linked directly to official `ABSF-en.pdf` schedule instead of broken marketing URL.",
+      "source_url": "https://www.chase.com/content/dam/chase-ux/documents/personal/checking/ABSF-en.pdf"
+    },
+    {
+      "flag_id": "IRREG-BAC-01",
+      "severity": "MEDIUM \u2014 Unverified APY (`$XXXX` Placeholders on Web Page)",
+      "institution": "Bank of America, N.A. \u2014 Advantage Savings",
+      "field_affected": "Current Savings APY %",
+      "status": "Unverified \u2014 Left Blank (Fees Confirmed via PDF)",
+      "date_checked": "2026-10-22",
+      "observation": "`bankofamerica.com/deposits/savings/savings-accounts/` renders `$XXXX` placeholders without client-side state. Fetching Bank of America's official *Personal Schedule of Fees (Effective August 7, 2026)* PDF confirmed `$100.00` minimum opening deposit, `$8.00` monthly fee (waived first 6 months or at `$500+` daily balance / BofA Rewards\u2122), while APY remains market-gated.",
+      "action_taken": "Populated verified `$100` min deposit and `$8` / `$500` fee waiver from official PDF; left APY strictly blank (`\u2014`).",
+      "source_url": "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/?request_locale=en_US"
+    },
+    {
+      "flag_id": "IRREG-WFC-01",
+      "severity": "LOW \u2014 Explicit Rate Effective Date Omitted on Wells Fargo Page",
+      "institution": "Wells Fargo Bank, N.A. \u2014 Platinum Savings & Way2Save\u00ae",
+      "field_affected": "Published 'Effective As Of' Rate Date & ZIP Dependency",
+      "status": "Needs Review (Verified Live for Default ZIP 94105)",
+      "date_checked": "2026-10-22",
+      "observation": "`wellsfargo.com/savings-cds/rates/` displays default location `CA, 94105` (`3.25% APY` new-customer Platinum `$25k+`; `0.01% APY` standard Platinum & Way2Save) without printing a calendar 'effective as of' date above the savings rate cards.",
+      "action_taken": "Left `official_rate_as_of_date` blank (`\u2014`), recorded verification date `2026-10-22` (`ZIP 94105`), and flagged potential ZIP variation for NYC (`10001`).",
+      "source_url": "https://www.wellsfargo.com/savings-cds/rates/"
+    },
+    {
+      "flag_id": "IRREG-USB-01",
+      "severity": "LOW \u2014 ZIP-Specific Relationship Rate & 90-Day Prior Client Exclusion",
+      "institution": "U.S. Bank N.A. \u2014 Bank Smartly\u00ae Savings",
+      "field_affected": "Regional Rate Variability & Existing Client Exclusion",
+      "status": "Needs Review (Verified for Default ZIP 55402)",
+      "date_checked": "2026-10-22",
+      "observation": "Official rate sheet (`usbank.com/.../savings-account-interest-rates.html`) verifies `3.50% APY` effective `October 21, 2026` at `$25,000+` CQB (`0.05%` standard) for default `ZIP 55402`, noting APYs may vary by ZIP and advertised rates exclude existing/prior-90-day U.S. Bank savings/MMA clients.",
+      "action_taken": "Documented exact ZIP `55402` anchor, companion account requirement, and 90-day exclusion rule.",
+      "source_url": "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html"
+    },
+    {
+      "flag_id": "IRREG-PNC-01",
+      "severity": "MEDIUM \u2014 Unverified APY (ZIP-Gated Rate Lookup & Regional HYSA)",
+      "institution": "PNC Bank, N.A. \u2014 Standard Savings / High Yield Savings",
+      "field_affected": "Current Savings APY %",
+      "status": "Unverified \u2014 Left Blank",
+      "date_checked": "2026-10-22",
+      "observation": "PNC deposit rate pages require interactive ZIP entry to populate APY tables; additionally, PNC savings page assets (`hys_vwcp_stop_sell`) reflect regional restrictions where PNC High Yield Savings is offered only in out-of-branch markets.",
+      "action_taken": "Confirmed `$0` online minimum deposit, `$1` min to earn interest, and `$5` fee / `$300` waiver from official page; left APY strictly blank (`\u2014`).",
+      "source_url": "https://www.pnc.com/en/personal-banking/banking/savings/standard-savings.html"
+    },
+    {
+      "flag_id": "IRREG-TFC-01",
+      "severity": "MEDIUM \u2014 Unverified APY (Not Displayed on Public Savings Page)",
+      "institution": "Truist Bank \u2014 Truist One Savings",
+      "field_affected": "Current Savings APY %",
+      "status": "Unverified \u2014 Left Blank",
+      "date_checked": "2026-10-22",
+      "observation": "`truist.com/savings` publishes exact opening deposits (`$50`) and fee waivers (`$5` waived at `$300` balance or linked checking) but omits numeric APYs on the public comparison table.",
+      "action_taken": "Left APY strictly blank (`\u2014`) rather than quoting third-party sources.",
+      "source_url": "https://www.truist.com/savings"
+    },
+    {
+      "flag_id": "IRREG-TD-01",
+      "severity": "HIGH \u2014 Unverified Region-Gated APY & $250,000 Tier vs FDIC Cap Conflict",
+      "institution": "TD Bank, N.A. \u2014 TD Signature Savings & TD Simple Savings",
+      "field_affected": "Current Savings APY % & Single-Owner FDIC Headroom",
+      "status": "Unverified APY + Structural FDIC Warning",
+      "date_checked": "2026-10-22",
+      "observation": "Public rate table on `td.com/us/en/personal-banking/savings-accounts` leaves cells blank until location modal is submitted, while headline states `'Rates up to APY* with minimum balance of $250,000\u2020'`. Requiring $250,000 to unlock the top tier leaves **$0.00 of single-owner FDIC insurance capacity** for accrued interest!",
+      "action_taken": "Left APY blank (`\u2014`) and flagged both location gating and the $250,000 single-owner FDIC ceiling conflict.",
+      "source_url": "https://www.td.com/us/en/personal-banking/savings-accounts"
+    },
+    {
+      "flag_id": "IRREG-CFG-01",
+      "severity": "MEDIUM \u2014 Broken CMS Placeholder Tokens on Citizens Access Rate Sheet",
+      "institution": "Citizens Bank, N.A. \u2014 Citizens Access\u00ae Savings",
+      "field_affected": "Current Savings APY % & Effective Date",
+      "status": "Unverified \u2014 Left Blank",
+      "date_checked": "2026-10-22",
+      "observation": "Both `citizensaccess.com/Citizens/home` and `citizensaccess.com/Citizens/customer-service/rate-sheet` output unrendered CMS strings (`#ProductLine=cax|Brand=citizensbank|ProductDescription=SAVINGS|...|ProductAttribute=interestRates::interestAPY#`).",
+      "action_taken": "Left APY and effective date strictly blank (`\u2014`) and logged official URLs for review.",
+      "source_url": "https://www.secure.citizensaccess.com/Citizens/customer-service/rate-sheet"
+    },
+    {
+      "flag_id": "IRREG-BMO-01",
+      "severity": "LOW \u2014 Legacy BMO Alto URL Returns HTTP 404",
+      "institution": "BMO Bank N.A.",
+      "field_affected": "Legacy `alto.bmo.com` Online Savings URL",
+      "status": "Needs Review (Verified Active BMO Savings Builder Instead)",
+      "date_checked": "2026-10-22",
+      "observation": "`https://www.alto.bmo.com/en-us/online-savings-account/` returned HTTP 404 Not Found on `2026-10-22`, whereas `https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/` is live (`0.01% APY` effective `10/21/2026` + `$5/mo` growth reward).",
+      "action_taken": "Used verified active `BMO Savings Builder` terms and flagged the 404 on legacy BMO Alto URL.",
+      "source_url": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/"
+    },
+    {
+      "flag_id": "IRREG-REPO-01",
+      "severity": "LOW \u2014 Baseline Repository Scaffold",
+      "institution": "Repository `sassnarep3-star/SAVINGS2`",
+      "field_affected": "`README.md` at Initial Commit `e5a82d8`",
+      "status": "Resolved",
+      "date_checked": "2026-10-22",
+      "observation": "Line-by-line review of commit `e5a82d8aadbfe96134b997e746e1098ff8ec03bc` found only `README.md` (10 bytes, `# SAVINGS2`, no trailing newline) and zero pre-existing bank data.",
+      "action_taken": "Built complete primary-source dataset, multi-page dashboard, verification suite, and comprehensive `README.md`.",
+      "source_url": "https://github.com/sassnarep3-star/SAVINGS2/commit/e5a82d8aadbfe96134b997e746e1098ff8ec03bc"
+    }
+  ]
+}
