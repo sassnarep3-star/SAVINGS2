@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FDIC Insurance, Security &amp; Mobile Apps (October 2026)</title>
+<meta name="description" content="FDIC insurance rules and limits, verified FDIC certificates for each bank, ownership-category strategies to insure more than $250,000, and each bank's security and mobile app features.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="pig">🏦</span><span>SAVINGS2<small>Savings account research · verified from official sources</small></span></a>
+    <nav class="main">
+      <a href="index.html">Dashboard</a>
+      <a href="national-banks.html">National banks</a>
+      <a href="online-banks.html">Online-first banks</a>
+      <a href="returns.html">Returns by deposit size</a>
+      <a href="bonuses.html">Bonuses &amp; promos</a>
+      <a href="requirements.html">Opening rules</a>
+      <a class="active" href="fdic-security.html">FDIC &amp; security</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="flagged.html">Flagged for review</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-head">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> › FDIC insurance, security &amp; apps</div>
+    <h1>FDIC insurance, security and mobile apps</h1>
+    <p>Every bank on this site is an FDIC member — verified on <strong>October 22, 2026</strong> against the FDIC’s official institutions API (records linked in the table below). Rules summarized from <a href="https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance">fdic.gov</a>.</p>
+  </div>
+
+  <h2>The FDIC rules that matter for savings</h2>
+  <ul class="tight">
+    <li><strong>$250,000 per depositor, per insured bank, for each account ownership category.</strong> The standard insurance amount has been $250,000 per depositor since 2008 and is permanent law. Principal and interest are insured together.</li>
+    <li><strong>Coverage is automatic</strong> when you open a deposit account at an FDIC-insured bank — no application, no cost to you.</li>
+    <li><strong>“Per bank” means per charter:</strong> deposits at two different FDIC-insured banks are insured separately. (One bank with two brands is one charter — this now matters for Capital One, which absorbed Discover Bank.)</li>
+    <li><strong>Categories stack:</strong> single accounts ($250,000 per owner per bank), joint accounts ($250,000 per co-owner per bank, across all joint accounts at that bank), certain retirement accounts (e.g., IRA CDs — a separate $250,000 per owner per bank), and revocable trust accounts ($250,000 per owner for each unique eligible beneficiary named on the trust, up to five beneficiaries = up to $1,250,000 per owner).</li>
+    <li><strong>Verify your own coverage</strong> with the FDIC’s official <a href="https://edie.fdic.gov">EDIE calculator</a> (Electronic Deposit Insurance Estimator).</li>
+    <li><strong>What is not insured:</strong> investments (stocks, bonds, mutual funds, crypto), safe deposit box contents, and annuities/insurance products, even when sold by a bank.</li>
+    <li><strong>If a bank fails:</strong> the FDIC as receiver either moves deposits to another bank or pays depositors directly, insured amounts typically within a few business days.</li>
+  </ul>
+
+  <div class="note good">
+    <p><strong>Insuring more than $250,000 (the user’s stated goal — maximum FDIC coverage):</strong> (1) split deposits across separately chartered FDIC banks — e.g., $250,000 at Synchrony (3.55%) + $250,000 at Marcus (3.50%) + $250,000 at Capital One (3.20%) keeps everything insured at strong rates; (2) use ownership categories at the same bank — a couple with a $500,000 joint account plus $250,000 each in single accounts has up to $1,000,000 insured at one bank; (3) revocable trusts multiply coverage per qualifying beneficiary; (4) SoFi advertises FDIC coverage up to <strong>$3M</strong> via its Insured Deposit Program, which sweeps balances beyond $250,000 to a network of participating FDIC banks — coverage then depends on those partner banks. Confirm any structure with the <a href="https://edie.fdic.gov">EDIE calculator</a> before depositing.</p>
+  </div>
+
+  <h2>FDIC verification per bank (official FDIC records)</h2>
+  <p>Queried via the FDIC’s institutions API on 10/22/2026 (index built 10/16/2026). “Active” = insured institution in operation. The link in each row returns the FDIC’s live record.</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Bank brand</th>
+          <th>Legal name (FDIC)</th>
+          <th class="num">FDIC cert #</th>
+          <th>HQ (FDIC)</th>
+          <th>Status</th>
+          <th>FDIC record (official)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="bank">Chase</td><td>JPMorgan Chase Bank, National Association</td><td class="num">628</td><td>Columbus, OH</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:628&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 628</a></td></tr>
+        <tr><td class="bank">Bank of America</td><td>Bank of America, National Association</td><td class="num">3510</td><td>Charlotte, NC</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:3510&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 3510</a></td></tr>
+        <tr><td class="bank">Wells Fargo</td><td>Wells Fargo Bank, National Association</td><td class="num">3511</td><td>Sioux Falls, SD</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:3511&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 3511</a></td></tr>
+        <tr><td class="bank">Citibank</td><td>Citibank, National Association</td><td class="num">7213</td><td>Sioux Falls, SD</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:7213&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 7213</a></td></tr>
+        <tr><td class="bank">U.S. Bank</td><td>U.S. Bank National Association</td><td class="num">6548</td><td>Minneapolis, MN</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:6548&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 6548</a></td></tr>
+        <tr><td class="bank">PNC Bank</td><td>PNC Bank, National Association</td><td class="num">6384</td><td>Wilmington, DE</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:6384&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 6384</a></td></tr>
+        <tr><td class="bank">Truist</td><td>Truist Bank</td><td class="num">9846</td><td>Charlotte, NC</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:9846&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 9846</a></td></tr>
+        <tr><td class="bank">Capital One</td><td>Capital One, National Association</td><td class="num">4297</td><td>McLean, VA</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:4297&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 4297</a></td></tr>
+        <tr><td class="bank">Marcus</td><td>Goldman Sachs Bank USA</td><td class="num">33124</td><td>New York, NY</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:33124&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 33124</a></td></tr>
+        <tr><td class="bank">Ally</td><td>Ally Bank</td><td class="num">57803</td><td>Sandy, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:57803&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 57803</a></td></tr>
+        <tr><td class="bank">American Express</td><td>American Express National Bank</td><td class="num">27471</td><td>Sandy, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:27471&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 27471</a></td></tr>
+        <tr><td class="bank">Synchrony</td><td>Synchrony Bank</td><td class="num">27314</td><td>Draper, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:27314&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 27314</a></td></tr>
+        <tr><td class="bank">SoFi</td><td>SoFi Bank, National Association</td><td class="num">26881</td><td>Cottonwood Heights, UT</td><td><span class="chip good">Active</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:26881&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 26881</a></td></tr>
+        <tr><td class="bank">Discover (former)</td><td>Discover Bank</td><td class="num">5649</td><td>Greenwood, DE</td><td><span class="chip bad">Inactive — merged into Capital One</span></td><td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:5649&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC API: CERT 5649</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note warn">
+    <p><strong>Capital One + Discover are now one FDIC charter.</strong> Discover Bank’s certificate (5649) is inactive: its deposits are held by Capital One, N.A. If you hold both a legacy Discover savings account and a Capital One 360 account, the balances combine toward the same $250,000 limit (per ownership category). This also means “Discover” no longer adds a separate bank for FDIC-maximization purposes.</p>
+  </div>
+
+  <h2>Balance caps and movement limits that matter at $250,000+</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Bank</th>
+          <th>Published limit</th>
+          <th>Source (official)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="bank">Bank of America</td><td>New savings account opening limit of <strong>$250,000</strong> through the online channel (larger: contact the bank)</td><td class="src"><a href="https://media.bac-assets.com/DigitalDeposit_NY_NY_Tri_State_Area.pdf">NY rate sheet (eff. 10/21/2026)</a></td></tr>
+        <tr><td class="bank">Marcus</td><td>Max <strong>$1,000,000 per Online Savings Account</strong>; max $3,000,000 across all deposit accounts per owner; excess deposits are returned</td><td class="src"><a href="https://www.marcus.com/us/en/faqs">Marcus FAQ</a></td></tr>
+        <tr><td class="bank">PNC</td><td>PNC may refuse deposits that would push combined savings/money-market balances above <strong>$5,000,000</strong></td><td class="src"><a href="https://www.pnc.com/en/personal-banking/banking/savings/standard-savings.html">Standard Savings page</a></td></tr>
+        <tr><td class="bank">SoFi</td><td>Advertises FDIC insurance up to <strong>$3,000,000</strong> through the SoFi Insured Deposit Program (network of participating banks, conditions apply)</td><td class="src"><a href="https://www.sofi.com/banking/high-yield-savings-account/">Product page</a></td></tr>
+        <tr><td class="bank">Marcus (transfers)</td><td>Same-day external transfers up to <strong>$100,000</strong> (received by 12pm ET)</td><td class="src"><a href="https://www.marcus.com/us/en/savings/high-yield-savings">Product page</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Digital apps and security features</h2>
+  <p>Features stated on each bank’s own pages (linked). All banks above are FDIC-insured national institutions with iOS/Android apps and standard deposit-account protections (encryption in transit, transaction monitoring, fraud alerts; specifics vary). What each bank officially highlights:</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Bank</th>
+          <th>App &amp; digital features (as stated by the bank)</th>
+          <th>Security highlights (as stated by the bank)</th>
+          <th>Source (official)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bank">Chase</td>
+          <td>Chase Mobile® app — manage spending/savings, pay bills, send money; Autosave repeating transfers; 14,000+ ATMs / 5,000+ branches in 48 states + DC</td>
+          <td>“Your money is FDIC insured up to the maximum amount allowed by law”; bank uses cookies/tools “to help stop fraud”; online privacy &amp; security resources at chase.com/digital/resources/privacy-security</td>
+          <td class="src"><a href="https://account.chase.com/consumer/banking/savingsoffer">Offer page</a> · <a href="https://www.chase.com/digital/mobile-banking">Mobile banking</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Bank of America</td>
+          <td>Mobile app and online banking (features documented on bankofamerica.com); branch network nationwide</td>
+          <td>Official Personal Schedule of Fees &amp; deposit disclosures; security &amp; fraud guidance on bankofamerica.com</td>
+          <td class="src"><a href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/">Fee schedule</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Wells Fargo</td>
+          <td>Mobile banking app, online banking, Zelle®, Save As You Go® auto-transfers, Find a location tool</td>
+          <td>Dedicated fraud reporting path (wellsfargo.com/privacy-security/fraud/report/), Online Access Agreement, routing/security help center</td>
+          <td class="src"><a href="https://www.wellsfargo.com/savings-cds/rates/">Rates page (nav links)</a> · <a href="https://www.wellsfargo.com/privacy-security/fraud/report/">Fraud reporting</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Citibank</td>
+          <td>Citi Mobile® App, Citi Online, branches; savings opened online or in the Citi Mobile App (per Citi’s promotional terms)</td>
+          <td>FDIC insured (member bank); account alerts; dedicated security guidance at citi.com</td>
+          <td class="src"><a href="https://www.citi.com/banking/savings-account">citi.com savings</a></td>
+        </tr>
+        <tr>
+          <td class="bank">U.S. Bank</td>
+          <td>U.S. Bank Mobile App — open accounts in minutes, set goals, track spending; online banking enrollment required for the checking bonus</td>
+          <td>“How does U.S. Bank protect my account?” guidance on its promotional pages; standard FDIC membership</td>
+          <td class="src"><a href="https://www.usbank.com/bank-accounts/savings-accounts.html">Savings hub</a></td>
+        </tr>
+        <tr>
+          <td class="bank">PNC</td>
+          <td>PNC Mobile app (direct App Store / Google Play links on product page), mobile deposit, customizable account alerts</td>
+          <td>Dedicated security &amp; privacy center at pnc.com (linked in site footer); FDIC insurance explainer page</td>
+          <td class="src"><a href="https://www.pnc.com/en/personal-banking/banking/savings/standard-savings.html">Product page</a> · <a href="https://www.pnc.com/en/security-privacy.html">Security &amp; privacy</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Truist</td>
+          <td>Online &amp; mobile banking with Truist One Savings; U by Truist® app</td>
+          <td>FDIC member; disclosures &amp; fees published per product</td>
+          <td class="src"><a href="https://www.truist.com/savings/truist-one-savings/disclosures-and-fees">Disclosures</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Capital One</td>
+          <td>“Top-rated mobile app” (bank’s own claim on its open-an-account page), online tools, branches + Capital One Cafés</td>
+          <td>FDIC-insured bank; security guidance on capitalone.com</td>
+          <td class="src"><a href="https://www.capitalone.com/bank/open-an-account/">capitalone.com</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Marcus</td>
+          <td>Marcus app &amp; web; same-day transfers up to $100,000; no ACH/wire fees</td>
+          <td>Goldman Sachs Bank USA is an FDIC member; funds insured up to the maximum allowed by law; no-fee structure (no ACH/wire fees)</td>
+          <td class="src"><a href="https://www.marcus.com/us/en/savings/high-yield-savings">Product page</a> · <a href="https://www.marcus.com/us/en/faqs">FAQ</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Ally</td>
+          <td>Ally app — savings buckets, boosters, round-ups; 24/7 service</td>
+          <td>“Deposits are insured by the FDIC up to the maximum allowed by law”; standard online-banking security on ally.com</td>
+          <td class="src"><a href="https://www.ally.com/bank/online-savings-account/">Product page</a></td>
+        </tr>
+        <tr>
+          <td class="bank">American Express</td>
+          <td>Manage via the Amex App (bank’s award-winning app claim); 24/7 customer support; QR code to download app on product page</td>
+          <td>American Express National Bank, Member FDIC; savings accounts with no ATM/debit card (reduces card-fraud surface)</td>
+          <td class="src"><a href="https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/">Product page</a></td>
+        </tr>
+        <tr>
+          <td class="bank">Synchrony</td>
+          <td>Synchrony Bank mobile app for iOS/Android — app ratings shown on page: 4.8 (Apple App Store), 4.6 (Google Play); custom account alerts</td>
+          <td>“Security on lock” section: FDIC insurance up to $250,000 per depositor, per insured bank, for each ownership category; 24/7 transaction monitoring</td>
+          <td class="src"><a href="https://www.synchrony.com/banking/products/hys-core">Product page</a> · <a href="https://www.synchrony.com/banking/mobile-app">Mobile app</a></td>
+        </tr>
+        <tr>
+          <td class="bank">SoFi</td>
+          <td>SoFi app — deposit checks anywhere, customizable alerts, joint accounts, get paid up to 2 days early with direct deposit; Savings Vaults &amp; round-ups</td>
+          <td>“We continuously monitor your account for suspicious activity”; SoFi Bank, N.A., Member FDIC; IDP up to $3M via participating banks</td>
+          <td class="src"><a href="https://www.sofi.com/banking/high-yield-savings-account/">Product page</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <p><strong>Security features to expect from any large bank app:</strong> multi-factor authentication at login, biometric login (fingerprint/face), instant card/account lock, transaction push alerts, FDIC membership, and a published fraud-reporting channel. Every bank above offers the first four; the linked official pages document each bank’s own security statements. For independent verification of any bank’s insurance status, use the FDIC’s <a href="https://banks.data.fdic.gov/">BankFind Suite</a> or the per-bank FDIC API records above.</p>
+  </div>
+
+  <p class="verified-line">FDIC rules summarized from fdic.gov (Deposits at a Glance) · Bank records via banks.data.fdic.gov API, queried 2026-10-22 · Security/app features quoted from banks’ own product pages</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p><strong>SAVINGS2</strong> — savings account research dashboard. Rates are variable and change frequently; always confirm current terms on the bank’s official site (linked in every row) before opening an account. This site is research, not financial advice.</p>
+    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

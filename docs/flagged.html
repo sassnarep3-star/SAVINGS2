@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review — Unverified or Uncertain Items</title>
+<meta name="description" content="Items that could not be fully verified from official sources, with what is known, what was attempted, and links for manual review.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="pig">🏦</span><span>SAVINGS2<small>Savings account research · verified from official sources</small></span></a>
+    <nav class="main">
+      <a href="index.html">Dashboard</a>
+      <a href="national-banks.html">National banks</a>
+      <a href="online-banks.html">Online-first banks</a>
+      <a href="returns.html">Returns by deposit size</a>
+      <a href="bonuses.html">Bonuses &amp; promos</a>
+      <a href="requirements.html">Opening rules</a>
+      <a href="fdic-security.html">FDIC &amp; security</a>
+      <a href="analysis.html">Analysis</a>
+      <a class="active" href="flagged.html">Flagged for review</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-head">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> › Flagged for review</div>
+    <h1>Flagged for review</h1>
+    <p>Items that could not be fully confirmed from official sources during this research (October 21–22, 2026). Per the verification policy of this project, values that could not be read from an official page are either left blank or clearly labeled as unverified in the main tables, never presented as confirmed. Each entry lists what is known, what was attempted, and links for manual review.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Item</th>
+          <th>What is known / what was attempted</th>
+          <th>Impact</th>
+          <th>Manual review links</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="citi-accel">
+          <td class="bank">F1</td>
+          <td class="bank">Citi Accelerate Savings APY<span class="entity">numeric value unverified officially</span></td>
+          <td>Citi’s official savings pages render the Accelerate APY via JavaScript (the static page shows placeholder text; the rate footnote says “accurate as of 10/13/2026” and is determined by Rate Region/Tier). Fetching citi.com savings pages, the current-rates page, and a preview subdomain all failed to return the number. Independent trackers (Bankrate, NerdWallet-adjacent trackers, banksparency, GoBankingRates) consistently reported <strong>3.00% APY</strong> in October 2026 (raised from 2.80% on 9/29/2026) — third-party, so it is shown as “3.00% ⚠” and used in the returns table with a flag.</td>
+          <td>Rate ranking only (account is unavailable in NY anyway)</td>
+          <td class="src"><a href="https://www.citi.com/banking/savings-account">citi.com/banking/savings-account</a> · <a href="https://www.citi.com/banking/compare-bank-accounts">compare page (state list)</a></td>
+        </tr>
+        <tr id="citi-std-rate">
+          <td class="bank">F2</td>
+          <td class="bank">Citi Savings standard APY by Rate Region</td>
+          <td>Verified for the NY region: Citi’s official Lunar New Year PDF and Fact Sheet state the Citi Savings APY is <strong>0.03%</strong> in NY, CT, MD, VA, DC, CA, NV, NJ and select FL/IL markets, and the promo page chart shows tier rates 0.06/0.09/0.12%. Other states’ standard rates for Citi Savings were not separately captured (Citi prices by “Rate Region”); outside those states the product in scope is Accelerate anyway.</td>
+          <td>Low — NY value is verified; other regions may differ slightly</td>
+          <td class="src"><a href="https://www.citi.com/content/dam/cfs/mobile/assets/JRS/popups/ao/Fact_Sheet.pdf">Fact Sheet PDF</a></td>
+        </tr>
+        <tr id="chase-min">
+          <td class="bank">F3</td>
+          <td class="bank">Chase Savings℠ / Premier Savings℠ minimum opening deposit</td>
+          <td>Chase’s official fee pages, rate sheet and offer page reviewed on 10/22/2026 state the monthly fees and waivers but do not state a minimum opening deposit for Chase Savings℠ or Premier Savings℠. Third-party reviews commonly report $0. Left blank in tables rather than assumed.</td>
+          <td>Cosmetic (decision-relevant only if a surprise minimum existed; $200 bonus requires $10,000+ anyway)</td>
+          <td class="src"><a href="https://www.chase.com/personal/savings/savings-account">chase.com product page</a> · <a href="https://www.chase.com/personal/fees/savings">fees page</a></td>
+        </tr>
+        <tr id="pnc-hys">
+          <td class="bank">F4</td>
+          <td class="bank">PNC High Yield Savings availability (NYC)</td>
+          <td>PNC’s official High Yield Savings page advertises <strong>3.15% APY</strong>, but when fetched it displayed “This Product Isn’t Available in Your Area.” PNC’s footprint rules mean the product is offered only where PNC does <em>not</em> have branches. Whether a New York City address qualifies requires entering a ZIP on the official page — could not be conclusively determined from the fetched static page.</td>
+          <td>Medium for NYC residents — 3.15% would otherwise rank in the top tier</td>
+          <td class="src"><a href="https://www.pnc.com/en/personal-banking/banking/savings/high-yield-savings.html">pnc.com High Yield Savings</a></td>
+        </tr>
+        <tr id="usbank-4pc">
+          <td class="bank">F5</td>
+          <td class="bank">U.S. Bank “up to 4.00% APY” bundle promo</td>
+          <td>Official U.S. Bank promotional splash page advertised up to 4.00% APY on Smartly Savings when bundled with an eligible product and $25,000+ CQB — “select markets,” apply by <strong>10/20/2026</strong>. As of the research date (10/22/2026) the window appears closed; the main rate page (eff. 10/21/2026) tops out at 3.50%. Not included in rankings; would have been the top relationship rate.</td>
+          <td>Medium — worth re-checking usbank.com for a Q4 replacement offer</td>
+          <td class="src"><a href="https://www.usbank.com/splash/checking/2026-q3-dmf-checking-offer.html">usbank.com splash page</a></td>
+        </tr>
+        <tr id="usbank-100">
+          <td class="bank">F6</td>
+          <td class="bank">U.S. Bank $100 Smartly Savings bonus</td>
+          <td>Published on official usbank.com campus banking offer pages (e.g., University of Missouri page): $100 for a new Smartly Savings account opened through the campus page by 10/29/2026 with $1,000+ new deposits and $1,000+ balance held until 01/31/2027 — <strong>requires also qualifying for the paired checking bonus</strong>. It is unclear whether a general (non-campus) savings-bonus offer exists; none was found on the main savings pages.</td>
+          <td>Low-medium — $100 is minor vs. rate choice</td>
+          <td class="src"><a href="https://www.usbank.com/bank-accounts/checking-accounts/student-checking-account/choose-your-school/university-of-missouri.html">Campus offer page</a></td>
+        </tr>
+        <tr id="usbank-checking">
+          <td class="bank">F7</td>
+          <td class="bank">U.S. Bank up-to-$450 Smartly Checking bonus (expiry)</td>
+          <td>The official splash page fetched during research said “Apply by October 20, 2026,” while third-party trackers in mid-October reported an extension through 11/10/2026. The official page’s date appears to have passed; a refreshed offer page may exist. Checking-only item; included for completeness.</td>
+          <td>Low (checking product)</td>
+          <td class="src"><a href="https://www.usbank.com/splash/checking/2026-q3-dmf-checking-offer.html">usbank.com splash page</a></td>
+        </tr>
+        <tr id="bofa-bonus">
+          <td class="bank">F8</td>
+          <td class="bank">Bank of America savings bonus</td>
+          <td>No savings-specific new-account bonus found on BofA’s official NY rate sheet or Personal Schedule of Fees. Third parties (CNBC, Fortune, Oct 2026) describe a checking bonus (up to $500 with direct deposits) — that page was not captured from bankofamerica.com during this session (bankofamerica.com/deposits/savings/ returned an HTTP error to the fetcher), so it is not listed as verified.</td>
+          <td>Low — checking product anyway</td>
+          <td class="src"><a href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/">BofA fee schedule</a></td>
+        </tr>
+        <tr id="amex-bonus">
+          <td class="bank">F9</td>
+          <td class="bank">American Express savings bonus</td>
+          <td>No new-account bonus published on the official Amex HYSA page (checked 10/22/2026). Third-party reviews occasionally mention referral or card-linked offers; none verified on americanexpress.com in this session.</td>
+          <td>Low</td>
+          <td class="src"><a href="https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/">amex page</a></td>
+        </tr>
+        <tr id="ally-bonus">
+          <td class="bank">F10</td>
+          <td class="bank">Ally savings bonus</td>
+          <td>No new-account bonus published on ally.com’s savings page (checked 10/22/2026).</td>
+          <td>Low</td>
+          <td class="src"><a href="https://www.ally.com/bank/online-savings-account/">ally page</a></td>
+        </tr>
+        <tr id="truist-bonus">
+          <td class="bank">F11</td>
+          <td class="bank">Truist savings bonus</td>
+          <td>No savings bonus found on Truist’s official savings disclosures pages (checked 10/21–22/2026).</td>
+          <td>Low</td>
+          <td class="src"><a href="https://www.truist.com/savings">truist.com savings</a></td>
+        </tr>
+        <tr id="withdrawal-fees">
+          <td class="bank">F12</td>
+          <td class="bank">Excess-withdrawal fees at Chase / BofA / Wells / Citi / PNC</td>
+          <td>Truist’s $5-per-withdrawal fee (over 6/cycle) and Ally’s 10-per-cycle cap are verified on their official pages. For the other banks, withdrawal-limit fees live in full fee schedules that are PDF/JS-delivered; they were not captured in this session, so those cells on the requirements page say “no published withdrawal-limit fee <em>on the pages reviewed</em>” rather than asserting there is none.</td>
+          <td>Low-medium for heavy transactors</td>
+          <td class="src"><a href="https://www.chase.com/personal/fees/savings">Chase fees</a> · <a href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/">BofA fees</a> · <a href="https://www.wellsfargo.com/savings-cds/rates/">Wells rates</a></td>
+        </tr>
+        <tr id="discover">
+          <td class="bank">F13</td>
+          <td class="bank">Discover Bank — status for new customers</td>
+          <td>FDIC record for Discover Bank (cert 5649) shows <strong>ACTIVE = 0</strong> (institution no longer operating — consistent with the Capital One acquisition). Discover’s online savings page no longer accepts new savings applications; independent reporting (Aug 2026) says existing accounts migrated to Capital One 360 Performance Savings on 8/23/2026. The official discover.com savings URL now routes to Capital One. Treated as “closed to new applicants” everywhere on this site.</td>
+          <td>Informational — Discover is not an option for new accounts</td>
+          <td class="src"><a href="https://banks.data.fdic.gov/api/institutions?filters=CERT:5649&amp;fields=NAME,CERT,ACTIVE,CITY,STALP">FDIC record</a> · <a href="https://www.discover.com/online-banking/savings-account/">discover.com savings URL</a></td>
+        </tr>
+        <tr id="bofa-booster">
+          <td class="bank">F14</td>
+          <td class="bank">BofA Preferred Rewards savings Interest Rate Booster tiers (personal)</td>
+          <td>The official NY consumer rate sheet lists a flat 0.04% APY standard rate for Advantage Savings across all balance tiers, and shows booster tiers only on the <em>business</em> product lines on that sheet. BofA’s Preferred Rewards program includes a savings rate booster (Gold/Platinum/Platinum Honors/Diamond Honors tiers) per its program pages, but personal booster <em>values</em> were not captured from an official source in this session. Third parties report boosts of roughly 0.02–0.05pt. Not shown in tables.</td>
+          <td>Low — boosters don’t approach online rates</td>
+          <td class="src"><a href="https://media.bac-assets.com/DigitalDeposit_NY_NY_Tri_State_Area.pdf">NY rate sheet</a></td>
+        </tr>
+        <tr id="bofa-blocking">
+          <td class="bank">F15</td>
+          <td class="bank">bankofamerica.com fetch behavior (method note)</td>
+          <td>bankofamerica.com/deposits/savings/ returned HTTP 405 to the automated fetcher (bot protection). BofA values in this study therefore come from its official asset-hosted NY Tri-State rate sheet PDF and the official Personal Schedule of Fees — both bankofamerica.com/bac-assets.com official documents.</td>
+          <td>None — official PDFs used instead</td>
+          <td class="src"><a href="https://media.bac-assets.com/DigitalDeposit_NY_NY_Tri_State_Area.pdf">NY rate sheet PDF</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Repository irregularities (repo review)</h2>
+  <ul class="tight">
+    <li>The repository at the start of this task contained a single file, <code>README.md</code> with the text “# SAVINGS2” and one commit — no code, no hidden files, no CI, no secrets. Reviewed line by line; nothing irregular to report beyond the empty state.</li>
+    <li>No sensitive files (tokens, credentials, <code>.env</code>) were present or are introduced by this work. The site is fully static (HTML/CSS) plus a documented Python calculation script (<code>tools/returns_calc.py</code>) — no build step, no external scripts loaded (no CDN, no tracking), which keeps the GitHub Pages deploy simple and safe.</li>
+  </ul>
+
+  <p class="verified-line">Flagged items do not change the main conclusions; they are documented so every claim on this site is traceable to what was actually observed · Last updated 2026-10-22</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p><strong>SAVINGS2</strong> — savings account research dashboard. Rates are variable and change frequently; always confirm current terms on the bank’s official site (linked in every row) before opening an account. This site is research, not financial advice.</p>
+    <p>Pages: <a href="national-banks.html">National banks</a> · <a href="online-banks.html">Online-first banks</a> · <a href="returns.html">Returns</a> · <a href="bonuses.html">Bonuses</a> · <a href="requirements.html">Opening rules</a> · <a href="fdic-security.html">FDIC &amp; security</a> · <a href="analysis.html">Analysis</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
