@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "research_date": "2026-10-22",
+    "account_open_date_assumed": "2026-10-22",
+    "verification_policy": "Every value verified from an official bank/government source; values not confirmable from official sources are left blank or flagged. See docs/flagged.html.",
+    "fed_context": {
+      "fed_funds_target_range": "3.75%-4.00%",
+      "as_of": "2026-09-16 FOMC (raised 25bp)",
+      "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "fdic_national_average_savings_apy": 0.38,
+      "fdic_national_average_as_of": "2026-10-19",
+      "fdic_source": "https://www.fdic.gov/national-rates-and-rate-caps"
+    }
+  },
+  "banks": [
+    {
+      "brand": "Chase",
+      "entity": "JPMorgan Chase Bank, National Association",
+      "fdic_cert": 628,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:628&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Chase Savings",
+          "apy_standard_pct": 0.01,
+          "apy_tiers": "0.01% on all balance tiers",
+          "rate_effective": "2026-10-16",
+          "min_to_open_usd": null,
+          "min_to_open_note": "Not published on fee/rate/offer pages reviewed - flagged F3",
+          "monthly_fee_usd": 5,
+          "fee_waiver": "$300 daily balance OR $25/mo Autosave OR linked qualifying checking OR linked Chase College Checking (overdraft protection) OR owner under 25",
+          "bonus": {
+            "amount_usd_max": 200,
+            "code": null,
+            "expires": "2027-01-27",
+            "source": "https://account.chase.com/consumer/banking/savingsoffer"
+          },
+          "sources": [
+            "https://www.chase.com/content/dam/chase-ux/ratesheets/pdfs/rdin1.pdf",
+            "https://www.chase.com/personal/fees/savings"
+          ]
+        },
+        {
+          "name": "Chase Premier Savings",
+          "apy_standard_pct": 0.01,
+          "apy_relationship_pct": 0.02,
+          "relationship_condition": "Linked qualifying checking + 5 or more customer-initiated checking transactions per month",
+          "rate_effective": "2026-10-16",
+          "min_to_open_usd": null,
+          "monthly_fee_usd": 25,
+          "fee_waiver": "$15,000 daily balance OR linked qualifying checking",
+          "sources": [
+            "https://www.chase.com/content/dam/chase-ux/ratesheets/pdfs/rdin1.pdf",
+            "https://www.chase.com/personal/fees/premier-savings"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Bank of America",
+      "entity": "Bank of America, National Association",
+      "fdic_cert": 3510,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:3510&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Advantage Savings",
+          "apy_standard_pct": 0.04,
+          "apy_tiers": "0.04% on all balance tiers (NY Tri-State sheet)",
+          "rate_effective": "2026-10-21",
+          "min_to_open_usd": 100,
+          "monthly_fee_usd": 8,
+          "fee_waiver": "First 6 months for new accounts; then $500 min daily balance OR Advantage Relationship Banking account OR qualifying Preferred Rewards tier OR owner under 25",
+          "notes": "Online channel new-account opening limit $250,000",
+          "sources": [
+            "https://media.bac-assets.com/DigitalDeposit_NY_NY_Tri_State_Area.pdf",
+            "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Wells Fargo",
+      "entity": "Wells Fargo Bank, National Association",
+      "fdic_cert": 3511,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:3511&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Way2Save Savings",
+          "apy_standard_pct": 0.01,
+          "min_to_open_usd": 25,
+          "monthly_fee_usd": 5,
+          "fee_waiver": "$300 min daily balance OR automatic transfers ($25+/period or $1+/business day) OR Save As You Go OR primary owner 24 or under",
+          "sources": [
+            "https://www.wellsfargo.com/savings-cds/rates/",
+            "https://www.wellsfargo.com/savings-cds/way2save/way2save-monthly-service-fee/"
+          ]
+        },
+        {
+          "name": "Platinum Savings",
+          "apy_standard_pct": 0.01,
+          "apy_relationship_pct": 0.05,
+          "relationship_condition": "Linked Premier Checking (0.02% with Prime Checking)",
+          "promo": {
+            "apy_pct": 3.25,
+            "condition": "New WF savings customers; deposit & maintain $25,000+ within 30 days; variable",
+            "effective": "2026-10-07"
+          },
+          "min_to_open_usd": 25,
+          "monthly_fee_usd": 12,
+          "fee_waiver": "$3,500 min daily balance",
+          "sources": [
+            "https://www.wellsfargo.com/savings-cds/rates/",
+            "https://www.wellsfargo.com/fetch-pdf?documentName=Account+Addenda&subProductCode=ANY"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Citibank",
+      "entity": "Citibank, National Association",
+      "fdic_cert": 7213,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:7213&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Citi Savings",
+          "apy_standard_pct": 0.03,
+          "apy_tiers": "0.03% standard (NY); 0.06% Citi Priority; 0.09% Citigold; 0.12% Citigold Private Client",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 4.5,
+          "fee_waiver": "$500+ average monthly balance OR linked Citi checking OR Citi Priority/Citigold/Citigold PC tier; no fee for month of opening + first 3 full calendar months",
+          "promo": {
+            "rate_pct": 3.75,
+            "duration": "up to 3 months",
+            "condition": "$25,000+ new-to-Citi funds maintained; max interest $10,000",
+            "window": "2026-07-14 to 2026-10-22",
+            "discontinued_effective": "2026-10-23"
+          },
+          "sources": [
+            "https://www.citi.com/banking/savings-account",
+            "https://www.citi.com/content/dam/cfs/mobile/assets/JRS/popups/ao/Fact_Sheet.pdf"
+          ]
+        },
+        {
+          "name": "Citi Accelerate Savings",
+          "apy_pct": 3.0,
+          "apy_verified": false,
+          "unverified_note": "Official page renders APY via JavaScript; 3.00% per independent trackers Oct 2026 - flagged F1",
+          "availability": "Not available to residents of NY, CA, CT, DC, MD, NV, NJ, VA, IL (select FL)",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 4.5,
+          "sources": [
+            "https://www.citi.com/banking/savings-account",
+            "https://www.citi.com/banking/compare-bank-accounts"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "U.S. Bank",
+      "entity": "U.S. Bank National Association",
+      "fdic_cert": 6548,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:6548&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Bank Smartly Savings",
+          "apy_standard_pct": 0.05,
+          "relationship_tiers_pct": {
+            "under_5k_cqb": 1.0,
+            "5k_to_24999.99_cqb": 2.0,
+            "25k_plus_cqb": 3.5
+          },
+          "relationship_condition": "Account owner on Bank Smartly Checking, Safe Debit, or Bank Smartly Visa Signature Card; tiers by Combined Qualifying Balance (CQB)",
+          "rate_effective": "2026-10-21",
+          "min_to_open_usd": 25,
+          "monthly_fee_usd": 5,
+          "fee_waiver": "Linked eligible product OR account with minor under 18",
+          "bonus_flagged": "Campus-page $100 savings bonus (by 2026-10-29, hold $1,000+ until 2027-01-31, requires checking offer) - flagged F6; 'up to 4.00% APY' bundle promo apply-by 2026-10-20 select markets - flagged F5",
+          "sources": [
+            "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html",
+            "https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings.html"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "PNC Bank",
+      "entity": "PNC Bank, National Association",
+      "fdic_cert": 6384,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:6384&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Standard Savings",
+          "apy_tiers_pct": {
+            "1_to_2499.99": 0.02,
+            "2500_plus": 0.03
+          },
+          "totalrewards_boost_pct_max": 0.06,
+          "rate_accurate_as_of": "2026-10-21",
+          "min_to_open_usd_online": 0,
+          "min_to_open_usd_branch": 25,
+          "monthly_fee_usd": 5,
+          "fee_waiver": "$300 avg monthly balance OR linked select PNC checking OR Auto Savings $25+/period OR owner under 25",
+          "notes": "PNC may refuse deposits pushing combined savings+MM above $5,000,000",
+          "sources": [
+            "https://www.pnc.com/en/personal-banking/banking/deposit-rates/standard-savings.html",
+            "https://www.pnc.com/en/personal-banking/banking/savings/standard-savings.html"
+          ]
+        },
+        {
+          "name": "High Yield Savings",
+          "apy_pct": 3.15,
+          "availability": "Offered only outside PNC's branch footprint (page shows area restriction) - flagged F4 for NYC",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "sources": [
+            "https://www.pnc.com/en/personal-banking/banking/savings/high-yield-savings.html"
+          ]
+        }
+      ],
+      "checking_bonus": {
+        "amount_usd_max": 400,
+        "valid": "2026-09-01 to 2027-01-07",
+        "source": "https://www.pnc.com/en/personal-banking/banking/checking/bonus-offer.html"
+      }
+    },
+    {
+      "brand": "Truist",
+      "entity": "Truist Bank",
+      "fdic_cert": 9846,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:9846&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "brick-and-mortar",
+      "accounts": [
+        {
+          "name": "Truist One Savings",
+          "apy_standard_pct": 0.01,
+          "apy_tiers": "0.01% on all tiers",
+          "rate_accurate_as_of": "2026-09-28",
+          "min_to_open_usd": 50,
+          "monthly_fee_usd": 5,
+          "fee_waiver": "$300 daily ledger balance OR recurring internal transfer $25+/cycle OR minor under 18 OR any related Truist checking",
+          "withdrawal_fee": "$5 per withdrawal over 6 per statement cycle (max 6 fees/cycle)",
+          "sources": [
+            "https://www.truist.com/savings/truist-one-savings/disclosures-and-fees"
+          ]
+        },
+        {
+          "name": "Truist One Money Market",
+          "apy_standard_pct": 0.01,
+          "min_to_open_usd": 50,
+          "monthly_fee_usd": 12,
+          "fee_waiver": "$15,000 min daily ledger balance",
+          "sources": [
+            "https://www.truist.com/savings/truist-one-money-market/disclosures-and-fees"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Capital One",
+      "entity": "Capital One, National Association",
+      "fdic_cert": 4297,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:4297&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "online-first (also operates branches)",
+      "accounts": [
+        {
+          "name": "360 Performance Savings",
+          "apy_pct": 3.2,
+          "rate_effective": "2026-10-21",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "bonus": {
+            "code": "BONUS1500",
+            "tiers": {
+              "20000+": 300,
+              "50000+": 750,
+              "100000+": 1500
+            },
+            "rule": "Deposit external funds within 15-day Initial Funding Period; hold 90 days; paid within 60 days",
+            "source": "https://www.capitalone.com/bank/bonus1500/"
+          },
+          "notes": "Discover Bank (cert 5649, inactive) merged into Capital One - balances share one FDIC limit",
+          "sources": [
+            "https://www.capitalone.com/bank/open-an-account/",
+            "https://www.capitalone.com/bank/bonus1500/"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Marcus by Goldman Sachs",
+      "entity": "Goldman Sachs Bank USA",
+      "fdic_cert": 33124,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:33124&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "online-first",
+      "accounts": [
+        {
+          "name": "Online Savings Account",
+          "apy_pct": 3.5,
+          "apy_as_of": "2026-10-21",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "withdrawal_limit": "none",
+          "balance_caps": "Max $1,000,000 per Online Savings Account; $3,000,000 per owner across all deposit accounts",
+          "promo": {
+            "type": "referral",
+            "boost_apy_pct": 1.0,
+            "duration": "3 months, both parties",
+            "source": "https://www.marcus.com/us/en/savings/referrals"
+          },
+          "sources": [
+            "https://www.marcus.com/us/en/savings/high-yield-savings",
+            "https://www.marcus.com/us/en/faqs"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Ally Bank",
+      "entity": "Ally Bank",
+      "fdic_cert": 57803,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:57803&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "online-first",
+      "accounts": [
+        {
+          "name": "Ally Bank Savings",
+          "apy_pct": 3.1,
+          "apy_correct_as_of": "2026-10-21",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "withdrawal_limit": "10 per statement cycle (no fee; account may be closed if habitual)",
+          "sources": [
+            "https://www.ally.com/bank/online-savings-account/"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "American Express",
+      "entity": "American Express National Bank",
+      "fdic_cert": 27471,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:27471&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "online-first",
+      "accounts": [
+        {
+          "name": "High Yield Savings",
+          "apy_pct": 3.2,
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "notes": "No ATM/debit card or checks; daily compounding; 24/7 support",
+          "sources": [
+            "https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Synchrony Bank",
+      "entity": "Synchrony Bank",
+      "fdic_cert": 27314,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:27314&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "online-first",
+      "accounts": [
+        {
+          "name": "High Yield Savings",
+          "apy_pct": 3.55,
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "notes": "No minimum balance; app ratings 4.8 iOS / 4.6 Android; 24/7 monitoring",
+          "sources": [
+            "https://www.synchrony.com/banking/products/hys-core"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "SoFi Bank",
+      "entity": "SoFi Bank, National Association",
+      "fdic_cert": 26881,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:26881&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "type": "online-first",
+      "accounts": [
+        {
+          "name": "SoFi Savings (auto-bundled with SoFi Checking)",
+          "apy_pct_with_direct_deposit": 3.3,
+          "apy_standard_pct": 0.8,
+          "sofi_plus_apy_pct": 4.5,
+          "sofi_plus_condition": "$10/month subscription; 4.50% on up to $20,000; 3.30% on the rest",
+          "rates_current_as_of": "2026-10-20",
+          "min_to_open_usd": 0,
+          "monthly_fee_usd": 0,
+          "promo": {
+            "new_member_boost_apy_pct": 1.1,
+            "max_total_apy_pct": 4.4,
+            "duration": "up to 6 months",
+            "open_by": "2027-12-31",
+            "condition": "Eligible direct deposit (or $5,000 qualifying deposits per 31 days) within 60 days"
+          },
+          "bonus": {
+            "amounts_usd": [
+              50,
+              400
+            ],
+            "rule": "$1,000-$4,999.99 eligible direct deposits -> $50; $5,000+ -> $400 (within 25 days of first eligible DD of $1+)"
+          },
+          "fdic_note": "Advertises FDIC insurance up to $3M via SoFi Insured Deposit Program (participating banks)",
+          "sources": [
+            "https://www.sofi.com/banking/high-yield-savings-account/savings-account-interest-rates-apy/",
+            "https://www.sofi.com/banking/high-yield-savings-account/"
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Discover Bank",
+      "entity": "Discover Bank",
+      "fdic_cert": 5649,
+      "fdic_record": "https://banks.data.fdic.gov/api/institutions?filters=CERT:5649&fields=NAME,CERT,ACTIVE,CITY,STALP",
+      "fdic_active": false,
+      "type": "former online bank",
+      "status": "Closed to new savings applicants; deposits now part of Capital One, N.A. (cert 4297). FDIC record shows ACTIVE=0."
+    }
+  ],
+  "fdic_rules": {
+    "standard_insurance_usd": 250000,
+    "rule": "$250,000 per depositor, per insured bank, for each account ownership category",
+    "categories": [
+      "single",
+      "joint ($250,000 per co-owner)",
+      "certain retirement accounts",
+      "revocable trust ($250,000 per owner per unique beneficiary, up to 5)"
+    ],
+    "edie_calculator": "https://edie.fdic.gov",
+    "source": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance"
+  },
+  "additional_banks_second_session": {
+    "note": "Verified by the parallel session (branch arena/46ab1baa-savings2) on 2026-10-22; quoted evidence in research/verification-log.md; published on docs/other-national-banks.html.",
+    "banks": [
+      {
+        "brand": "Barclays US",
+        "entity": "Barclays Bank Delaware",
+        "fdic_cert": 57203,
+        "account": "Tiered Savings",
+        "apy_pct_under_250k": 3.5,
+        "apy_pct_250k_to_1m": 3.65,
+        "apy_as_of": "2026-10-07",
+        "min_to_open_usd": 0,
+        "monthly_fee_usd": 0,
+        "caps": "$1M max per account, up to 3 accounts per customer",
+        "bonus": {
+          "amount_usd": 200,
+          "rule": "Fund $25,000+ within 30 days, hold $25,000 for 120 consecutive days",
+          "through": "2026-10-31"
+        },
+        "sources": [
+          "https://banking.us.barclays/tiered-savings.html"
+        ]
+      },
+      {
+        "brand": "CIT Bank",
+        "entity": "First-Citizens Bank & Trust Company (CIT Bank division)",
+        "fdic_cert": 11063,
+        "account": "Platinum Savings",
+        "apy_pct_under_5k": 0.25,
+        "apy_pct_5k_plus": 3.75,
+        "apy_as_of": "2026-07-01",
+        "min_to_open_usd": 100,
+        "monthly_fee_usd": 0,
+        "fdic_note": "Deposits under First-Citizens and its divisions are not separately insured - shares one $250k limit",
+        "flag": "Rate sheet dated 2026-07-01 (oldest quote in the study) - confirm current rate",
+        "sources": [
+          "https://www.cit.com/cit-bank/platinum-savings"
+        ]
+      },
+      {
+        "brand": "HSBC US",
+        "entity": "HSBC Bank USA, National Association",
+        "fdic_cert": 57890,
+        "account": "Premier Relationship Savings",
+        "apy_standard_pct": 0.05,
+        "apy_relationship_pct": 3.1,
+        "apy_as_of": null,
+        "apy_as_of_note": "No effective date published",
+        "condition": "Relationship APY: month of opening + 3 months automatic, then monthly qualifying criterion ($500 debit spend / $500 card payments / $5,000 direct deposits / HSBC-serviced mortgage / Premier Elite). Requires HSBC Premier client with Premier checking.",
+        "sources": [
+          "https://www.us.hsbc.com/savings-accounts/products/relationship-savings/"
+        ]
+      },
+      {
+        "brand": "TD Bank",
+        "entity": "TD Bank, National Association",
+        "fdic_cert": 18409,
+        "account": "TD Signature Savings",
+        "apy_pct": null,
+        "apy_note": "Rates render per-location; blank on served page",
+        "min_to_open_usd": 0,
+        "monthly_fee_usd": 15,
+        "fee_waiver": "$10,000 min daily balance or linked eligible TD Beyond/Complete checking",
+        "notes": "Auto-closes if unfunded for 45 days",
+        "sources": [
+          "https://www.td.com/us/en/personal-banking/savings-accounts"
+        ]
+      },
+      {
+        "brand": "Citizens",
+        "entity": "Citizens Bank, National Association",
+        "fdic_cert": 57957,
+        "account": "One Deposit Savings from Citizens",
+        "apy_pct": null,
+        "apy_note": "Rates in account documents / at application",
+        "min_to_open_usd": 0,
+        "monthly_fee_usd": 4.99,
+        "fee_waiver": "One deposit of any amount per statement period or $200 min daily balance; first 4 fees waived on new accounts",
+        "notes": "No transaction limits; footprint CT, DC, DE, FL, MD, MA, MI, NH, NJ, NY, OH, PA, RI, VT, VA",
+        "sources": [
+          "https://www.citizensbank.com/savings/savings-accounts/overview.aspx"
+        ]
+      },
+      {
+        "brand": "Fifth Third",
+        "entity": "Fifth Third Bank, National Association",
+        "fdic_cert": 6672,
+        "account": "Momentum Savings",
+        "apy_pct": null,
+        "apy_note": "Promotional rates via branch/banker only",
+        "min_to_open_usd": 0,
+        "monthly_fee_usd": 7.5,
+        "fee_waiver": "Fifth Third checking account or $500+ balance",
+        "sources": [
+          "https://www.53.com/content/fifth-third/en/personal-banking/bank/savings.html"
+        ]
+      },
+      {
+        "brand": "Charles Schwab",
+        "entity": null,
+        "status": "excluded",
+        "note": "Official savings URLs returned 404 (both sessions); excluded rather than populated from third parties"
+      }
+    ]
+  }
+}

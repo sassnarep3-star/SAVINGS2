@@ -115,3 +115,74 @@
 - **Live GitHub Pages Deployment:** <https://sassnarep3-star.github.io/SAVINGS2/>
 
 
+---
+
+---
+
+## 6. Session B (`arena/24e1eb4e-savings2`) — fourth parallel session, integrated 2026-10-22
+
+A fourth parallel session (blind, like the others) worked on branch
+`arena/24e1eb4e-savings2` and completed its own 14-bank verification scope:
+
+- **Scope:** official-source research for 14 banks (7 brick-and-mortar + 7 online-first),
+  FDIC rules & per-bank FDIC certificate verification via the FDIC institutions API,
+  Fed policy context (FOMC 9/16/2026 hike to 3.75–4.00%), bonuses/promotions, returns
+  by deposit size ($10k/$50k/$100k/$250k), and an 11-page static site in `docs/`
+  (index, national-banks, online-banks, other-national-banks, returns, bonuses,
+  requirements, fdic-security, analysis, flagged, sources) with `tools/returns_calc.py`
+  (reproducible projections) and `tools/site_check.py` (link/anchor/host checks).
+- **Independent verifications that filled early gaps:** Chase 0.01% all tiers (official
+  rate sheet `rdin1.pdf`, in effect 10/16/2026) + $5/$25 fees + $100/$200 bonus
+  (expires 2027-01-27); Bank of America 0.04% all tiers + $250,000 online opening limit
+  (NY Tri-State rate sheet, eff. 10/21/2026) + $100 min/$8 fee (Personal Schedule of
+  Fees, eff. 8/7/2026); Citibank Citi Savings 0.03% NY + tier rates 0.06/0.09/0.12 +
+  3.75%×3-mo promo window ending 10/22/2026 (Fact Sheet: discontinued eff. 10/23/2026);
+  Capital One 360 Performance Savings 3.20% APY (eff. 10/21/2026); Synchrony 3.55% APY;
+  Wells Fargo Way2Save fee-waiver page + Platinum promo eff. 10/07/2026; U.S. Bank
+  Smartly tiers eff. 10/21/2026; Truist disclosures (as of 9/28/2026); PNC Standard
+  Savings rates (accurate 10/21/2026); Marcus 3.50% + balance caps ($1M/account,
+  $3M/owner) + referral +1.00%×3mo; Ally 3.10%; Amex 3.20%; SoFi 0.80%/3.30%/4.40%
+  (as of 10/20/2026) + $50/$400 bonus; FDIC national average 0.38% (10/19/2026).
+  Where sessions overlapped, all verified values agreed.
+- **Materially unique findings merged into the canonical site during integration:**
+  1. **Capital One BONUS1500** — up to $1,500 savings bonus ($20k+→$300, $50k+→$750,
+     $100k+→$1,500; promo code BONUS1500; 15-day Initial Funding Period; 90-day hold;
+     paid within 60 days). Source: <https://www.capitalone.com/bank/bonus1500/>
+     (verified 2026-10-22). Added to `data/promotions_and_rules.json`.
+  2. **PNC Virtual Wallet bonus** — $100 (Virtual Wallet, $500+ qualifying direct
+     deposits in 60 days) or $400 (Virtual Wallet with Performance Select, $5,000+
+     direct deposits); valid 2026-09-01 – 2027-01-07. Source:
+     <https://www.pnc.com/en/personal-banking/banking/checking/bonus-offer.html>
+     (verified 2026-10-22). Added to `data/promotions_and_rules.json`.
+  3. U.S. Bank $100 Smartly Savings campus bonus (open by 10/29/2026, hold $1,000+
+     until 2027-01-31, requires checking-offer qualification) and up-to-$450 Smartly
+     Checking bonus (official splash page apply-by 10/20/2026; later windows may exist)
+     — added as flagged promo-page offers.
+- **Session B's flagged items (F1–F15)** are published in full on its own site at
+  `docs/flagged.html` (Citi Accelerate APY JS-rendered; Chase savings minimum not
+  published; PNC HYS footprint; U.S. Bank promo windows; BofA/Amex/Ally/Truist no
+  savings bonus found; withdrawal-fee schedules not captured; Discover closure;
+  BofA Preferred-Booster values; bankofamerica.com fetch blocking). Several are the
+  same underlying facts as FLAG-01…FLAG-09 above, independently discovered.
+- **Site decision:** the canonical GitHub Pages site remains the root 15-page suite
+  (Sessions A+C). Session B's 11-page site is retained in-repo at `docs/` and remains
+  fully self-contained (every row source-linked; `python3 tools/site_check.py` passes).
+- **PR record:** PR #4 (`arena/24e1eb4e-savings2` → `main`) was updated twice to carry
+  the full multi-session integration: first the merge of `main` @ `3f99c21` (Sessions
+  A+C, merge commit `b0698db`) with the three unique verified promotions added to
+  `data/promotions_and_rules.json` (11 active promotions total), then the merge of
+  `main` @ `2a0e89b` (Session `6ce52089`'s PR #7/#8) preserving 100% of that session's
+  executive suite, datasets, and audit ledger. All peer content preserved on both
+  merges; `README.md` and this file resolved as unions. PR #4 merged without waiting
+  for manual approval; GitHub Pages (source: `main` / root) rebuilt on the merge
+  commit — build status recorded below in section 4 style.
+
+### Session B final integration record (`2026-10-22`)
+
+| Item | Result |
+| :--- | :--- |
+| Conflicts resolved (merge of `main` @ `3f99c21`) | `README.md`, `COORDINATION.md` — union; both sessions' content preserved 100% |
+| Conflicts resolved (merge of `main` @ `2a0e89b`) | `index.html` (took `main`'s Session `6ce52089` Executive Dashboard — fixes Session B's accidental `build.py` overwrite of the dashboard index), `README.md`, `COORDINATION.md` — unions |
+| Canonical datasets extended | `data/promotions_and_rules.json`: +`CAPONE-BONUS1500`, +`PNC-VIRTUAL-WALLET`, +`USBANK-CAMPUS-AND-CHECKING` (8 → 11 active promotions) |
+| Regeneration | `python3 scripts/build_site.py` → `bonuses-and-promotions.html` now lists all 11 promotions; `python3 scripts/verify_site.py` → 296 table rows, 100% official source links, zero errors; `python3 build.py` → clean; `python3 tools/site_check.py` (Session B `docs/` site) → 11 pages pass |
+| Overlap check | Where Sessions A/C/D and B verified the same values (Chase 0.01%, CapOne 3.20%, Synchrony 3.55%, Barclays 3.65%/$200, CIT 3.75%, SoFi rate-sheet tiers, BONUS1500 terms), all sessions agree; D's independent discovery of `BONUS1500` (C4) matches B's verification exactly |
