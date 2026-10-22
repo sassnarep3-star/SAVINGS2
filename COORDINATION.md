@@ -14,10 +14,10 @@
 | **TASK-01** | FDIC Insurance Rules, Cert Numbers & Macro Benchmarks Verification | `done` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/fdic_and_benchmarks.json`, `fdic-maximization.html` |
 | **TASK-02** | Big National Banks — High-Yield Savings Accounts (HYSA) Verification | `done` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/national_banks_savings.json`, `high-yield-savings.html` |
 | **TASK-03** | Big Four Brick-and-Mortar National Banks & Relationship Tiers Verification | `done` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/big_four_banks.json`, `big-four-comparison.html` |
-| **TASK-04** | Account Opening Bonuses, Promotions & Account Rules Verification | `in progress` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/promotions_and_rules.json`, `bonuses-and-promotions.html`, `account-rules-and-security.html` |
-| **TASK-05** | Return on Size of Investment & Max FDIC ($250k / $500k / $1M) Projections (`2026-10-22`) | `in progress` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/investment_returns_matrix.json`, `investment-returns.html` |
-| **TASK-06** | Irregularities, Regional Restrictions & Unverified Fields Audit (`Flagged for Review`) | `in progress` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/flagged_for_review.json`, `flagged-for-review.html` |
-| **TASK-07** | Final Integration, Dashboard Site Build, Link Verification, PR & Merge to `main` | `unclaimed` | — | — | `index.html`, `assets/css/styles.css`, `assets/js/app.js`, `scripts/verify_site.py`, `README.md`, `.nojekyll` |
+| **TASK-04** | Account Opening Bonuses, Promotions & Account Rules Verification | `done` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/promotions_and_rules.json`, `bonuses-and-promotions.html`, `account-rules-and-security.html` |
+| **TASK-05** | Return on Size of Investment & Max FDIC ($250k / $500k / $1M) Projections (`2026-10-22`) | `done` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/investment_returns_matrix.json`, `investment-returns.html` |
+| **TASK-06** | Irregularities, Regional Restrictions & Unverified Fields Audit (`Flagged for Review`) | `needs review` | `1024a045-savings2` | `arena/1024a045-savings2` | `data/flagged_for_review.json`, `flagged-for-review.html` |
+| **TASK-07** | Final Integration, Dashboard Site Build, Link Verification, PR & Merge to `main` | `in progress` | `1024a045-savings2` | `arena/1024a045-savings2` | `index.html`, `assets/css/styles.css`, `assets/js/app.js`, `scripts/verify_site.py`, `README.md`, `.nojekyll` |
 
 ---
 
@@ -56,3 +56,25 @@
     - Citibank Simplified Banking Fact Sheet (Effective 2026-10-01; Citi Savings 0.03%–0.12% standard/tier APY; Promotional Rate Feature for New Citi Savings discontinued effective October 23, 2026): https://www.citi.com/content/dam/cfs/mobile/assets/JRS/popups/ao/Fact_Sheet.pdf
     - BMO Retail Savings Builder (0.01% APY + $5/mo reward up to $60/yr): https://www.bmo.com/en-us/main/personal/bank-accounts/savings-and-cds/ and https://www.bmo.com/en-us/pdf/disclosures/savings_builder_reg_dd.pdf
   - Claimed `TASK-04`, `TASK-05`, and `TASK-06`.
+- **2026-10-22 (Session `1024a045-savings2`):** Completed `TASK-04` (`data/promotions_and_rules.json`), `TASK-05` (`data/investment_returns_matrix.json`), and `TASK-06` (`data/flagged_for_review.json` — marked `needs review` to surface all 9 verified irregularities and unconfirmed fields for post-deployment inspection).
+  - **Verification Performed (`TASK-04` & `TASK-05`):**
+    - Verified all active account opening bonuses and rate boosts as of `2026-10-22`:
+      1. **Barclays Tiered Savings (`$200` Bonus + `3.65% APY` at `$250k–$1M`)**: Open by `2026-10-31`, deposit `>=$25,000` within 30 days (`2026-11-21`), hold for 120 consecutive days (`2027-02-19`). At `$250,000` (Max Single-Account FDIC), delivers `$9,125.00` base interest + `$200.00` bonus = **`$9,325.00`** in Year 1 (`3.73%` effective 1-year yield) and **`$49,076.62`** over 5 years (`2026-10-22` to `2031-10-22`).
+      2. **Marcus by Goldman Sachs (`+1.00% APY` 3-Month Referral Boost on `3.50% APY`)**: Delivers `4.50%` effective APY for 3 months (`3.75%` combined Year-1 APY with 1 referral = **`$9,375.00`** on `$250,000` in Year 1; **`$47,638.78`** over 5 years).
+      3. **Synchrony Bank High Yield Savings (`3.55% APY`)**: Delivers **`$8,875.00`** in Year 1 and **`$47,638.99`** over 5 years on `$250,000`.
+      4. **U.S. Bank Smartly® Savings (`3.50% APY` with eligible account + `$25k+` CQB)**: Delivers **`$8,750.00`** in Year 1 and **`$46,921.58`** over 5 years on `$250,000`.
+      5. **Wells Fargo Platinum Savings (`3.25% APY` online new customer offer on `$25k+` / `3.50% APY` 12-mo banker promo on `$10k+`)**: Delivers **`$8,125.00`** (online) to **`$8,750.00`** (banker promo) in Year 1 on `$250,000`.
+      6. **Chase Savings℠ (`$100` on `$5k` / `$200` on `$10k+` held 90 days at `0.01% APY`)**: Effective `8.01%` annualized return on `$10,000` for 90 days (`$200.25`), but only `$225.00` total Year-1 return on `$250,000` (`-$9,100.00` opportunity cost vs Barclays Tiered Savings).
+      7. **Capital One 360 Checking Companion Bonus (`$250` via `CHECKING250` / `DEBIT250` / `STUDENT250`)**: Pairs with `360 Performance Savings` (`3.20% APY` = `$8,000.00/yr` on `$250,000`).
+    - Computed full Return on Size of Investment matrix (`$1,000`, `$10,000`, `$25,000`, `$50,000`, `$100,000`, `$250,000`, `$500,000`, `$1,000,000`) across 6 horizons (`3 Months`, `6 Months`, `1 Year`, `2 Years`, `3 Years`, `5 Years`) from `2026-10-22` to `2031-10-22`, plus Multi-Bank FDIC Maximization Portfolios (`$250k`, `$500k`, `$1M`).
+  - **Irregularities & Unverified Fields Documented (`TASK-06` — Status: `needs review`):**
+    - `FLAG-01`: Citibank `Citi® Accelerate Savings` APY renders uninterpolated `:BLUE_AccSavings_Rate%` from NYC due to National Rate Region geo-restriction (APY left blank).
+    - `FLAG-02`: PNC `High Yield Savings` (`3.15% APY`) is geo-blocked in NYC (`"This Product Isn't Available in Your Area"`).
+    - `FLAG-03`: Capital One & Discover Bank share a single FDIC insurance limit (`Cert #4297`) as of `2025-11-18`, and Discover Online Savings is converting to Capital One 360 Performance Savings.
+    - `FLAG-04`: Capital One marketing/disclosure pages render `NaN APY` in static HTML, while `apply.capitalone.com/fc/index.html` confirms `3.20% APY` as of `10/21/2026`.
+    - `FLAG-05`: Citibank Simplified Banking Fact Sheet (`10/01/2026`) announces discontinuation of the Promotional Rate Feature for New Citi Savings accounts effective **October 23, 2026**.
+    - `FLAG-06`: Bank of America transitioned Preferred Rewards to `BofA Rewards™` (`~2026-05-26`) and disclosed discontinuation of the Advantage Savings interest rate booster.
+    - `FLAG-07`: Synchrony High Yield Savings embedded calculator displays stale `2.85%` APY while page headline/disclosures confirm `3.55% APY` as of `10/21/2026`.
+    - `FLAG-08`: Maximum balance caps for 7 banks and the exact % of American Express's Platinum Card Exclusive Savings Rate are not published on public pages and are left blank.
+    - `FLAG-09`: Minor footnote template omissions on Chase Savings offer page, BMO Alto modal, and U.S. Bank calculator widget (all rates verified via official PDF rate sheets and static HTML tables).
+  - Claimed `TASK-07` to build and verify the multi-page GitHub Pages dashboard.

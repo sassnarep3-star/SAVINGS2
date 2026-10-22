@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "dataset": "Flagged for Review — Irregularities, Regional Restrictions & Unverified Fields",
+    "audit_date": "2026-10-22",
+    "policy": "Every irregularity or unconfirmed field found during line-by-line verification of official sources is documented here with primary source links. Unconfirmed values are left blank in all tables and never inferred."
+  },
+  "flagged_items": [
+    {
+      "flag_id": "FLAG-01",
+      "severity": "High — Unverified Value (Left Blank)",
+      "bank_name": "Citibank, N.A. (FDIC Cert #7213)",
+      "account_name": "Citi® Accelerate Savings",
+      "field_affected": "Annual Percentage Yield (APY)",
+      "status": "Needs Review",
+      "finding_summary": "Official Citi Savings page renders uninterpolated server-side template variable ':BLUE_AccSavings_Rate%' and Compare Accounts page renders '% · % · %' when accessed from New York City.",
+      "detailed_explanation": "Per Citibank's official disclosures, Citi Accelerate Savings is only available to residents in the 'National Rate Region' plus Texas, which explicitly excludes New York, New Jersey, Connecticut, California, Florida, Illinois, Maryland, Virginia, Washington D.C., and Nevada. Because the user's location is New York City, NY, Citibank's server does not populate the Accelerate Savings rate and instead outputs the literal placeholder token ':BLUE_AccSavings_Rate%'. In strict compliance with verification rules, this APY is left blank in our tables rather than estimated from third-party aggregators.",
+      "official_source_url": "https://www.citi.com/banking/savings-account?intc=citihpmenu_overview_savings",
+      "secondary_source_url": "https://www.citi.com/banking/compare-bank-accounts",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-02",
+      "severity": "High — Regional Geo-Restriction",
+      "bank_name": "PNC Bank, National Association (FDIC Cert #6384)",
+      "account_name": "PNC High Yield Savings℠",
+      "field_affected": "Account Availability in New York City / Branch Footprint Markets",
+      "status": "Needs Review",
+      "finding_summary": "PNC High Yield Savings (3.15% APY) is geo-blocked in New York City; page body displays 'This Product Isn't Available in Your Area'.",
+      "detailed_explanation": "While the HTML <title> and meta description of pnc.com/en/personal-banking/banking/savings/high-yield-savings.html confirm 'High Yield Savings Account | 3.15% Annual Percentage Yield APY' with $0 minimum balance and $0 monthly service charge, PNC restricts online opening of this product to out-of-branch markets. Visitors in New York City are redirected on-page to Virtual Wallet, Premiere Money Market, and Standard Savings.",
+      "official_source_url": "https://www.pnc.com/en/personal-banking/banking/savings/high-yield-savings.html",
+      "secondary_source_url": "https://www.pnc.com/content/dam/pnc-com/pdf/personal/Savings/service-charges-high-yield-savings.pdf",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-03",
+      "severity": "High — FDIC Insurance Aggregation Risk",
+      "bank_name": "Capital One, N.A. & Discover Bank (FDIC Cert #4297)",
+      "account_name": "Capital One 360 Performance Savings & Discover Online Savings",
+      "field_affected": "FDIC Deposit Insurance Independence & Account Migration",
+      "status": "Needs Review",
+      "finding_summary": "As of November 18, 2025, Capital One and Discover deposit accounts are jointly insured under a single FDIC limit (Capital One, N.A., Cert #4297), and Discover Online Savings accounts are converting to Capital One 360 Performance Savings.",
+      "detailed_explanation": "Depositors seeking to maximize FDIC coverage above $250,000 must NOT treat Capital One 360 and Discover Bank as separate banks. Official notices on both capitalone.com/updates/discover/savings/ and discover.com/online-banking/savings-account/ confirm that Discover Online Savings and Money Market accounts are migrating into Capital One 360 Performance Savings and share a single $250,000 per-owner FDIC insurance cap.",
+      "official_source_url": "https://www.capitalone.com/updates/discover/savings/",
+      "secondary_source_url": "https://www.discover.com/online-banking/savings-account/",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-04",
+      "severity": "Medium — Official Site Rendering Defect ('NaN APY')",
+      "bank_name": "Capital One, N.A. (FDIC Cert #4297)",
+      "account_name": "360 Performance Savings & 360 Checking",
+      "field_affected": "Server-Side Rendered APY Display on Marketing & Disclosure Pages",
+      "status": "Needs Review",
+      "finding_summary": "Capital One's marketing page and disclosure page render literal 'NaN APY' in static HTML, while Capital One's application portal (apply.capitalone.com) confirms 3.20% APY as of 10/21/2026.",
+      "detailed_explanation": "On capitalone.com/bank/savings-accounts/online-performance-savings-account/, capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/, and discover.com/online-banking/savings-account/, the static server-side HTML displays 'A rate of NaN Annual Percentage Yield (APY) applies to all account balances. Advertised rates are variable and effective as of 10/21/2026.' However, Capital One's official online application rate table at apply.capitalone.com/fc/index.html properly renders '3.20% APY' effective 10/21/2026 (and 0.10% APY for 360 Checking).",
+      "official_source_url": "https://apply.capitalone.com/fc/index.html",
+      "secondary_source_url": "https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-05",
+      "severity": "High — Imminent Promotional Feature Discontinuation (2026-10-23)",
+      "bank_name": "Citibank, N.A. (FDIC Cert #7213)",
+      "account_name": "Citi® Savings Account",
+      "field_affected": "Promotional Rate Feature for New Citi Savings Accounts",
+      "status": "Needs Review",
+      "finding_summary": "Citibank's Simplified Banking Fact Sheet (dated 10/01/2026) announces that effective October 23, 2026 (one day after 2026-10-22), the Promotional Rate Feature for New Citi Savings accounts is discontinued.",
+      "detailed_explanation": "Page 1 of Citibank's official Simplified Banking Fact Sheet states in bold: 'Effective October 23, 2026, Promotional Rate Feature for New Citi Savings accounts will be discontinued.' Additionally, effective October 26, 2026, Relationship Tier selections by New-to-Relationship customers will impact Monthly Service Fees and rates applied to Citi Savings accounts.",
+      "official_source_url": "https://www.citi.com/content/dam/cfs/mobile/assets/JRS/popups/ao/Fact_Sheet.pdf",
+      "secondary_source_url": "https://www.citi.com/content/dam/cfs/mobile/assets/JRS/popups/ao/CDAA.pdf",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-06",
+      "severity": "Medium — Program Restructuring & Discontinued Rate Booster",
+      "bank_name": "Bank of America, N.A. (FDIC Cert #3510)",
+      "account_name": "Bank of America Advantage Savings",
+      "field_affected": "Preferred Rewards Savings Interest Rate Booster (0.02%–0.04% APY)",
+      "status": "Needs Review",
+      "finding_summary": "Bank of America replaced Preferred Rewards with 'BofA Rewards™' effective ~May 26, 2026 and disclosed discontinuation of the Advantage Savings interest rate booster.",
+      "detailed_explanation": "Bank of America's Personal Schedule of Fees (effective August 7, 2026) and Preferred Rewards disclosures state that on or about May 26, 2026, Preferred Rewards became BofA Rewards™ (tiers: Member <$30k, Preferred Plus $30k+, Preferred Honors $100k+, Premier $1M+) and that 'the Preferred Rewards Interest Rate booster on a Bank of America Advantage Savings account will be discontinued.' Meanwhile, Bank of America's Business Advantage Savings pages and third-party comparison feeds (Curinos/Marcus as of 2026-10-20) still display the legacy 0.04% APY Platinum Honors rate.",
+      "official_source_url": "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/",
+      "secondary_source_url": "https://promotions.bankofamerica.com/preferredrewards/es?subCampCode=94362&nmls=481151",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-07",
+      "severity": "Low — On-Page Calculator Widget Discrepancy",
+      "bank_name": "Synchrony Bank (FDIC Cert #27314)",
+      "account_name": "Synchrony High Yield Savings",
+      "field_affected": "Interactive Calculator Default APY vs Headline APY",
+      "status": "Needs Review",
+      "finding_summary": "Synchrony's High Yield Savings page displays '3.55% APY' (accurate as of 10/21/2026) in the hero banner and footer CTA, but its embedded calculator widget displays 'Our HYS APY: 2.85%'.",
+      "detailed_explanation": "On synchrony.com/banking/products/high-yield-savings, both the top hero section and bottom product card state '3.55% APY*' with footnote '*ANNUAL PERCENTAGE YIELD (APY): All APYs are accurate as of 10/21/2026.' However, the middle 'Watch how fast your money can grow' interactive calculator widget has a hardcoded '2.85%' label and '1% APY' national average.",
+      "official_source_url": "https://www.synchrony.com/banking/products/high-yield-savings",
+      "secondary_source_url": "https://www.synchrony.com/banking/products/compare-products",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-08",
+      "severity": "Low — Unverified / Unpublished Field (Left Blank)",
+      "bank_name": "Multiple National Banks (Synchrony, U.S. Bank, Wells Fargo, Capital One, PNC, Ally, BMO Alto)",
+      "account_name": "Various High-Yield & Promotional Savings Accounts",
+      "field_affected": "Maximum Balance Limit & Amex Platinum Exclusive Rate %",
+      "status": "Needs Review",
+      "finding_summary": "Maximum account balance caps for 7 banks and the exact APY percentage of American Express's Platinum Card Exclusive Savings Rate are not published on public rate sheets and have been left blank.",
+      "detailed_explanation": "While Barclays Tiered Savings ($1,000,000), Barclays Online Savings ($20,000,000), Marcus by Goldman Sachs ($1,000,000/account; $3,000,000 total), and American Express HYSA ($5,000,000) explicitly publish their maximum balance limits in public schedules, Synchrony, U.S. Bank, Wells Fargo, Capital One 360, PNC, Ally Bank, and BMO Alto do not state a hard maximum balance cap on their public product pages. Similarly, American Express's Exclusive Savings Rate Terms PDF states that the boosted APY for Consumer Platinum Card holders is only visible inside the account holder's monthly statement. All such unconfirmed values are left blank in our tables.",
+      "official_source_url": "https://www.americanexpress.com/content/dam/amex/en-us/banking/personal-savings/exclusive_savings_rate_terms_and_conditions.pdf",
+      "secondary_source_url": "https://www.americanexpress.com/content/dam/amex/en-us/banking/personal-savings/Savings-Schedule.pdf",
+      "date_observed": "2026-10-22"
+    },
+    {
+      "flag_id": "FLAG-09",
+      "severity": "Low — Minor Footnote / Calculator Template Omissions",
+      "bank_name": "JPMorgan Chase Bank (#628), BMO Bank N.A. (#16571) & U.S. Bank (#6548)",
+      "account_name": "Chase Savings Offer Page, BMO Alto / Savings Builder & U.S. Bank Rate Calculator",
+      "field_affected": "Footnote Template Variables & Calculator Service Message",
+      "status": "Needs Review",
+      "finding_summary": "Minor template omissions in webpage footnotes across Chase, BMO, and U.S. Bank; all underlying rates were cross-verified via each bank's official PDF rate sheets and static HTML tables.",
+      "detailed_explanation": "1) On account.chase.com/consumer/banking/savingsoffer, the footnote reads 'The Annual Percentage Yield (APY) for Chase Savings, effective as of 09/18/2026, is  for all balances' (missing the '0.01%' string, which is confirmed in Chase's rdin1.pdf rate sheet effective 2026-10-16). 2) On alto.bmo.com/en-us/high-yield-online-savings/, the modal popup says 'assumes a % Annual Percentage Yield' while the hero banner confirms '3.00% APY as of October 21, 2026'. 3) On usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html, the JS calculator shows 'We're temporarily having trouble displaying our current rates', while the static HTML table directly below it renders the full verified tier schedule (0.05% standard / 1.00%–3.50% relationship APY effective October 21, 2026).",
+      "official_source_url": "https://account.chase.com/consumer/banking/savingsoffer",
+      "secondary_source_url": "https://www.alto.bmo.com/en-us/high-yield-online-savings/",
+      "date_observed": "2026-10-22"
+    }
+  ]
+}
