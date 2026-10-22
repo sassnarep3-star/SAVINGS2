@@ -100,9 +100,9 @@ _None. No other session is active in this repository._
 
 | Item | Value |
 | --- | --- |
-| PR | [#1](https://github.com/sassnarep3-star/SAVINGS2/pull/1) — "Verified savings-account research + GitHub Pages dashboard (19 products, sourced line by line)" |
-| Merge result | **Merged** 2026-10-22T00:12:46Z via `gh pr merge 1 --merge` (no review requested, per instruction). Merge commit `e474bfc` on `main`. |
-| Pages build | `pages/builds` → status **built**, commit `e474bfc`, no error. `pages` status `built`, source `main` / root, `build_type` legacy, `https_enforced` true. |
+| PR | [#1](https://github.com/sassnarep3-star/SAVINGS2/pull/1) — "Verified savings-account research + GitHub Pages dashboard (19 products, sourced line by line)" · [#2](https://github.com/sassnarep3-star/SAVINGS2/pull/2) — post-merge corrections |
+| Merge result | **PR 1 merged** 2026-10-22T00:12:46Z → `e474bfc`. **PR 2 merged** 2026-10-22T00:14:15Z → `6601f69`. Both via `gh pr merge <n> --merge`, no review requested (per instruction). |
+| Pages build | `pages/builds` → status **built**, latest commit `6601f69`, no error. `pages` status `built`, source `main` / root, `build_type` legacy, `https_enforced` true. |
 | Deploy verification | All 8 pages plus `assets/style.css` fetched live from the Pages host and read: correct `<title>` on each, headline figures render (3.75% / 0.38% / 9.9× / $9,375.00). Shell `curl` has no egress in this sandbox, so the check was done with the page-fetch tool rather than `curl` exit codes. |
 | Live URL | https://sassnarep3-star.github.io/SAVINGS2/ |
 
