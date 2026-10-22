@@ -6,7 +6,7 @@ Compiled 2026-10-22; account-opening date used for all projections: **2026-10-22
 
 - Highest fully verified savings APY: **3.75%** (CIT Bank Platinum Savings).
 - FDIC national average savings rate: **0.38%** as of 2026-10-19.
-- Verified accounts: **16 of 23**; unverified APY: **6**.
+- Verified accounts: **17 of 24**; unverified APY: **6**.
 - On $250,000 for one year the best verified account earns **$9,375.00**,
   versus **$950.00** at the national average and **$25.00** at 0.01%.
 

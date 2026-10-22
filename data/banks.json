@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Savings account research — big national banks + national digital banks",
+    "title": "Savings account research \u2014 big national banks + national digital banks",
     "opened_on": "2026-10-22",
     "opened_on_note": "Account-opening date used for every return projection on this site.",
     "retrieved_on": "2026-10-22",
@@ -40,13 +40,13 @@
       "bank": "JPMorgan Chase Bank, National Association",
       "fdic_cert": "628",
       "fdic_active": true,
-      "product": "Chase Savings℠",
+      "product": "Chase Savings\u2120",
       "kind": "Big Four",
       "tiers": [
         {
           "min": 0,
           "apy": 0.01,
-          "condition": "All balance tiers ($0–$9,999; $10,000–$24,999; $25,000–$49,999; $50,000+)"
+          "condition": "All balance tiers ($0\u2013$9,999; $10,000\u2013$24,999; $25,000\u2013$49,999; $50,000+)"
         }
       ],
       "apy_status": "verified",
@@ -57,18 +57,19 @@
       "monthly_fee": 5,
       "fee_note": "$5 monthly service fee; $0 with a $300+ balance at the beginning of each day, OR $25+ in Autosave/recurring transfers from a Chase checking account, OR a linked qualifying checking account, OR an owner under 25.",
       "withdrawal_note": "",
-      "app": "Yes — Chase Mobile® app (online check deposit, transfers, Autosave).",
+      "app": "Yes \u2014 Chase Mobile\u00ae app (online check deposit, transfers, Autosave).",
       "app_source": "https://www.chase.com/personal/savings/savings-account",
       "security": "Data encryption; biometric login (Touch ID / Face ID / Android fingerprint or facial recognition); passkeys and password-manager support on chase.com; one-time code or app notification on new/unusual logins; 24/7 fraud monitoring; reimbursement commitment for unauthorized online/mobile transactions reported promptly.",
       "security_source": "https://www.chase.com/digital/resources/privacy-security",
       "fdic_note": "FDIC insured up to the maximum amount allowed by law.",
-      "bonus": "Up to $200 New Chase Savings Customer Bonus: Earn $100 when depositing $5,000–$9,999.99 or $200 when depositing $10,000+ in new money within 30 days and maintaining for 90 days (offer expires 2027-01-27).",
-      "bonus_source": "https://account.chase.com/consumer/banking/savingsoffer",
+      "bonus": "$200 Chase Savings\u2120 bonus ($15,000 new money within 30 days, held 90 days) OR $900 combo bonus when opened with Chase Total Checking\u00ae + direct deposit (expires 2027-01-27).",
+      "bonus_source": "https://www.chase.com/personal/offers/checking-and-savings",
       "opening_rules": "Apply online at chase.com or in a branch; SSN, address, email and contact details required (Chase FAQ).",
       "sources": {
         "product": "https://www.chase.com/personal/savings/savings-account",
         "rates": "https://www.chase.com/content/dam/chase-ux/ratesheets/pdfs/rdin1.pdf",
-        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/628"
+        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/628",
+        "fee_schedule_pdf": "https://www.chase.com/content/dam/chase-ux/documents/personal/checking/ABSF-en.pdf"
       },
       "flags": [
         "Interactive HTML rate page (chase.com/personal/savings/savings-account/interest-rates) is ZIP-gated, but official Chase rate sheet PDF (rdin1.pdf, effective 2026-10-16) confirms 0.01% APY.",
@@ -88,26 +89,27 @@
       "apy_note": "APY is ZIP/location gated and not present in the served HTML. Not recorded.",
       "apy_as_of": null,
       "min_open": 100,
-      "min_open_note": "$100.00 minimum amount to open (verified in Personal Schedule of Fees, effective August 7, 2026).",
+      "min_open_note": "$100.00 minimum opening deposit confirmed in official Personal Schedule of Fees (Effective August 7, 2026).",
       "monthly_fee": 8,
-      "fee_note": "$8.00 monthly maintenance fee, waived for the first 6 months on new accounts; thereafter waived with $500+ minimum daily balance, linked Advantage Relationship Banking/Checking, enrollment in Preferred Rewards / BofA Rewards™, or owner under age 25.",
+      "fee_note": "$8.00 monthly fee (waived first 6 months on new accounts; $0 thereafter with $500+ minimum daily balance, Advantage Relationship Banking, age under 25, or BofA Rewards Preferred Plus/Honors/Premier).",
       "withdrawal_note": "6 free withdrawals/transfers per monthly statement cycle; $10.00 Withdrawal Limit Fee for each additional withdrawal.",
-      "app": "Yes — Bank of America mobile app (App Store / Google Play links published on the product page).",
+      "app": "Yes \u2014 Bank of America mobile app (App Store / Google Play links published on the product page).",
       "app_source": "https://www.bankofamerica.com/deposits/savings/savings-accounts/",
-      "security": "Bank of America Security Center; additional controls are exposed only after login ('standard security already helps protect you… log in and take additional steps'), so specific MFA features could not be verified from a public page.",
+      "security": "Bank of America Security Center; additional controls are exposed only after login ('standard security already helps protect you\u2026 log in and take additional steps'), so specific MFA features could not be verified from a public page.",
       "security_source": "https://web.bankofamerica.com/en/security",
       "fdic_note": "Deposit products are FDIC-insured (FDIC digital sign displayed on the product page).",
       "bonus": "",
       "bonus_source": "",
-      "opening_rules": "Online application linked from the product page (Open now → Advantage Savings).",
+      "opening_rules": "Online application linked from the product page (Open now \u2192 Advantage Savings).",
       "sources": {
         "product": "https://www.bankofamerica.com/deposits/savings/savings-accounts/",
         "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/3510",
-        "rates": "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/"
+        "rates": "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/",
+        "fee_schedule_pdf": "https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/?request_locale=en_US"
       },
       "flags": [
-        "Consumer APY is ZIP-gated on the web page (Business Advantage Savings publishes 0.01% standard / 0.02%–0.04% Preferred Rewards).",
-        "Official disclosures state that effective on or about May 26, 2026, Preferred Rewards transitioned to BofA Rewards™ and the Advantage Savings interest rate booster was discontinued."
+        "APY not published without interactive ZIP submission \u2014 APY left strictly blank.",
+        "Public HTML shows `$XXXX` placeholders, resolved for fee/minimum via official Aug 7, 2026 Personal Schedule of Fees PDF."
       ]
     },
     {
@@ -116,33 +118,34 @@
       "bank": "Citibank, National Association",
       "fdic_cert": "7213",
       "fdic_active": true,
-      "product": "Citi® Savings",
+      "product": "Citi\u00ae Savings",
       "kind": "Big Four",
       "tiers": [],
       "apy_status": "unverified",
       "apy_note": "Citi's savings APY pages return an empty shell to a non-JavaScript fetch; Citi's own disclosure states APY is 'determined by Rate Region, Relationship Tier and applicable promotion'. No single public APY exists to record.",
       "apy_as_of": null,
       "min_open": 0,
-      "min_open_note": "$0 minimum opening deposit; accounts with a zero balance for 90 calendar days are subject to closure.",
+      "min_open_note": "$0 minimum deposit required to open/obtain APY; zero-balance accounts close after 90 days.",
       "monthly_fee": 4.5,
-      "fee_note": "$4.50 monthly service fee; waived with $500+ Average Monthly Balance, a linked Citibank checking account, or membership in Citi Priority ($30k+), Citigold ($200k+), or Citigold Private Client ($1M+).",
+      "fee_note": "Monthly service fee waived with $500+ Average Monthly Balance, linked Citi Checking account, or Relationship Tier ($30k+ Citi Priority / $200k+ Citigold).",
       "withdrawal_note": "",
-      "app": "Yes — Citi Mobile® App (mobile check deposit, real-time transfers, 65,000+ fee-free ATMs).",
-      "app_source": "https://www.citi.com/banking/savings-account?intc=citihpmenu_overview_savings",
-      "security": "",
-      "security_source": "",
+      "app": "Yes \u2014 Citi Mobile\u00ae App (iOS/Android) + 65,000+ fee-free ATMs.",
+      "app_source": "https://www.citi.com/banking/savings-account",
+      "security": "Biometric login, real-time fraud alerts, 24/7 monitoring, FDIC Certificate #7213.",
+      "security_source": "https://www.citi.com/banking/savings-account",
       "fdic_note": "Citibank, N.A. is an FDIC-insured institution (FDIC certificate 7213).",
       "bonus": "",
       "bonus_source": "",
-      "opening_rules": "Apply online, via Citi Mobile App, or in branch; zero balance for 90 days subject to closure.",
+      "opening_rules": "CRITICAL GEOGRAPHIC RESTRICTION: Residential addresses in NY, CA, NJ, CT, FL, IL, MD, DC, NV, and select VA markets are INELIGIBLE for Citi\u00ae Accelerate Savings per official comparison disclosure.",
       "sources": {
         "product": "https://www.citi.com/banking/savings-account?intc=citihpmenu_overview_savings",
         "rates": "https://www.citi.com/content/dam/cfs/mobile/assets/JRS/popups/ao/Fact_Sheet.pdf",
-        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/7213"
+        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/7213",
+        "comparison": "https://www.citi.com/banking/compare-bank-accounts"
       },
       "flags": [
-        "Citi Accelerate Savings renders uninterpolated placeholder ':BLUE_AccSavings_Rate%' from NYC because NY is excluded from the National Rate Region — left blank.",
-        "Per Citibank's Simplified Banking Fact Sheet (dated 10/01/2026), 'Effective October 23, 2026, Promotional Rate Feature for New Citi Savings accounts will be discontinued.'"
+        "Public page renders `:BLUE_AccSavings_Rate%` placeholder until residential address is entered \u2014 APY left strictly blank.",
+        "New York (NY) residents are excluded from Citi\u00ae Accelerate Savings per official Citi disclosure."
       ]
     },
     {
@@ -151,7 +154,7 @@
       "bank": "Wells Fargo Bank, National Association",
       "fdic_cert": "3511",
       "fdic_active": true,
-      "product": "Way2Save® Savings",
+      "product": "Way2Save\u00ae Savings",
       "kind": "Big Four",
       "tiers": [
         {
@@ -168,7 +171,7 @@
       "monthly_fee": 5,
       "fee_note": "$5 monthly service fee; waived with a $300 minimum daily balance, OR 1 automatic transfer of $25+ per fee period from a linked Wells Fargo checking account, OR 1 automatic transfer of $1+ each business day, OR 1+ Save As You Go transfers, OR primary owner 24 or under.",
       "withdrawal_note": "",
-      "app": "Yes — Wells Fargo Mobile® app (mobile deposit, transfers, in-app Security Center).",
+      "app": "Yes \u2014 Wells Fargo Mobile\u00ae app (mobile deposit, transfers, in-app Security Center).",
       "app_source": "https://www.wellsfargo.com/mobile-online-banking/",
       "security": "Zero-liability protection for promptly reported unauthorized card transactions; 24/7 fraud monitoring; Security Center with security tools and options.",
       "security_source": "https://www.wellsfargo.com/privacy-security/fraud/",
@@ -189,7 +192,7 @@
       "bank": "U.S. Bank National Association",
       "fdic_cert": "6548",
       "fdic_active": true,
-      "product": "Bank Smartly® Savings",
+      "product": "Bank Smartly\u00ae Savings",
       "kind": "National",
       "tiers": [
         {
@@ -205,7 +208,7 @@
         {
           "min": 5000,
           "apy": 2.0,
-          "condition": "Relationship rate, CQB $5,000–$24,999.99"
+          "condition": "Relationship rate, CQB $5,000\u2013$24,999.99"
         },
         {
           "min": 25000,
@@ -214,14 +217,14 @@
         }
       ],
       "apy_status": "verified",
-      "apy_note": "Standard APY 0.05%. Relationship tiers: 1.00% (CQB < $5,000), 2.00% ($5,000–$24,999.99), 3.50% ($25,000+). Effective 2026-10-21 for ZIP 55402; U.S. Bank states APYs may vary by location.",
+      "apy_note": "Standard APY 0.05%. Relationship tiers: 1.00% (CQB < $5,000), 2.00% ($5,000\u2013$24,999.99), 3.50% ($25,000+). Effective 2026-10-21 for ZIP 55402; U.S. Bank states APYs may vary by location.",
       "apy_as_of": "2026-10-21",
       "min_open": 25,
       "min_open_note": "$25 minimum opening deposit.",
       "monthly_fee": 5,
       "fee_note": "$5 monthly maintenance fee, waivable when you are an account owner of eligible U.S. Bank accounts.",
       "withdrawal_note": "",
-      "app": "Yes — U.S. Bank Mobile App ('Get the mobile app' on the savings page).",
+      "app": "Yes \u2014 U.S. Bank Mobile App ('Get the mobile app' on the savings page).",
       "app_source": "https://www.usbank.com/online-mobile-banking/mobile-banking.html",
       "security": "Industry-standard encryption and zero fraud liability; Touch ID / Face ID (iOS) and fingerprint/face scan (Android) sign-in; card lock and unlock in the app; published digital security guarantee.",
       "security_source": "https://www.usbank.com/online-mobile-banking/mobile-banking.html",
@@ -261,7 +264,7 @@
       "monthly_fee": 0,
       "fee_note": "$0 monthly service charge (verified in PNC Consumer Schedule of Service Charges and Fees PDF).",
       "withdrawal_note": "",
-      "app": "Yes — PNC Mobile Banking (App Store / Google Play badges published on PNC pages).",
+      "app": "Yes \u2014 PNC Mobile Banking (App Store / Google Play badges published on PNC pages).",
       "app_source": "https://www.pnc.com/en/personal-banking/banking/online-and-mobile-banking.html",
       "security": "",
       "security_source": "",
@@ -301,7 +304,7 @@
       "monthly_fee": 5,
       "fee_note": "$5 monthly maintenance fee; waived with a $300 minimum daily ledger balance, OR a recurring internal transfer of $25+ per statement cycle, OR any related Truist checking account, OR an owner under 18. A $5 withdrawal-limit fee applies to each withdrawal over six per statement cycle.",
       "withdrawal_note": "First 6 withdrawals per statement cycle free; $5 per withdrawal after that (max 6 such fees per cycle).",
-      "app": "Yes — Truist online and mobile banking (app QR code and mobile features listed on the product page).",
+      "app": "Yes \u2014 Truist online and mobile banking (app QR code and mobile features listed on the product page).",
       "app_source": "https://www.truist.com/savings/truist-one-savings",
       "security": "",
       "security_source": "",
@@ -333,7 +336,7 @@
       "monthly_fee": 15,
       "fee_note": "$15 monthly maintenance fee; waived with a $10,000 minimum daily balance or a linked eligible TD Beyond/Complete checking account. Tiered rates with a rate bump when an eligible TD account is linked.",
       "withdrawal_note": "",
-      "app": "Yes — TD Mobile Banking App (mobile deposit, Zelle, alerts; iOS and Android).",
+      "app": "Yes \u2014 TD Mobile Banking App (mobile deposit, Zelle, alerts; iOS and Android).",
       "app_source": "https://www.td.com/us/en/personal-banking/online-banking",
       "security": "Touch ID sign-in plus a single-use security code (text or voice) at login; Security Center published; online security commitment.",
       "security_source": "https://www.td.com/us/en/personal-banking/online-banking",
@@ -362,33 +365,34 @@
         {
           "min": 0,
           "apy": 3.2,
-          "condition": "All account balances (verified on apply.capitalone.com/fc/index.html)"
+          "condition": "All balances (3.1540% interest rate; monthly compounding per official Truth-in-Savings disclosure)"
         }
       ],
       "apy_status": "verified",
-      "apy_note": "3.20% variable APY across all balances, effective 10/21/2026, verified on Capital One's official application comparison page (apply.capitalone.com/fc/index.html). Marketing page capitalone.com/bank/savings-accounts/online-performance-savings-account/ renders 'NaN APY' in server-side HTML.",
+      "apy_note": "Hero marketing page rendered client-side `NaN APY`, but official Capital One Truth-in-Savings Disclosure page confirms `3.1540% Interest Rate / 3.20% APY` across all balances effective `10/21/2026`.",
       "apy_as_of": "2026-10-21",
       "min_open": 0,
       "min_open_note": "No minimum balance required to open or maintain; no fees to open or keep the account.",
       "monthly_fee": 0,
       "fee_note": "No monthly fees and no minimums (Capital One product page).",
       "withdrawal_note": "Withdrawals online or at a branch; not by ATM directly (transfer to a checking account first).",
-      "app": "Yes — Capital One Mobile app (mobile check deposit, AutoSave, card lock/unlock).",
+      "app": "Yes \u2014 Capital One Mobile app (mobile check deposit, AutoSave, card lock/unlock).",
       "app_source": "https://www.capitalone.com/digital/tools/mobile/",
       "security": "Facial recognition or fingerprint sign-in; two-step authentication; real-time fraud and purchase alerts; debit card lock/unlock in the app; enhanced transaction details; $0 fraud liability when reported in a timely manner.",
       "security_source": "https://www.capitalone.com/bank/security-fraud-protection/",
       "fdic_note": "FDIC-insured up to allowable limits. Capital One states that any Capital One or Discover Bank deposit accounts opened on or after 2025-05-18 are counted together for FDIC coverage.",
-      "bonus": "Companion 360 Checking offers $250 bonus with code CHECKING250 (2x $500+ direct deposits in 75 days) or DEBIT250/STUDENT250 (20x $10+ debit transactions in 75 days).",
-      "bonus_source": "https://www.capitalone.com/bank/choose-your-offer/",
+      "bonus": "Promo code BONUS1500 (NO direct deposit required): $300 bonus on $20,000\u2013$49,999.99, $750 bonus on $50,000\u2013$99,999.99, or $1,500 bonus on $100,000+ deposited within 15 days and held 90 days.",
+      "bonus_source": "https://www.capitalone.com/bank/bonus1500/",
       "opening_rules": "Open online or in the app in about 5 minutes; name, DOB, address, email, phone, employment, income, SSN/ITIN and citizenship information required; 60 days to fund after approval.",
       "sources": {
         "product": "https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/",
         "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/4297",
-        "rates": "https://apply.capitalone.com/fc/index.html"
+        "rates": "https://apply.capitalone.com/fc/index.html",
+        "disclosure": "https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/"
       },
       "flags": [
-        "Marketing page (capitalone.com/bank/savings-accounts/online-performance-savings-account/) renders 'NaN APY' in static HTML, while Capital One's application portal (apply.capitalone.com/fc/index.html) confirms 3.20% APY as of 10/21/2026.",
-        "Capital One and Discover Bank share FDIC Cert #4297 (jointly insured since 2025-11-18)."
+        "Marketing hero page rendered `NaN APY` to non-JS client; exact `3.20% APY` verified from official Capital One Truth-in-Savings Disclosure page.",
+        "Shares single $250,000 charter limit (CERT #4297) with Discover deposits post-2025-05-18 merger."
       ]
     },
     {
@@ -397,7 +401,7 @@
       "bank": "Citizens Bank, National Association",
       "fdic_cert": "57957",
       "fdic_active": true,
-      "product": "One Deposit Savings from Citizens®",
+      "product": "One Deposit Savings from Citizens\u00ae",
       "kind": "National",
       "tiers": [],
       "apy_status": "unverified",
@@ -408,7 +412,7 @@
       "monthly_fee": 4.99,
       "fee_note": "$4.99 monthly maintenance fee; waived with one deposit of any amount per statement period OR a $200 minimum daily balance. New accounts get the first 4 monthly fees waived.",
       "withdrawal_note": "Citizens states it does not limit transactions, including withdrawals, on savings accounts.",
-      "app": "Yes — Citizens Mobile Banking App (Savings Tracker® goals, Round Ups).",
+      "app": "Yes \u2014 Citizens Mobile Banking App (Savings Tracker\u00ae goals, Round Ups).",
       "app_source": "https://www.citizensbank.com/savings/savings-accounts/overview.aspx",
       "security": "24/7 fraud monitoring; FDIC insurance.",
       "security_source": "https://www.citizensbank.com/savings/savings-accounts/overview.aspx",
@@ -432,7 +436,7 @@
       "bank": "Fifth Third Bank, National Association",
       "fdic_cert": "6672",
       "fdic_active": true,
-      "product": "Fifth Third Momentum® Savings",
+      "product": "Fifth Third Momentum\u00ae Savings",
       "kind": "National",
       "tiers": [],
       "apy_status": "unverified",
@@ -477,7 +481,7 @@
         {
           "min": 1,
           "apy": 3.1,
-          "condition": "Relationship APY — requires a linked, open HSBC Premier checking account and monthly qualifying activity"
+          "condition": "Relationship APY \u2014 requires a linked, open HSBC Premier checking account and monthly qualifying activity"
         }
       ],
       "apy_status": "verified",
@@ -488,7 +492,7 @@
       "monthly_fee": null,
       "fee_note": "",
       "withdrawal_note": "",
-      "app": "Yes — HSBC mobile and online banking (including international transfers).",
+      "app": "Yes \u2014 HSBC mobile and online banking (including international transfers).",
       "app_source": "https://www.us.hsbc.com/savings-accounts/products/relationship-savings/",
       "security": "",
       "security_source": "",
@@ -529,7 +533,7 @@
       "monthly_fee": 0,
       "fee_note": "No monthly maintenance fees; interest compounded daily; 10 withdrawals/transfers per statement cycle (no fee for exceeding, but repeated excess may close the account).",
       "withdrawal_note": "10 withdrawals/transfers per statement cycle (combined limited transactions).",
-      "app": "Yes — Ally online and mobile banking (the bank's security guarantee explicitly covers 'Online or Mobile Banking' transactions).",
+      "app": "Yes \u2014 Ally online and mobile banking (the bank's security guarantee explicitly covers 'Online or Mobile Banking' transactions).",
       "app_source": "https://www.ally.com/security/",
       "security": "Online and mobile security guarantee: no liability for unauthorized online/mobile transactions reported within 60 days; multi-factor authentication; fraud monitoring.",
       "security_source": "https://www.ally.com/security/",
@@ -550,7 +554,7 @@
       "bank": "American Express National Bank",
       "fdic_cert": "27471",
       "fdic_active": true,
-      "product": "American Express® High Yield Savings",
+      "product": "American Express\u00ae High Yield Savings",
       "kind": "National digital",
       "tiers": [
         {
@@ -567,7 +571,7 @@
       "monthly_fee": 0,
       "fee_note": "No monthly fees and no minimum balance.",
       "withdrawal_note": "",
-      "app": "Yes — Amex App: manage the High Yield Savings Account, deposit funds, set alerts (per Amex's app page).",
+      "app": "Yes \u2014 Amex App: manage the High Yield Savings Account, deposit funds, set alerts (per Amex's app page).",
       "app_source": "https://www.americanexpress.com/en-us/support/digital/amex-mobile-app/",
       "security": "Two-step verification with verification codes or app notifications; biometrics; passkeys; SafeKey; Voice ID; fraud alerts; device management.",
       "security_source": "https://www.americanexpress.com/en-us/security/",
@@ -605,7 +609,7 @@
       "monthly_fee": 0,
       "fee_note": "No fees; no minimum deposit; same-day transfers up to $100,000 to/from other banks when requested by the cut-off.",
       "withdrawal_note": "No limit to the number of withdrawals or transfers (Marcus FAQ).",
-      "app": "Yes — Marcus app (open an account, schedule transfers).",
+      "app": "Yes \u2014 Marcus app (open an account, schedule transfers).",
       "app_source": "https://www.marcus.com/us/en/savings/high-yield-savings",
       "security": "",
       "security_source": "",
@@ -619,7 +623,7 @@
         "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/33124"
       },
       "flags": [
-        "The 1.00% promotional increase is tied to the referral programme and lasts 3 months — it is not a standing base rate."
+        "The 1.00% promotional increase is tied to the referral programme and lasts 3 months \u2014 it is not a standing base rate."
       ]
     },
     {
@@ -633,13 +637,18 @@
       "tiers": [
         {
           "min": 0,
+          "apy": 0.8,
+          "condition": "Standard savings APY WITHOUT eligible direct deposit or $5,000/31-day qualifying deposits (0.79708% rate \u2014 Table 5, Oct 20, 2026 Rate Sheet PDF)"
+        },
+        {
+          "min": 0,
           "apy": 3.3,
-          "condition": "Standard savings APY, no direct deposit"
+          "condition": "Ongoing APY WITH eligible direct deposit OR $5,000+ in qualifying deposits every 31 days (Table 4; 4.70% up to $20k w/ SoFi Plus)"
         },
         {
           "min": 0,
           "apy": 4.4,
-          "condition": "With eligible direct deposit: 1.10% boost for up to 6 months, then the then-current standard APY"
+          "condition": "New-member promo APY with eligible direct deposit or $5,000/31d qualifying deposits: 3.30% + 1.10% boost for up to 6 months"
         }
       ],
       "apy_status": "verified",
@@ -650,18 +659,19 @@
       "monthly_fee": 0,
       "fee_note": "No monthly, overdraft or minimum-balance fees.",
       "withdrawal_note": "No withdrawal limit (SoFi comparison table).",
-      "app": "Yes — SoFi app (mobile check deposit, Vaults, roundups).",
+      "app": "Yes \u2014 SoFi app (mobile check deposit, Vaults, roundups).",
       "app_source": "https://www.sofi.com/banking/high-yield-savings-account/",
       "security": "Continuous account monitoring for suspicious activity; customizable alerts; FDIC insurance through a network of participating banks up to $3M (SoFi's own claim).",
       "security_source": "https://www.sofi.com/banking/high-yield-savings-account/",
-      "fdic_note": "SoFi Bank, N.A. Member FDIC; additional coverage up to $3M through a network of participating banks (SoFi's own statement — verify with SoFi before relying on it).",
-      "bonus": "$50 or $400 cash bonus with eligible direct deposit of $1,000+ (terms apply).",
+      "fdic_note": "SoFi Bank, N.A. Member FDIC; additional coverage up to $3M through a network of participating banks (SoFi's own statement \u2014 verify with SoFi before relying on it).",
+      "bonus": "Up to $400 cash bonus ($50 for $1,000\u2013$4,999.99 DD; $400 for $5,000+ DD within 25 days) + 1.10% APY boost (to 4.40% APY) for up to 6 months; valid through 2027-12-31.",
       "bonus_source": "https://www.sofi.com/banking/high-yield-savings-account/",
       "opening_rules": "Open online; SoFi Bank automatically opens a SoFi Checking account alongside the savings account; eligible direct deposit required for the APY boost and the cash bonus.",
       "sources": {
         "product": "https://www.sofi.com/banking/high-yield-savings-account/",
         "rates": "https://www.sofi.com/banking/high-yield-savings-account/",
-        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/26881"
+        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/26881",
+        "rate_sheet_pdf": "https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SoFi-Bank-Rate-Sheet-October-20-2026.pdf"
       },
       "flags": [
         "The 4.40% headline depends on a 6-month promotional boost tied to direct deposit; it is not a 12-month rate.",
@@ -739,7 +749,7 @@
       "monthly_fee": 0,
       "fee_note": "No account opening or monthly service fees.",
       "withdrawal_note": "",
-      "app": "Yes — CIT Bank mobile app (mobile check deposit, account management).",
+      "app": "Yes \u2014 CIT Bank mobile app (mobile check deposit, account management).",
       "app_source": "https://www.cit.com/cit-bank/platinum-savings",
       "security": "Continuous fraud monitoring (CIT's own statement); FDIC insurance.",
       "security_source": "https://www.cit.com/cit-bank/platinum-savings/boost",
@@ -753,7 +763,7 @@
         "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/11063"
       },
       "flags": [
-        "CIT's published rate sheet is effective 2026-07-01 — older than the other verified quotes (2026-10-07 to 2026-10-21). Confirm at application.",
+        "CIT's published rate sheet is effective 2026-07-01 \u2014 older than the other verified quotes (2026-10-07 to 2026-10-21). Confirm at application.",
         "CIT accounts are aggregated with First Citizens Bank for FDIC coverage; they do not add separate $250k capacity."
       ]
     },
@@ -780,7 +790,7 @@
       "monthly_fee": 0,
       "fee_note": "No monthly fees and no minimum balance requirement.",
       "withdrawal_note": "Unlimited electronic transfers and ATM withdrawals; optional ATM card with up to $5/statement cycle domestic ATM fee refund (unlimited for Perks Diamond); $25 outgoing wire fee.",
-      "app": "Yes — Synchrony Bank Mobile App (4.8★ App Store / 4.6★ Google Play as of 09/01/2026; mobile check deposit up to $2,000/day).",
+      "app": "Yes \u2014 Synchrony Bank Mobile App (4.8\u2605 App Store / 4.6\u2605 Google Play as of 09/01/2026; mobile check deposit up to $2,000/day).",
       "app_source": "https://www.synchrony.com/banking/products/high-yield-savings",
       "security": "24/7 fraud monitoring; custom account alerts; biometric login; FDIC insurance up to $250,000 per ownership category.",
       "security_source": "https://www.synchrony.com/banking/products/high-yield-savings",
@@ -825,7 +835,7 @@
       "monthly_fee": 10,
       "fee_note": "$10 monthly maintenance fee; waived with a $10,000 minimum daily balance or a U.S. Bank Smartly Checking account.",
       "withdrawal_note": "Includes ATM card, debit card, and check-writing access.",
-      "app": "Yes — U.S. Bank Mobile App (#1 ranked mobile banking app on product page).",
+      "app": "Yes \u2014 U.S. Bank Mobile App (#1 ranked mobile banking app on product page).",
       "app_source": "https://www.usbank.com/bank-accounts/savings-accounts/elite-money-market.html",
       "security": "FDIC insured; encryption, biometric login, card lock/unlock.",
       "security_source": "https://www.usbank.com/online-mobile-banking/mobile-banking.html",
@@ -839,7 +849,7 @@
         "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/6548"
       },
       "flags": [
-        "3.40% APY applies only to new savings/MMA clients who deposit >=$25,000 within 30 days; existing accounts open >=30 days earn standard rates (0.01%–0.05% APY)."
+        "3.40% APY applies only to new savings/MMA clients who deposit >=$25,000 within 30 days; existing accounts open >=30 days earn standard rates (0.01%\u20130.05% APY)."
       ]
     },
     {
@@ -869,8 +879,8 @@
       "min_open_note": "$25 minimum opening deposit.",
       "monthly_fee": 12,
       "fee_note": "$12 monthly service fee; waived with a $3,500 minimum daily balance each fee period.",
-      "withdrawal_note": "Includes check-writing option; if daily collected balance drops below $25,000, rate reverts to Standard (0.01%) or Relationship (0.02%–0.05%) APY.",
-      "app": "Yes — Wells Fargo Mobile® app.",
+      "withdrawal_note": "Includes check-writing option; if daily collected balance drops below $25,000, rate reverts to Standard (0.01%) or Relationship (0.02%\u20130.05%) APY.",
+      "app": "Yes \u2014 Wells Fargo Mobile\u00ae app.",
       "app_source": "https://www.wellsfargo.com/mobile-online-banking/",
       "security": "Zero-liability protection; 24/7 fraud monitoring; Security Center.",
       "security_source": "https://www.wellsfargo.com/privacy-security/fraud/",
@@ -909,8 +919,8 @@
       "min_open_note": "$0 minimum opening deposit (must fund within 90 days or account closes automatically).",
       "monthly_fee": 0,
       "fee_note": "No monthly maintenance fees.",
-      "withdrawal_note": "Unlimited ACH transfers and withdrawals; no checks, debit cards, wire transfers, or Zelle® supported.",
-      "app": "Yes — BMO Alto Online & Mobile Banking.",
+      "withdrawal_note": "Unlimited ACH transfers and withdrawals; no checks, debit cards, wire transfers, or Zelle\u00ae supported.",
+      "app": "Yes \u2014 BMO Alto Online & Mobile Banking.",
       "app_source": "https://www.alto.bmo.com/en-us/high-yield-online-savings/",
       "security": "FDIC-insured through BMO Bank N.A.; encrypted online/mobile access.",
       "security_source": "https://www.alto.bmo.com/en-us/high-yield-online-savings/",
@@ -930,7 +940,7 @@
     {
       "id": "discover-online-savings",
       "brand": "Discover",
-      "bank": "Discover Bank (inactive) — now Capital One, N.A.",
+      "bank": "Discover Bank (inactive) \u2014 now Capital One, N.A.",
       "fdic_cert": "5649",
       "fdic_active": false,
       "product": "Discover Online Savings (legacy)",
@@ -959,6 +969,46 @@
       },
       "flags": [
         "Included only to record the merger: Discover is not a separate FDIC-insured institution anymore."
+      ]
+    },
+    {
+      "id": "bmo-savings-builder",
+      "brand": "BMO Bank",
+      "bank": "BMO Bank National Association",
+      "fdic_cert": "16571",
+      "fdic_active": true,
+      "product": "Savings Builder Account",
+      "kind": "National branch",
+      "tiers": [
+        {
+          "min": 0,
+          "apy": 0.01,
+          "condition": "All balances ($0.01+; accurate as of 10/21/2026)"
+        }
+      ],
+      "apy_status": "verified",
+      "apy_note": "0.01% APY across all balances (accurate as of 10/21/2026) plus $5/month reward in Year 1 ($60 max) when growing balance by >= $200/month.",
+      "apy_as_of": "2026-10-21",
+      "min_open": 25,
+      "min_open_note": "$25 minimum deposit to open.",
+      "monthly_fee": 0,
+      "fee_note": "$0 monthly maintenance fee.",
+      "withdrawal_note": "Unlimited ACH transfers; 40,000+ fee-free BMO & Allpoint\u00ae ATMs.",
+      "app": "Yes \u2014 BMO Digital Banking App (iOS & Android).",
+      "app_source": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/",
+      "security": "Multi-factor authentication, Total Look\u00ae, biometric login, 986 U.S. branches, FDIC Certificate #16571.",
+      "security_source": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/",
+      "fdic_note": "FDIC insured up to $250,000 per depositor under BMO Bank N.A. (CERT #16571).",
+      "bonus": "Up to $60 Year-1 Savings Reward ($5/month each month balance grows by >= $200 during first 12 months).",
+      "bonus_source": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/",
+      "opening_rules": "Apply online in ~5 minutes; age 18+, SSN, U.S. address, and $25 opening transfer.",
+      "sources": {
+        "product": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/",
+        "rates": "https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/",
+        "fdic_lookup": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/16571"
+      },
+      "flags": [
+        "Legacy `alto.bmo.com/en-us/online-savings-account/` URL returns HTTP 404; verified live `BMO Savings Builder` instead."
       ]
     }
   ]

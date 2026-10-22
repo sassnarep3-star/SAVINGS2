@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "verification_date_utc": "2026-10-22",
+    "account_open_date": "2026-10-22",
+    "auditor_session": "session-6ce52089",
+    "primary_sources_only": true
+  },
+  "fdic_coverage_rules": {
+    "standard_maximum_deposit_insurance_amount_usd": 250000,
+    "unit_rule": "Per depositor, per separately chartered FDIC-insured bank (unique FDIC Certificate Number), per account ownership category — inclusive of principal plus accrued and posted interest.",
+    "official_sources": [
+      {
+        "title": "FDIC Understanding Deposit Insurance",
+        "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+        "published_or_revised_date": "2024-04-01",
+        "verified_date": "2026-10-22"
+      },
+      {
+        "title": "FDIC Deposit Insurance At A Glance",
+        "url": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance",
+        "published_or_revised_date": "2024-04-01",
+        "verified_date": "2026-10-22"
+      },
+      {
+        "title": "FDIC Electronic Deposit Insurance Estimator (EDIE)",
+        "url": "https://edie.fdic.gov/fdic_info_calculator.html",
+        "published_or_revised_date": null,
+        "verified_date": "2026-10-22"
+      }
+    ],
+    "ownership_categories": [
+      {
+        "category": "Single Accounts",
+        "who_qualifies": "Owned by one natural person with no named beneficiaries",
+        "coverage_limit_per_charter_usd": 250000,
+        "coverage_formula": "$250,000 per owner across all single deposit accounts at the same FDIC charter (principal + accrued interest combined)",
+        "safe_day1_principal_at_3_55_apy_usd": 241429.26,
+        "source_url": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance",
+        "source_date": "2024-04-01"
+      },
+      {
+        "category": "Joint Accounts",
+        "who_qualifies": "Owned by two or more natural persons with equal withdrawal rights and no named beneficiaries",
+        "coverage_limit_per_charter_usd": 500000,
+        "coverage_formula": "$250,000 per co-owner ($500,000 total for a 2-owner joint savings account at a single bank charter)",
+        "safe_day1_principal_at_3_55_apy_usd": 482858.52,
+        "source_url": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance",
+        "source_date": "2024-04-01"
+      },
+      {
+        "category": "Trust Accounts (Informal POD / ITF & Formal Revocable/Irrevocable)",
+        "who_qualifies": "Single or joint deposit accounts naming 1 to 5+ unique eligible beneficiaries (Payable on Death / revocable / irrevocable trust)",
+        "coverage_limit_per_charter_usd": 1250000,
+        "coverage_formula": "$250,000 per owner per unique eligible beneficiary, up to 5 beneficiaries ($1,250,000 for 1 owner + 5 unique beneficiaries; $2,500,000 for 2 co-owners + 5 unique beneficiaries)",
+        "safe_day1_principal_at_3_55_apy_usd": 1207146.31,
+        "source_url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+        "source_date": "2024-04-01"
+      },
+      {
+        "category": "Certain Retirement Accounts (IRAs)",
+        "who_qualifies": "Self-directed Traditional IRAs, Roth IRAs, SEP IRAs, and SIMPLE IRAs held as bank deposits",
+        "coverage_limit_per_charter_usd": 250000,
+        "coverage_formula": "$250,000 per owner across all qualifying self-directed retirement deposit accounts at the same bank charter",
+        "safe_day1_principal_at_3_55_apy_usd": 241429.26,
+        "source_url": "https://www.fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance",
+        "source_date": "2024-04-01"
+      },
+      {
+        "category": "Program Bank Sweep Network (Multi-Charter Deposit Sweep)",
+        "who_qualifies": "Enrolled checking/savings depositors at national banks operating an insured deposit sweep network (e.g., SoFi Insured Deposit Program)",
+        "coverage_limit_per_charter_usd": 3000000,
+        "coverage_formula": "Up to $3,000,000 aggregate FDIC coverage across participating network banks ($250,000 per participating bank charter)",
+        "safe_day1_principal_at_3_55_apy_usd": 2897151.13,
+        "source_url": "https://www.sofi.com/banking/high-yield-savings-account/",
+        "source_date": "2026-10-20"
+      }
+    ]
+  },
+  "macro_benchmarks": {
+    "fdic_national_rates": {
+      "official_effective_date": "2026-10-19",
+      "verified_date": "2026-10-22",
+      "source_title": "FDIC National Rates and Rate Caps – October 2026",
+      "source_url": "https://www.fdic.gov/national-rates-and-rate-caps",
+      "rates_percent": {
+        "savings": { "national_rate": 0.38, "rate_cap": 4.63 },
+        "interest_checking": { "national_rate": 0.07, "rate_cap": 4.63 },
+        "money_market": { "national_rate": 0.63, "rate_cap": 4.63 },
+        "cd_1_month": { "national_rate": 0.23, "treasury_yield_ref": 4.02, "rate_cap": 5.57 },
+        "cd_3_month": { "national_rate": 1.14, "treasury_yield_ref": 4.20, "rate_cap": 5.79 },
+        "cd_6_month": { "national_rate": 1.39, "treasury_yield_ref": 4.33, "rate_cap": 5.95 },
+        "cd_12_month": { "national_rate": 1.76, "treasury_yield_ref": 4.54, "rate_cap": 6.20 },
+        "cd_24_month": { "national_rate": 1.55, "treasury_yield_ref": 4.88, "rate_cap": 6.61 },
+        "cd_36_month": { "national_rate": 1.39, "treasury_yield_ref": 5.00, "rate_cap": 6.75 },
+        "cd_48_month": { "national_rate": 1.31, "treasury_yield_ref": 5.00, "rate_cap": 6.75 },
+        "cd_60_month": { "national_rate": 1.41, "treasury_yield_ref": 5.09, "rate_cap": 6.86 }
+      }
+    },
+    "federal_reserve_h15": {
+      "official_release_date": "2026-10-21",
+      "observation_date": "2026-10-20",
+      "verified_date": "2026-10-22",
+      "source_title": "Federal Reserve Board H.15 Selected Interest Rates (Daily)",
+      "source_url": "https://www.federalreserve.gov/releases/h15/",
+      "rates_percent": {
+        "effective_federal_funds_rate": 3.88,
+        "discount_window_primary_credit": 4.00,
+        "bank_prime_loan": 7.00
+      }
+    },
+    "us_treasury_par_yield_curve": {
+      "official_observation_date": "2026-10-21",
+      "verified_date": "2026-10-22",
+      "source_title": "U.S. Department of the Treasury Daily Treasury Par Yield Curve Rates (October 2026)",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=202610",
+      "yields_percent": {
+        "1_month": 4.09,
+        "1_5_month": 4.12,
+        "2_month": 4.16,
+        "3_month": 4.25,
+        "4_month": 4.34,
+        "6_month": 4.35,
+        "1_year": 4.52,
+        "2_year": 4.81,
+        "3_year": 4.89,
+        "5_year": 4.95,
+        "7_year": 5.03,
+        "10_year": 5.13,
+        "20_year": 5.47,
+        "30_year": 5.42
+      }
+    },
+    "federal_reserve_large_commercial_banks": {
+      "data_as_of_date": "2026-06-30",
+      "posted_date": "2026-10-02",
+      "verified_date": "2026-10-22",
+      "source_title": "Federal Reserve Statistical Release: U.S. Domestically Chartered Commercial Banks, Ranked by Consolidated Assets",
+      "source_url": "https://www.federalreserve.gov/releases/lbr/current/"
+    },
+    "fdic_bankfind_registry": {
+      "index_timestamp": "2026-10-16T11:58:03Z",
+      "verified_date": "2026-10-22",
+      "source_title": "FDIC BankFind Suite Institution Directory API",
+      "source_url": "https://api.fdic.gov/banks/institutions?filters=CERT%3A(628%20OR%203510%20OR%207213%20OR%203511%20OR%206548%20OR%206384%20OR%209846%20OR%204297%20OR%2033124%20OR%2027471%20OR%2057803%20OR%205649%20OR%2027314%20OR%2026881%20OR%2018409%20OR%2016571%20OR%2057957)&fields=NAME,CERT,ACTIVE,ASSET,DEP,CITY,STALP,WEBADDR,DATEUPDT,INSDATE,BKCLASS&limit=25&format=json"
+    }
+  },
+  "same_charter_merger_traps": [
+    {
+      "trap_id": "TRAP-01",
+      "brands_sharing_charter": ["Capital One 360 Performance Savings", "Discover Online Savings (Division of Capital One, N.A.)"],
+      "active_fdic_cert": 4297,
+      "inactive_merged_cert": 5649,
+      "merger_aggregation_rule": "Discover Bank (FDIC Cert #5649) became INACTIVE in the FDIC registry (updated 2025-06-04) following its merger into Capital One, National Association (FDIC Cert #4297). Per Capital One's official disclosure, all Capital One and Discover deposit accounts opened on or after May 18, 2025 are aggregated under a SINGLE $250,000 per-depositor, per-category FDIC insurance limit.",
+      "primary_sources": [
+        "https://api.fdic.gov/banks/institutions?filters=CERT%3A(4297%20OR%205649)&fields=NAME,CERT,ACTIVE,ASSET,DEP,DATEUPDT&format=json",
+        "https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/?timerBanner=DISCOVER&src=dfs117-savings-account"
+      ]
+    },
+    {
+      "trap_id": "TRAP-02",
+      "brands_sharing_charter": ["Citizens Bank, N.A. (Branch Savings)", "Citizens Access® Online Savings"],
+      "active_fdic_cert": 57957,
+      "inactive_merged_cert": null,
+      "merger_aggregation_rule": "Citizens Access® is an online division of Citizens Bank, N.A., not a separately chartered bank. Deposits held at both Citizens Access and Citizens Bank branches share one combined $250,000 single-owner limit under FDIC Certificate #57957.",
+      "primary_sources": [
+        "https://www.secure.citizensaccess.com/Citizens/home",
+        "https://api.fdic.gov/banks/institutions?filters=CERT%3A57957&fields=NAME,CERT,ACTIVE,ASSET,DEP&format=json"
+      ]
+    },
+    {
+      "trap_id": "TRAP-03",
+      "brands_sharing_charter": ["JPMorgan Chase Savings℠", "Chase Premier Savings℠", "Chase Private Client Savings℠"],
+      "active_fdic_cert": 628,
+      "inactive_merged_cert": null,
+      "merger_aggregation_rule": "Multiple savings, checking, and CD tiers held by the same individual at JPMorgan Chase Bank, N.A. (Cert #628) are combined under one single-owner $250,000 FDIC cap unless separated across distinct legal ownership categories (e.g., Joint or Trust/POD).",
+      "primary_sources": [
+        "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+        "https://www.chase.com/personal/savings/savings-account"
+      ]
+    },
+    {
+      "trap_id": "TRAP-04",
+      "brands_sharing_charter": ["CIT Bank Platinum Savings / Savings Connect", "First-Citizens Bank & Trust Company (519 Branches)"],
+      "active_fdic_cert": 11063,
+      "inactive_merged_cert": null,
+      "merger_aggregation_rule": "CIT Bank is an unincorporated division of First-Citizens Bank & Trust Company (FDIC Cert #11063), not a separate bank charter. All CIT Bank online deposits and First Citizens branch deposits combine toward one $250,000 single-owner cap.",
+      "primary_sources": [
+        "https://www.cit.com/cit-bank/platinum-savings",
+        "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/11063"
+      ]
+    }
+  ]
+}
