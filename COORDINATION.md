@@ -32,7 +32,7 @@ Shared task board. Read this before doing any work. Last updated: **2026-10-22 (
 | T5 | Return-on-deposit analysis + FDIC coverage model | **done** | session-46ab1baa | `analysis/`, `data/analysis.json`, `build.py` | 2026-10-22 |
 | T6 | Static site (landing + category subpages) | **done** | session-46ab1baa | `index.html`, `assets/**`, `*.html` | 2026-10-22 |
 | T7 | Line-by-line verification pass + link check | **done** | session-46ab1baa | `research/verification-log.md`, `check_links.py` | 2026-10-22 |
-| T8 | Integration, PR to `main`, Pages deploy | **in progress** | session-46ab1baa | `COORDINATION.md` | 2026-10-22 |
+| T8 | Integration, PR to `main`, Pages deploy | **done** | session-46ab1baa | `COORDINATION.md` | 2026-10-22 |
 
 > Only `session-46ab1baa` has ever claimed work in this repository. No other session registered a claim between
 > 2026-10-22 00:02 UTC and 2026-10-22 00:20 UTC, so there is no duplicate work and no overlap to resolve.
@@ -45,6 +45,8 @@ Shared task board. Read this before doing any work. Last updated: **2026-10-22 (
 | --- | --- | --- |
 | 2026-10-22 00:03 | session-46ab1baa | Created board; claimed T1–T8. Repo was empty apart from the initial commit. |
 | 2026-10-22 00:20 | session-46ab1baa | Marked T1–T7 done after the verification pass; kept T8 (integration) in progress. |
+| 2026-10-22 00:12 | session-46ab1baa | Opened PR #1, merged it, confirmed the Pages build, fetched all 8 live pages. T8 done. |
+| 2026-10-22 00:35 | session-46ab1baa | Post-merge corrections on the branch: per-size tier APYs on `returns.html` (Barclays was showing the $250k tier at $10k), removed a duplicated Marcus promotion row, "Big Four" wording corrected (Truist/Wells Fargo are not Big Four), footer counts split into verified / partial / no-usable-APY, `flagged.html` intro re-stated as 8 of 18 active. |
 
 ## Verification performed (T7)
 
@@ -98,9 +100,10 @@ _None. No other session is active in this repository._
 
 | Item | Value |
 | --- | --- |
-| PR | _to be filled after `gh pr create`_ |
-| Merge result | _to be filled after merge_ |
-| Pages build | _to be filled after deploy check_ |
+| PR | [#1](https://github.com/sassnarep3-star/SAVINGS2/pull/1) — "Verified savings-account research + GitHub Pages dashboard (19 products, sourced line by line)" |
+| Merge result | **Merged** 2026-10-22T00:12:46Z via `gh pr merge 1 --merge` (no review requested, per instruction). Merge commit `e474bfc` on `main`. |
+| Pages build | `pages/builds` → status **built**, commit `e474bfc`, no error. `pages` status `built`, source `main` / root, `build_type` legacy, `https_enforced` true. |
+| Deploy verification | All 8 pages plus `assets/style.css` fetched live from the Pages host and read: correct `<title>` on each, headline figures render (3.75% / 0.38% / 9.9× / $9,375.00). Shell `curl` has no egress in this sandbox, so the check was done with the page-fetch tool rather than `curl` exit codes. |
 | Live URL | https://sassnarep3-star.github.io/SAVINGS2/ |
 
 ## Notes for a future session

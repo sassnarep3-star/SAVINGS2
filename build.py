@@ -204,7 +204,7 @@ def page(title, body, subtitle="", active=""):
   <div class="wrap">
     <p>Compiled 2026-10-22 from official bank, FDIC and Treasury publications. Deposit account opened <strong>2026-10-22</strong>.
     APYs are variable unless the source says otherwise. Nothing here is financial advice.</p>
-    <p>{len(PRODUCTS)} products screened · {len(verified)} with a fully verified APY · {len(unverified)} APY unverifiable from a public official page ·
+    <p>{len(PRODUCTS)} products screened · {len(verified)} with a fully verified APY · {len(unverified)} with no usable public APY · {len(partial)} partial
     <a href="flagged.html">see what is missing</a>.</p>
   </div>
 </footer>
@@ -353,8 +353,9 @@ def build_index():
     <li><strong>The rate spread is enormous.</strong> {pct(top['apy'])} vs {pct(FDIC_NAT)} at the average bank is a
       {top['apy']/FDIC_NAT:.1f}× difference in interest for identical FDIC protection. On {money(amt)} that is
       {money(ranked[0]['interest_1y'] - interest(amt, FDIC_NAT, 1), True)} of extra interest in one year.</li>
-    <li><strong>Big-bank brand costs you the interest.</strong> The two Big Four banks that publish a rate publicly
-      (Truist 0.01%, Wells Fargo 0.01%) sit at the bottom of the table; the highest verified rates come from
+    <li><strong>Branch-bank brand costs you the interest.</strong> The only branch banks that publish a rate publicly
+      (Truist 0.01%, Wells Fargo 0.01%) sit at the bottom of the table, and the four largest banks publish no retrievable
+      rate at all; the highest verified rates come from
       branch-free U.S. banks (CIT/First Citizens, Barclays Bank Delaware, Goldman Sachs/Marcus, SoFi, American Express, Ally).</li>
     <li><strong>"Max FDIC insurance" is a structuring question, not a bank question.</strong> Coverage is $250,000 per depositor,
       per ownership category, per bank. {money(1_000_000)} in one name needs four banks; a joint account needs two;
@@ -381,6 +382,7 @@ PROMO_CONDITIONS = {
     "barclays-tiered-savings": "New Barclays savings customers only. Open through 2026-10-31, fund with at least $25,000 within 30 days, hold $25,000 for 120 consecutive days; bonus paid about 60 days later.",
     "sofi-savings": "Eligible direct deposit of $1,000+; bonus is $50 or $400 depending on the deposit; terms apply.",
     "cit-platinum-savings": "Promo code BOOST50 at opening; boost applies for six months; promotion runs 2026-09-29 to 2026-12-15.",
+    "marcus-online-savings": "Referral programme: one +1.00% boost per referral, up to 5 referrals a year, each lasting 3 months; APY as of 2026-10-21.",
 }
 
 
@@ -394,10 +396,6 @@ def promotion_rows():
                 esc(PROMO_CONDITIONS.get(p["id"], "")),
                 f"<a href='{esc(p['bonus_source'])}' target='_blank' rel='noopener'>official terms</a>",
             ])
-    rows.append(["<strong>Marcus</strong>",
-                 "3-month +1.00% APY increase on top of the standard APY; Marcus illustrates a combined 3.75% APY for one referral in a year.",
-                 "Referral programme; boost lasts 3 months.",
-                 "<a href='https://www.marcus.com/us/en/savings/referrals#termsandconditions' target='_blank' rel='noopener'>official terms</a>"])
     return rows
 
 
@@ -475,9 +473,10 @@ def build_returns():
     size_rows = []
     for s in SIZES:
         sc = scenarios_for(s)
+        by_id = {x["id"]: x for x in sc}
         cells = [f"<strong>{money(s)}</strong>"]
         for r in ranked:
-            apy = r["apy"]
+            apy = by_id[r["id"]]["apy"]          # tier for THIS deposit size, not the $250k tier
             cells.append(f"{money(interest(s, apy, 1), True)}<div class='small'>{pct(apy)}</div>")
         best = sc[0]
         cells.append(f"<strong>{money(best['interest_1y'], True)}</strong><div class='small'>{esc(best['product']['brand'])} {pct(best['apy'])}</div>")
