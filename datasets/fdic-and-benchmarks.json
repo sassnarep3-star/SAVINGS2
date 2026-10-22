@@ -177,6 +177,17 @@
         "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
         "https://www.chase.com/personal/savings/savings-account"
       ]
+    },
+    {
+      "trap_id": "TRAP-04",
+      "brands_sharing_charter": ["CIT Bank Platinum Savings / Savings Connect", "First-Citizens Bank & Trust Company (519 Branches)"],
+      "active_fdic_cert": 11063,
+      "inactive_merged_cert": null,
+      "merger_aggregation_rule": "CIT Bank is an unincorporated division of First-Citizens Bank & Trust Company (FDIC Cert #11063), not a separate bank charter. All CIT Bank online deposits and First Citizens branch deposits combine toward one $250,000 single-owner cap.",
+      "primary_sources": [
+        "https://www.cit.com/cit-bank/platinum-savings",
+        "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/11063"
+      ]
     }
   ]
 }

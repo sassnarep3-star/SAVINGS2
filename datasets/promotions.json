@@ -2,9 +2,34 @@
   "metadata": {
     "verification_date_utc": "2026-10-22",
     "account_open_date": "2026-10-22",
-    "total_promotions": 8
+    "total_promotions": 9
   },
   "promotions": [
+    {
+      "promo_id": "PROMO-CIT-BOOST50",
+      "bank_name": "First-Citizens Bank & Trust Co. (CIT Bank Division)",
+      "account_name": "CIT Bank Platinum Savings",
+      "promo_code": "BOOST50",
+      "offer_headline": "+0.50% APY Boost for 6 Months -> 4.25% APY on $5,000+ Balances (NO Direct Deposit Required!)",
+      "bonus_tiers": [
+        {
+          "min_deposit_usd": 5000,
+          "bonus_usd": 0,
+          "effective_1yr_apy_at_min_pct": 4.0,
+          "note": "4.25% APY for first 6 months + 3.75% APY standard thereafter up to $9,999,999 ($9,999.25 Year-1 interest on $250k)"
+        }
+      ],
+      "direct_deposit_required": false,
+      "funding_window_days": 30,
+      "hold_period_days": 180,
+      "total_lock_days": 0,
+      "payout_timing": "Credited monthly inside daily-compounded interest throughout the 6-month boost window (no lockup penalty if withdrawn early).",
+      "expiration_date": "2026-12-15",
+      "expiration_note": "Confirmed verbatim on official terms: 'The Promotion begins on September 29, 2026, and ends December 15, 2026.' Note standard tier APY schedule carries effective date July 1, 2026 ( reference comparison footnote updated September 21, 2026).",
+      "base_apy_percent": 3.75,
+      "official_source_url": "https://www.cit.com/cit-bank/platinum-savings/boost",
+      "verified_date": "2026-10-22"
+    },
     {
       "promo_id": "PROMO-CAPONE-1500",
       "bank_name": "Capital One, N.A.",

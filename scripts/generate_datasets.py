@@ -58,17 +58,17 @@ ACCOUNTS = [
         "min_balance_for_apy_usd": 5000,
         "monthly_fee_usd": 0,
         "fee_waiver_rules": "No monthly maintenance or account opening fees ($0 unconditional).",
-        "bonus_summary": "None confirmed with public terms on primary product/rate sheets as of 2026-10-22.",
-        "has_active_promo": False,
-        "promo_id": None,
+        "bonus_summary": "Promo Code BOOST50: +0.50% APY boost for 6 months -> 4.25% APY on $5,000+ balances (0.75% < $5k), no direct deposit required! Valid 2026-09-29 through 2026-12-15.",
+        "has_active_promo": True,
+        "promo_id": "PROMO-CIT-BOOST50",
         "compounding": "Compounded daily and credited monthly based on end-of-day tier.",
-        "withdrawal_rules": "Unlimited online/mobile ACH transfers; mobile check deposit and incoming/outgoing wires available via CIT Bank app.",
-        "opening_rules": "Apply online in ~5 minutes with SSN/ITIN, U.S. address, and $100 minimum opening transfer via ACH, check, or wire.",
+        "withdrawal_rules": "Unlimited online/mobile ACH transfers; mobile check deposit and free incoming wires available via CIT Bank app.",
+        "opening_rules": "Apply online in ~5 minutes with SSN/ITIN, U.S. address, promo code BOOST50, and $100 minimum opening transfer via ACH, check, or wire.",
         "digital_app_name": "CIT Bank Mobile App (iOS & Android)",
         "digital_app_available": True,
         "security_features": "Multi-factor authentication, biometric login, TLS encryption, FDIC Certificate #11063 under First-Citizens Bank & Trust Co.",
-        "rate_source_url": "https://www.cit.com/cit-bank/resources/products-and-rates",
-        "disclosure_source_url": "https://www.cit.com/cit-bank/platinum-savings",
+        "rate_source_url": "https://www.cit.com/cit-bank/platinum-savings/boost",
+        "disclosure_source_url": "https://www.cit.com/cit-bank/resources/products-and-rates",
         "fdic_source_url": "https://banks.data.fdic.gov/bankfind-suite/bankfind/details/11063",
         "flagged_ids": ["IRREG-CIT-01", "IRREG-CHARTER-03"]
     },
@@ -647,6 +647,47 @@ ACCOUNTS = [
         "flagged_ids": []
     },
     {
+        "id": "bmo-alto-online-savings",
+        "institution_name": "BMO Bank National Association",
+        "brand_name": "BMO Alto (Alto Online Banking Division)",
+        "account_name": "Alto High Yield Online Savings Account",
+        "category": "Direct Division of Big National Bank (#16 U.S. Assets)",
+        "fed_rank": 16,
+        "fed_rank_note": "#16 U.S. commercial bank by consolidated assets ($254.97B; online division sharing FDIC Cert #16571 with BMO Bank N.A.).",
+        "consolidated_assets_mil_usd": 254973,
+        "domestic_deposits_mil_usd": 194140,
+        "us_branches": 986,
+        "fdic_cert": 16571,
+        "fdic_active": True,
+        "fdic_insured_max_single_usd": 250000,
+        "fdic_sweep_max_usd": None,
+        "shared_charter_warning": "SHARED CHARTER WARNING: Per official Alto disclosure, deposits at BMO Alto and retail BMO Bank N.A. branches are NOT separately insured and combine under FDIC Certificate #16571.",
+        "apy_status": "verified",
+        "apy_percent": 3.00,
+        "interest_rate_percent": None,
+        "rate_type": "Variable flat rate across all balances ($0+)",
+        "rate_condition_summary": "3.00% APY current as of October 21, 2026 across all balances ($0 minimum). Note: rebranding from BMO Alto to Alto; must fund within 90 days or account auto-closes.",
+        "official_rate_as_of_date": "2026-10-21",
+        "verified_date": VERIFIED_DATE,
+        "min_opening_deposit_usd": 0,
+        "min_balance_for_apy_usd": 0,
+        "monthly_fee_usd": 0,
+        "fee_waiver_rules": "$0 monthly maintenance fees and $0 minimum balance.",
+        "bonus_summary": "None advertised on official Alto High Yield Online Savings page as of 2026-10-22.",
+        "has_active_promo": False,
+        "promo_id": None,
+        "compounding": "Variable rate; compounded and credited monthly.",
+        "withdrawal_rules": "Unlimited online ACH transfers at $0 fee; note Alto does NOT issue checks/debit cards and does NOT support wire transfers, Zelle®, or mail transactions.",
+        "opening_rules": "$0 minimum opening deposit online (must be funded within 90 consecutive days or auto-closes).",
+        "digital_app_name": "BMO Alto Online Banking Portal (ACH-only digital interface)",
+        "digital_app_available": True,
+        "security_features": "TLS encryption, multi-factor login, FDIC Certificate #16571 under BMO Bank N.A.",
+        "rate_source_url": "https://www.alto.bmo.com/en-us/high-yield-online-savings/",
+        "disclosure_source_url": "https://www.alto.bmo.com/pdf/online-savings-deposit-account-disclosure.pdf",
+        "fdic_source_url": FED_LBR_URL,
+        "flagged_ids": ["IRREG-BMO-01"]
+    },
+    {
         "id": "bmo-savings-builder",
         "institution_name": "BMO Bank National Association",
         "brand_name": "BMO Bank",
@@ -703,15 +744,15 @@ ACCOUNTS = [
         "fdic_insured_max_single_usd": 250000,
         "fdic_sweep_max_usd": None,
         "shared_charter_warning": "All Chase Savings℠, Premier Savings℠, Total Checking®, and CDs share one $250,000 single-owner cap under FDIC Certificate #628.",
-        "apy_status": "unverified_zip_gated",
-        "apy_percent": None,
-        "interest_rate_percent": None,
-        "rate_type": "Variable market-dependent rate (ZIP-code gated on chase.com — left blank per strict primary-source rule)",
-        "rate_condition_summary": "Official rate table on chase.com/personal/savings/savings-account/interest-rates requires interactive 5-digit ZIP entry and refuses to render server-side. Left blank rather than inferred.",
-        "official_rate_as_of_date": None,
+        "apy_status": "verified",
+        "apy_percent": 0.01,
+        "interest_rate_percent": 0.01,
+        "rate_type": "Variable (0.01% Chase Savings℠; 0.02% Relationship APY on Premier/Private Client Savings)",
+        "rate_condition_summary": "Web HTML is ZIP-gated, but official Chase Consumer Deposit Rate Sheet PDF (`rdin1.pdf`, effective Friday, October 16, 2026) confirms 0.01% APY across all tiers on Chase Savings℠ and 0.02% Relationship APY on Chase Premier / Private Client Savings℠.",
+        "official_rate_as_of_date": "2026-10-16",
         "verified_date": VERIFIED_DATE,
         "min_opening_deposit_usd": 0,
-        "min_balance_for_apy_usd": None,
+        "min_balance_for_apy_usd": 0,
         "monthly_fee_usd": 5,
         "fee_waiver_rules": "Chase Savings℠ $5/mo -> $0 with $300+ beginning daily balance, OR $25+ Autosave/repeating transfer from Chase checking, OR linked qualifying checking, OR age < 25. (Chase Premier Savings℠: $25/mo -> $0 with $15,000+ daily balance or linked Premier Plus/Sapphire/Private Client checking).",
         "bonus_summary": "VERIFIED HIGH-VALUE BONUS (expires 01/27/2027): $200 standalone Chase Savings℠ bonus ($15,000 new money within 30 days, held 90 days) OR $900 combined bonus when opening Chase Total Checking® (with DD) + Chase Savings℠ ($15,000 held 90 days) simultaneously!",
@@ -722,8 +763,8 @@ ACCOUNTS = [
         "opening_rules": "$0 minimum deposit to open online or in branch; address, email, SSN, and contact details required.",
         "digital_app_name": "Chase Mobile® App (#1 J.D. Power National Bank Mobile App)",
         "digital_app_available": True,
-        "security_features": "Zero Liability Protection, 24/7 fraud monitoring, card lock, biometric authentication, 5,137 U.S. branches, FDIC Certificate #628.",
-        "rate_source_url": "https://www.chase.com/personal/savings/savings-account/interest-rates",
+        "security_features": "Passkeys, Zero Liability Protection, 24/7 fraud monitoring, card lock, biometric authentication, 5,137 U.S. branches, FDIC Certificate #628.",
+        "rate_source_url": "https://www.chase.com/content/dam/chase-ux/ratesheets/pdfs/rdin1.pdf",
         "disclosure_source_url": "https://www.chase.com/personal/offers/checking-and-savings",
         "fdic_source_url": FED_LBR_URL,
         "flagged_ids": ["IRREG-JPM-01", "IRREG-JPM-02"]
@@ -794,8 +835,8 @@ ACCOUNTS = [
         "verified_date": VERIFIED_DATE,
         "min_opening_deposit_usd": 0,
         "min_balance_for_apy_usd": 0,
-        "monthly_fee_usd": None,
-        "fee_waiver_rules": "Monthly service fees waived with $500+ Average Monthly Balance, a linked Citi Checking account, OR Relationship Tier ($30,000+ Citi Priority, $200,000+ Citigold, $1,000,000+ Citigold Private Client). Zero-balance accounts close after 90 days.",
+        "monthly_fee_usd": 4.5,
+        "fee_waiver_rules": "$4.50/mo standard fee ($2.50 non-Citi ATM fee) per Simplified Banking Fact Sheet -> $0 with $500+ Average Monthly Balance, linked Citi Checking, OR Relationship Tier ($30k+ Priority / $200k+ Citigold). URGENT ALERT: Effective 2026-10-23 (tomorrow!), Promotional Rate Feature for New Citi Savings accounts is discontinued!",
         "bonus_summary": "No standalone savings-only cash bonus on citi.com/banking/savings-account as of 2026-10-22 (checking Enhanced Direct Deposit offers apply separately to checking).",
         "has_active_promo": False,
         "promo_id": None,
@@ -1063,6 +1104,26 @@ ACCOUNTS = [
 
 PROMOTIONS = [
     {
+        "promo_id": "PROMO-CIT-BOOST50",
+        "bank_name": "First-Citizens Bank & Trust Co. (CIT Bank Division)",
+        "account_name": "CIT Bank Platinum Savings",
+        "promo_code": "BOOST50",
+        "offer_headline": "+0.50% APY Boost for 6 Months -> 4.25% APY on $5,000+ Balances (NO Direct Deposit Required!)",
+        "bonus_tiers": [
+            {"min_deposit_usd": 5000, "bonus_usd": 0, "effective_1yr_apy_at_min_pct": 4.00, "note": "4.25% APY for first 6 months + 3.75% APY standard thereafter up to $9,999,999 ($9,999.25 Year-1 interest on $250k)"}
+        ],
+        "direct_deposit_required": False,
+        "funding_window_days": 30,
+        "hold_period_days": 180,
+        "total_lock_days": 0,
+        "payout_timing": "Credited monthly inside daily-compounded interest throughout the 6-month boost window (no lockup penalty if withdrawn early).",
+        "expiration_date": "2026-12-15",
+        "expiration_note": "Confirmed verbatim on official terms: 'The Promotion begins on September 29, 2026, and ends December 15, 2026.' Note standard tier APY schedule carries effective date July 1, 2026 ( reference comparison footnote updated September 21, 2026).",
+        "base_apy_percent": 3.75,
+        "official_source_url": "https://www.cit.com/cit-bank/platinum-savings/boost",
+        "verified_date": VERIFIED_DATE
+    },
+    {
         "promo_id": "PROMO-CAPONE-1500",
         "bank_name": "Capital One, N.A.",
         "account_name": "360 Performance Savings",
@@ -1278,6 +1339,13 @@ def calc_account_return(acct: dict, principal: float, years: float) -> dict:
             promo_extra = 750.0
         elif principal >= 20000:
             promo_extra = 300.0
+    elif acct["id"] == "cit-platinum-savings":
+        boost_years = min(years, 0.50)
+        rem_years = max(0.0, years - 0.50)
+        boost_rate = 0.0425 if principal >= 5000 else 0.0075
+        rem_rate = effective_base_apy / 100.0
+        boosted_ending = principal * (((1.0 + boost_rate) ** boost_years) * ((1.0 + rem_rate) ** rem_years))
+        promo_extra = round(boosted_ending - base_ending, 2)
     elif acct["id"] == "barclays-tiered-savings" and principal >= 25000 and years >= 0.42:  # >= 150 days (30d fund + 120d hold)
         promo_extra = 200.0
     elif acct["id"] == "sofi-checking-savings-dd":
@@ -1293,6 +1361,8 @@ def calc_account_return(acct: dict, principal: float, years: float) -> dict:
         rem_years = max(0.0, years - 0.25)
         boosted_ending = principal * ((1.045 ** boost_years) * (1.035 ** rem_years))
         promo_extra = round(boosted_ending - base_ending, 2)
+    elif acct["id"] == "chase-savings" and principal >= 15000 and years >= 0.25:
+        promo_extra = 200.0
     elif acct["id"] == "bmo-savings-builder" and years >= 1.0:
         promo_extra = 60.0
 
@@ -1321,7 +1391,7 @@ PORTFOLIO_STRATEGIES = [
     {
         "portfolio_id": "PORT-250K-NO-DD-MAX",
         "target_principal_usd": 250000,
-        "strategy_name": "Optimal $250,000 Zero-Direct-Deposit Max-Yield Split (4.13% Year-1 APY — 100% Insured Across 2 Charters)",
+        "strategy_name": "Optimal $250,000 Zero-Direct-Deposit Max-Yield Split (4.28% Year-1 APY — Beats 3-Mo T-Bills, 100% Insured Across 2 Charters)",
         "ownership_assumption": "Single Account Owner (No Direct Deposit Required)",
         "open_date": OPEN_DATE,
         "maturity_eval_date": "2027-10-22",
@@ -1340,26 +1410,26 @@ PORTFOLIO_STRATEGIES = [
                 "source_url": "https://www.capitalone.com/bank/bonus1500/"
             },
             {
-                "bank": "First-Citizens Bank & Trust Co. (CIT Bank Division) — Platinum Savings",
+                "bank": "First-Citizens Bank & Trust Co. (CIT Bank Division) — Platinum Savings (`BOOST50` -> 4.25% 6-Mo / 3.75% Std)",
                 "fdic_cert": 11063,
                 "allocation_usd": 150000,
                 "base_apy_pct": 3.75,
                 "year1_interest_usd": 5625.00,
-                "year1_bonus_usd": 0.00,
-                "year1_total_return_usd": 5625.00,
-                "year1_ending_balance_usd": 155625.00,
+                "year1_bonus_usd": 374.55,
+                "year1_total_return_usd": 5999.55,
+                "year1_ending_balance_usd": 155999.55,
                 "fdic_cap_usd": 250000,
                 "uninsured_usd": 0.00,
-                "source_url": "https://www.cit.com/cit-bank/resources/products-and-rates"
+                "source_url": "https://www.cit.com/cit-bank/platinum-savings/boost"
             }
         ],
         "summary": {
             "total_principal_usd": 250000,
             "aggregate_fdic_capacity_usd": 500000,
-            "year1_total_return_usd": 10325.00,
-            "year1_effective_apy_pct": 4.13,
+            "year1_total_return_usd": 10699.55,
+            "year1_effective_apy_pct": 4.28,
             "uninsured_dollars_at_year1_end": 0.00,
-            "vs_fdic_national_savings_avg_gain_usd": round(10325.00 - 250000 * 0.0038, 2)
+            "vs_fdic_national_savings_avg_gain_usd": round(10699.55 - 250000 * 0.0038, 2)
         }
     },
     {
@@ -1822,6 +1892,17 @@ FLAGGED_ITEMS = [
         "date_checked": VERIFIED_DATE,
         "observation": "Public rate table on `td.com/us/en/personal-banking/savings-accounts` leaves cells blank until location modal is submitted, while headline states `'Rates up to APY* with minimum balance of $250,000†'`. Requiring $250,000 to unlock the top tier leaves **$0.00 of single-owner FDIC insurance capacity** for accrued interest!",
         "action_taken": "Left APY blank (`—`) and flagged both location gating and the $250,000 single-owner FDIC ceiling conflict.",
+        "source_url": "https://www.td.com/us/en/personal-banking/savings-accounts"
+    },
+    {
+        "flag_id": "IRREG-TD-02",
+        "severity": "LOW — 45-Day Unfunded Auto-Closure & $15/mo Fee Cliff Below $10,000",
+        "institution": "TD Bank, N.A. — TD Signature Savings",
+        "field_affected": "Account Opening Funding Window & Monthly Maintenance Fee",
+        "status": "Verified Rule Flagged",
+        "date_checked": VERIFIED_DATE,
+        "observation": "Official `td.com/us/en/personal-banking/savings-accounts` terms specify $0 minimum opening deposit online, **automatic closure after 45 days if balance remains $0**, and a **$15 monthly maintenance fee** unless maintaining a **$10,000 minimum daily balance** or linking an eligible TD checking account.",
+        "action_taken": "Documented exact 45-day funding rule and $10,000 daily balance waiver in all rules tables.",
         "source_url": "https://www.td.com/us/en/personal-banking/savings-accounts"
     },
     {

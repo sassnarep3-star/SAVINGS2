@@ -1,7 +1,7 @@
 {
   "metadata": {
     "verification_date_utc": "2026-10-22",
-    "total_flagged_items": 24
+    "total_flagged_items": 25
   },
   "items": [
     {
@@ -233,6 +233,17 @@
       "date_checked": "2026-10-22",
       "observation": "Public rate table on `td.com/us/en/personal-banking/savings-accounts` leaves cells blank until location modal is submitted, while headline states `'Rates up to APY* with minimum balance of $250,000\u2020'`. Requiring $250,000 to unlock the top tier leaves **$0.00 of single-owner FDIC insurance capacity** for accrued interest!",
       "action_taken": "Left APY blank (`\u2014`) and flagged both location gating and the $250,000 single-owner FDIC ceiling conflict.",
+      "source_url": "https://www.td.com/us/en/personal-banking/savings-accounts"
+    },
+    {
+      "flag_id": "IRREG-TD-02",
+      "severity": "LOW \u2014 45-Day Unfunded Auto-Closure & $15/mo Fee Cliff Below $10,000",
+      "institution": "TD Bank, N.A. \u2014 TD Signature Savings",
+      "field_affected": "Account Opening Funding Window & Monthly Maintenance Fee",
+      "status": "Verified Rule Flagged",
+      "date_checked": "2026-10-22",
+      "observation": "Official `td.com/us/en/personal-banking/savings-accounts` terms specify $0 minimum opening deposit online, **automatic closure after 45 days if balance remains $0**, and a **$15 monthly maintenance fee** unless maintaining a **$10,000 minimum daily balance** or linking an eligible TD checking account.",
+      "action_taken": "Documented exact 45-day funding rule and $10,000 daily balance waiver in all rules tables.",
       "source_url": "https://www.td.com/us/en/personal-banking/savings-accounts"
     },
     {

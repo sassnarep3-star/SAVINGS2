@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flagged for Review — Unverified Values, Bank CMS Anomalies &amp; Line-by-Line Repo Audit — U.S. National Bank Savings &amp; Max-FDIC Research</title>
+  <link rel="stylesheet" href="site-assets/styles.css">
+</head>
+<body>
+  <div class="telemetry-bar">
+    <div class="telemetry-inner">
+      <div class="telemetry-group">
+        <span class="telemetry-pill"><span class="dot-live"></span> Primary-Source Verified Research</span>
+        <span>Account Open Date Anchor: <strong style="color:#fff">2026-10-22 (UTC)</strong></span>
+        <span>FDIC Savings Avg: <strong style="color:#fff">0.38%</strong> (2026-10-19)</span>
+        <span>Fed EFFR: <strong style="color:#fff">3.88%</strong> · 3M T-Bill: <strong style="color:#fff">4.25%</strong> · 1Y T-Note: <strong style="color:#fff">4.52%</strong> (2026-10-21)</span>
+      </div>
+      <div class="telemetry-group">
+        <span>Zero Third-Party Aggregators · Unconfirmed Values Left Blank (<code>—</code>)</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a class="brand-title" href="index.html">
+          <span class="brand-mark">FDIC $250K+</span>
+          <span class="brand-text">
+            <strong>U.S. National Bank Savings Intelligence &amp; Max-FDIC Optimizer</strong>
+            <span>Line-by-Line Verified Against Official Bank Disclosures, FDIC BankFind, Federal Reserve &amp; U.S. Treasury</span>
+          </span>
+        </a>
+        <div class="header-meta-badges">
+          <span class="hdr-badge">25 Accounts · 20 National Charters</span>
+          <span class="hdr-badge">Open Date: 2026-10-22</span>
+          <span class="hdr-badge gold">Zero Hallucination Policy</span>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Primary category navigation">
+        <a class="nav-link" href="index.html">Executive Hub</a>
+<a class="nav-link" href="national-banks.html">National Banks<span class="nav-count">25</span></a>
+<a class="nav-link" href="returns-by-deposit.html">Returns &amp; Max-FDIC<span class="nav-count">$1k–$1M</span></a>
+<a class="nav-link" href="rate-competitiveness.html">Lifespan &amp; Spreads<span class="nav-count">3M–5Y</span></a>
+<a class="nav-link" href="promotions-bonuses.html">Promos &amp; Bonuses<span class="nav-count">9</span></a>
+<a class="nav-link" href="opening-rules.html">Rules, Min &amp; Fees</a>
+<a class="nav-link" href="fdic-security.html">FDIC &amp; Security<span class="nav-count">$250k–$3.5M</span></a>
+<a class="nav-link active flagged-nav" href="flagged-review.html">Flagged for Review<span class="nav-count">25</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="hero-card">
+      <div class="hero-eyebrow">Category 7 · Strict Audit Log &amp; Manual Review Queue</div>
+      <h1>Flagged for Review — Unverified Values, Bank CMS Anomalies &amp; Line-by-Line Repo Audit</h1>
+      <p>Complete transparency log of all 24 unconfirmed/ZIP-gated blank fields, broken bank CMS tokens, charter ceiling traps, and critical factual bugs caught and fixed during line-by-line repository verification.</p>
+      
+    </section>
+
+    
+    <div class="callout warn">
+      <strong>Strict Zero-Hallucination &amp; Transparency Mandate:</strong>
+      Whenever an official bank page gated its APY behind a client-side ZIP modal (`Chase`, `Bank of America`, `Citibank`, `PNC`, `TD Bank`, `Fifth Third`), rendered a broken server token (`Capital One hero NaN APY`, `Citibank :BLUE_AccSavings_Rate%`, `Citizens Access #ProductLine=cax...#`), omitted an effective date (`Wells Fargo`, `HSBC`), or contained an error on <code>main</code> (`SoFi 0.80% vs 3.30% non-DD bug`), we <strong>never guessed or used third-party aggregator numbers</strong>. Every single item is documented below with a direct primary link for manual verification. Per project protocol, flagged items are transparently published here and do not block PR creation or merge.
+    </div>
+    <section class="section-card">
+      <div class="section-header">
+        <div>
+          <h2>All 25 Flagged Unverified Values, Bank Website Bugs &amp; Repo Audit Findings</h2>
+          <p>Click any primary source link below to inspect the exact official bank page or PDF disclosure verified on `2026-10-22`.</p>
+        </div>
+      </div>
+      
+        <div class="flag-card critical" id="IRREG-AUDIT-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-AUDIT-01 · CRITICAL — Peer Repo Data Error Caught &amp; Corrected During Line-by-Line Audit of `main`</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">SoFi Bank, N.A. (`data/banks.json` Row 16 on `main`)</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Caught &amp; Fixed in Integrated Repo</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Non-Direct-Deposit Savings APY (`3.30%` Falsely Claimed Instead of Official `0.80% APY`)</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Line-by-line audit of `data/banks.json` merged onto `main` (`PR #1–#3`, `session-46ab1baa`) caught a critical factual error: `sofi-savings` listed `{&#x27;min&#x27;: 0, &#x27;apy&#x27;: 3.3, &#x27;condition&#x27;: &#x27;Standard savings APY, no direct deposit&#x27;}`. In reality, per **Table 5** of SoFi Bank&#x27;s official *Rate Sheet (Effective October 20, 2026)* PDF (`SoFi-Bank-Rate-Sheet-October-20-2026.pdf`), accounts **without** Eligible Direct Deposit, $5,000/31-day Qualifying Deposits, or SoFi Plus earn **`0.80% APY`** (`0.79708%` interest rate) — NOT `3.30% APY`! That single error overstates passive Year-1 interest on `$250,000` by **`$6,250.00`** (`$8,250` vs `$2,000`).</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Corrected `data/banks.json` and split `sofi-checking-savings-dd` (`3.30%` base / `4.40%` 6-mo boost WITH qualifying activity) vs `sofi-savings-no-dd` (`0.80%` passive APY) in `datasets/national-banks.json` with direct link to official Oct 20, 2026 PDF. ·
+            <a href="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SoFi-Bank-Rate-Sheet-October-20-2026.pdf" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-AUDIT-02">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-AUDIT-02 · HIGH — Peer Repo `NaN` / Missing Primary Disclosure Resolved via Official Truth-in-Savings Pages</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Capital One, N.A. (`360 Performance Savings`) &amp; Bank of America, N.A. (`Advantage Savings`)</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Resolved &amp; Upgraded Across Repo</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Capital One `3.20% APY` + `$1,500 BONUS1500` &amp; Bank of America `$100` Open / `$8` Fee / `$500` Waiver + Synchrony `3.55% APY`</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Prior pass on `main` recorded Capital One as `unverified` (`NaN APY` on hero page), Bank of America min/fee as `null` (`$XXXX` placeholders), Chase bonus as blank, and Synchrony as 404. Line-by-line primary verification located official Truth-in-Savings disclosures confirming: (1) Capital One `3.1540%` rate / **`3.20% APY`** effective `10/21/2026` + active **`BONUS1500` (`$300`/`$750`/`$1,500`)**; (2) Bank of America official *Personal Schedule of Fees (Effective Aug 7, 2026)* PDF confirming **`$100` min open** and **`$8` fee (`$500` daily balance waiver)**; (3) Chase **`$200` Savings / `$900` Combo Bonus** (`exp. 01/27/2027`); and (4) live Synchrony HYSA page (`/banking/products/hys-core`) confirming **`3.55% APY`** effective `10/21/2026`.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Upgraded both `datasets/national-banks.json` and `data/banks.json` with exact verbatim primary-source links and dates. ·
+            <a href="https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-CIT-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-CIT-01 · MEDIUM — Older Rate Sheet Effective Date (`2026-07-01`) &amp; Sharp `&lt;$5,000` Rate Cliff</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">First-Citizens Bank &amp; Trust Co. (CIT Bank Division) — Platinum Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Verified from Official CIT Rate Table)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Official Rate Effective Date (`2026-07-01`) &amp; Tier Cliff (`0.25%` below `$5,000`)</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> CIT Bank&#x27;s official Products and Interest Rates table (`cit.com/cit-bank/resources/products-and-rates`) lists `3.75% APY` (`3.682%` rate) at `&gt;= $5,000`, `0.25% APY` below `$5,000`, and `3.65% APY` on `Savings Connect`, stamped **Effective July 1, 2026** — nearly 16 weeks older than peers stamped `2026-10-20`/`2026-10-21`.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Recorded exact `2026-07-01` source date prominently in every table and offered parallel Oct-2026-fresh multi-bank portfolio (`Synchrony 3.55%`). ·
+            <a href="https://www.cit.com/cit-bank/resources/products-and-rates" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-CHARTER-03">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-CHARTER-03 · HIGH — Shared Single FDIC Charter Between CIT Bank &amp; First Citizens Bank</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">First-Citizens Bank &amp; Trust Company (`CIT Bank` Division)</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Active Charter Trap Flagged</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Aggregate $250,000 FDIC Limit (`CERT #11063`)</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> CIT Bank is an unincorporated division of **First-Citizens Bank &amp; Trust Company (`FDIC Cert #11063`)**. Per CIT&#x27;s official FDIC disclosure, deposits across CIT Platinum Savings, CIT Savings Connect, and all 519 First Citizens branches combine toward a single `$250,000` per-owner cap.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Flagged on all tables and excluded CIT + First Citizens pairing from multi-bank max-FDIC portfolios. ·
+            <a href="https://www.cit.com/cit-bank/platinum-savings" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-BARC-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-BARC-01 · HIGH — Structural $250,000 Balance Tier Threshold vs Single-Owner FDIC Ceiling + 9-Day Promo Expiry</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Barclays Bank Delaware — Barclays Tiered Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Active Warning Flagged</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Top `3.65% APY` Tier (`$250k–$1M`) &amp; `$200` Bonus Expiration (`2026-10-31`)</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Barclays Tiered Savings requires at least **`$250,000.00`** to unlock its top **`3.65% APY`** tier (`3.50%` under `$250k`, accurate `10/07/2026`). For an individual single-owner account without POD beneficiaries, every penny of accrued interest above `$250,000` (`$9,125` in Year 1) is **uninsured**! Additionally, Barclays&#x27; `$200` bonus (`$25k` held 120d) expires **`2026-10-31`** (9 days from `2026-10-22`).</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Recommended opening Barclays Tiered Savings strictly as a **Joint Account (`$500k` FDIC limit)** or **POD Trust (`$250k`/beneficiary up to `$1.25M`)** when targeting `$250,000+`. ·
+            <a href="https://banking.us.barclays/tiered-savings.html" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-HSBC-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-HSBC-01 · LOW — Public Rate Page Omits Calendar As-Of Date</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">HSBC Bank USA, N.A. — Premier Relationship Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Verified `2026-10-22`)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Official Rate Effective Date (`—`)</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Official HSBC product page displays `3.10% Relationship APY` / `0.05% Standard APY` (`$1` min balance) but omits a specific calendar effective date on the public webpage.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left `Official Rate As-Of Date` strictly blank (`—`) while recording retrieval date `2026-10-22`. ·
+            <a href="https://www.us.hsbc.com/savings-accounts/products/relationship-savings/" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-FITB-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-FITB-01 · MEDIUM — Unverified APY (ZIP-Gated Rate Table)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Fifth Third Bank, N.A. — Fifth Third Momentum® Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY %</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Fifth Third Momentum® Savings rate lookup requires regional ZIP entry to display APY tiers.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left APY strictly blank (`—`) and logged official URL for review. ·
+            <a href="https://www.53.com/content/fifth-third/en/personal-banking/bank/savings/momentum.html" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-CHARTER-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-CHARTER-01 · CRITICAL — FDIC Coverage Trap</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Discover Bank / Capital One, N.A.</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Verified Merger — Do Not Double-Count)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Independent $250,000 FDIC Insurance Capacity</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> FDIC BankFind API reports Discover Bank (Cert #5649) as `ACTIVE: 0` (`DATEUPDT: 06/04/2025`), and `https://www.discover.com/online-banking/savings-account/` HTTP-redirects directly to Capital One 360 Performance Savings (`Cert #4297`). Official Capital One FAQ states any Capital One or Discover Bank deposit accounts opened on or after May 18, 2025 are immediately aggregated under Capital One&#x27;s single $250,000 FDIC insurance cap.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Recorded Discover under Capital One Charter #4297 and excluded Discover from multi-bank $500k/$1M FDIC diversification portfolios. ·
+            <a href="https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/?timerBanner=DISCOVER&amp;src=dfs117-savings-account" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-CHARTER-02">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-CHARTER-02 · HIGH — Shared FDIC Charter</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Citizens Bank, N.A. / Citizens Access®</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Shared Charter #57957)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Independent $250,000 FDIC Insurance Capacity</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Citizens Access® is branded separately online from Citizens Bank branch banking, but footnote `^` on `citizensaccess.com/Citizens/home` explicitly states both are treated as the SAME legal entity under FDIC Certificate #57957.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Flagged shared certificate #57957 so depositors do not hold $250,000 at both divisions simultaneously. ·
+            <a href="https://www.secure.citizensaccess.com/Citizens/home" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-CITI-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-CITI-01 · CRITICAL — Geographic Ineligibility (NYC / NY State)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Citibank, N.A. — Citi® Accelerate Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Ineligible in New York)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Account Eligibility by Residential Address</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Official disclosure on `citi.com/banking/compare-bank-accounts` restricts Citi® Accelerate Savings strictly to non-branch U.S. states/territories (`AK, AL, AR, AZ, CO, DE, GA, HI, IA, ID, IN, KS, KY, LA, MA, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NM, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY`). Residents of New York (`NY`), CA, NJ, CT, FL, IL, MD, and DC are NOT eligible.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Flagged prominently because New York City depositors cannot open Citi Accelerate Savings online and are routed to lower-yielding branch savings tiers. ·
+            <a href="https://www.citi.com/banking/compare-bank-accounts" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-CITI-02">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-CITI-02 · MEDIUM — Unverified APY (Address-Gated Token)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Citibank, N.A.</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY % &amp; Monthly Service Fee Base Amount</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Public HTML on `citi.com/banking/savings-account` renders raw placeholder token `:BLUE_AccSavings_Rate% Annual Percentage Yield` until a residential address is submitted interactively.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left APY and base unwaived monthly fee cells blank (`—`); never inferred or copied from third-party sites. ·
+            <a href="https://www.citi.com/banking/savings-account" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-COF-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-COF-01 · MEDIUM — Marketing Page `NaN APY` Hydration Bug</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Capital One, N.A. — 360 Performance Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Resolved via Official Disclosure (Flagged Site Defect)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Marketing Hero APY Display vs Truth-in-Savings Disclosure</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Capital One&#x27;s marketing pages (`/bank/savings-accounts/online-performance-savings-account/` and `/bank/bonus1500/`) render literal `NaN APY` in server-returned HTML. Cross-checking Capital One&#x27;s official Truth-in-Savings Disclosure (`/bank/disclosures/savings-accounts/online-performance-savings-account/`) and application portal (`apply.capitalone.com/fc/index.html`) confirmed the exact rate server-side: `3.1540%` interest rate / `3.20% APY` effective `10/21/2026`.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Used verified `3.20% APY` from Capital One&#x27;s official Truth-in-Savings disclosure and logged the marketing hero `NaN` defect here. ·
+            <a href="https://www.capitalone.com/bank/disclosures/savings-accounts/online-performance-savings-account/" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-SYF-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-SYF-01 · LOW — Stale Static Calculator Default Text</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Synchrony Bank — High Yield Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Resolved via Official Disclosure (Flagged Site Defect)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Embedded Calculator Widget Default Text vs Official Rate Disclosure</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Synchrony&#x27;s hero banner, bottom CTA, and official `*DISCLOSURES` section all confirm `3.55% APY accurate as of 10/21/2026`, whereas an embedded calculator widget placeholder displays static default text `Our HYS APY: 2.85%` / `National Average: 1% APY`, and top alert banner still mentions legacy `Hurricane Isaias`.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Recorded confirmed `3.55% APY` (`as of 2026-10-21`) from official Truth-in-Savings disclosure footnote and flagged stale widget text. ·
+            <a href="https://www.synchrony.com/banking/products/hys-core" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-JPM-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-JPM-01 · MEDIUM — Unverified APY (ZIP-Code Gated)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">JPMorgan Chase Bank, N.A. — Chase Savings℠</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY %</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> `chase.com/personal/savings/savings-account/interest-rates` blocks server-side rendering with `&#x27;In order to see rates table, please provide valid 5-digit zip code.&#x27;` All fees (`$5` / `$0` waiver), `$0` min deposit, and `$200`/`$900` bonus through `01/27/2027` were verified directly from official Chase pages and `ABSF-en.pdf`.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left APY strictly blank (`—`) in all tables per verification rules. ·
+            <a href="https://www.chase.com/personal/savings/savings-account/interest-rates" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-JPM-02">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-JPM-02 · LOW — HTTP 404 on Legacy Premier Savings URL</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">JPMorgan Chase Bank, N.A. — Chase Premier Savings℠</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Resolved via Official Fee Schedule PDF</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Standalone Marketing Page URL</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> `https://www.chase.com/personal/savings/premier-savings` returned HTTP 404 (&#x27;Page not found...&#x27;), whereas Chase&#x27;s official Deposit Account Agreement `ABSF-en.pdf` (page 9) documents active Chase Premier Savings℠ terms (`$25` monthly fee waived at `$15,000+` daily balance or linked qualifying checking).</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Linked directly to official `ABSF-en.pdf` schedule instead of broken marketing URL. ·
+            <a href="https://www.chase.com/content/dam/chase-ux/documents/personal/checking/ABSF-en.pdf" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-BAC-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-BAC-01 · MEDIUM — Unverified APY (`$XXXX` Placeholders on Web Page)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Bank of America, N.A. — Advantage Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank (Fees Confirmed via PDF)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY %</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> `bankofamerica.com/deposits/savings/savings-accounts/` renders `$XXXX` placeholders without client-side state. Fetching Bank of America&#x27;s official *Personal Schedule of Fees (Effective August 7, 2026)* PDF confirmed `$100.00` minimum opening deposit, `$8.00` monthly fee (waived first 6 months or at `$500+` daily balance / BofA Rewards™), while APY remains market-gated.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Populated verified `$100` min deposit and `$8` / `$500` fee waiver from official PDF; left APY strictly blank (`—`). ·
+            <a href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/?request_locale=en_US" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-WFC-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-WFC-01 · LOW — Explicit Rate Effective Date Omitted on Wells Fargo Page</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Wells Fargo Bank, N.A. — Platinum Savings &amp; Way2Save®</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Verified Live for Default ZIP 94105)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Published &#x27;Effective As Of&#x27; Rate Date &amp; ZIP Dependency</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> `wellsfargo.com/savings-cds/rates/` displays default location `CA, 94105` (`3.25% APY` new-customer Platinum `$25k+`; `0.01% APY` standard Platinum &amp; Way2Save) without printing a calendar &#x27;effective as of&#x27; date above the savings rate cards.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left `official_rate_as_of_date` blank (`—`), recorded verification date `2026-10-22` (`ZIP 94105`), and flagged potential ZIP variation for NYC (`10001`). ·
+            <a href="https://www.wellsfargo.com/savings-cds/rates/" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-USB-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-USB-01 · LOW — ZIP-Specific Relationship Rate &amp; 90-Day Prior Client Exclusion</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">U.S. Bank N.A. — Bank Smartly® Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Verified for Default ZIP 55402)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Regional Rate Variability &amp; Existing Client Exclusion</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Official rate sheet (`usbank.com/.../savings-account-interest-rates.html`) verifies `3.50% APY` effective `October 21, 2026` at `$25,000+` CQB (`0.05%` standard) for default `ZIP 55402`, noting APYs may vary by ZIP and advertised rates exclude existing/prior-90-day U.S. Bank savings/MMA clients.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Documented exact ZIP `55402` anchor, companion account requirement, and 90-day exclusion rule. ·
+            <a href="https://www.usbank.com/bank-accounts/savings-accounts/bank-smartly-savings/savings-account-interest-rates.html" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-PNC-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-PNC-01 · MEDIUM — Unverified APY (ZIP-Gated Rate Lookup &amp; Regional HYSA)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">PNC Bank, N.A. — Standard Savings / High Yield Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY %</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> PNC deposit rate pages require interactive ZIP entry to populate APY tables; additionally, PNC savings page assets (`hys_vwcp_stop_sell`) reflect regional restrictions where PNC High Yield Savings is offered only in out-of-branch markets.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Confirmed `$0` online minimum deposit, `$1` min to earn interest, and `$5` fee / `$300` waiver from official page; left APY strictly blank (`—`). ·
+            <a href="https://www.pnc.com/en/personal-banking/banking/savings/standard-savings.html" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-TFC-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-TFC-01 · MEDIUM — Unverified APY (Not Displayed on Public Savings Page)</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Truist Bank — Truist One Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY %</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> `truist.com/savings` publishes exact opening deposits (`$50`) and fee waivers (`$5` waived at `$300` balance or linked checking) but omits numeric APYs on the public comparison table.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left APY strictly blank (`—`) rather than quoting third-party sources. ·
+            <a href="https://www.truist.com/savings" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card critical" id="IRREG-TD-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-danger">IRREG-TD-01 · HIGH — Unverified Region-Gated APY &amp; $250,000 Tier vs FDIC Cap Conflict</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">TD Bank, N.A. — TD Signature Savings &amp; TD Simple Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified APY + Structural FDIC Warning</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY % &amp; Single-Owner FDIC Headroom</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Public rate table on `td.com/us/en/personal-banking/savings-accounts` leaves cells blank until location modal is submitted, while headline states `&#x27;Rates up to APY* with minimum balance of $250,000†&#x27;`. Requiring $250,000 to unlock the top tier leaves **$0.00 of single-owner FDIC insurance capacity** for accrued interest!</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left APY blank (`—`) and flagged both location gating and the $250,000 single-owner FDIC ceiling conflict. ·
+            <a href="https://www.td.com/us/en/personal-banking/savings-accounts" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-TD-02">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-TD-02 · LOW — 45-Day Unfunded Auto-Closure &amp; $15/mo Fee Cliff Below $10,000</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">TD Bank, N.A. — TD Signature Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Verified Rule Flagged</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Account Opening Funding Window &amp; Monthly Maintenance Fee</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Official `td.com/us/en/personal-banking/savings-accounts` terms specify $0 minimum opening deposit online, **automatic closure after 45 days if balance remains $0**, and a **$15 monthly maintenance fee** unless maintaining a **$10,000 minimum daily balance** or linking an eligible TD checking account.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Documented exact 45-day funding rule and $10,000 daily balance waiver in all rules tables. ·
+            <a href="https://www.td.com/us/en/personal-banking/savings-accounts" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-CFG-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-CFG-01 · MEDIUM — Broken CMS Placeholder Tokens on Citizens Access Rate Sheet</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Citizens Bank, N.A. — Citizens Access® Savings</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Unverified — Left Blank</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Current Savings APY % &amp; Effective Date</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Both `citizensaccess.com/Citizens/home` and `citizensaccess.com/Citizens/customer-service/rate-sheet` output unrendered CMS strings (`#ProductLine=cax|Brand=citizensbank|ProductDescription=SAVINGS|...|ProductAttribute=interestRates::interestAPY#`).</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Left APY and effective date strictly blank (`—`) and logged official URLs for review. ·
+            <a href="https://www.secure.citizensaccess.com/Citizens/customer-service/rate-sheet" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-BMO-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-BMO-01 · LOW — Legacy BMO Alto URL Returns HTTP 404</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">BMO Bank N.A.</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Needs Review (Verified Active BMO Savings Builder Instead)</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> Legacy `alto.bmo.com` Online Savings URL</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> `https://www.alto.bmo.com/en-us/online-savings-account/` returned HTTP 404 Not Found on `2026-10-22`, whereas `https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/` is live (`0.01% APY` effective `10/21/2026` + `$5/mo` growth reward).</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Used verified active `BMO Savings Builder` terms and flagged the 404 on legacy BMO Alto URL. ·
+            <a href="https://www.bmo.com/en-us/main/personal/savings-and-cds/savings-builder/" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+        <div class="flag-card" id="IRREG-REPO-01">
+          <div class="flag-head">
+            <div>
+              <span class="badge badge-flagged">IRREG-REPO-01 · LOW — Baseline Repository Scaffold</span>
+              <strong style="margin-left:0.45rem;font-size:0.96rem">Repository `sassnarep3-star/SAVINGS2`</strong>
+            </div>
+            <span class="mono" style="color:#475569">Checked: 2026-10-22 · Status: <strong>Resolved</strong></span>
+          </div>
+          <div style="font-size:0.84rem;margin:0.35rem 0"><strong>Affected Field:</strong> `README.md` at Initial Commit `e5a82d8`</div>
+          <div style="font-size:0.84rem;color:#334155;margin:0.35rem 0"><strong>Primary-Source Observation:</strong> Line-by-line review of commit `e5a82d8aadbfe96134b997e746e1098ff8ec03bc` found only `README.md` (10 bytes, `# SAVINGS2`, no trailing newline) and zero pre-existing bank data.</div>
+          <div style="font-size:0.83rem;color:#0f172a;margin-top:0.35rem">
+            <strong>Resolution / Action Taken:</strong> Built complete primary-source dataset, multi-page dashboard, verification suite, and comprehensive `README.md`. ·
+            <a href="https://github.com/sassnarep3-star/SAVINGS2/commit/e5a82d8aadbfe96134b997e746e1098ff8ec03bc" target="_blank" rel="noopener">Inspect Primary Official URL ↗</a>
+          </div>
+        </div>
+        
+    </section>
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong style="color:#fff">U.S. National Bank Savings &amp; Max-FDIC Research Suite (`sassnarep3-star/SAVINGS2`)</strong> — Account Opening Anchor Date: <code>2026-10-22</code> · All primary sources verified on <code>2026-10-22</code>.</div>
+      <div class="footer-links">
+        <strong style="color:#e2e8f0">Primary Suite Pages:</strong>
+        <a href="index.html">Executive Hub</a> · <a href="national-banks.html">National Banks</a> · <a href="returns-by-deposit.html">Returns &amp; Max-FDIC</a> · <a href="rate-competitiveness.html">Lifespan &amp; Spreads</a> · <a href="promotions-bonuses.html">Promos &amp; Bonuses</a> · <a href="opening-rules.html">Rules, Min &amp; Fees</a> · <a href="fdic-security.html">FDIC &amp; Security</a> · <a href="flagged-review.html">Flagged for Review</a>
+      </div>
+      <div class="footer-links">
+        <strong style="color:#e2e8f0">Preserved Multi-Session Reference Pages:</strong>
+        <a href="accounts.html">Reference Directory (v1)</a> · <a href="returns.html">Reference Returns (v1)</a> · <a href="competitiveness.html">Reference Benchmarks (v1)</a> · <a href="bonuses.html">Reference Bonuses (v1)</a> · <a href="fdic.html">Reference FDIC Guide (v1)</a> · <a href="flagged.html">Reference Flags (v1)</a> · <a href="methodology.html">Methodology &amp; Audit Rules</a>
+      </div>
+      <div style="margin-top:0.55rem;color:#64748b">
+        Strict Primary-Source Verification Rule: Every numeric rate, fee, bonus, asset total, and charter limit links directly to an official bank domain or U.S. government agency (`fdic.gov`, `api.fdic.gov`, `federalreserve.gov`, `home.treasury.gov`). Any ZIP-gated or unhydrated CMS value is intentionally left blank (`—`) and documented on <a href="flagged-review.html">Flagged for Review</a>. Savings APYs are variable unless otherwise stated.
+      </div>
+    </div>
+  </footer>
+  <script src="site-assets/dashboard.js"></script>
+</body>
+</html>
